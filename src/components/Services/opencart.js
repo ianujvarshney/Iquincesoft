@@ -1,0 +1,336 @@
+
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import Header from '../Header';
+import Footer from '../Footer';
+import FormPopup from '../../container/FormPopup';
+import WorkSec from '../../container/WorkSec';
+import EasySec from '../../container/EasySec';
+import WebSec from '../../container/WebSec';
+import ReviewSec from '../../container/ReviewSec';
+import EuquireSec from '../../container/EuquireSec';
+import AwardSec from '../../container/AwardSec';
+import OwlCarousel from 'react-owl-carousel2';
+import 'react-owl-carousel2/src/owl.carousel.css';
+import { PostCate } from '../../json/PostCate';
+import 'react-accessible-accordion/dist/fancy-example.css';
+import FAQ from '../../container/FAQ';
+import AwardFormsec from '../../container/AwardFormsec';
+import { FaCode } from 'react-icons/fa';
+import { TailSpin } from 'react-loader-spinner';
+import Partner from '../../container/Partner';
+
+
+class opencart extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            servicesJson: [],
+            appjson: [],
+            Questionjson: [],
+            OpenCartJson: [],
+            Loading: true,
+        }
+    }
+
+    componentDidMount() {
+        PostCate.getOpenCart().then((OpenCart, err) => {
+            if (!err) {
+                this.setState({
+                    OpenCartJson: OpenCart,
+                    Loading: false,
+
+                });
+            }
+        });
+    }
+    render() {
+        const { OpenCartJson } = this.state;
+        const servSlide = {
+            items: 1,
+            responsive: {
+                320: { items: 1, }
+            },
+            loop: true
+        };
+
+        const stackSlide = {
+            items: 3,
+            responsive: {
+                1200: { items: 3, },
+                768: { items: 3 },
+                480: { items: 2 },
+                320: { items: 1, }
+            },
+            loop: true
+        };
+
+        const culture = {
+            items: 1,
+            responsive: {
+                480: { items: 2 },
+                320: { items: 1, }
+            },
+            loop: true
+        };
+
+        return (
+            this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
+                <>
+                    <Header headerClass={'serv-head'} />
+                    <div className="service-banner service-banner-cat">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <h1><strong>Hire Open Cart Developers</strong><br /></h1>
+                                    <ul>
+                                        <p>What is my benefit in it?</p>
+                                        <li>Reduce the operating cost</li>
+                                        <li>Increase the overall revenues</li>
+                                        <li>Smoothen the process</li>
+                                        <li>Get regular updates on any and every project</li>
+                                        <li>Get streamlined results as per your business goals. </li>
+                                        <li>Highly skilled and professional  OpenCart developers.  </li>
+                                    </ul>
+                                </div>
+                                <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="culture-sec cr-sec">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2"></div>
+                                <div className="col-lg-8 col-md-12" data-aos="fade-right">
+                                    <h3>Why Open Cart?</h3>
+                                    <p>OpenCart is one of the finest tools for e-commerce development. It is featured with customized solutions that meet your business needs.</p>
+                                </div>
+
+                                <OwlCarousel options={culture}>
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Smooth Operations</h4>
+                                        <p>OpenCart allows to carry out a series of operations with one admin panel. OpenCart offers multiple benefits with multiple features. </p>
+                                    </div>
+
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Multiple Payment Operations</h4>
+                                        <p>OpenCart offers multiple payment gateways as a choice to the users. This choice of payment gateway helps to accomplish bulk orders with the help of safe and secure payment modes.</p>
+                                    </div>
+
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Multi-Store Functionality</h4>
+                                        <p>This feature offers you to focus on essential activities. This feature can allow you to run multiple stores and sell products of diverse brands with one admin panel.'</p>
+                                    </div>
+
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Multilingual support </h4>
+                                        <p>OpenCart offers various languages and currencies with the interface. With its help, you can grow and expand your business exponentially.</p>
+                                    </div>
+
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Responsive</h4>
+                                        <p>openCart functions exceptionally well across the devices. OpenCart is responsive and SEO friendly, thus helping the website rank higher on the Search Engine Result Pages. </p>
+                                    </div>
+
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Product Browsing is fun with OpenCart.</h4>
+                                        <p>It allows adding multiple products and categorizing them accordingly. It also allows the reviews, comments and ratings to display about the products on the website. </p>
+                                    </div>
+
+
+                                </OwlCarousel>
+
+
+                                <div className="col-lg-4 col-md-6">
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Smooth Operations</h4>
+                                        <p>OpenCart allows to carry out a series of operations with one admin panel. OpenCart offers multiple benefits with multiple features. </p>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-4 col-md-6">
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Multiple Payment Operations</h4>
+                                        <p>OpenCart offers multiple payment gateways as a choice to the users. This choice of payment gateway helps to accomplish bulk orders with the help of safe and secure payment modes.</p>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-4 col-md-6">
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Multi-Store Functionality</h4>
+                                        <p>This feature offers you to focus on essential activities. This feature can allow you to run multiple stores and sell products of diverse brands with one admin panel.</p>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-4 col-md-6">
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Multilingual support </h4>
+                                        <p>OpenCart offers various languages and currencies with the interface. With its help, you can grow and expand your business exponentially. </p>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-4 col-md-6">
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Responsive</h4>
+                                        <p>openCart functions exceptionally well across the devices. OpenCart is responsive and SEO friendly, thus helping the website rank higher on the Search Engine Result Pages. </p>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-4 col-md-6">
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Product Browsing is fun with OpenCart.</h4>
+                                        <p>It allows adding multiple products and categorizing them accordingly. It also allows the reviews, comments and ratings to display about the products on the website. </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="culture-sec web-sec">
+                        <h3>OpenCart Development Services</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-1"></div>
+                                <div className="col-lg-10 col-md-12" data-aos="fade-up">
+                                    <OwlCarousel options={culture}>
+                                        <div className="cult-box">
+                                            <div class="tech-dot"></div>
+                                            {/* <img src={webImg} /> */}
+                                            <h4>OpenCart Web Development</h4>
+                                            <p>Launch your eCommerce website and build your digital marketplace from scratch. We create a long-lasting impression on your customer with our OpenCart Website development services. </p>
+                                        </div>
+
+                                        <div className="cult-box">
+                                            <div class="tech-dot"></div>
+                                            {/* <img src={webImg1} /> */}
+                                            <h4>OpenCart Migration Services</h4>
+                                            <p>Improve the performance, usability and security by migrating your online store to the updated version of OpenCart. We take minimal time with no loss of data.</p>
+                                        </div>
+
+                                        <div className="cult-box">
+                                            <div class="tech-dot"></div>
+                                            {/* <img src={webImg2} /> */}
+                                            <h4>OpenCart App development </h4>
+                                            <p>IQuinceSoft developers can offer you a highly scalable OpenCart app development solution. We ensure you an improved experience with the help of intuitive layout design and an appealing app.</p>
+                                        </div>
+
+                                        <div className="cult-box">
+                                            <div class="tech-dot"></div>
+                                            {/* <img src={webImg3} /> */}
+                                            <h4>Theme Customization</h4>
+                                            <p>Explore more alluring themes with iQuinceSoft theme customization services. We customize and offer the most advanced and appealing themes for your website.  </p>
+                                        </div>
+                                    </OwlCarousel>
+
+                                    <div className="row">
+                                        <div className="col-lg-4 col-md-4">
+                                            {/* <img src={webImg} /> */}
+                                            <h4>OpenCart Web Development</h4>
+                                            <p>Launch your eCommerce website and build your digital marketplace from scratch. We create a long-lasting impression on your customer with our OpenCart Website development services. </p>
+                                        </div>
+
+                                        <div className="col-lg-4 col-md-4">
+                                            {/* <img src={webImg1} /> */}
+                                            <h4>OpenCart Migration Services</h4>
+                                            <p>Improve the performance, usability and security by migrating your online store to the updated version of OpenCart. We take minimal time with no loss of data.</p>
+                                        </div>
+
+                                        <div className="col-lg-4 col-md-4">
+                                            {/* <img src={webImg2} /> */}
+                                            <h4>OpenCart App development </h4>
+                                            <p>IQuinceSoft developers can offer you a highly scalable OpenCart app development solution. We ensure you an improved experience with the help of intuitive layout design and an appealing app.
+                                            </p>
+                                        </div>
+
+                                        <div className="col-lg-4 col-md-4">
+                                            {/* <img src={webImg3} /> */}
+                                            <h4>Theme Customization</h4>
+                                            <p>Explore more alluring themes with iQuinceSoft theme customization services. We customize and offer the most advanced and appealing themes for your website.  </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                    </div>
+
+                    <Partner />
+
+                    <EasySec />
+
+                    <WebSec />
+
+                    <WorkSec />
+
+                    <FAQ />
+
+                    <div className="culture-sec insight-sec">
+                        <h3>Featured Insights</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-12 col-md-12">
+                                    <OwlCarousel options={culture}>
+                                        {OpenCartJson && OpenCartJson.map(OpenCartJsonS => {
+                                            return (
+                                                <div className="cult-box">
+                                                    <div class="tech-dot"></div>
+                                                    <h4>{OpenCartJson.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: OpenCartJsonS.content }}></p>
+                                                    <a href="#">Read More</a>
+                                                </div>
+                                            );
+                                        })}
+                                    </OwlCarousel>
+
+                                    <div className="row">
+                                        {OpenCartJson && OpenCartJson.map((OpenCartJsonS, index) => {
+                                            return (
+
+                                                <div className="col-lg-4 col-md-4">
+                                                    <div className="insight-box" key={OpenCartJsonS.id}>
+                                                        <h4>{OpenCartJsonS.name}</h4>
+                                                        <p dangerouslySetInnerHTML={{ __html: OpenCartJsonS.content.substr(0, 100) }}></p>
+                                                        <Link to={`/PostPage/${OpenCartJsonS.slug}`} >READ MORE </Link>
+                                                    </div>
+                                                </div>
+
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <FormPopup />
+                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                    </div>
+
+                    <ReviewSec />
+
+                    <EuquireSec />
+
+                    <AwardSec />
+
+                    <Footer />
+                </>
+        );
+    }
+}
+
+export default opencart;
+
