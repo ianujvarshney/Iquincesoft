@@ -72,7 +72,7 @@ class WorkSec extends Component {
                         })}
                     </OwlCarousel>
                 )}
-                <a class="view-btn" href="#">View All Case Studies</a> <FormPopup />
+                <a class="view-btn" href="/caseStudies">View All Case Studies</a> <FormPopup />
             </div >
 
         );
