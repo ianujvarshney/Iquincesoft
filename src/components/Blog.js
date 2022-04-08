@@ -19,14 +19,11 @@ class Blog extends Component {
 			InsightsJson2: [],
 			InsightsJson3: [],
 			Loading: true,
-
 			hash: false,
 			start: 1,
-
 			count2: 3,
 
 		}
-		// this.refresh = this.refresh.bind(this);
 	}
 	componentDidMount() {
 

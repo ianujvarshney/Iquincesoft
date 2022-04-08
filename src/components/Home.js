@@ -193,10 +193,10 @@ class Home extends Component {
 						<div className="mob-box">
 							<h4><span> We offer <del>services</del> solutions that meet your <del>needs</del> demands.</span></h4>
 							<ul>
-								<li><a href="#">WEB</a></li>
+								<li><a href="/Web_Development">WEB</a></li>
 								<li><a href="#">SOFTWARE</a></li>
-								<li><a href="#">MOBILE</a></li>
-								<li><a href="#">CLOUD</a></li>
+								<li><a href="/Mobile_Developement">MOBILE</a></li>
+								<li><a href="/CloudDevelopment">CLOUD</a></li>
 							</ul>
 							<FormPopup />
 						</div>
@@ -260,7 +260,7 @@ class Home extends Component {
 								</div>
 							</div>
 						</div>
-						<h6><a href="#">View More Services </a></h6>
+						<h6><a href="/service">View More Services </a></h6>
 						<FormPopup />
 					</div>
 
@@ -272,7 +272,7 @@ class Home extends Component {
 
 									<OwlCarousel options={technology}>
 										<div className="tech-box">
-											<a href="#">
+											<a href="/CloudDevelopment">
 												<div className="tech-dot"></div>
 												<img src={imgs6} />
 												<h4>Cloud</h4>
@@ -290,7 +290,7 @@ class Home extends Component {
 										</div>
 
 										<div className="tech-box">
-											<a href="#">
+											<a href="/Mobile_Developement">
 												<div className="tech-dot"></div>
 												<img src={imgs4} />
 												<h4>Mobile</h4>

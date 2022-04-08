@@ -7,7 +7,7 @@ import FormPopup from '../container/FormPopup';
 import ReviewSec from '../container/ReviewSec';
 import EuquireSec from '../container/EuquireSec';
 import AwardSec from '../container/AwardSec';
-
+import { Helmet } from 'react-helmet';
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import { AboutJson } from '../json/aboutJson';
@@ -44,6 +44,7 @@ class About extends Component {
 			Culturejson: [],
 			Loading: true,
 		}
+		// document.title = 'fsjhfgsdjhg';
 	}
 
 	componentDidMount() {
@@ -125,6 +126,12 @@ class About extends Component {
 		return (
 			// this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
 			<>
+				<Helmet>
+					<title>App Title</title>
+					<meta name="description" content="App Description" />
+					<meta name="theme-color" content="#008f68" />
+				</Helmet>
+
 				<Header headerClass={'about-head'} />
 				<div div className="about-banner" >
 					<div className="about-box">
