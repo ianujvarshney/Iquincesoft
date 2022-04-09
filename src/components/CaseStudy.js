@@ -7,17 +7,15 @@ import ReviewSec from '../container/ReviewSec';
 import EuquireSec from '../container/EuquireSec';
 import AwardSec from '../container/AwardSec';
 
-import { CaseStudies } from '../json/CaseStudies';
-
 import caseIcon from '../images/case-icon.png';
 import caseIcon1 from '../images/case-icon1.png';
 import arrow2 from '../images/arrow2.png';
+import { CaseStudies } from '../json/CaseStudies';
 import { FaChevronRight } from 'react-icons/fa';
-
 import { TailSpin } from 'react-loader-spinner'
 
 class Service extends Component {
-	CaseStudies
+
 	constructor(props) {
 		super(props)
 		this.state = {

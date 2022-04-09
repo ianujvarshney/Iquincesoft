@@ -1,27 +1,25 @@
 
-import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import servBL from
+import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Inspired } from '../json/Inspired';
-import arrow2 from '../images/arrow2.png';
+import { TailSpin } from 'react-loader-spinner';
+import axios from "axios";
 import caseImg4 from '../images/case-img4.jpg';
+import arrow2 from '../images/arrow2.png';
 import InfiniteScroll from "react-infinite-scroll-component";
-import { TailSpin } from 'react-loader-spinner'
+
 
 class Blog extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
 			InsightsJson: [],
-			InsightsJson2: [],
-			InsightsJson3: [],
+			page: 1,
+			data: [],
 			Loading: true,
-			hash: false,
-			start: 1,
-			count2: 3,
 
 		}
 	}
@@ -35,87 +33,43 @@ class Blog extends Component {
 				});
 			}
 		});
-
-		// Inspired.getInspired2(this.state.count, this.state.start).then((Insights2, err) => {
-		// 	if (!err) {
-		// 		// console.log("hello", Insights2)
-		// 		this.setState({
-		// 			// InsightsJson2: Insights2,
-		// 			Loading: false,
-		// 		});
-		// 	}
-		// });
-
-
+		Inspired.getInspired2(this.state.page).then((Insights, err) => {
+			if (!err) {
+				this.setState({
+					data: Insights,
+					Loading: false,
+				});
+			}
+		});
 	}
-	// Apple = (page) => {
-	// 	// fetch("https://jsonplaceholder.typicode.com/photos").then()
-	// 	// Inspired.getInspired3(this.state.count2, this.state.start).then((Insights2, err) => {
-	// 	// 	// if (!err && Number(Insights2.length) >= 9) {
-	// 	// 	// 	this.setState({
-	// 	// 	// 		InsightsJson2: Insights2,
-	// 	// 	// 		start: Number(this.state.start) + Number(1),
-	// 	// 	// 	});
-	// 	// 	// }
-	// 	// 	console.log("length==", Insights2.length)
-	// 	// 	if (Number(this.state.count2) >= Insights2.length) {
-	// 	// 		this.setState({ hasMore: false });
-	// 	// 		return;
-	// 	// 	}
-	// 	// 	setTimeout(() => {
-	// 	// 		if (Number(this.state.count2) <= Insights2.length) {
-	// 	// 			console.log("data=", Insights2)
-	// 	// 			this.setState({
-	// 	// 				InsightsJson2: Insights2,
-	// 	// 				count2: Number(this.state.count2) + Number(1),
-	// 	// 			});
-	// 	// 		}
-	// 	// 	}, 1000);
-	// 	// })
 
-	// 	// else {
-	// 	// 	console.log("hash = false")
-	// 	// 	this.setState({
-	// 	// 		hashMore: false
-	// 	// 	})
-	// 	// }
-	// 	// console.log("insight == ", this.state.InsightsJson2);
-
-	// }
-	fetchMoreData = () => {
-		fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
-			.then((res) => res.json())
-			.then((json) => {
-				console.log("freez: " + json);
-				// this.setState({ InsightsJson: json });
-
-				if (this.state.count2 >= 38) {
-					this.setState({ hasMore: false });
-					return;
-				}
-				setTimeout(() => {
-					if (this.state.count2 <= 38) {
-						this.setState({
-							count: this.state.count2 + 5,
-						});
-					}
-				}, 500);
-			});
+	fetch = (pageNumber) => {
+		Inspired.getInspired2(this.state.page + 1).then((Insights, err) => {
+			if (!err) {
+				this.setState({
+					data: this.state.data.concat(Insights),
+					Loading: false,
+					page: this.state.page + 1,
+				});
+			}
+		});
 	};
 
 
-
+	fetchMoreData = (page) => {
+		return this.fetch(page);
+	};
 
 
 	render() {
 
-		console.log(this.state);
-		const { InsightsJson, InsightsJson2 } = this.state;
+		const { InsightsJson, data, page } = this.state;
+
+
 
 		return (
 			this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
 				<>
-
 					<Header headerClass={'case-head'} />
 					{InsightsJson && InsightsJson.map((InsightsJsonS, index) => {
 						return (
@@ -125,7 +79,6 @@ class Blog extends Component {
 										<div className="col-lg-2"></div>
 										<div className="col-lg-8 col-md-12" data-aos="fade-up" key={index}>
 											<h1>{InsightsJsonS.name}</h1>
-											{/* <p><span>Get a bi-weekly email with <strong>the most popular stories</strong></span></p> */}
 											<p dangerouslySetInnerHTML={{ __html: InsightsJsonS.content }}></p>
 											<div className="in-box"><input className="box" type="text" name="" placeholder="Supercharge your brain" /> <a href="#">Let's Learn</a></div>
 										</div>
@@ -162,43 +115,28 @@ class Blog extends Component {
 										</TabList>
 
 										<TabPanel data-aos="fade-down" >
-											<InfiniteScroll
-												// height={300}
-												dataLength={InsightsJson2.length}
-												next={this.fetchMoreData}
-												// threshold={100}
-												// loadMore={() => this.Apple()}
-												hashMore={true}
-												// scrollThreshold={0.8}
-												loader={<p>Loading....</p>}
-											// refreshFunction={this.refresh}
-											// scrollableTarget="scrollableDiv"
+											<InfiniteScroll style={{ overflow: 'hidden' }}
+												dataLength={data.length}
+												next={() => this.fetchMoreData(page)}
+												hasMore={true}
+
 											>
 												<div className="row case-txt" >
-													{InsightsJson2.map(InsightsJson2S => {
+													{data.map(dataS => {
 														return (
-															// <div className="col-lg-4 col-md-6">
+															<div className="col-lg-4 col-md-6">
+																<img width="350px" height="300px" src={dataS.img} />
+																<div className="case-box">
+																	<h5><img src={dataS.author_profile} /> <span><strong>{dataS.author_name}</strong> QA Specialist</span></h5>
+																	<h3>{dataS.name}</h3>
+																	<h4><Link to={`/PostPage/${dataS.slug}`} >READ MORE <img src={arrow2} /></Link>Oct 10, 2021</h4>
+																</div>
+															</div>
 
-															// 	<img width="350px" height="300px" src={InsightsJson2S.thumbnailUrl} />
-															// 	<div className="case-box">
-															// 		{/* <h5><img src={InsightsJson2S.author_profile} /> <span><strong>{InsightsJson2S.author_name}</strong> QA Specialist</span></h5> */}
-															// 		{/* <h3>{InsightsJson2S.name}</h3> */}
-															// 		{/* <h4>
-															// <Link to={`/PostPage/${InsightsJson2S.slug}`} >READ MORE <img src={arrow2} /></Link>
-															// 	Oct 10, 2021</h4> */}
-
-															// 	</div>
-															// </div>
-															InsightsJson2.map((item) => (
-																<ol key={item.id}>
-																	Title : {item.title}, Img Url : {item.thumbnailUrl},
-																</ol>
-															))
 														);
 													})}
 												</div>
 											</InfiniteScroll>
-											{/* <div className="read-btn"><a href="#">READ OLDER POSTS <img src={arrow2} /></a></div> */}
 										</TabPanel>
 
 										<TabPanel>

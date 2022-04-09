@@ -18,7 +18,6 @@ import JobOffer from './components/JobOffer';
 import JobDetail from './components/JobDetail';
 import PostPage from './components/PostPage';
 
-
 import Web_Development from './components/Services/WebDev';
 import Mobile_Developement from './components/Services/MobileDev';
 import CloudDevelopment from './components/Services/CloudDev';
@@ -49,9 +48,9 @@ import HireWooCommerceDevelopers from './components/Services/WooCommerce';
 import HireAndroidDevelopers from './components/Services/AndroidDev';
 import HireWordpressDevelopers from './components/Services/WordPress';
 import DevOps from './components/Services/DevOpsDev';
-import WooCommerce from './components/Services/WooCommerce';
-import AwardFormsec from '../src/container/AwardFormsec';
+import AwardFormsec from './container/AwardFormsec';
 import jobCateDetails from './components/JobCateDetails';
+
 
 class App extends Component {
 	render() {
@@ -107,8 +106,6 @@ class App extends Component {
 					<Route exact path='/DevOps' component={DevOps} />
 					<Route path='/blog/:post' component={HireWooCommerceDevelopers} />
 					<Route path='/HireAndroidDevelopers' component={HireAndroidDevelopers} />
-					{/* <Route path='/blog/:post' component={HireMagentoDevelopers} /> */}
-
 					<Route exact path='/PostPage/:post' component={PostPage} />
 				</Switch>
 			</Router>
