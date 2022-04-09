@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 import Header from './Header';
@@ -6,8 +5,6 @@ import Footer from './Footer';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Inspired } from '../json/Inspired';
 import { TailSpin } from 'react-loader-spinner';
-import axios from "axios";
-import caseImg4 from '../images/case-img4.jpg';
 import arrow2 from '../images/arrow2.png';
 import InfiniteScroll from "react-infinite-scroll-component";
 
