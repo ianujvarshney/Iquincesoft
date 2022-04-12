@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 import FormPopup from '../container/FormPopup';
 import FeatureSec from '../container/FeatureSec';
 import WorkSec from '../container/WorkSec';
@@ -435,7 +436,7 @@ class Home extends Component {
 										return (
 											<div key={careerJsons.id}>
 												<h3>{careerJsons.name}</h3>
-												<p dangerouslySetInnerHTML={{ __html: careerJsons.content }}></p>
+												<Link to={'/career'}><p dangerouslySetInnerHTML={{ __html: careerJsons.content }}></p></Link>
 											</div>
 										);
 									})}

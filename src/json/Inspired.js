@@ -1,5 +1,5 @@
 
-import servBL from '../images/serv-blank.png';
+import servBL from '../images/serv-blank.jpg';
 export class Inspired {
     static getInspired = () => {
         return new Promise(async (resolve, reject) => {
