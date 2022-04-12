@@ -1,4 +1,4 @@
-import servBL from '../images/serv-blank.png';
+import servBL from '../images/serv-blank.jpg';
 
 export class serviceapi {
     static getService = () => {
