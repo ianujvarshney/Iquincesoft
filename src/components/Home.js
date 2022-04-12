@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import { Link } from 'react-router-dom';
 import FormPopup from '../container/FormPopup';
 import FeatureSec from '../container/FeatureSec';
 import WorkSec from '../container/WorkSec';
