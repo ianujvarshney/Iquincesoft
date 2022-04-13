@@ -1818,8 +1818,37 @@ footer li {
 }
 .case-sec a img,
 .case-box a img {
+  height: auto;
   margin-left: 10px;
   width: 20px;
+}
+.case-main a {
+  position: relative;
+  display: block;
+}
+.case-main {
+  transition: transform 0.3s;
+}
+.case-main:hover {
+  transform: translateY(-1rem);
+}
+.case-main a h4 {
+  background-color: var(--main-color);
+  color: #fff;
+  position: absolute;
+  bottom: 6px;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 25px;
+}
+.case-main:hover a h4 {
+  opacity: 0.8;
 }
 
 .case-txt {
@@ -2127,6 +2156,10 @@ footer li {
   margin: 0;
   padding: 0;
   text-align: right;
+}
+.case-txt img {
+  height: 300px;
+  object-fit: cover;
 }
 .blog-sec h4 a {
   float: left;
@@ -2625,7 +2658,7 @@ footer li {
   justify-content: center;
 }
 .award-form-sec2 .row:nth-child(1) .col-lg-12 {
-  background: rgba(255, 255, 255, 0.2);
+  background: black;
 }
 .form-sec {
   font-size: 13px;
@@ -2633,7 +2666,7 @@ footer li {
   text-align: center;
   margin: 40px;
 }
-.form-sec a {
+.form-sec button {
   background-color: black;
   border-radius: 4px;
   color: #fff;
@@ -2641,6 +2674,7 @@ footer li {
   font-family: Avenir-semi;
   font-size: 17px;
   padding: 16px 20px;
+  border: none;
 }
 .award-form-sec .row:first-child ul {
   display: flex;
@@ -2655,7 +2689,7 @@ footer li {
 .award-form-sec .row:first-child ul li img {
   width: 100%;
 }
-.form-sec a:hover {
+.form-sec button:hover {
   background-color: #fff;
   color: #ff3400;
 }

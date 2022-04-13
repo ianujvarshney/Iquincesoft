@@ -117,11 +117,13 @@ class Blog extends Component {
 													{data.map(dataS => {
 														return (
 															<div className="col-lg-4 col-md-6">
-																<img width="350px" height="300px" src={dataS.img} />
-																<div className="case-box">
-																	<h5><img src={dataS.author_profile} /> <span><strong>{dataS.author_name}</strong> QA Specialist</span></h5>
-																	<h3>{dataS.name}</h3>
-																	<h4><Link to={`/PostPage/${dataS.slug}`} >READ MORE <img src={arrow2} /></Link>Oct 10, 2021</h4>
+																<div className="case-main">
+																	<a href="#"><h4>Read More</h4> <img width="100%" src={dataS.img} /></a>
+																	<div className="case-box">
+																		<h5><img src={dataS.author_profile} /> <span><strong>{dataS.author_name}</strong> QA Specialist</span></h5>
+																		<h3>{dataS.name}</h3>
+																		<h4><Link to={`/PostPage/${dataS.slug}`} >READ MORE <img src={arrow2} /></Link>Oct 10, 2021</h4>
+																	</div>
 																</div>
 															</div>
 
