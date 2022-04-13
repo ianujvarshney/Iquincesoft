@@ -14,13 +14,15 @@ class jobCateDetails extends Component {
             joblinks: [],
             joblinks2: [],
             url: this.props.location,
-            lastItem: ""
+            lastItem: '',
+            thePath: this.props.location.pathname,
         }
-        var thePath = this.props.location.pathname;
-        console.log("path", thePath);
-        this.setState({ lastItem: thePath.substring(thePath.lastIndexOf('/') + 1) });
-
-        // console.log("b===>", lastItem);
+        // const a = this.state.thePath.substr(this.state.thePath.lastIndexOf('/'));
+        // var t = this.state.thePath.substr(2, 5);
+        // console.log("path==>", t);
+        // console.log("path==>", t);
+        // this.setState({ lastItem: this.state.thePath.substr(2, 4) });
+        // console.log("b===>", this.state.lastItem);
     }
 
     componentDidMount() {
@@ -31,9 +33,10 @@ class jobCateDetails extends Component {
                 });
             }
         })
-        Joboffers.getJoboffersDetails(this.state.lastItem).then((menus, err) => {
+        const a = this.state.thePath.substr(this.state.thePath.lastIndexOf('/') + 1);
+        Joboffers.getJoboffersDetails(a).then((menus, err) => {
             if (!err) {
-                console.log("lastItem=>", this.state.lastItem)
+                console.log("lastItem=>", a);
 
                 this.setState({
                     joblinks2: menus,
@@ -76,7 +79,7 @@ class jobCateDetails extends Component {
                                                 <Tab> All </Tab>
                                                 {joblinks && joblinks.map(link => {
                                                     return (
-                                                        <Tab ><Link to={`/jobOffer/${link.cateSlug}`}>{link.cate}</Link></Tab>
+                                                        <Tab ><Link to={`/jobOffer/${link.slug}`}>{link.name}</Link></Tab>
                                                     );
                                                 })}
                                             </div>
@@ -100,6 +103,7 @@ class jobCateDetails extends Component {
                                                 )
                                             })}
                                         </div>
+
                                     </TabPanel>
 
                                 </Tabs>

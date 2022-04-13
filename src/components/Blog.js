@@ -7,8 +7,6 @@ import { Inspired } from '../json/Inspired';
 import { TailSpin } from 'react-loader-spinner';
 import arrow2 from '../images/arrow2.png';
 import InfiniteScroll from "react-infinite-scroll-component";
-
-
 class Blog extends Component {
 	constructor(props) {
 		super(props)
@@ -62,8 +60,6 @@ class Blog extends Component {
 
 		const { InsightsJson, data, page } = this.state;
 
-
-
 		return (
 			this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
 				<>
@@ -116,7 +112,6 @@ class Blog extends Component {
 												dataLength={data.length}
 												next={() => this.fetchMoreData(page)}
 												hasMore={true}
-
 											>
 												<div className="row case-txt" >
 													{data.map(dataS => {
@@ -134,7 +129,10 @@ class Blog extends Component {
 													})}
 												</div>
 											</InfiniteScroll>
+
 										</TabPanel>
+
+
 
 										<TabPanel>
 											<h3>Any content 2</h3>

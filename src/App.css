@@ -871,7 +871,7 @@ footer h4 a,
   left: 0;
   position: absolute;
   right: 0;
-  top: 0;
+  top: -5px;
   width: 65px;
 }
 .career-sec a:hover::before {

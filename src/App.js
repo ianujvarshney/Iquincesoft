@@ -72,6 +72,8 @@ class App extends Component {
 					<Route exact path='/jobDetail' component={JobDetail} />
 					<Route exact path='/PostPage' component={PostPage} />
 					<Route path='/blog/:post' component={HireWooCommerceDevelopers} />
+					<Route exact path='/jobOffer/:post' component={jobCateDetails} />
+					<Route exact path='/PostPage/:post' component={PostPage} />
 
 
 					<Route exact path='/Web_Development' component={Web_Development} />
@@ -103,10 +105,8 @@ class App extends Component {
 					<Route exact path='/HireBootStrapDevelopers' component={HireBootStrapDevelopers} />
 					<Route exact path='/HireSymfonyDevelopers' component={HireSymfonyDevelopers} />
 					<Route exact path='/AwardFormsec' component={AwardFormsec} />
-					<Route exact path='/jobOffer/:post' component={jobCateDetails} />
 					<Route exact path='/DevOps' component={DevOps} />
 					<Route path='/HireAndroidDevelopers' component={HireAndroidDevelopers} />
-					<Route exact path='/PostPage/:post' component={PostPage} />
 				</Switch>
 			</Router>
 

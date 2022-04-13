@@ -52,11 +52,12 @@ class PostPage extends Component {
                                     <div className="col-lg-3">
                                     </div>
                                     <div className="col-lg-5 col-md-8">
-                                        <p><strong dangerouslySetInnerHTML={{ __html: PostPageJsonS.content.substr(0, 100) }}></strong></p>
-                                        <h2 className="Post-pera"><span>In the design process, keep your ideas close but user research closer</span></h2>
-                                        <p><span>You come up with an idea for a software-based business that seems very likely to be a big hit.You think about the functionalities, sometimes about the general looks and aesthetics.Since software development is a team sport, you’ll need developers, testers, architects, and designers to build the app.Find people, complete formalities, and off to work.</span></p>
-                                        <blockquote><p><b>So how to deliver the desired product that will be a hit not only inside your head? Keep your target group close from the very beginning of the design process by introducing the design discovery phase.</b></p></blockquote>
-                                        <img width="100%" src={PostPageJsonS.img} />
+                                        <p dangerouslySetInnerHTML={{ __html: PostPageJsonS.content }}></p>
+                                        {/* <p><strong dangerouslySetInnerHTML={{ __html: PostPageJsonS.content.substr(0, 100) }}></strong></p> */}
+                                        {/* <h2 className="Post-pera"><span>In the design process, keep your ideas close but user research closer</span></h2> */}
+                                        {/* <p><span>You come up with an idea for a software-based business that seems very likely to be a big hit.You think about the functionalities, sometimes about the general looks and aesthetics.Since software development is a team sport, you’ll need developers, testers, architects, and designers to build the app.Find people, complete formalities, and off to work.</span></p> */}
+                                        {/* <blockquote><p><b>So how to deliver the desired product that will be a hit not only inside your head? Keep your target group close from the very beginning of the design process by introducing the design discovery phase.</b></p></blockquote> */}
+                                        {/* <img width="100%" src={PostPageJsonS.img} /> */}
                                     </div>
                                 </div>
                             </div>

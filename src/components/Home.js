@@ -8,7 +8,7 @@ import WorkSec from '../container/WorkSec';
 import ReviewSec from '../container/ReviewSec';
 import EuquireSec from '../container/EuquireSec';
 import AwardSec from '../container/AwardSec';
-
+import { Link } from 'react-router-dom';
 import { Main } from '../json/Main';
 
 import OwlCarousel from 'react-owl-carousel2';
@@ -31,6 +31,7 @@ import imgs6 from '../images/tech-icon5.png';
 import star from '../images/star.png';
 import banimg from '../images/ban-img.png';
 import arrow from '../images/arrow.png';
+import arrow3 from '../images/arrow3.png';
 import bannerMob from '../images/banner-mob.jpg';
 
 import { TailSpin } from 'react-loader-spinner'
@@ -435,7 +436,8 @@ class Home extends Component {
 										return (
 											<div key={careerJsons.id}>
 												<h3>{careerJsons.name}</h3>
-												<Link to={'/career'}><p dangerouslySetInnerHTML={{ __html: careerJsons.content }}></p></Link>
+												<p dangerouslySetInnerHTML={{ __html: careerJsons.content }}></p>
+												<Link to={'/career'}><img src={arrow3} />search and apply</Link>
 											</div>
 										);
 									})}

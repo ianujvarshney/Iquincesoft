@@ -14,27 +14,29 @@ class JobOffer extends Component {
 			joblinks: [],
 			joblinks2: [],
 			url: this.props.location,
-			lastItem: "_blank",
-			thePath: '_blankPath',
+			lastItem: '',
+			thePath: this.props.location.pathname,
 		}
-		var thePath = this.props.location.pathname;
-		console.log("path", thePath);
-		const lastItem = thePath.substring(thePath.lastIndexOf('/') + 1);
+		// this.state.lastItem = this.state.thePath.substr(this.state.thePath.lastIndexOf('/'));
+		// var t = this.state.thePath.substr(this.state.thePath.lastIndexOf('/'), 8);
+		// console.log("path==>", t);
+		// console.log("path==>", this.state.thePath);
+		// this.setState({ lastItem: this.state.thePath.substr(this.state.thePath.lastIndexOf('/'), 8) })
 
-		console.log("lastITem1==>", this.state.lastItem);
+		// console.log("lastITem1==>", this.state.lastItem);
 	}
 
 	componentDidMount() {
 		Joboffers.getJoboffers().then((menus, err) => {
 			if (!err) {
-				console.log("menus==>", menus)
+				console.log("menus==>", a)
 				this.setState({
 					joblinks: menus,
 				});
 			}
 		})
-
-		Joboffers.getJoboffersDetails('react-js').then((menus, err) => {
+		var a = this.state.thePath.substr(this.props.location.pathname.lastIndexOf('/') + 1);
+		Joboffers.getJoboffersDetails(a).then((menus, err) => {
 			if (!err) {
 				console.log("lastItem==>", this.state.lastItem)
 				this.setState({
@@ -80,7 +82,7 @@ class JobOffer extends Component {
 												<Tab> All </Tab>
 												{joblinks && joblinks.map(link => {
 													return (
-														<Tab ><Link to={`/jobOffer/${link.cateSlug}`}>{link.cate}</Link></Tab>
+														<Tab ><Link to={`/jobOffer/${link.slug}`}>{link.name}</Link></Tab>
 													);
 												})}
 											</div>

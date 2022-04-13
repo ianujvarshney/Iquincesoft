@@ -28,7 +28,7 @@ export class Inspired {
     }
     static getInspired2 = (start) => {
         return new Promise(async (resolve, reject) => {
-            await fetch(process.env.REACT_APP_GET_INSPIRED2 + `&page=${start}`, {
+            await fetch(process.env.REACT_APP_GET_INSPIRED2 + '&per_page=3' + `&page=${start}`, {
                 "method": "GET"
             }).then(response => response.json())
                 .then(response => {
