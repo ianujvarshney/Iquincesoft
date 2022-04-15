@@ -50,6 +50,7 @@ import HireWordpressDevelopers from './components/Services/WordPress';
 import DevOps from './components/Services/DevOpsDev';
 import AwardFormsec from './container/AwardFormsec';
 import jobCateDetails from './components/JobCateDetails';
+import BlogTabs from './components/BlogTabs';
 
 
 class App extends Component {
@@ -71,9 +72,9 @@ class App extends Component {
 					<Route exact path='/jobOffer' component={JobOffer} />
 					<Route exact path='/jobDetail' component={JobDetail} />
 					<Route exact path='/PostPage' component={PostPage} />
-					<Route path='/blog/:post' component={HireWooCommerceDevelopers} />
-					<Route exact path='/jobOffer/:post' component={jobCateDetails} />
+					<Route exact path='/blog/:post' component={BlogTabs} />
 					<Route exact path='/PostPage/:post' component={PostPage} />
+					<Route exact path='/jobOffer/:post' component={jobCateDetails} />
 
 
 					<Route exact path='/Web_Development' component={Web_Development} />

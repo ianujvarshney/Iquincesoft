@@ -14,7 +14,10 @@ class Blog extends Component {
 			InsightsJson: [],
 			page: 1,
 			data: [],
+			data2: [],
+			catedata: [],
 			Loading: true,
+			thePath: this.props.location.pathname,
 
 		}
 	}
@@ -28,7 +31,26 @@ class Blog extends Component {
 				});
 			}
 		});
+
 		Inspired.getInspired2(this.state.page).then((Insights, err) => {
+			if (!err) {
+				this.setState({
+					data: Insights,
+					Loading: false,
+				});
+			}
+		});
+		Inspired.getcate().then((Insights, err) => {
+			if (!err) {
+				this.setState({
+					catedata: Insights,
+					Loading: false,
+				});
+			}
+		});
+
+		var a = this.state.thePath.substr(this.props.location.pathname.lastIndexOf('/') + 1);
+		Inspired.getInspired3(this.state.page, a).then((Insights, err) => {
 			if (!err) {
 				this.setState({
 					data: Insights,
@@ -58,7 +80,7 @@ class Blog extends Component {
 
 	render() {
 
-		const { InsightsJson, data, page } = this.state;
+		const { InsightsJson, data, page, data2, catedata } = this.state;
 
 		return (
 			this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
@@ -85,22 +107,17 @@ class Blog extends Component {
 						<div className="container">
 							<div className="row">
 								<div className="col-lg-12 col-md-12">
-									<h2>Recent articles from our web development blog</h2>
+									<h2>Recent articles from our web development blog </h2>
 									<Tabs>
 										<TabList>
 											<div className="row">
 												<div className="col-lg-10 col-md-9">
 													<Tab>All Posts (500)</Tab>
-													<Tab>CTO's Guidebook (103)</Tab>
-													<Tab>Developer Stories (179)</Tab>
-													<Tab>Development Process (42)</Tab>
-													<Tab>Product Owner's Kit (91)</Tab>
-													<Tab>Software Architecture (25)</Tab>
-													<Tab>Frontend (53)</Tab>
-													<Tab>Node.js (33)</Tab>
-													<Tab>PHP (34)</Tab>
-													<Tab>Quality Assurance (42)</Tab>
-													<Tab>Mobile (18)</Tab>
+													{catedata && catedata.map((dataS, index) => {
+														return (
+															<p><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename}</Link></p>
+														);
+													})}
 												</div>
 
 												<div className="col-lg-2 col-md-3"><input className="box" type="text" name="" placeholder="Search" /></div>

@@ -17,13 +17,6 @@ class JobOffer extends Component {
 			lastItem: '',
 			thePath: this.props.location.pathname,
 		}
-		// this.state.lastItem = this.state.thePath.substr(this.state.thePath.lastIndexOf('/'));
-		// var t = this.state.thePath.substr(this.state.thePath.lastIndexOf('/'), 8);
-		// console.log("path==>", t);
-		// console.log("path==>", this.state.thePath);
-		// this.setState({ lastItem: this.state.thePath.substr(this.state.thePath.lastIndexOf('/'), 8) })
-
-		// console.log("lastITem1==>", this.state.lastItem);
 	}
 
 	componentDidMount() {
@@ -46,23 +39,6 @@ class JobOffer extends Component {
 		})
 
 	}
-
-
-
-	// getnodejs = (data) => {
-	// 	return (
-	// 		<>
-	// 			{this.state.joblinks.filter(joblinks => this.state.joblinks.includes(data)).map(link => (
-	// 				this.setState({
-	// 					joblinks2: link,
-	// 				}),
-	// 				<h1 style={{ color: 'black' }}>{this.state.joblinks2.name}</h1>
-	// 			))
-
-	// 			}
-	// </>
-	// );
-
 
 	render() {
 		const { joblinks, joblinks2 } = this.state;

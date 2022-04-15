@@ -2188,7 +2188,7 @@ footer li {
   color: #000;
   display: block;
 }
-.blog-sec .react-tabs__tab-list li {
+.blog-sec .react-tabs__tab-list p {
   cursor: pointer;
   display: inline-block;
   font-family: Avenir-Medium;
