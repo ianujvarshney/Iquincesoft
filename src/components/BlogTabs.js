@@ -17,14 +17,12 @@ class BlogTabs extends Component {
             data: [],
             data2: [],
             Loading: true,
-            thePath: this.props.location.pathname,
-
+            allpost: '',
+            VisitedLink: "",
+            thePath: this.props.location.pathname.substr(this.props.location.pathname.lastIndexOf('/') + 1),
         }
     }
     componentDidMount() {
-
-        console.log('ds');
-
         Inspired.getInspired().then((Insights, err) => {
             if (!err) {
                 this.setState({
@@ -36,6 +34,7 @@ class BlogTabs extends Component {
         Inspired.getcate().then((Insights, err) => {
             if (!err) {
                 this.setState({
+                    allpost: Insights[0].blogpost,
                     catedata: Insights,
                     Loading: false,
                 });
@@ -49,10 +48,8 @@ class BlogTabs extends Component {
                 });
             }
         });
-        const a = this.state.thePath.substr(this.props.location.pathname.lastIndexOf('/') + 1);
-        Inspired.getInspired3(this.state.page, a).then((Insights, err) => {
+        Inspired.getInspired3(this.state.page, this.state.thePath).then((Insights, err) => {
             if (!err) {
-                console.log("c", Insights)
                 this.setState({
                     data: Insights,
                     Loading: false,
@@ -60,28 +57,28 @@ class BlogTabs extends Component {
             }
         });
     }
-
-    shouldComponentUpdate(nextProps, nextState) {
-        console.log('dasd');
-        const a = this.props.location.pathname;
-        const b = a.substr(a.lastIndexOf('/') + 1);
-
-        /*Inspired.getInspired3(this.state.page, b).then((Insights, err) => {
-            if (!err) {
-                this.setState({
-                    data: Insights,
-                    // Loading: false,
-                });
-            }
-        })*/
-        return false;
+    componentDidUpdate(preprops, prestate) {
+        const oldURL = preprops.location.pathname;
+        const oldURLString = oldURL.substr(oldURL.lastIndexOf('/') + 1);
+        const newUrl = this.props.location.pathname;
+        const newUrlString = newUrl.substr(newUrl.lastIndexOf('/') + 1);
+        if (oldURLString !== newUrlString) {
+            Inspired.getInspired3(1, newUrlString).then((Insights, err) => {
+                if (!err) {
+                    this.setState({
+                        data: Insights,
+                        thePath: newUrlString,
+                        Loading: false,
+                    });
+                }
+            });
+        }
     }
 
     fetch = (pageNumber) => {
         const a = this.state.thePath.substr(this.props.location.pathname.lastIndexOf('/') + 1);
         Inspired.getInspired3(this.state.page + 1, a).then((Insights, err) => {
             if (!err) {
-                console.log("d", Insights)
                 this.setState({
                     data2: this.state.data.concat(Insights),
                     Loading: false,
@@ -99,9 +96,7 @@ class BlogTabs extends Component {
 
     render() {
 
-        const { InsightsJson, data, page, data2, catedata } = this.state;
-
-
+        const { InsightsJson, data, page, data2, catedata, thePath, allpost } = this.state;
 
         return (
             this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
@@ -133,14 +128,14 @@ class BlogTabs extends Component {
                                         <TabList>
                                             <div className="row">
                                                 <div className="col-lg-10 col-md-9">
-                                                    <Tab>All Posts (500)</Tab>
+                                                    <Tab>All Posts ({allpost})</Tab>
                                                     {catedata && catedata.map((dataS, index) => {
                                                         return (
-                                                            <p><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename}</Link></p>
+                                                            dataS.cateslug == thePath ? <p className="para"><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p> :
+                                                                <p><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p>
                                                         );
                                                     })}
                                                 </div>
-
                                                 <div className="col-lg-2 col-md-3"><input className="box" type="text" name="" placeholder="Search" /></div>
                                             </div>
                                         </TabList>

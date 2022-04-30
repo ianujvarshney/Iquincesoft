@@ -13,9 +13,11 @@ class jobCateDetails extends Component {
         this.state = {
             joblinks: [],
             joblinks2: [],
+            joblinks3: [],
             url: this.props.location,
             lastItem: '',
-            thePath: this.props.location.pathname,
+            VisitedLink: "",
+            thePath: this.props.location.pathname.substr(this.props.location.pathname.lastIndexOf('/') + 1),
         }
     }
 
@@ -27,20 +29,44 @@ class jobCateDetails extends Component {
                 });
             }
         })
-        const a = this.state.thePath.substr(this.state.thePath.lastIndexOf('/') + 1);
-        Joboffers.getJoboffersDetails(a).then((menus, err) => {
+        //const a = this.state.thePath.substr(this.state.thePath.lastIndexOf('/') + 1);
+        Joboffers.getJoboffersDetails(this.state.thePath).then((menus, err) => {
             if (!err) {
-                console.log("lastItem=>", a);
-
                 this.setState({
                     joblinks2: menus,
                 });
             }
         })
+        Joboffers.getJoboffersCate().then((menus, err) => {
+            if (!err) {
+                console.log("lastItem2=>");
+                this.setState({
+                    joblinks3: menus,
+                });
+            }
+        })
     }
+    componentDidUpdate(preprops, prestate) {
 
+        const oldURL = preprops.location.pathname;
+        const oldURLString = oldURL.substr(oldURL.lastIndexOf('/') + 1);
+        const newUrl = this.props.location.pathname;
+        const newUrlString = newUrl.substr(newUrl.lastIndexOf('/') + 1);
+        if (oldURLString !== newUrlString) {
+            Joboffers.getJoboffersDetails(newUrlString).then((Insights, err) => {
+                if (!err) {
+                    console.log(Insights);
+                    this.setState({
+                        VisitedLink: newUrlString,
+                        joblinks2: Insights,
+                        //Loading: false,
+                    });
+                }
+            });
+        }
+    }
     render() {
-        const { joblinks, joblinks2 } = this.state;
+        const { joblinks, joblinks2, joblinks3, VisitedLink, lastItem, thePath } = this.state;
         return (
             <>
                 <Header headerClass={'job-head'} />
@@ -54,11 +80,14 @@ class jobCateDetails extends Component {
                                         <div className="row">
                                             <div className="col-lg-3 col-md-3" data-aos="fade-up"><h3>Job Offers</h3></div>
                                             <div className="col-lg-9 col-md-9">
-                                                <Tab> All </Tab>
-                                                {joblinks && joblinks.map(link => {
+                                                <p className="job-sec-p"><Link to={`/jobOffer`}>All</Link></p>
+                                                {joblinks3 && joblinks3.map(link => {
+                                                    console.log("a==>", link.slug, '\n', "lastitem==>", thePath)
                                                     return (
-                                                        <Tab ><Link to={`/jobOffer/${link.slug}`}>{link.name}</Link></Tab>
-                                                    );
+                                                        // lastItem  ? <p className="job-offer-2"><Link to={`/jobOffer/${link.slug}`}>{link.name}</Link></p> :
+                                                        link.slug == thePath ? <p className="job-offer-2"><Link to={`/jobOffer/${link.slug}`}>{link.name}</Link></p> :
+                                                            <p className="job-sec-p"><Link to={`/jobOffer/${link.slug}`}>{link.name}</Link></p>
+                                                    )
                                                 })}
                                             </div>
                                         </div>
@@ -66,10 +95,10 @@ class jobCateDetails extends Component {
 
                                     <TabPanel>
                                         <div className="row">
-                                            {joblinks2 && joblinks2.map(link => {
+                                            {joblinks2.map(link => {
                                                 return (
                                                     <div className="col-lg-4 col-md-6">
-                                                        <Link to={'/joboffer'}>
+                                                        <Link to={'/jobDetail'}>
                                                             <div className="job-box">
                                                                 <h4>{link.name}</h4>
                                                                 <p dangerouslySetInnerHTML={{ __html: link.content }}></p>

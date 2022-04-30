@@ -327,9 +327,9 @@ class CloudDevelopment extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{Cloud_DevelopmentJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: Cloud_DevelopmentJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{Cloud_DevelopmentJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: Cloud_DevelopmentJsonS.content.substr(0, 100) + '...' }}></p>
+                                                    <Link to={`/PostPage/${Cloud_DevelopmentJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}
@@ -344,7 +344,6 @@ class CloudDevelopment extends Component {
                                                         <h4>{Cloud_DevelopmentJsonS.name}</h4>
                                                         <p dangerouslySetInnerHTML={{ __html: Cloud_DevelopmentJsonS.content.substr(0, 100) + '...' }}></p>
                                                         <Link to={`/PostPage/${Cloud_DevelopmentJsonS.slug}`} >READ MORE </Link>
-
                                                     </div>
                                                 </div>
 

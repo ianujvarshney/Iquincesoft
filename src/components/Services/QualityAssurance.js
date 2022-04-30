@@ -246,9 +246,9 @@ class QualityAssurance extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{Quality_AssuranceJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: Quality_AssuranceJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{Quality_AssuranceJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: Quality_AssuranceJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${Quality_AssuranceJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

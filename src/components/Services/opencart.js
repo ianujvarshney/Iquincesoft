@@ -289,9 +289,9 @@ class opencart extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{OpenCartJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: OpenCartJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{OpenCartJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: OpenCartJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${OpenCartJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

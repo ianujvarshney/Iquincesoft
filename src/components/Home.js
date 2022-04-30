@@ -73,6 +73,7 @@ class Home extends Component {
 
 		Main.getTechnology().then((technology, err) => {
 			if (!err) {
+				console.log("acf===>", technology);
 				this.setState({
 					technologyJson: technology,
 					Loading: false,
@@ -459,3 +460,121 @@ class Home extends Component {
 }
 
 export default Home;
+
+// static getInspired2 = (start) => {
+// 	return new Promise(async (resolve, reject) => {
+// 		await fetch(process.env.REACT_APP_GET_INSPIRED2 + '&per_page=9' + `&page=${start}`, {
+// 			"method": "GET"
+// 		}).then(response => response.json())
+// 			.then(response => {
+// 				var data = [];
+// 				if (response) {
+// 					for (var i = 0; i < response.length; i++) {
+// 						data.push({
+// 							"id": response[i].id,
+// 							"name": response[i].title.rendered || '',
+// 							"img": response[i]._embedded['wp:featuredmedia'] && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
+// 							"slug": response[i].slug,
+// 							"author_name": response[i]._embedded['author'][0].name,
+// 							"author_profile": response[i]._embedded['author'] && response[i]._embedded['author'][0].avatar_urls['96'] || servBL,
+// 							"content": response[i].content.rendered || '',
+// 							"cate": response[i]._embedded['wp:term'][0][0].name,
+// 							"cateslug": response[i]._embedded['wp:term'][0][0].slug,
+// 						});
+// 					}
+
+// 				}
+
+// 				resolve(data)
+// 			})
+// 			.catch(err => {
+// 				console.log(err);
+// 				reject(err)
+// 			});
+// 	})
+// }
+// static first = (start) => {
+
+// 	var a;
+
+// 	fetch(process.env.REACT_APP_GET_INSPIRED2 + '&per_page=9' + `&page=${start}`, {
+// 		"method": "GET"
+// 	}).then(response => {
+// 		a = response.headers.get('X-WP-TotalPages');
+// 		console.log("a", response.headers.get('X-WP-TotalPages'))
+// 	});
+
+// 	fetch(process.env.REACT_APP_GET_INSPIRED2 + '&per_page=9' + `&page=${start}`, {
+// 		"method": "GET"
+// 	}).then(response => { return Promise.all([response.json(), response.headers]); })
+// 		.then(([response, headers]) => {
+// 			//console.log("ggjgjgjg", JSON.stringify(response.json()));
+// 			var data = [];
+// 			if (response) {
+// 				for (var i = 0; i < response.length; i++) {
+// 					data.push({
+// 						"id": response[i].id,
+// 						"name": response[i].title.rendered || '',
+// 						"img": response[i]._embedded['wp:featuredmedia'] && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
+// 						"slug": response[i].slug,
+// 						"author_name": response[i]._embedded['author'][0].name,
+// 						"author_profile": response[i]._embedded['author'] && response[i]._embedded['author'][0].avatar_urls['96'] || servBL,
+// 						"content": response[i].content.rendered || '',
+// 						"cate": response[i]._embedded['wp:term'][0][0].name,
+// 						"cateslug": response[i]._embedded['wp:term'][0][0].slug,
+// 					});
+// 				}
+
+// 			}
+// 		});
+
+// }
+
+// static second = (start) => {
+//     var a;
+//     fetch(process.env.REACT_APP_GET_INSPIRED2 + '&per_page=9' + `&page=${start}`, {
+//         "method": "GET"
+//     }).then(response => response.headersc.get('X-WP-TotalPages'))
+//         .then(response => {
+//             a = response;
+//         });
+//     console.log("a", a)
+// }
+
+// static getInspired2 = (start) => {
+	//this.first(start);
+	//     return new Promise(async (resolve, reject) => {
+	//         await fetch(process.env.REACT_APP_GET_INSPIRED2 + '&per_page=9' + `&page=${start}`, {
+	//             "method": "GET"
+	//         }).then(response1 => {
+
+	//         });
+	//     .then(response0 => {
+	//         var data = [];
+	//         var data1 = response0;
+	//         console.log(data1);
+	//         if (response) {
+	//             for (var i = 0; i < response.length; i++) {
+	//                 data.push({
+	//                     // "id": response[i].id,
+	//                     // "name": response[i].title.rendered || '',
+	//                     // "img": response[i]._embedded['wp:featuredmedia'] && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
+	//                     // "slug": response[i].slug,
+	//                     // "author_name": response[i]._embedded['author'][0].name,
+	//                     // "author_profile": response[i]._embedded['author'] && response[i]._embedded['author'][0].avatar_urls['96'] || servBL,
+	//                     // "content": response[i].content.rendered || '',
+	//                     // "cate": response[i]._embedded['wp:term'][0][0].name,
+	//                     // "cateslug": response[i]._embedded['wp:term'][0][0].slug,
+	//                 });
+	//             }
+
+	//         }
+
+	//         resolve(data)
+	//     })
+	//         .catch (err => {
+	//         console.log(err);
+	//         reject(err)
+	//     });
+	//     })
+// }

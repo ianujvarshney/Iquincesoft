@@ -68,6 +68,7 @@ export class Main {
                                 "id": response[i].id,
                                 "name": response[i].title.rendered || '',
                                 "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
+                                "acf": response[i].acf,
                             });
                         }
 

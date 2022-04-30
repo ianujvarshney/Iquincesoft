@@ -13,6 +13,7 @@ class JobOffer extends Component {
 		this.state = {
 			joblinks: [],
 			joblinks2: [],
+			joblinks3: [],
 			url: this.props.location,
 			lastItem: '',
 			thePath: this.props.location.pathname,
@@ -37,11 +38,19 @@ class JobOffer extends Component {
 				});
 			}
 		})
+		Joboffers.getJoboffersCate().then((menus, err) => {
+			if (!err) {
+				this.setState({
+					joblinks3: menus,
+				});
+			}
+		})
 
 	}
 
+
 	render() {
-		const { joblinks, joblinks2 } = this.state;
+		const { joblinks, joblinks2, joblinks3 } = this.state;
 		return (
 			<>
 				<Header headerClass={'job-head'} />
@@ -56,7 +65,7 @@ class JobOffer extends Component {
 											<div className="col-lg-3 col-md-3" data-aos="fade-up"><h3>Job Offers</h3></div>
 											<div className="col-lg-9 col-md-9">
 												<Tab> All </Tab>
-												{joblinks && joblinks.map(link => {
+												{joblinks3 && joblinks3.map(link => {
 													return (
 														<Tab ><Link to={`/jobOffer/${link.slug}`}>{link.name}</Link></Tab>
 													);
@@ -70,7 +79,7 @@ class JobOffer extends Component {
 											{joblinks && joblinks.map(link => {
 												return (
 													<div className="col-lg-4 col-md-6">
-														<Link to={'/joboffer'}>
+														<Link to={'/jobDetail'}>
 															<div className="job-box">
 																<h4>{link.name}</h4>
 																<p dangerouslySetInnerHTML={{ __html: link.content }}></p>

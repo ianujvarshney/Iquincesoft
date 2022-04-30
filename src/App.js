@@ -51,12 +51,17 @@ import DevOps from './components/Services/DevOpsDev';
 import AwardFormsec from './container/AwardFormsec';
 import jobCateDetails from './components/JobCateDetails';
 import BlogTabs from './components/BlogTabs';
+import DigitalMarket from '../src/components/Services/DigiMarket';
+import DedicateTeams from '../src/components/Services/DedicatedTeams';
+import Designers from '../src/components/Services/Designers';
+import Ecommerce from '../src/components/Services/Ecommerce';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 class App extends Component {
 	render() {
 		return (
-
 			<Router>
 				<Switch>
 					<Route exact path='/' component={Home} />
@@ -105,9 +110,13 @@ class App extends Component {
 					<Route exact path='/HireWordpressDevelopers' component={HireWordpressDevelopers} />
 					<Route exact path='/HireBootStrapDevelopers' component={HireBootStrapDevelopers} />
 					<Route exact path='/HireSymfonyDevelopers' component={HireSymfonyDevelopers} />
+					<Route exact path='/HireAndroidDevelopers' component={HireAndroidDevelopers} />
+					<Route exact path='/DigitalMarketting' component={DigitalMarket} />
+					<Route exact path='/DedicatedDevelopmentTeams' component={DedicateTeams} />
+					<Route exact path='/EcommerceDevelopers' component={Ecommerce} />
+					<Route exact path='/HireDesigners' component={Designers} />
 					<Route exact path='/AwardFormsec' component={AwardFormsec} />
 					<Route exact path='/DevOps' component={DevOps} />
-					<Route path='/HireAndroidDevelopers' component={HireAndroidDevelopers} />
 				</Switch>
 			</Router>
 

@@ -11,10 +11,11 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
+
                             });
                         }
 
@@ -38,8 +39,9 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
+                                "id": response[i].id, "date": response[i].date,
                                 "name": response[i].title.rendered || '',
+                                "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
                             });
@@ -64,8 +66,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
                             });
@@ -90,8 +92,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -117,8 +119,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -144,8 +146,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -171,8 +173,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -198,8 +200,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -225,8 +227,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -252,8 +254,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -279,8 +281,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -306,8 +308,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -333,8 +335,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -360,8 +362,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -387,8 +389,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -414,8 +416,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -441,8 +443,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -468,8 +470,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
                             });
@@ -494,8 +496,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -521,8 +523,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -548,8 +550,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -575,8 +577,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -602,8 +604,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -629,8 +631,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -656,8 +658,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -683,8 +685,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -710,8 +712,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -737,8 +739,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -764,8 +766,8 @@ export class PostCate {
                     if (response) {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
-                                "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "id": response[i].id, "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 
@@ -792,7 +794,8 @@ export class PostCate {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
                                 "id": response[i].id,
-                                "name": response[i].title.rendered || '',
+                                "date": response[i].date,
+                                "name": response[i].title.rendered || '', "author": response[i]._embedded['author'][0].name,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
 

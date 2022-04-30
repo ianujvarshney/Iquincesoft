@@ -313,9 +313,9 @@ class MernStack extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{MernStackJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: MernStackJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{MernStackJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: MernStackJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${MernStackJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

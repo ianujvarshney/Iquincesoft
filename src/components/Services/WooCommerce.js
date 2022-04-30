@@ -338,7 +338,7 @@ class WooCommerce extends Component {
                                                 return (
                                                     <div className="cult-box">
                                                         <div class="tech-dot"></div>
-                                                        <h4>{CommerceJson.name}</h4>
+                                                        <h4>{CommerceJsonS.name}</h4>
                                                         <p dangerouslySetInnerHTML={{ __html: CommerceJsonS.content.substr(0, 100) }}></p>
                                                         <Link to={`/PostPage/${CommerceJsonS.slug}`} >READ MORE </Link>
                                                     </div>

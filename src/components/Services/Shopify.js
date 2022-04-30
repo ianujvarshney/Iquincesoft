@@ -317,8 +317,8 @@ class Shopify extends Component {
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
                                                     <h4>{ShopifyJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: ShopifyJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <p dangerouslySetInnerHTML={{ __html: ShopifyJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${ShopifyJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

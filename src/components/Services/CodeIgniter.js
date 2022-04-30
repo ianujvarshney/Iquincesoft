@@ -346,9 +346,9 @@ class CodeIgniter extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{CodeigniterJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: CodeigniterJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{CodeigniterJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: CodeigniterJsonS.content.substr(0, 100) + '...' }}></p>
+                                                    <Link to={`/PostPage/${CodeigniterJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

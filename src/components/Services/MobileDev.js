@@ -327,9 +327,9 @@ class Mobile_Developementjs extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{MobileJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: MobileJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{MobileJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: MobileJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${MobileJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

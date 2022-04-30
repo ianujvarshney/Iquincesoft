@@ -324,9 +324,9 @@ class Web_Development extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{WebJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: WebJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{WebJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: WebJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${WebJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

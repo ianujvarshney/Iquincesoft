@@ -310,9 +310,9 @@ class IOSDev extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{IOSJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: IOSJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{IOSJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: IOSJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${IOSJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

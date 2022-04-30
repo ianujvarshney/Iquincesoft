@@ -316,9 +316,9 @@ class AngularDev extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{InsightsJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: InsightsJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{InsightsJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: InsightsJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${InsightsJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

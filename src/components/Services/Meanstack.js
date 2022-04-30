@@ -294,9 +294,9 @@ class Meanstack extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{MeanStackJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: MeanStackJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{MeanStackJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: MeanStackJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${MeanStackJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

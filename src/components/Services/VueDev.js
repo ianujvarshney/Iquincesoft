@@ -313,9 +313,9 @@ class VueDev extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{VueJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: VueJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{VueJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: VueJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${VueJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

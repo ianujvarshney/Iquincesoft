@@ -45,28 +45,28 @@ class partner extends Component {
                     <div className="row" data-aos="fade-down">
                         <div className="col-lg-6 col-md-6">
                             <div className="serv-txt">
-                                <h4><span></span> Startups</h4>
+                                <h4><span className="serv-sec-span"></span> Startups</h4>
                                 <p>Startups fail because of the lack of appropriate support and valuable insights. We help you at every step of your journey to Success. From the ideation to strategic planning to designing and development until the product launch, and help you make it a huge success. </p>
                             </div>
                         </div>
 
                         <div className="col-lg-6 col-md-6">
                             <div className="serv-txt">
-                                <h4><span></span> Small Businesses</h4>
+                                <h4><span className="serv-sec-span"></span> Small Businesses</h4>
                                 <p>We are blurring the physical and digital boundaries, making it Phygital. We help you with the development skills and scale your business to newer heights of success.  </p>
                             </div>
                         </div>
 
                         <div className="col-lg-6 col-md-6">
                             <div className="serv-txt">
-                                <h4><span></span> Enterprise</h4>
+                                <h4><span className="serv-sec-span"></span> Enterprise</h4>
                                 <p>We ensure better outcomes with a smooth automated process and a significant reduction in the cost and solutions that derive business insights. Thus, we help you with scaling your business. </p>
                             </div>
                         </div>
 
                         <div className="col-lg-6 col-md-6">
                             <div className="serv-txt">
-                                <h4><span></span> Software Companies</h4>
+                                <h4><span className="serv-sec-span"></span> Software Companies</h4>
                                 <p>We comprehend the need for a talent pool of skilled workforce. We offer dedicated developer teams to help, assist and support skilled resources. Thus, we address the need for a skilled workforce. </p>
                             </div>
                         </div>

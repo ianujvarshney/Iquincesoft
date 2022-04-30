@@ -14,26 +14,27 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
+import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { FaCode } from 'react-icons/fa';
-import { TailSpin } from 'react-loader-spinner'
-import FAQ from '../../container/FAQ';
+import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 
-class ReactDev extends Component {
+
+class DigiMarket extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            ReactJson: [],
+            LaravelJson: [],
             Loading: true,
         }
     }
 
     componentDidMount() {
-        PostCate.getReact().then((React, err) => {
+        PostCate.getLaravel().then((Laravel, err) => {
             if (!err) {
                 this.setState({
-                    ReactJson: React,
+                    LaravelJson: Laravel,
                     Loading: false,
 
                 });
@@ -41,7 +42,7 @@ class ReactDev extends Component {
         });
     }
     render() {
-        const { ReactJson } = this.state;
+        const { LaravelJson } = this.state;
         const servSlide = {
             items: 1,
             responsive: {
@@ -78,15 +79,14 @@ class ReactDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>React.js Services</strong><br /></h1>
+                                    <h1><strong>Data-driven digital marketing services</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals.</li>
-                                        <li>Highly skilled and professional React.js developers.</li>
+                                        <p>The iQuinceSoft Advantage ensures you:</p>
+                                        <li>Higher revenues by a significant margin.</li>
+                                        <li>Guaranteed results</li>
+                                        <li>Regular updates and insights on the ongoing projects</li>
+                                        <li>Swift initiation with the process</li>
+                                        <li>skilled team to deliver meaningful outputs outcomes. </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -99,44 +99,45 @@ class ReactDev extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Our React Framework Expertise</h3>
+                                    <h3>Why Laravel?</h3>
+                                    <p>Laravel is adding flavor to the digital domain. We enlist a few reasons to clarify the benefits of using Laravel. </p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>NEXT.js</h4>
-                                        <p>An optimal option if you wish to build a static-site and server-side rendering with serverless deployment. </p>
+                                        <h4>Object-oriented Libraries</h4>
+                                        <p>Laravel composes of 20+ libraries. It offers CSRF protection, database security, and encryption.  </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Gatsby</h4>
-                                        <p>Famous static site generator based on React and offers various popular developer-friendly plugins.</p>
+                                        <h4>Ease of Documentation</h4>
+                                        <p>Laravel comes with Model View Controller (MVC) pattern. This pattern ensures high-End architecture and neat and organized documentation efficiently. </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Custom</h4>
-                                        <p>We can craft your applications as per your needs.</p>
+                                        <h4>Blade Template Engine</h4>
+                                        <p>Laravel ensures easy data display and extends web layouts while maintaining the app's speed. </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>TypeScript</h4>
-                                        <p>TypeScript with React can enhance development speed, improve code readability and much more.</p>
+                                        <h4>Unit-Testing</h4>
+                                        <p>Smooth and easy to perform unit-tests of an existing web function or new feature is accessible with Laravel. </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>React Native</h4>
-                                        <p>ast and responsive e-commerce experience for online stores. This is a crucial benefit of React.js. </p>
+                                        <h4>Caching</h4>
+                                        <p>APC, Redis, and Memcached caching systems are easy to integrate. It helps to enhance the app's performance. </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Redux</h4>
-                                        <p>Consistent applications are compatible to run on various environments (client, server and Native) as well as are easy to test. </p>
+                                        <h4>Security</h4>
+                                        <p>Laravel prevents illegal access. Thus, it ensures the security of the web app and systems with proper authentication.  </p>
                                     </div>
 
 
@@ -146,48 +147,48 @@ class ReactDev extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>NEXT.js</h4>
-                                        <p>An optimal option if you wish to build a static-site and server-side rendering with serverless deployment. </p>
+                                        <h4>Object-oriented Libraries</h4>
+                                        <p>Laravel composes of 20+ libraries. It offers CSRF protection, database security, and encryption.  </p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Gatsby</h4>
-                                        <p>Famous static site generator based on React and offers various popular developer-friendly plugins.</p>
+                                        <h4>Ease of Documentation</h4>
+                                        <p>Laravel comes with Model View Controller (MVC) pattern. This pattern ensures high-End architecture and neat and organized documentation efficiently. </p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Custom</h4>
-                                        <p>We can craft your applications as per your needs.</p>
+                                        <h4>Blade Template Engine</h4>
+                                        <p>Laravel ensures easy data display and extends web layouts while maintaining the app's speed. </p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>TypeScript</h4>
-                                        <p>TypeScript with React can enhance development speed, improve code readability and much more. </p>
+                                        <h4>Unit-Testing</h4>
+                                        <p>Smooth and easy to perform unit-tests of an existing web function or new feature is accessible with Laravel.  </p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>React Native</h4>
-                                        <p> Optimal choice to build mobile apps that can be deployed on Apple and Google Play Stores. </p>
+                                        <h4>Caching</h4>
+                                        <p>APC, Redis, and Memcached caching systems are easy to integrate. It helps to enhance the app's performance. </p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Redux</h4>
-                                        <p>Consistent applications are compatible to run on various environments (client, server and Native) as well as are easy to test. </p>
+                                        <h4>Security</h4>
+                                        <p>Laravel prevents illegal access. Thus, it ensures the security of the web app and systems with proper authentication.  </p>
                                     </div>
                                 </div>
 
@@ -196,7 +197,7 @@ class ReactDev extends Component {
                     </div>
 
                     <div className="culture-sec web-sec">
-                        <h3>React.js Development Services</h3>
+                        <h3>Laravel Services</h3>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-1"></div>
@@ -205,114 +206,116 @@ class ReactDev extends Component {
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg} /> */}
-                                            <h4>React.js Website Customization</h4>
-                                            <p>iQuinceSoft is a leading organization that offer interactive React.js development services to build modern, reliable and interactive user interfaces across the industry domains. We have a team of experienced and proficient developers that can serve from remote locations. Our remote React.js developers can contribute as your in-house team members. </p>
+                                            <h4>Laravel App Development</h4>
+                                            <p>Think of Laravel applications that fit your processes seamlessly. Think of applications that generate scalable output outcomes for your organizations. We help you design, build and manage that kind of application.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg1} /> */}
-                                            <h4>Active Contribution</h4>
-                                            <p>Our dedicated React.js developers can help you reduce the cost by a significant margin. The developers work as your in-house team under your supervision.</p>
+                                            <h4>SaaS Application Development</h4>
+                                            <p>We help you develop customized SaaS applications. We use Laravel Cashier, Spark, Passport, and Socialite, among such Laravel packages. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg2} /> */}
-                                            <h4>Testing & Quality Assurance</h4>
-                                            <p>Get compliant and secure UI/UX with us. We offer updated and fast React.js architecture. </p>
+                                            <h4>Website Development</h4>
+                                            <p>We add custom features to your website with the help of Laravel. We help create a customized website based on Laravel based CMS like Statamic and October. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg3} /> */}
-                                            <h4>Architecture and Design</h4>
-                                            <p>We offer state-of-the-art web interfaces that suit the user experience checklists. </p>
+                                            <h4>Browser Testing and automation</h4>
+                                            <p>IQuinceSoft offers complete test automation of websites and applications.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg4} /> */}
-                                            <h4>React.js Development</h4>
-                                            <p>Explore the iQuinceSoft expertise with tailor-made React Web Applications. We have developed and delivered applications across the industrial domains. Connect with us for your high-performance application. </p>
+                                            <h4>Migrate</h4>
+                                            <p>From Java, Python, .NET, or any other framework, we help you migrate your apps to Laravel with no loss of any functionality or data.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg5} /> */}
-                                            <h4>Test-Driven Development</h4>
-                                            <p>With the help of Enzyme and Jest, we make sure the right set of the codebase. Thus, you get a stable and error-free application. </p>
+                                            <h4>Web Services and API Development</h4>
+                                            <p>We power your iOS & Android mobile apps. We offer easy access to the platform data with safe, stable, and well-documented web services and apis. </p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg5} /> */}
-                                            <h4>Migrate</h4>
-                                            <p>We can help you to migrate your running applications to React. Our developers can assist with APIs creation as per the clients’ needs.  </p>
+                                            <h4>Consulting</h4>
+                                            <p>If your systems are not going smooth, or you seek innovative ideas for your business, we can help. We offer Laravel consulting services like pre-project and review of current services. we help you make a call to improve the business process with laravel. </p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg5} /> */}
-                                            <h4>PWA & SPA Development</h4>
-                                            <p>Whether a progressive web application (PWA) or single page application (SPA), we give you an edge through responsive designs that resonate with the clients. </p>
+                                            <h4>Maintenance and Support</h4>
+                                            <p>We make sure your apps run error-free. We provide all kinds of maintenance and support to keep your business on Laravel smooth and easy. </p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg5} /> */}
-                                            <h4>Maintenance & Support</h4>
-                                            <p>We assist you with our maintenance and support services. Call us, and we’ll tailor a specific plan to meet your needs. </p>
-                                        </div>
-                                        <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
-                                            <h4>DevOps for React.js</h4>
-                                            <p>We are specialists working with all major cloud platforms such as AWS, Azure, and GCP. </p>
+                                            <h4>Full-Text Search</h4>
+                                            <p>We implement fast full-text search on your website. </p>
                                         </div>
                                     </OwlCarousel>
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg} /> */}
-                                            <h4>React.js Website Customization</h4>
-                                            <p>Customized features for your online stores with iQuinceSoft React.js services. We create, add and apply templates, functionalities and styles with simple CSS and HTML. </p>
+                                            <h4>Laravel App Development</h4>
+                                            <p>Think of Laravel applications that fit your processes seamlessly. Think of applications that generate scalable output outcomes for your organizations. We help you design, build and manage that kind of application.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg1} /> */}
-                                            <h4>Active Contribution</h4>
-                                            <p>Our dedicated React.js developers can help you reduce the cost by a significant margin. The developers work as your in-house team under your supervision.</p>
+                                            <h4>SaaS Application Development</h4>
+                                            <p>We help you develop customized SaaS applications. We use Laravel Cashier, Spark, Passport, and Socialite, among such Laravel packages. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg2} /> */}
-                                            <h4>Testing & Quality Assurance</h4>
-                                            <p>Get compliant and secure UI/UX with us. We offer updated and fast React.js architecture.
+                                            <h4>Website Development</h4>
+                                            <p>We add custom features to your website with the help of Laravel. We help create a customized website based on Laravel based CMS like Statamic and October.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg3} /> */}
-                                            <h4>Architecture and Design</h4>
-                                            <p>We offer state-of-the-art web interfaces that suit the user experience checklists. </p>
+                                            <h4>Browser Testing and automation</h4>
+                                            <p>IQuinceSoft offers complete test automation of websites and applications.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg4} /> */}
-                                            <h4>React.js Development</h4>
-                                            <p>Explore the iQuinceSoft expertise with tailor-made React Web Applications. We have developed and delivered applications across the industrial domains. Connect with us for your high-performance application. </p>
-                                        </div>
-
-                                        <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
-                                            <h4>Test-Driven Development</h4>
-                                            <p>With the help of Enzyme and Jest, we make sure the right set of the codebase. Thus, you get a stable and error-free application. </p>
-                                        </div>
-
-                                        <div className="col-lg-4 col-md-4"> </div>
-
-                                        <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Migrate</h4>
-                                            <p>We can help you to migrate your running applications to React. Our developers can assist with APIs creation as per the clients’ needs.  </p>
+                                            <p>From Java, Python, .NET, or any other framework, we help you migrate your apps to Laravel with no loss of any functionality or data.  </p>
+                                        </div>
+
+                                        <div className="col-lg-4 col-md-4">
+                                            {/* <img src={webImg5} /> */}
+                                            <h4>Web Services and API Development</h4>
+                                            <p>We power your iOS & Android mobile apps. We offer easy access to the platform data with safe, stable, and well-documented web services and apis. </p>
+                                        </div>
+
+                                        <div className="col-lg-4 col-md-4">
+                                            {/* <img src={webImg5} /> */}
+                                            <h4>Consulting</h4>
+                                            <p>If your systems are not going smooth, or you seek innovative ideas for your business, we can help. We offer Laravel consulting services like pre-project and review of current services. we help you make a call to improve the business process with laravel. </p>
+                                        </div>
+                                        <div className="col-lg-4 col-md-4">
+                                            {/* <img src={webImg5} /> */}
+                                            <h4>Maintenance and Support</h4>
+                                            <p>We make sure your apps run error-free. We provide all kinds of maintenance and support to keep your business on Laravel smooth and easy.</p>
+                                        </div>
+                                        <div className="col-lg-4 col-md-4">
+                                            {/* <img src={webImg5} /> */}
+                                            <h4>Full-Text Search</h4>
+                                            <p>We implement fast full-text search on your website.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -338,27 +341,27 @@ class ReactDev extends Component {
                             <div className="row">
                                 <div className="col-lg-12 col-md-12">
                                     <OwlCarousel options={culture}>
-                                        {ReactJson && ReactJson.map(ReactJsonS => {
+                                        {LaravelJson && LaravelJson.map(LaravelJsonS => {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{ReactJsonS.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: ReactJsonS.content.substr(0, 100) }}></p>
-                                                    <Link to={`/PostPage/${ReactJsonS.slug}`} >READ MORE </Link>
+                                                    <h4>{LaravelJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: LaravelJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${LaravelJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}
                                     </OwlCarousel>
 
                                     <div className="row">
-                                        {ReactJson && ReactJson.map((ReactJsonS, index) => {
+                                        {LaravelJson && LaravelJson.map((LaravelJsonS, index) => {
                                             return (
 
                                                 <div className="col-lg-4 col-md-4">
-                                                    <div className="insight-box" key={ReactJsonS.id}>
-                                                        <h4>{ReactJsonS.name}</h4>
-                                                        <p dangerouslySetInnerHTML={{ __html: ReactJsonS.content.substr(0, 100) }}></p>
-                                                        <Link to={`/PostPage/${ReactJsonS.slug}`} >READ MORE </Link>
+                                                    <div className="insight-box" key={LaravelJsonS.id}>
+                                                        <h4>{LaravelJsonS.name}</h4>
+                                                        <p dangerouslySetInnerHTML={{ __html: LaravelJsonS.content.substr(0, 100) }}></p>
+                                                        <Link to={`/PostPage/${LaravelJsonS.slug}`} >READ MORE </Link>
                                                     </div>
                                                 </div>
 
@@ -385,5 +388,5 @@ class ReactDev extends Component {
     }
 }
 
-export default ReactDev;
+export default DigiMarket;
 

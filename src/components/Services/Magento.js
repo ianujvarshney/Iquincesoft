@@ -326,9 +326,9 @@ class Magento extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{MagentoJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: MagentoJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{MagentoJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: MagentoJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${MagentoJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

@@ -345,9 +345,9 @@ class LaravelDev extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{LaravelJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: LaravelJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{LaravelJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: LaravelJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${LaravelJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

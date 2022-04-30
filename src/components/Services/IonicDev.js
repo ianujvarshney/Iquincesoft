@@ -302,9 +302,9 @@ class IonicDev extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{IonicJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: IonicJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{IonicJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: IonicJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${IonicJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

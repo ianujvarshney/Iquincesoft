@@ -315,9 +315,9 @@ class Drupal extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{DrupalJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: DrupalJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{DrupalJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: DrupalJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${DrupalJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

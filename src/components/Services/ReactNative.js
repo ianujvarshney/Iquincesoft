@@ -317,9 +317,9 @@ class ReactNative extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{ReactNativeJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: ReactNativeJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{ReactNativeJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: ReactNativeJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${ReactNativeJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

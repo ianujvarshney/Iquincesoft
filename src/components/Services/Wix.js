@@ -317,9 +317,9 @@ class Wix extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{WixJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: WixJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{WixJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: WixJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${WixJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

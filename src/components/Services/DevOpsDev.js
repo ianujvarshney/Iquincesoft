@@ -328,9 +328,9 @@ class DevOpsDev extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{Devops_ServicesJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: Devops_ServicesJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{Devops_ServicesJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: Devops_ServicesJsonS.content.substr(0, 100) + '...' }}></p>
+                                                    <Link to={`/PostPage/${Devops_ServicesJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

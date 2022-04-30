@@ -18,11 +18,10 @@ class Blog extends Component {
 			catedata: [],
 			Loading: true,
 			thePath: this.props.location.pathname,
-
+			allpost: '',
 		}
 	}
 	componentDidMount() {
-
 		Inspired.getInspired().then((Insights, err) => {
 			if (!err) {
 				this.setState({
@@ -42,7 +41,9 @@ class Blog extends Component {
 		});
 		Inspired.getcate().then((Insights, err) => {
 			if (!err) {
+				console.log(Insights);
 				this.setState({
+					allpost: Insights[0].blogpost,
 					catedata: Insights,
 					Loading: false,
 				});
@@ -80,7 +81,7 @@ class Blog extends Component {
 
 	render() {
 
-		const { InsightsJson, data, page, data2, catedata } = this.state;
+		const { InsightsJson, data, page, data2, catedata, allpost } = this.state;
 
 		return (
 			this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
@@ -112,14 +113,14 @@ class Blog extends Component {
 										<TabList>
 											<div className="row">
 												<div className="col-lg-10 col-md-9">
-													<Tab>All Posts (500)</Tab>
+													<Tab>All Posts ({allpost})</Tab>
 													{catedata && catedata.map((dataS, index) => {
 														return (
-															<p><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename}</Link></p>
+															<p><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p>
 														);
 													})}
-												</div>
 
+												</div>
 												<div className="col-lg-2 col-md-3"><input className="box" type="text" name="" placeholder="Search" /></div>
 											</div>
 										</TabList>
@@ -138,8 +139,8 @@ class Blog extends Component {
 																	<a href="#"><h4>Read More</h4> <img width="100%" src={dataS.img} /></a>
 																	<div className="case-box">
 																		<h5><img src={dataS.author_profile} /> <span><strong>{dataS.author_name}</strong> QA Specialist</span></h5>
-																		<h3>{dataS.name}</h3>
-																		<h4><Link to={`/PostPage/${dataS.slug}`} >READ MORE <img src={arrow2} /></Link>Oct 10, 2021</h4>
+																		<Link to={`/PostPage/${dataS.slug}`} ><h3>{dataS.name}</h3></Link>
+																		{/* <h4>READ MORE <img src={arrow2} />Oct 10, 2021</h4> */}
 																	</div>
 																</div>
 															</div>

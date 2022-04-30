@@ -362,9 +362,9 @@ class HirePHPDevelopers extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{PhpJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: PhpJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <h4>{PhpJsonS.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: PhpJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${PhpJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}

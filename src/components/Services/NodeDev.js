@@ -328,8 +328,8 @@ class NodeDev extends Component {
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
                                                     <h4>{NodeJson.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: NodeJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <p dangerouslySetInnerHTML={{ __html: NodeJsonS.content.substr(0, 100) }}></p>
+                                                    <Link to={`/PostPage/${NodeJsonS.slug}`} >READ MORE </Link>
                                                 </div>
                                             );
                                         })}
