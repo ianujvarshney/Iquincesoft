@@ -7,6 +7,7 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import { CareerData } from '../json/careers';
 import 'react-accessible-accordion/dist/fancy-example.css';
+import FormPopup from '../container/FormPopup';
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 import arrow5 from '../images/arrow5.png';
@@ -88,7 +89,6 @@ class Career extends Component {
 											</div>
 											<div className="col-lg-7 col-md-5" data-aos="fade-up"><a href="https://www.facebook.com/iquincesoft"><FaFacebook /></a> <a href="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></a> <a href="https://twitter.com/iquincesoft"><FaTwitter /></a> <a href="#"><FaLink /></a></div>
 										</div>
-
 									</div>
 								</div>
 								<img className="abt-img" width="100%" src={CareerJsonS.img} />
@@ -185,7 +185,82 @@ class Career extends Component {
 						</div>
 					</div>
 
-
+					<div className="frequent-sec">
+						<h3>Frequently Asked Questions</h3>
+						<div className="container">
+							<div className="row">
+								<div className="col-lg-2 col-md-1"></div>
+								<div className="col-lg-8 col-md-10" data-aos="fade-right">
+									<Accordion allowZeroExpanded preExpanded={['a']}>
+										<AccordionItem>
+											<AccordionItemButton>
+												What is iQuinceSoft?
+											</AccordionItemButton>
+											<AccordionItemPanel>
+												iQuinceSoft is an award-winning offshore software development company that
+												offers software solutions to a global clientele.
+											</AccordionItemPanel>
+										</AccordionItem>
+										<AccordionItem>
+											<AccordionItemButton>
+												What type of clients do you deal with?
+											</AccordionItemButton>
+											<AccordionItemPanel>
+												We have helped a significant number of global brands to meet their unmet business needs.
+												We have helped them scale the business to the next level.
+												All our clients are from all the continents.
+											</AccordionItemPanel>
+										</AccordionItem>
+										<AccordionItem>
+											<AccordionItemButton>
+												What is the preferred mode of communication in iQuinceSoft?
+											</AccordionItemButton>
+											<AccordionItemPanel>
+												We use various modes of communication. We use Skype, hangouts, and Slack for internal
+												communication and emails for official communication.
+											</AccordionItemPanel>
+										</AccordionItem>
+										<AccordionItem>
+											<AccordionItemButton>
+												How many projects am I supposed to deliver at a time?
+											</AccordionItemButton>
+											<AccordionItemPanel>
+												Not more than one.
+											</AccordionItemPanel>
+										</AccordionItem>
+										<AccordionItem>
+											<AccordionItemButton>
+												How will I get my salary?
+											</AccordionItemButton>
+											<AccordionItemPanel>
+												Your salary will be credited to the bank account you share with us during
+												documentation post your selection.
+											</AccordionItemPanel>
+										</AccordionItem>
+										<AccordionItem>
+											<AccordionItemButton>
+												Whom do I report to?
+											</AccordionItemButton>
+											<AccordionItemPanel>
+												You’re supposed to report to your team leader.
+											</AccordionItemPanel>
+										</AccordionItem>
+										<AccordionItem>
+											<AccordionItemButton>
+												What if I am not okay with anything?
+											</AccordionItemButton>
+											<AccordionItemPanel>
+												Our HR team is very engaged and can solve the issues quickly for anything you are
+												not satisfied with from the company front. Connect with any of them, and they can handle it with care.
+											</AccordionItemPanel>
+										</AccordionItem>
+									</Accordion>
+								</div>
+							</div>
+						</div>
+						<FormPopup />
+						<h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+					</div>
 
 
 					<div className="container">

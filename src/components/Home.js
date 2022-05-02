@@ -242,7 +242,7 @@ class Home extends Component {
 										</div>
 
 										<div className="serv-box">
-											<a href="/ProductDesign">
+											<a href="/DevOps">
 												<img src={img3} />
 												<h4>Dev Ops</h4>
 												<div className="arrow-icon"><FaArrowRight /></div>
@@ -252,7 +252,7 @@ class Home extends Component {
 										<div className="serv-box">
 											<a href="/CloudDevelopment">
 												<img src={img4} />
-												<h4>AI and ML</h4>
+												<h4>Cloud Development</h4>
 												<div className="arrow-icon"><FaArrowRight /></div>
 											</a>
 										</div>
@@ -283,7 +283,7 @@ class Home extends Component {
 										</div>
 
 										<div className="tech-box">
-											<a href="#">
+											<a href="/ECommerceDevelopers">
 												<div className="tech-dot"></div>
 												<img src={imgs5} />
 												<h4>e-Commerce</h4>
@@ -313,7 +313,8 @@ class Home extends Component {
 											<a href="#">
 												<div className="tech-dot"></div>
 												<img src={imgs2} />
-												<h4>Front-End</h4>
+												<h4>Product Design
+												</h4>
 												<div className="arrow-icon"><FaArrowRight /></div>
 											</a>
 										</div>

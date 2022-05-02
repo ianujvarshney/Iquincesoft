@@ -19,6 +19,7 @@ import AwardFormsec from '../../container/AwardFormsec';
 import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 
 class QualityAssurance extends Component {
@@ -234,7 +235,58 @@ class QualityAssurance extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What type of software testing services do you offer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We offer a wide array of testing services, including functional testing, integration testing, compatibility testing, regression testing, usability testing, automated testing, and performance testing.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                As a software development company, do you sign NDAs?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We sign non-disclosure agreements to protect your business information.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How to trust a reliable testing & QA services company?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                You can check the third-party reviews on third-party platforms like clutch and Google. You can also scroll through their social media pages to dig deeper into their profile.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How to get started with outsourced software testing?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                • Follow the basic steps to the road of a managed outsourced software testing:
+                                                • Streamline your workflow.
+                                                • Choose a trusted vendor who is skilled.
+                                                • Motivate your development team to collaborate with the external test team.
+                                                • Assign a senior QA manager to cooperate with the vendor.
+                                                • Assess the vendor performance regularly.
+                                                • Handle outsourcing concerns like unexpected software upgrades efficiently.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

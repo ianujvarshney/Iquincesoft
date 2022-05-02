@@ -17,23 +17,23 @@ class JobOffer extends Component {
 			url: this.props.location,
 			lastItem: '',
 			thePath: this.props.location.pathname,
+			totalsjob: ""
 		}
 	}
 
 	componentDidMount() {
 		Joboffers.getJoboffers().then((menus, err) => {
 			if (!err) {
-				console.log("menus==>", a)
 				this.setState({
+					totalsjob: menus[0].totaljob,
 					joblinks: menus,
 				});
 			}
 		})
-		var a = this.state.thePath.substr(this.props.location.pathname.lastIndexOf('/') + 1);
-		Joboffers.getJoboffersDetails(a).then((menus, err) => {
+		Joboffers.getJoboffersDetails(this.state.thePath).then((menus, err) => {
 			if (!err) {
-				console.log("lastItem==>", this.state.lastItem)
 				this.setState({
+					totalsjob: menus[0].totaljob,
 					joblinks2: menus,
 				});
 			}
@@ -50,7 +50,7 @@ class JobOffer extends Component {
 
 
 	render() {
-		const { joblinks, joblinks2, joblinks3 } = this.state;
+		const { joblinks, joblinks2, joblinks3, totalsjob } = this.state;
 		return (
 			<>
 				<Header headerClass={'job-head'} />
@@ -64,10 +64,10 @@ class JobOffer extends Component {
 										<div className="row">
 											<div className="col-lg-3 col-md-3" data-aos="fade-up"><h3>Job Offers</h3></div>
 											<div className="col-lg-9 col-md-9">
-												<Tab> All </Tab>
+												<Tab> All ({totalsjob})</Tab>
 												{joblinks3 && joblinks3.map(link => {
 													return (
-														<Tab ><Link to={`/jobOffer/${link.slug}`}>{link.name}</Link></Tab>
+														<Tab ><Link to={`/jobOffer/${link.slug}`}> {link.name} ({link.size})</Link></Tab>
 													);
 												})}
 											</div>

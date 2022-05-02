@@ -19,7 +19,7 @@ import AwardFormsec from '../../container/AwardFormsec';
 import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
-
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class DevOpsDev extends Component {
     constructor(props) {
@@ -316,7 +316,80 @@ class DevOpsDev extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What are DevOps services?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                DevOps refers to the practices and policies involved in the software development process. DevOps services include implementing strategies
+                                                like planning, developing, integrating, testing and deploying the product.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How does DevOps work?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                The DevOps model works by collaborating the development team of the organization and the operations team to achieve a common goal and offer value.
+                                                DevOps removes the barriers between the operations team and development.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I hire DevOps developers from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. You can hire our seasoned and skilled DevOps developers.
+                                                You can manage them as your extended team on your projects. In addition to this,
+                                                we offer a free-of-cost project manager to you as a single point of contact for you.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What type of DevOps services you offer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                The DevOps services that we offer are environment configuration with the help of AWS, Google Cloud, end-to-end DevOps testing, continuous integration, DevOps maintenance and monitoring, reliable support solutions and DevOps consulting.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What are the technologies you use for DevOps solutions?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We help businesses with the help of implementing DevOps strategies that include the following tech stacks like:
+                                                • GitHub, BitBucket (for Source Code Repository)
+                                                • AWS Backup, Storage Gateway (for Backup)
+                                                • Jenkins, Gitlab CI (for continuous Deployment)
+                                                • Gradle, Ant (for Build)
+                                                • Selenium, WireMock (for Automated Testing)
+                                                • AWS, GCP (for Clouds)
+                                                • Sonar, Black Duck (for Code Analysis)
+                                                • Datadog, Zabbix (for Monitoring)
+                                                • Windows Server Family, Oracle Linux (for Security Scanning)
+                                                • Argo (for Workflow Automation)
+                                                • Okta, AWS Security Hub (for Security)
+                                                • Terraform, Cloudformation (for IAC & Configuration Management)
+                                                • AWS ECR, Azure Container Registry (for Container Image Registry)
+                                                • ElasticSearch, Fluentd (For Log Management)
+                                                • Clair, Nessus (for Security Scanning)
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                    </div>
+
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

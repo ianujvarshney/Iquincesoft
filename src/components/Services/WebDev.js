@@ -19,6 +19,7 @@ import { FaCode } from 'react-icons/fa';
 import FAQ from '../../container/FAQ';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 
 class Web_Development extends Component {
@@ -312,7 +313,69 @@ class Web_Development extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you sign NDAs?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We have the policy to keep your data and source code secret and confidential.
+                                                We sign Non-Disclosure Agreements.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I hire web developers from you and manage them directly?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. You can hire dedicated developers from iQuinceSoft and manage them as your extended team.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How much does a website cost?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                The cost depends on various factors like hosting provider, bandwidth and storage,
+                                                domain, functionalities, themes, and tech stacks used. Once we are through with all
+                                                these factors, we can quote you the exact price. Connect with us for a FREE quote. u
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What types of web development services do you offer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We offer web development services that suit your business and budget. We provide a range of services that include Content Management Services (CMS), API development, CRM, inventory management, business automation, website optimization, maintenance and eCommerce portals.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What are the technologies you use to build a website?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We use technologies to deliver robust web solutions. We use PHP, Laravel, Codeigniter, Django, Yii, Ruby on Rails, CakePHP, Python, and Node.js for the server-side. Symfony,
+                                                For the front-end, we use Angular.js, React.js, jQuery, Vue.js etc.
+                                                For eCommerce, we use Magento, Shopify and WooCommerce.
+                                                For CMS, we use WordPress and Drupal.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                    </div>
+
+
+
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

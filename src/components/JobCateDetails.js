@@ -16,8 +16,8 @@ class jobCateDetails extends Component {
             joblinks3: [],
             url: this.props.location,
             lastItem: '',
-            VisitedLink: "",
-            thePath: this.props.location.pathname.substr(this.props.location.pathname.lastIndexOf('/') + 1),
+            totalsjob: '',
+            VisitedLink: this.props.location.pathname.substr(this.props.location.pathname.lastIndexOf('/') + 1),
         }
     }
 
@@ -25,12 +25,12 @@ class jobCateDetails extends Component {
         Joboffers.getJoboffers().then((menus, err) => {
             if (!err) {
                 this.setState({
+                    totalsjob: menus[0].totaljob,
                     joblinks: menus,
                 });
             }
         })
-        //const a = this.state.thePath.substr(this.state.thePath.lastIndexOf('/') + 1);
-        Joboffers.getJoboffersDetails(this.state.thePath).then((menus, err) => {
+        Joboffers.getJoboffersDetails(this.state.VisitedLink).then((menus, err) => {
             if (!err) {
                 this.setState({
                     joblinks2: menus,
@@ -39,8 +39,8 @@ class jobCateDetails extends Component {
         })
         Joboffers.getJoboffersCate().then((menus, err) => {
             if (!err) {
-                console.log("lastItem2=>");
                 this.setState({
+                    totalsjob: menus[0].totaljob,
                     joblinks3: menus,
                 });
             }
@@ -66,7 +66,7 @@ class jobCateDetails extends Component {
         }
     }
     render() {
-        const { joblinks, joblinks2, joblinks3, VisitedLink, lastItem, thePath } = this.state;
+        const { joblinks, joblinks2, joblinks3, VisitedLink, lastItem, thePath, totalsjob } = this.state;
         return (
             <>
                 <Header headerClass={'job-head'} />
@@ -80,13 +80,11 @@ class jobCateDetails extends Component {
                                         <div className="row">
                                             <div className="col-lg-3 col-md-3" data-aos="fade-up"><h3>Job Offers</h3></div>
                                             <div className="col-lg-9 col-md-9">
-                                                <p className="job-sec-p"><Link to={`/jobOffer`}>All</Link></p>
+                                                <p className="job-sec-p"><Link to={`/jobOffer`}>All ({totalsjob})</Link></p>
                                                 {joblinks3 && joblinks3.map(link => {
-                                                    console.log("a==>", link.slug, '\n', "lastitem==>", thePath)
                                                     return (
-                                                        // lastItem  ? <p className="job-offer-2"><Link to={`/jobOffer/${link.slug}`}>{link.name}</Link></p> :
-                                                        link.slug == thePath ? <p className="job-offer-2"><Link to={`/jobOffer/${link.slug}`}>{link.name}</Link></p> :
-                                                            <p className="job-sec-p"><Link to={`/jobOffer/${link.slug}`}>{link.name}</Link></p>
+                                                        link.slug == VisitedLink ? <p className="job-offer-2"><Link to={`/jobOffer/${link.slug}`}>{link.name} ({link.size})</Link></p> :
+                                                            <p className="job-sec-p"><Link to={`/jobOffer/${link.slug}`}>{link.name} ({link.size})</Link></p>
                                                     )
                                                 })}
                                             </div>

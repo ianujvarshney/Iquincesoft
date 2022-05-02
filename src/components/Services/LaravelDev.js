@@ -19,7 +19,7 @@ import AwardFormsec from '../../container/AwardFormsec';
 import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
-
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class LaravelDev extends Component {
     constructor(props) {
@@ -333,7 +333,84 @@ class LaravelDev extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is Laravel, and why is it used?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Laravel is an open-source framework backed up by PHP. Laravel is a server-side framework.
+                                                This is used for building customized web applications.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is the expected time to build a Laravel Website?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We are the Laravel developers with extensive experience and knowledge base to complete the Laravel
+                                                project within the stipulated timeframe. We follow a well-defined process to describe the time to build a website,
+                                                depending upon the web requirement of functionalities and added features.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How much cost does it take to build a Laravel website?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                The cost is a varying factor. It changes with the change in hosting services, features, third-party integrations, maintenance, UI/UX designs, etc.
+                                                You can have the feature-filled, visually appealing, and engaging Laravel website with iQuinceSoft in the most cost-effective way.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is the benefit of outsourcing your Laravel website project?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                An offshore partner can bring freshness to the projects. A Laravel web design partner like iQuinceSoft can add
+                                                value to your Laravel project with speed, amazing layouts, and an engaging website.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why choose iQuinceSoft for my new Laravel website?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                iQuinceSoft is a team of skilled developers with in-depth knowledge.
+                                                We can cater to niche-based business needs efficiently. We use agile methodology for strategic planning, development,
+                                                and enhancement with significant cost savings for you, with multi-fold results.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How to verify the authenticity of a Laravel development company?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                You can verify it with the help of client reviews on third-party platforms like clutch and Google. You can check it on the social media platforms, certifications, awards, and client partnerships.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I hire Laravel developers from you and manage them as my team?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                You can hire highly skilled developers from our side. Assign them with tasks and assignments and review their outputs. We can assign a service executive who’ll be your single
+                                                point of contact for communications and who can manage the developers on your behalf.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

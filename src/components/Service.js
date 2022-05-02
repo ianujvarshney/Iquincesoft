@@ -29,7 +29,7 @@ import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-
+import service_img from '../images/service-img.png';
 import popupImg from '../images/popup-img.png';
 import arrow_white from '../images/arrow-white.png';
 import { FaRegCalendar, FaLockOpen, FaRegUserCircle, FaRegEnvelope, FaPhoneAlt, FaPaperPlane } from 'react-icons/fa';
@@ -191,18 +191,11 @@ class Service extends Component {
 						<div className="container">
 							<div className="row" data-aos="fade-down">
 								<div className="col-lg-4 col-md-6">
-									{appJson && appJson.map((appJsonS, index) => {
-										return (
-											(index == 1) ?
-												<>
-													<h3>{appJsonS.name}</h3>
-													<p dangerouslySetInnerHTML={{ __html: appJsonS.content }}></p>
-													<em><Link to="/serviceDescription">Schedule an Appointment</Link></em>
-													<em><a href="#">Read Case Study</a></em>
-												</>
-												: null
-										);
-									})}
+									<h3>Web Development</h3>
+									<p>Remote Web Developers can scale your business swiftly. We offer you the facility to hire a remote web developer for 40 hours/week at a fixed rate.</p>
+									<em><Link to="/Web_Development">Schedule an Appointment</Link></em>
+									<em><a href="/caseStudies">Read Case Study</a></em>
+
 									{appJson && (
 										<OwlCarousel options={servSlide}>
 											{appJson.map((appJsonS, index) => {
@@ -221,33 +214,27 @@ class Service extends Component {
 
 								{appJson && appJson.map((appJsonS, index) => {
 									return (
-										(index == 0) ? null :
-											<div className="col-lg-4 col-md-6">
-												<div className="serv-txt">
-													<h4><span><FaCode /><Link to={`/${appJsonS.slug}`} >{appJsonS.name}</Link></span></h4>
-													<p dangerouslySetInnerHTML={{ __html: appJsonS.content }}></p>
-													<h4><Link to={`/${appJsonS.slug}`} >Read more</Link></h4>
-												</div>
+										<div className="col-lg-4 col-md-6">
+											<div className="serv-txt">
+												<h4><span><FaCode /><Link to={`/${appJsonS.slug}`} >{appJsonS.name}</Link></span></h4>
+												<p dangerouslySetInnerHTML={{ __html: appJsonS.content }}></p>
+												<h4><Link to={`/${appJsonS.slug}`} >Read more</Link></h4>
 											</div>
+										</div>
 									);
 								})}
-								{appJson && appJson.map((appJsonS, index) => {
-									return (
-										(index == 0) ?
-											<div className="col-lg-8 col-md-12">
-												<div className="serv-txt">
-													<div className="row">
-														<div className="col-lg-6 col-md-6">
-															<h4><span><FaCode /><Link to={`/${appJsonS.slug}`} >{appJsonS.name}</Link></span></h4>
-															<p dangerouslySetInnerHTML={{ __html: appJsonS.content }}></p>
-															<h4><Link to={`/${appJsonS.slug}`} >Read more</Link></h4>
-														</div>
-														<div className="col-lg-6 col-md-6"><img src={appJsonS.img} /></div>
-													</div>
-												</div>
-											</div> : null
-									);
-								})}
+								<div className="col-lg-8 col-md-12">
+									<div className="serv-txt">
+										<div className="row">
+											<div className="col-lg-6 col-md-6">
+												<h4><span><FaCode /><Link to='#'>Integrations and Extensions</Link></span></h4>
+												<p>We have integrated several platforms and can serve you with the same. Explore the best-in-class CRM platform services with us.</p>
+												<h4><Link to={"#"} >Read more</Link></h4>
+											</div>
+											<div className="col-lg-6 col-md-6"><img src={service_img} /></div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 

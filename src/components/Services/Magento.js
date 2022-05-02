@@ -19,6 +19,8 @@ import { PostCate } from '../../json/PostCate';
 import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner'
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
+
 
 class Magento extends Component {
     constructor(props) {
@@ -26,6 +28,7 @@ class Magento extends Component {
         this.state = {
             MagentoJson: [],
             Loading: true,
+            Questionjson: [],
         }
     }
 
@@ -314,7 +317,86 @@ class Magento extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Is Magento a good-to-go with eCommerce platform?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Magento is considered one of the best eCommerce platforms. It works well for every store, plus it is easy to build a site on Magento.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Which of the different Magento development services do you offer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                iQuinceSoft offers web customization services, API Integrations, Payment gateway integrations, consulting, and Magento plugin development services as Magento development services.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How to hire the best Magento developers?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                A certified Magento developer is hard to find, but following a process can make it easy:
+                                                • The expertise of the stack
+                                                • Reviews
+                                                • Experience of the developer
+                                                • Easy communication
+                                                • Reviews.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you offer Magento services?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We offer quality Magento services. We offer to hire Magento services,
+                                                where you can opt for a developer and use his skills on an hourly, weekly, or project basis.
+                                                You can use these developers as your extended team.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can you offer developers of my choice?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We understand your project needs and offer you the dedicated Magento developers.
+                                                For your satisfaction with the quality of the developer, we can schedule the interviews as well.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What are your pricing models at iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                iQuinceSoft offer two pricing models: a fixed price quote at
+                                                $ 20/hour or a dedicated developer at $ 2400.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How to stay in touch with the team?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                You will be assigned with a project delivery manager who will act as a point of contact,
+                                                and he will manage the team on your behalf.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

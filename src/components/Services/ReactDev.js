@@ -19,6 +19,7 @@ import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner'
 import FAQ from '../../container/FAQ';
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class ReactDev extends Component {
     constructor(props) {
@@ -330,7 +331,63 @@ class ReactDev extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is React JS?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                React JS is a JavaScript library. It was created by Facebook in 2011. It was developed to create user interfaces for the
+                                                web but it is used to build frontend and visual development for web and apps.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you offer React JS developers to hire services?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We offer React JS developers to hire on hourly, monthly and project basis.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you share your developer’s profile with us?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. The skillset of our developers will be matched with your project needs and after screening from your end, our developers will be an extended part of your team.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What if we are not satisfied with the quality of work?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                In case you are not satisfied with the quality of work of our developer, we will replace the developer as early as possible.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you sign NDAs?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We sign Non-Disclosure Agreements with the clients to secure the confidentiality of the data, source code and project details.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                    </div>
+
+
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

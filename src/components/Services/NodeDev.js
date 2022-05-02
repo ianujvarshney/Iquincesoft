@@ -19,7 +19,7 @@ import AwardFormsec from '../../container/AwardFormsec';
 import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
-
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class NodeDev extends Component {
     constructor(props) {
@@ -315,7 +315,81 @@ class NodeDev extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Who is iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                iQuinceSoft is a software delivery services agency that serves the clients' unmet software, web, mobile and cloud-based needs. With more than 1500+ satisfied clients, we are marching ahead to a delighted business world.
+                                                We are accredited and reviewed positively by stringent authorities like clutch and others.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is the no-risk trial period at iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We offer the initial first week of interaction between you and your node.js developer as a no-risk
+                                                trial period. This week, if you are not satisfied with the quality of work of your developer,
+                                                we can change the developer for you.
+                                                If still, you don’t find it fruitful, we won’t charge a single penny.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How experienced are your Node.JS developers?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We have a team of dedicated Node.js developers with an average of 4+ years of experience.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you sign NDAs?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We sign Non-Disclosure Agreements to protect your project details and source code.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Is it beneficial to use Node.js for web development?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Node.js offers multiple benefits in web development. Some of the benefits are as follows:
+                                                • Cost-effective hosting and cloud scalability.
+                                                • Multiple platform compatible codes.
+                                                • Rapid minimum viable product (MVP) delivery.
+                                                • Many packages and extensions availability.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why should I hire dedicated Node.js developers from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Hiring a Node.js developer from iQuinceSoft can:
+                                                • Ensure risk minimization and assured quality.
+                                                • Developer work as a part of your team.
+                                                • Control over the entire process.
+                                                • Work with dedicated and skilled developers.
+                                                • Get a dedicated project manager to work on your project at no extra charge.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

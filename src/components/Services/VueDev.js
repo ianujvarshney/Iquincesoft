@@ -19,7 +19,7 @@ import AwardFormsec from '../../container/AwardFormsec';
 import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
-
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class VueDev extends Component {
     constructor(props) {
@@ -301,7 +301,64 @@ class VueDev extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is Vue JS used for?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Vue Js is used for web interfaces and one page applications.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Is VueJS good for web development?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                VueJS is great for web development because it is flexible, easy-to-integrate, developer-friendly and scalable.
+                                                It has a model-view-viewmodel (MVVM) architecture that facilitates two-communications.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How to choose a bankable VueJS company?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Check the client testimonials on the third party platforms like Clutch and google. Have a look at the awards, certificates and client partnerships as well.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How much does it cost to build a VueJS based website?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                The cost depends on the various factors like UI/UX designs, web hosting providers, third-party modules, security options and other factors.
+                                                You can choose our highly-efficient VueJS developer services on a monthly basis with $ 3000 per month or fixed-cost pricing model that starts at $25 per hour.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I hire VueJS developers from iQuinceSoft and manage them directly?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. You can hire VueJS developers from iQuinceSoft and manage them as your extended team at $3000 per month or at $ 25 per hour basis.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                    </div>
+
+
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

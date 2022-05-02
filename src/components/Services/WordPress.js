@@ -14,12 +14,10 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import AwardFormsec from '../../container/AwardFormsec';
-import FAQ from '../../container/FAQ';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import { PostCate } from '../../json/PostCate';
 import Partner from '../../container/Partner';
-
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class WordPress extends Component {
     constructor(props) {
@@ -352,7 +350,63 @@ class WordPress extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How much does it cost to develop a custom WordPress website?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                The cost of developing a custom WordPress website site varies and depends on various
+                                                factors like web hosting server, domain, themes, security plan etc. If you wish to build a WordPress Website, we offer custom development services to deliver top-notch WordPress solutions. The cost of developing a custom WordPress website site varies and depends on various factors like web hosting server, domain, themes, security plan etc. If you wish to build a WordPress Website, we offer custom development services to deliver top-notch WordPress solutions.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you offer custom theme and plug-ins development services?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We are seasoned with the development of custom themes and plug-ins for WordPress.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I hire WordPress developers from you and manage them on my own?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We offer WordPress developers to hire and manage them as your extended team.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                I have a WordPress website and need to update the same. Can iQuinceSoft help?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We can help you update and scale up your WordPress website. With enriching
+                                                experience and expertise, we can offer migration to API development, SEO, third-party integration, speed optimization and module development services to take your website to the next level.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is the best way to choose a professional WordPress development agency?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                The best way is to get fair and impartial reviews from third-party platforms, i.e., clutch and Google. Search the social media handles of the agency as well for a clear perspective of the agency and its business.
+                                                iQuinceSoft is a clutch certified agency that can take your business to the next level.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>
