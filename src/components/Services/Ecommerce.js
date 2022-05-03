@@ -146,7 +146,7 @@ class Ecommerce extends Component {
                                     </div>
                                 </OwlCarousel>
 
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-6">
                                     <div class="want-part">
                                         <div>
                                             <span>01</span>
@@ -154,7 +154,7 @@ class Ecommerce extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-6">
                                     <div class="want-part">
                                         <div>
                                             <span>01</span>
@@ -162,7 +162,7 @@ class Ecommerce extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-6">
                                     <div class="want-part">
                                         <div>
                                             <span>01</span>
@@ -170,7 +170,7 @@ class Ecommerce extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-6">
                                     <div class="want-part">
                                         <div>
                                             <span>01</span>
@@ -189,7 +189,7 @@ class Ecommerce extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-1"></div>
-                                <div className="col-lg-10">
+                                <div className="col-lg-10 col-md-12">
                                     <h1>Advanced eCommerce Solutions</h1>
                                     <p>This is the best option for first-timers. We can help you with a complete set of shopping cart systems and a customizable website for your brand.
                                         You can also choose from the Promotional Tools, Content Management Tools, Shipping Options, Online Payment, Shopping Cart, Traffic Reports, and Product Database. </p>
@@ -197,7 +197,7 @@ class Ecommerce extends Component {
                             </div>
                             <div className="row">
                                 <div className="col-lg-1"></div>
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="ecom-part">
                                         <h3>In addition to this, apart from the available resources, the additional features are:</h3>
                                         <ul>
@@ -210,7 +210,7 @@ class Ecommerce extends Component {
                                         <Link to="#">For more clarity, </Link>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="col-lg-6 col-md-6">
                                     <div className="ecom-image">
                                         <img src={image_body} />
                                     </div>
@@ -225,7 +225,7 @@ class Ecommerce extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-1"></div>
-                                <div className="col-lg-10">
+                                <div className="col-lg-10 col-md-12">
                                     <h1>Advanced eCommerce Solutions</h1>
                                     <p>Advanced eCommerce Solutions are also considered the optimal solution for beginners. In this system, the beginner gets access to a shopping cart system, an integrated product catalog tool, and a website tailored to brand identity. </p>
                                 </div>
@@ -233,7 +233,7 @@ class Ecommerce extends Component {
 
                             <div className="row">
                                 <div className="col-lg-1"></div>
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="ecom-part">
                                         <h3>In addition to this, apart from the available resources, the additional features are:</h3>
                                         <ul>
@@ -245,7 +245,7 @@ class Ecommerce extends Component {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="col-lg-6 col-md-6">
                                     <div className="ecom-image">
                                         <img src={image_body} />
                                     </div>
@@ -254,7 +254,7 @@ class Ecommerce extends Component {
 
                             <div className="row">
                                 <div className="col-lg-1"></div>
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="ecom-part2">
                                         <div>
                                             <span><img src={magento} /></span><h2>Magento</h2>
@@ -270,7 +270,7 @@ class Ecommerce extends Component {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="ecom-part2">
                                         <div>
                                             <span><img src={magento} /></span><h2>WooCommerce</h2>
@@ -484,9 +484,9 @@ class Ecommerce extends Component {
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>
-                                                    <h4>{LaravelJsonS.name}</h4>
-                                                    <p dangerouslySetInnerHTML={{ __html: LaravelJsonS.content.substr(0, 100) }}></p>
-                                                    <Link to={`/PostPage/${LaravelJsonS.slug}`} >READ MORE </Link>
+                                                    <h4>{LaravelJson.name}</h4>
+                                                    <p dangerouslySetInnerHTML={{ __html: LaravelJsonS.content }}></p>
+                                                    <a href="#">Read More</a>
                                                 </div>
                                             );
                                         })}

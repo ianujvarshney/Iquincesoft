@@ -37,20 +37,18 @@ class PostPage extends Component {
                         <div className="Post-sec">
                             <div className="container">
                                 <div className="row">
-                                    <div className="col-lg-1"></div>
-                                    <div className="col-lg-5 col-md-5">
+                                    <div className="col-lg-8 col-md-7">
                                         <h3><img src={arrow1} /><a href="/blog">Back to all the blogposts</a></h3>
                                         <h4>{PostPageJsonS.date}abc</h4>
                                         <h1><strong>{PostPageJsonS.name}</strong></h1>
                                         <h5><img src={blog_img} /> <span><strong>{PostPageJsonS.author}</strong> QA Specialist</span></h5>
                                     </div>
-                                    <div className="col-lg-4 col-md-6">
+                                    <div className="col-lg-4 col-md-5">
                                         <img width="100%" src={PostPageJsonS.img} />
                                     </div>
                                 </div>
                                 <div className="row">
-                                    <div className="col-lg-2"></div>
-                                    <div className="col-lg-8 col-md-12">
+                                    <div className="col-lg-12 col-md-12">
                                         <p dangerouslySetInnerHTML={{ __html: PostPageJsonS.content }}></p>
                                     </div>
                                 </div>

@@ -86,7 +86,7 @@ class DedicatedTeams extends Component {
         return (
             this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
                 <>
-                    <Header headerClass={'serv-head'} />
+                    <Header headerClass={'serv-head dd'} />
                     <div className="service-banner service-banner-cat">
                         <div className="container">
                             <div className="row">
@@ -117,17 +117,17 @@ class DedicatedTeams extends Component {
                             </div>
                             <div className="row mid-border">
                                 <div className="col-lg-2"></div>
-                                <div className="col-lg-4 col-md-12">
+                                <div className="col-lg-4 col-md-6">
                                     <ul>
-                                        <li><span><img src={icon1} /></span>Work with some of the best creative minds in the industry</li>
-                                        <li><span><img src={icon1} /></span>Build your designer team and clear your creative bottlenecks.</li>
-                                        <li><span><img src={icon1} /></span>Increase your productivity.</li>
+                                        <li><img src={icon1} /> <span>Work with some of the best creative minds in the industry</span></li>
+                                        <li><img src={icon1} /> <span>Build your designer team and clear your creative bottlenecks.</span></li>
+                                        <li><img src={icon1} /> <span>Increase your productivity.</span></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 col-md-12">
+                                <div className="col-lg-4 col-md-6">
                                     <ul>
-                                        <li><span><img src={icon1} /></span>Hire dedicated designers and use their skills to benefit your brand directly.</li>
-                                        <li><span><img src={icon1} /></span>Higher revenues by a significant margin.</li>
+                                        <li><img src={icon1} /> <span>Hire dedicated designers and use their skills to benefit your brand directly.</span></li>
+                                        <li><img src={icon1} /> <span>Higher revenues by a significant margin.</span></li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-1">
@@ -344,7 +344,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-10 col-md-12" data-aos="fade-up">
                                     <div className="row">
-                                        <div className="col-lg-4 col-md-4">
+                                        <div className="col-lg-4 col-md-6">
                                             <div className="design-box">
                                                 <img src={icon1} />
                                                 <h4>Hire Dedicated Developers</h4>
@@ -352,7 +352,7 @@ class DedicatedTeams extends Component {
                                                 <Link className="design-btn" to={'/DedicatedDevelopmentTeams'}>Learn More</Link>
                                             </div>
                                         </div>
-                                        <div className="col-lg-4 col-md-4">
+                                        <div className="col-lg-4 col-md-6">
                                             <div className="design-box">
                                                 <img src={icon1} />
                                                 <h4>Front-end Development</h4>
@@ -360,7 +360,7 @@ class DedicatedTeams extends Component {
                                                 <Link className="design-btn" to="/HireReactDevelopers">Learn More</Link>
                                             </div>
                                         </div>
-                                        <div className="col-lg-4 col-md-4">
+                                        <div className="col-lg-4 col-md-6">
                                             <div className="design-box">
                                                 <img src={icon1} />
                                                 <h4>Backend Development</h4>
@@ -368,7 +368,7 @@ class DedicatedTeams extends Component {
                                                 <Link className="design-btn" to="/HireNodeDevelopers">Learn More</Link>
                                             </div>
                                         </div>
-                                        <div className="col-lg-4 col-md-4">
+                                        <div className="col-lg-4 col-md-6">
                                             <div className="design-box">
                                                 <img src={icon1} />
                                                 <h4>Software Development</h4>
@@ -376,7 +376,7 @@ class DedicatedTeams extends Component {
                                                 <Link className="design-btn" to="#">Learn More</Link>
                                             </div>
                                         </div>
-                                        <div className="col-lg-4 col-md-4">
+                                        <div className="col-lg-4 col-md-6">
                                             <div className="design-box">
                                                 <img src={icon1} />
                                                 <h4>Custom Graphic Designs</h4>
@@ -384,7 +384,7 @@ class DedicatedTeams extends Component {
                                                 <Link className="design-btn" to="/HireDesigners">Learn More</Link>
                                             </div>
                                         </div>
-                                        <div className="col-lg-4 col-md-4">
+                                        <div className="col-lg-4 col-md-6">
                                             <div className="design-box">
                                                 <img src={icon1} />
                                                 <h4>Web Development</h4>
@@ -401,16 +401,16 @@ class DedicatedTeams extends Component {
                         <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
                     </div>
 
-                    <div className="process-sec">
+                    <div className="process-sec dd">
                         <div className="container">
                             <h1>Our Process</h1>
                             <div className="row">
                                 <p className="process-heading-para">The Process we use to build your dedicated development team</p>
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <picture><img src={icon1} /></picture>
                                 </div>
                                 <div className="col-lg-1"></div>
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="process-box txt-process-box">
                                         <span className="blue">01</span>
                                         <h3>Choose Developers</h3>
@@ -419,7 +419,7 @@ class DedicatedTeams extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="process-box txt-process-box">
                                         <span className="blue">02</span>
                                         <h3>Smooth Integration:</h3>
@@ -427,16 +427,16 @@ class DedicatedTeams extends Component {
                                     </div>
                                 </div>
                                 <div className="col-lg-1"></div>
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <picture><img src={icon1} /></picture>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <picture><img src={icon1} /></picture>
                                 </div>
                                 <div className="col-lg-1"></div>
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="process-box txt-process-box">
                                         <span className="blue">03</span>
                                         <h3>Scale on-demand:</h3>
@@ -452,7 +452,7 @@ class DedicatedTeams extends Component {
                             <div className="row">
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-10 col-md-12">
-                                    <h1>Benefits of a hiring a dedicated development team from iQuinceSoft: </h1>
+                                    <h1>Benefits of a hiring a dedicated development team from iQuinceSoft:</h1>
                                 </div>
                             </div>
 
@@ -461,8 +461,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-8 col-md-12">
                                     <ul>
                                         <li>
-                                            <img src={icon1} />
-                                            <span>Diverse Teams:</span>
+                                            <label><img src={icon1} /> Diverse Teams:</label>
                                             <p>According to your project specifications, our diverse and versatile teams will deliver you result-driven solutions with expertise in key skills like PHP, Python, Django, NodeJS, Angular, WordPress, React Native, and other services areas.</p>
                                         </li>
                                     </ul>
@@ -475,9 +474,8 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-8 col-md-12">
                                     <ul>
                                         <li>
-                                            <img src={icon1} />
-                                            <span>Efficient Delivery:</span>
-                                            <p>We are a highly skilled and efficient team that leads the clients to forge long-term relations with us, from full-scale software development to quick customizations of pre-designed platforms. </p>
+                                            <label><img src={icon1} /> Efficient Delivery:</label>
+                                            <p>We are a highly skilled and efficient team that leads the clients to forge long-term relations with us, from full-scale software development to quick customizations of pre-designed platforms.</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -489,8 +487,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-8 col-md-12">
                                     <ul>
                                         <li>
-                                            <img src={icon1} />
-                                            <span>Quick Ramp-ups:</span>
+                                            <label><img src={icon1} /> Quick Ramp-ups:</label>
                                             <p>We can swiftly ramp up your development projects by implementing the business transformations significantly in the blink of an eye. We leverage our developers to complete the tasks with minimum time to market. </p>
                                         </li>
                                     </ul>
@@ -503,8 +500,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-8 col-md-12">
                                     <ul>
                                         <li>
-                                            <img src={icon1} />
-                                            <span>Quick Ramp-ups:</span>
+                                            <label><img src={icon1} /> Quick Ramp-ups:</label>
                                             <p>We can swiftly ramp up your development projects by implementing the business transformations significantly in the blink of an eye. We leverage our developers to complete the tasks with minimum time to market. </p>
                                         </li>
                                     </ul>
@@ -518,8 +514,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-8 col-md-12">
                                     <ul>
                                         <li>
-                                            <img src={icon1} />
-                                            <span>Quick Ramp-ups:</span>
+                                            <label><img src={icon1} /> Quick Ramp-ups:</label>
                                             <p>We can swiftly ramp up your development projects by implementing the business transformations significantly in the blink of an eye. We leverage our developers to complete the tasks with minimum time to market. </p>
                                         </li>
                                     </ul>
@@ -531,8 +526,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-8 col-md-12">
                                     <ul>
                                         <li>
-                                            <img src={icon1} />
-                                            <span>Transparent Costing:</span>
+                                            <label><img src={icon1} /> Transparent Costing:</label>
                                             <p>We offer transparent and fair costing at all stages of software development. We charge what is reasonably right and suit your budget by matching our highest quality benchmarks.  </p>
                                         </li>
                                     </ul>

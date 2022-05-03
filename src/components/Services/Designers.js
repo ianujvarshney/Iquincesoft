@@ -110,7 +110,7 @@ class Designers extends Component {
                         </div>
                     </div>
 
-                    <div className="culture-sec cr-sec cr-sec-2">
+                    <div className="culture-sec cr-sec cr-sec-2 dd">
                         <div className="container">
                             <div className="row ">
                                 <div className="col-lg-1"></div>
@@ -122,15 +122,15 @@ class Designers extends Component {
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-4 col-md-12">
                                     <ul>
-                                        <li><span><img src={icon1} /></span>Work with some of the best creative minds in the industry</li>
-                                        <li><span><img src={icon1} /></span>Build your designer team and clear your creative bottlenecks.</li>
-                                        <li><span><img src={icon1} /></span>Increase your productivity.</li>
+                                        <li><img src={icon1} /> <span>Work with some of the best creative minds in the industry</span></li>
+                                        <li><img src={icon1} /> <span>Build your designer team and clear your creative bottlenecks.</span></li>
+                                        <li><img src={icon1} /> <span>Increase your productivity.</span></li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-4 col-md-12">
                                     <ul>
-                                        <li><span><img src={icon1} /></span>Hire dedicated designers and use their skills to benefit your brand directly.</li>
-                                        <li><span><img src={icon1} /></span>Higher revenues by a significant margin.</li>
+                                        <li><img src={icon1} /> <span>Hire dedicated designers and use their skills to benefit your brand directly.</span></li>
+                                        <li><img src={icon1} /> <span>Higher revenues by a significant margin.</span></li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-1">
@@ -412,7 +412,7 @@ class Designers extends Component {
 
                             <div className="row">
                                 <div className="col-lg-1 col-md-1"></div>
-                                <div className="col-lg-5 col-md-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
                                             <img src={icon1} />
@@ -423,7 +423,7 @@ class Designers extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-5 col-md-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
                                             <img src={icon1} />
@@ -437,7 +437,7 @@ class Designers extends Component {
                             </div>
                             <div className="row">
                                 <div className="col-lg-1 col-md-1"></div>
-                                <div className="col-lg-5 col-md-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
                                             <img src={icon1} />
@@ -448,7 +448,7 @@ class Designers extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-5 col-md-">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
                                             <img src={icon1} />
@@ -467,7 +467,7 @@ class Designers extends Component {
                         <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
                     </div>
 
-                    <div className="process-sec">
+                    <div className="process-sec dd">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-1"></div>
@@ -477,11 +477,11 @@ class Designers extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <picture><img src={icon1} /></picture>
                                 </div>
                                 <div className="col-lg-1"></div>
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="process-box txt-process-box">
                                         <span className="blue">01</span>
                                         <h3>Analysis</h3>
@@ -490,7 +490,7 @@ class Designers extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="process-box txt-process-box">
                                         <span className="blue">02</span>
                                         <h3>Develop </h3>
@@ -498,16 +498,16 @@ class Designers extends Component {
                                     </div>
                                 </div>
                                 <div className="col-lg-1"></div>
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <picture><img src={icon1} /></picture>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <picture><img src={icon1} /></picture>
                                 </div>
                                 <div className="col-lg-1"></div>
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="process-box txt-process-box">
                                         <span className="blue">03</span>
                                         <h3> Implementation</h3>
@@ -516,7 +516,7 @@ class Designers extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <div className="process-box txt-process-box">
                                         <span className="blue">04</span>
                                         <h3> Maintenance</h3>
@@ -524,7 +524,7 @@ class Designers extends Component {
                                     </div>
                                 </div>
                                 <div className="col-lg-1"></div>
-                                <div className="col-lg-5">
+                                <div className="col-lg-5 col-md-6">
                                     <picture><img src={icon1} /></picture>
                                 </div>
                             </div>

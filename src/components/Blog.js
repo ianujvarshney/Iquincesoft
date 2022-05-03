@@ -22,6 +22,7 @@ class Blog extends Component {
 		}
 	}
 	componentDidMount() {
+
 		Inspired.getInspired().then((Insights, err) => {
 			if (!err) {
 				this.setState({
@@ -41,7 +42,6 @@ class Blog extends Component {
 		});
 		Inspired.getcate().then((Insights, err) => {
 			if (!err) {
-				console.log(Insights);
 				this.setState({
 					allpost: Insights[0].blogpost,
 					catedata: Insights,
@@ -121,6 +121,7 @@ class Blog extends Component {
 													})}
 
 												</div>
+
 												<div className="col-lg-2 col-md-3"><input className="box" type="text" name="" placeholder="Search" /></div>
 											</div>
 										</TabList>
