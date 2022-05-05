@@ -19,6 +19,7 @@ class Blog extends Component {
 			Loading: true,
 			thePath: this.props.location.pathname,
 			allpost: '',
+			setsearchterm: [],
 		}
 	}
 	componentDidMount() {
@@ -78,31 +79,45 @@ class Blog extends Component {
 		return this.fetch(page);
 	};
 
+	handlefilter = (event) => {
+		const searchword = event.target.value;
+		console.log("serach", searchword, event)
+		const newfilter = this.state.data.filter((value) => {
+			return value.title.toLowerCase().include(searchword.toLowerCase());
+		})
+		this.setState({
+			setsearchterm: newfilter,
+		})
+	}
 
 	render() {
 
-		const { InsightsJson, data, page, data2, catedata, allpost } = this.state;
+		const { InsightsJson, data, page, data2, catedata, allpost, setsearchterm } = this.state;
 
 		return (
 			this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
 				<>
 					<Header headerClass={'case-head'} />
-					{InsightsJson && InsightsJson.map((InsightsJsonS, index) => {
-						return (
-							<div className="blog-banner">
-								<div className="container">
-									<div className="row">
-										<div className="col-lg-2"></div>
-										<div className="col-lg-8 col-md-12" data-aos="fade-up" key={index}>
-											<h1>{InsightsJsonS.name}</h1>
-											<p dangerouslySetInnerHTML={{ __html: InsightsJsonS.content }}></p>
-											<div className="in-box"><input className="box" type="text" name="" placeholder="Supercharge your brain" /> <a href="#">Let's Learn</a></div>
-										</div>
+					<div className="blog-banner">
+						<div className="container">
+							<div className="row">
+								<div className="col-lg-2"></div>
+								<div className="col-lg-8 col-md-12" data-aos="fade-up">
+									<h1>hello</h1>
+									<p>hello world</p>
+									<div className="in-box"><input type="search" onChange={this.handlefilter} className="box" type="text" name="" placeholder="Supercharge your brain" />
+										{setsearchterm.map(val => {
+											return (
+												<div><p>Search</p></div>
+											)
+										})
+										}
 									</div>
+
 								</div>
 							</div>
-						);
-					})}
+						</div>
+					</div>
 
 					<div className="blog-sec">
 						<div className="container">
@@ -137,9 +152,9 @@ class Blog extends Component {
 														return (
 															<div className="col-lg-4 col-md-6">
 																<div className="case-main">
-																	<a href="#"><h4>Read More</h4> <img width="100%" src={dataS.img} /></a>
+																	<Link to={`/PostPage/${dataS.slug}`} ><h4>Read More</h4> <img width="100%" src={dataS.img} /></Link>
 																	<div className="case-box">
-																		<h5><img src={dataS.author_profile} /> <span><strong>{dataS.author_name}</strong> QA Specialist</span></h5>
+																		<h5><img src={dataS.author_profile} /><span><strong>{dataS.author_name}</strong> QA Specialist</span></h5>
 																		<Link to={`/PostPage/${dataS.slug}`} ><h3>{dataS.name}</h3></Link>
 																		{/* <h4>READ MORE <img src={arrow2} />Oct 10, 2021</h4> */}
 																	</div>

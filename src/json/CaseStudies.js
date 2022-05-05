@@ -42,6 +42,7 @@ export class CaseStudies {
                                 "name": response[i].title.rendered || '',
                                 "img": response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
                                 "content": response[i].content.rendered || '',
+                                "slug": response[i].slug || '',
                                 // "corporate": response[i]['post-meta-fields'] && response[i]['post-meta-fields']['corporate'] || '',
                             });
                         }

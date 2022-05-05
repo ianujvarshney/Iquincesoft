@@ -32,7 +32,6 @@ class PostPage extends Component {
             <>
                 <Header headerClass={'job-head'} />
                 {PostPageJson && PostPageJson.map(PostPageJsonS => {
-                    console.log(PostPageJsonS)
                     return (
                         <div className="Post-sec">
                             <div className="container">
@@ -63,21 +62,3 @@ class PostPage extends Component {
 }
 
 export default PostPage;
-
-
-
-
-/*<div class="container">
-    {PostPageJson && PostPageJson.map(PostPageJsonS => {
-        { console.log(PostPageJsonS) }
-        return (
-            <div class="row">
-                <div class="col-lg-5">
-                    <h1>{PostPageJsonS.name}</h1>
-                    <p dangerouslySetInnerHTML={{ __html: PostPageJsonS.content }}></p>
-                </div>
-            </div>
-        );
-    })
-    }
-</div>*/

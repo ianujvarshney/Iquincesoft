@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 import award from '../images/award-img.png';
 import award1 from '../images/award-img1.png';
@@ -14,6 +15,7 @@ import Client1 from '../images/Client1.png'
 import talk from '../images/talk.png';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import EuquireSec from './EuquireSec';
 
 import popupImg from '../images/popup-img.png';
 import arrow6 from '../images/arrow6.png';
@@ -51,7 +53,7 @@ class AwardFormsec extends Component {
                                     modal lockScroll={true} >
                                     {close => (
                                         <div className="modal">
-                                            <button className="close" onClick={close}>&times;</button>
+                                            <button className="close" onClick={close}>&times; </button>
                                             <div className="content">
                                                 <div className="row">
                                                     <div className="col-lg-6 col-md-6">
@@ -71,7 +73,7 @@ class AwardFormsec extends Component {
                                                             <a href="#"><FaPaperPlane /></a>
                                                             <ul>
                                                                 <li><FaRegCalendar /> <p>Pick a date & time of your choice</p></li>
-                                                                <li><FaLockOpen /> <p>No obligation. Cancel any time.</p></li>
+                                                                <li><FaLockOpen /> <p>No obligation.Cancel any time.</p></li>
                                                             </ul>
                                                         </form>
                                                     </div>
@@ -81,15 +83,14 @@ class AwardFormsec extends Component {
                                     )}
                                 </Popup>
 
-                                <p><span>Or, Use this form to share your requirements.
-                                    Get guaranteed response within 8 Hrs.</span></p>
+                                <p className="para-link"><Link to={'EuquireSec'}><span>Or, Use this form to share your requirements.
+                                    Get guaranteed response within 8 Hrs.</span></Link></p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div >
             </div >
         )
     }
 }
 export default AwardFormsec;
-    // /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);

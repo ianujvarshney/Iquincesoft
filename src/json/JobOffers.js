@@ -8,7 +8,8 @@ export class Joboffers {
                 return Promise.all([response.json(), response.headers]);
             }).then(([response, header]) => {
                 var data = [];
-                data.push({ "totaljob": header.get('X-WP-total') });
+                var data2 = [];
+                data2.push({ "totaljob": header.get('X-WP-total') });
                 if (response) {
                     for (var i = 0; i < response.length; i++) {
                         data.push({
@@ -24,7 +25,7 @@ export class Joboffers {
                     }
 
                 }
-                resolve(data)
+                resolve(data, data2)
             })
                 .catch(err => {
                     console.log(err);

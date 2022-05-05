@@ -22,8 +22,9 @@ class JobOffer extends Component {
 	}
 
 	componentDidMount() {
-		Joboffers.getJoboffers().then((menus, err) => {
+		Joboffers.getJoboffers().then((menus, data2, err) => {
 			if (!err) {
+				console.log("data2" + data2);
 				this.setState({
 					totalsjob: menus[0].totaljob,
 					joblinks: menus,
@@ -77,6 +78,7 @@ class JobOffer extends Component {
 									<TabPanel>
 										<div className="row">
 											{joblinks && joblinks.map(link => {
+												console.log("link", link)
 												return (
 													<div className="col-lg-4 col-md-6">
 														<Link to={'/jobDetail'}>

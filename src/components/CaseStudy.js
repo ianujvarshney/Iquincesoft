@@ -88,7 +88,7 @@ class Service extends Component {
 												<img className="dd-5" src={caseIcon1} />
 												<h3>{CaseJsonS.name}</h3>
 												<p dangerouslySetInnerHTML={{ __html: CaseJsonS.content }}></p>
-												<a href="#">READ MORE <img src={arrow2} /></a>
+												<a href="/caseStudyDescription">READ MORE <img src={arrow2} /></a>
 											</div>
 										</div>
 								);
@@ -140,9 +140,9 @@ class Service extends Component {
 											<img width="100%" src={Case2JsonS.img} />
 											<div className="case-box">
 												<h4>Case Study</h4>
-												<h3>CoinBase Project</h3>
-												<p><span>TECH STACK: {Case2JsonS.name}</span><p dangerouslySetInnerHTML={{ __html: Case2JsonS.content }}></p></p>
-												<a href="#">READ MORE <img src={arrow2} /></a>
+												<h3>{Case2JsonS.name}</h3>
+												<p><span>TECH STACK: {Case2JsonS.name}</span><p dangerouslySetInnerHTML={{ __html: Case2JsonS.content.substr(0, 128) + "...." }}></p></p>
+												<Link to={`caseStudyDescription/${Case2JsonS.slug}`}>READ MORE <img src={arrow2} /></Link>
 											</div>
 										</div>
 

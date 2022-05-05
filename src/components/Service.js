@@ -175,8 +175,8 @@ class Service extends Component {
 																</div>
 															)}
 														</Popup>
-														<p><span>Or, Use this form to share your requirements.
-															Get guaranteed response within 8 Hrs.</span></p>
+														<p className="para-link"><Link to={'EuquireSec'}><span>Or, Use this form to share your requirements.
+															Get guaranteed response within 8 Hrs.</span></Link></p>
 													</div>
 												</div>
 											</div>

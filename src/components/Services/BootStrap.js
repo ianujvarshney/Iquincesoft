@@ -306,7 +306,7 @@ class BootStrap extends Component {
                             </div>
                         </div>
                         <FormPopup />
-                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                        <Link to={"#EuquireSec"} target="_blank"><h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5></Link>
                     </div>
 
                     <Partner />

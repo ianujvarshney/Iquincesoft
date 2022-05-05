@@ -556,49 +556,58 @@ class DedicatedTeams extends Component {
                                         <AccordionItem>
                                             <AccordionItemButton>Project Manager</AccordionItemButton>
                                             <AccordionItemPanel>
-                                                <p>People who excel at everything from planning and scheduling to progress tracking and workflow optimization.</p>
+                                                <p>The project managers are the people who are the all-round performers from planning and scheduling to process tracking and workflow optimization.</p>
                                                 <p><strong>Related tools and technologies:</strong></p>
-                                                <h5>Product Roadmap, Burndown Chart, Release Plan, Jira, TeamWork, Risk Register, Budget Tracker, Project Charter.</h5>
+                                                <h5>Product Roadmap, Burndown chart, Release Plan, Jira, Team Work, Risk Register, Budget Tracker, Project Charter.</h5>
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                         <AccordionItem>
-                                            <AccordionItemButton>Diverse Teams:</AccordionItemButton>
+                                            <AccordionItemButton>Business Analyst</AccordionItemButton>
                                             <AccordionItemPanel>
-                                                <p>People who excel at everything from planning and scheduling to progress tracking and workflow optimization.</p>
+                                                <p>Our business analysts can improve your business processes with the help of rigorous research and insightful documentation and help you refine the project requirements.</p>
                                                 <p><strong>Related tools and technologies:</strong></p>
-                                                <h5>Product Roadmap, Burndown Chart, Release Plan, Jira, TeamWork, Risk Register, Budget Tracker, Project Charter.</h5>
+                                                <h5>Story map, Product Backlog, Business Model Canvas, Value Proposition.</h5>
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                         <AccordionItem>
-                                            <AccordionItemButton>Project Manager</AccordionItemButton>
+                                            <AccordionItemButton>UI Designers</AccordionItemButton>
                                             <AccordionItemPanel>
-                                                <p>People who excel at everything from planning and scheduling to progress tracking and workflow optimization.</p>
+                                                <p>The designers from iQuinceSoft can help you transform the product vision into user-friendly designs. We create the user experiences optimized for the highest conversion rates. </p>
                                                 <p><strong>Related tools and technologies:</strong></p>
-                                                <h5>Product Roadmap, Burndown Chart, Release Plan, Jira, TeamWork, Risk Register, Budget Tracker, Project Charter.</h5>
+                                                <h5>Sketch, Figma, inVision, Adobe CC, Principle, Pencil, Piece of paper, Zeplin, Story Map.</h5>
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                         <AccordionItem>
-                                            <AccordionItemButton>Project Manager</AccordionItemButton>
+                                            <AccordionItemButton>Frontend Developers</AccordionItemButton>
                                             <AccordionItemPanel>
-                                                <p>People who excel at everything from planning and scheduling to progress tracking and workflow optimization.</p>
+                                                <p>The frontend developers build the front-end  that users interact with. They make sure that the user experience is equally smooth and easy to use to every visitor.</p>
                                                 <p><strong>Related tools and technologies:</strong></p>
-                                                <h5>Product Roadmap, Burndown Chart, Release Plan, Jira, TeamWork, Risk Register, Budget Tracker, Project Charter.</h5>
+                                                <h5>JavaScript, HTML, CSS, React, Vue, Angular, React Native, and Ionic. </h5>
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                         <AccordionItem>
-                                            <AccordionItemButton>Project Manager</AccordionItemButton>
+                                            <AccordionItemButton>Backend Developers</AccordionItemButton>
                                             <AccordionItemPanel>
-                                                <p>People who excel at everything from planning and scheduling to progress tracking and workflow optimization.</p>
+                                                <p>The backend developers plan and develop the architecture of the web app and decides on the services and database part, API and external integrations and ensure the product is stable and secure.</p>
                                                 <p><strong>Related tools and technologies:</strong></p>
-                                                <h5>Product Roadmap, Burndown Chart, Release Plan, Jira, TeamWork, Risk Register, Budget Tracker, Project Charter.</h5>
+                                                <h5>Python, PHP, RoR, Java, Node.js, GoLang, SQL, Algorithm, Microservices, Architecture. </h5>
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                         <AccordionItem>
-                                            <AccordionItemButton>Project Manager</AccordionItemButton>
+                                            <AccordionItemButton>DevOps Engineers</AccordionItemButton>
                                             <AccordionItemPanel>
-                                                <p>People who excel at everything from planning and scheduling to progress tracking and workflow optimization.</p>
+                                                <p>Our DevOps Engineers use the best CI/CD practices to minimize the errors during integration and deployment to streamline the project. </p>
                                                 <p><strong>Related tools and technologies:</strong></p>
-                                                <h5>Product Roadmap, Burndown Chart, Release Plan, Jira, TeamWork, Risk Register, Budget Tracker, Project Charter.</h5>
+                                                <h5>Azure, Cloud Computing, AWS, Docker, Integration/Delivery, Kubernetes, Ansible, Terraform.</h5>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>Testing and QA Teams</AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                <p>Our QA engineers and testing teams ensure the software solution to be free from any performance, stability, or functionality issues from meticulous manual testing to writing complex automated testing solutions.  </p>
+                                                <p><strong>Related tools and technologies:</strong></p>
+                                                <h5>JavaScript, Selenium, Cucumber, Cypress, TestCraft, Katalon, WebDriver, Appium, Jasmine, Apptester.
+                                                </h5>
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                     </Accordion>

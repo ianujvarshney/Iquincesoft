@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import FormPopup from '../container/FormPopup';
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
+import { Link } from 'react-router-dom';
 
 import { Work } from '../json/work';
 
@@ -51,8 +52,7 @@ class WorkSec extends Component {
                 {workJson && workJson.map(workJsons => {
                     return (
                         <>
-                            {/* <h5>{workJsons.content}</h5> */}
-                            {workJsons.name === 'Untitled' ? <p dangerouslySetInnerHTML={{ __html: workJsons.content }}></p> : null}
+                            {workJsons.name === 'Untitled' ? <Link to="#"><p dangerouslySetInnerHTML={{ __html: workJsons.content }}></p></Link> : null}
                         </>
                     );
                 })}
@@ -63,15 +63,18 @@ class WorkSec extends Component {
                             return (
                                 workJsons.name == 'Untitled' ? null :
                                     <div key={workJsons.id} className="work-box" >
-                                        <img width="100%" src={workJsons.img} />
-                                        <h6>{workJsons.corporate}</h6>
-                                        <h4>{workJsons.name}</h4>
-                                        <p dangerouslySetInnerHTML={{ __html: workJsons.content }}></p>
+                                        <Link to={"/caseStudyDescription"}>
+                                            <img width="100%" src={workJsons.img} />
+                                            <h6>{workJsons.corporate}</h6>
+                                            <h4>{workJsons.name}</h4>
+                                            <p dangerouslySetInnerHTML={{ __html: workJsons.content }}></p>
+                                        </Link>
                                     </div>
                             );
                         })}
                     </OwlCarousel>
-                )}
+                )
+                }
                 <a class="view-btn" href="/caseStudies">View All Case Studies</a> <FormPopup />
             </div >
 

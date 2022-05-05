@@ -80,6 +80,7 @@ class App extends Component {
 					<Route exact path='/blog/:post' component={BlogTabs} />
 					<Route exact path='/PostPage/:post' component={PostPage} />
 					<Route exact path='/jobOffer/:post' component={jobCateDetails} />
+					<Route exact path='/CaseStudyDescription/:post' component={CaseStudyDescription} />
 
 
 					<Route exact path='/Web_Development' component={Web_Development} />

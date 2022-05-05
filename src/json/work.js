@@ -2,14 +2,16 @@
 import servBL from '../images/serv-blank.png';
 
 export class Work {
-    static getWork = () => {
+    static getWork = (slug) => {
+        console.log("slug" + slug);
         return new Promise(async (resolve, reject) => {
-            await fetch(process.env.REACT_APP_WORK, {
+            await fetch(process.env.REACT_APP_CASE_STUDIES_2 + '&slug=' + slug, {
                 "method": "GET"
             }).then(response => response.json())
                 .then(response => {
                     var data = [];
                     if (response) {
+                        console.log("response", response);
                         for (var i = 0; i < response.length; i++) {
                             data.push({
                                 "id": response[i].id,
