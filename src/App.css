@@ -20,7 +20,7 @@ body {
   src: url(fonts/Avenir-Bold.otf);
 }
 :root {
-  --main-color: #864fe9;
+  --main-color: #00ccff;
   --main-color-1: #fdca40;
 }
 a,
@@ -229,7 +229,8 @@ footer h4 a,
 .contact-sec h5 a,
 .cont-txt .case-box a:hover,
 .cont-social svg:hover,
-.job-txt li a {
+.job-txt li a,
+.arrow-icon path {
   color: var(--main-color);
 }
 /**** Navbar CSS End Here ****/
@@ -513,6 +514,7 @@ footer h4 a,
 }
 .serv-box h4,
 .tech-box h4 {
+  color: var(--main-color);
   font-size: 16px;
   letter-spacing: 0.01em;
   margin: 5px 0 17px;
@@ -710,6 +712,7 @@ footer h4 a,
   text-transform: uppercase;
 }
 .work-sec .owl-item.center p {
+  color: #000;
   display: block;
   font-size: 13px;
   line-height: 1.6;
@@ -1118,7 +1121,11 @@ footer li {
   padding-top: 50px;
 }
 .book-btn img {
+  filter: invert(62%) brightness(250%);
   margin: 0 10px 0;
+}
+.banner-sec .book-btn:hover img {
+  filter: none;
 }
 /* .btn_wrapper .btn-orange {
   z-index: 0;

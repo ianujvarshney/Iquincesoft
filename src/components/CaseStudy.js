@@ -13,7 +13,7 @@ import arrow2 from '../images/arrow2.png';
 import { CaseStudies } from '../json/CaseStudies';
 import { FaChevronRight } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner'
-
+import { Work } from '../json/work';
 class Service extends Component {
 
 	constructor(props) {
@@ -49,7 +49,7 @@ class Service extends Component {
 	render() {
 		const { CaseJson, Case2Json } = this.state;
 		return (
-			this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
+			this.state.Loading ? <div className="spinner"><TailSpin color="#00ccff" height={80} width={80} /></div> :
 				<>
 					<Header headerClass={'case-head'} />
 
@@ -77,18 +77,18 @@ class Service extends Component {
 												<img className="dd-5" src={caseIcon} />
 												<h3>{CaseJsonS.name}</h3>
 												<p dangerouslySetInnerHTML={{ __html: CaseJsonS.content }}></p>
-												<Link to="/caseStudyDescription">READ MORE <img src={arrow2} /></Link>
+												<Link to={`/caseStudyDescription/${CaseJsonS.slug}`}>READ MORE <img src={arrow2} /></Link>
 											</div>
-											<div className="col-lg-6 col-md-12"><img width="100%" src={CaseJsonS.img} /></div>
+											<div className="col-lg-6 col-md-12"><img width="100%" height="300px" src={CaseJsonS.img} /></div>
 										</div>
 										:
 										<div className="row">
-											<div className="col-lg-6 col-md-12"><img width="100%" src={CaseJsonS.img} /></div>
+											<div className="col-lg-6 col-md-12"><img width="100%" height="300px" src={CaseJsonS.img} /></div>
 											<div className="col-lg-6 col-md-12" data-aos="fade-up">
 												<img className="dd-5" src={caseIcon1} />
 												<h3>{CaseJsonS.name}</h3>
 												<p dangerouslySetInnerHTML={{ __html: CaseJsonS.content }}></p>
-												<a href="/caseStudyDescription">READ MORE <img src={arrow2} /></a>
+												<Link to={`/caseStudyDescription/${CaseJsonS.slug}`}>READ MORE <img src={arrow2} /></Link>
 											</div>
 										</div>
 								);

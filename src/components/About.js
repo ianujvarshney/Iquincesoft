@@ -25,7 +25,7 @@ import unsplash5 from '../images/unsplash5.png'
 import unsplash6 from '../images/unsplash6.png'
 import unsplash7 from '../images/unsplash7.png'
 import story from '../images/story-img.jpg'
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import priMob1 from '../images/pri-mob1.png';
 
@@ -125,7 +125,7 @@ class About extends Component {
 		};
 
 		return (
-			this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
+			this.state.Loading ? <div className="spinner"><TailSpin color="#00ccff" height={80} width={80} /></div> :
 				<>
 					<Helmet>
 						<title>App Title</title>
@@ -148,7 +148,7 @@ class About extends Component {
 											);
 										})
 										}
-										<Link to={'story-sec'}><h5>About us <img src={arrow2} /></h5></Link>
+										<Link to={'#story'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}><h5>About us <img src={arrow2} /></h5></Link>
 									</div>
 								</div>
 							</div>
@@ -172,7 +172,7 @@ class About extends Component {
 					</div>
 
 
-					<div className="story-sec" >
+					<div className="story-sec">
 						<div className="container">
 							<div className="row">
 								<div className="col-lg-1"></div>
@@ -234,7 +234,7 @@ class About extends Component {
 						</div>
 					</div>
 
-					<div className="about-txt story-sec">
+					<div className="about-txt story-sec" id="story">
 						<div className="container">
 							<h4 className="container-h6">Creating Opportunities</h4>
 							<div className="row">

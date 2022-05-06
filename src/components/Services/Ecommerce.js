@@ -81,7 +81,7 @@ class Ecommerce extends Component {
         };
 
         return (
-            this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
+            this.state.Loading ? <div className="spinner"><TailSpin color="#00ccff" height={80} width={80} /></div> :
                 <>
                     <Header headerClass={'serv-head'} />
                     <div className="service-banner service-banner-cat">
@@ -275,7 +275,7 @@ class Ecommerce extends Component {
                                         <div>
                                             <span><img src={magento} /></span><h2>WooCommerce</h2>
                                         </div>
-                                        <p>WooCommerce is the most popular WordPress plugin that is free to use. WooCommerce is packed full of features and integrated into a self-hosted WordPress Website. WooCommerce is practical, too.
+                                        <p>WooCommerce is the most popular WordPress plugin that is free to use. WooCommerce is packed full of features and integrated into a self-hosted WordPress Website. WooCommerce is practical Easy and most preferred for businesses, too.
                                         </p>
                                         <h3>What do we offer?</h3>
                                         <ul>
@@ -298,7 +298,7 @@ class Ecommerce extends Component {
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
                                     <h3>Why Choose eCommerce?</h3>
-                                    <p>Laravel is adding flavor to the digital domain. We enlist a few reasons to clarify the benefits of using Laravel. </p>
+                                    <p>Because of the results, we deliver you. </p>
                                 </div>
 
                                 <OwlCarousel options={culture}>

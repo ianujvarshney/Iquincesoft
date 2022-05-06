@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import award from '../images/award-img.png';
 import award1 from '../images/award-img1.png';
@@ -83,7 +83,7 @@ class AwardFormsec extends Component {
                                     )}
                                 </Popup>
 
-                                <p className="para-link"><Link to={'EuquireSec'}><span>Or, Use this form to share your requirements.
+                                <p className="para-link"><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })} ><span>Or, Use this form to share your requirements.
                                     Get guaranteed response within 8 Hrs.</span></Link></p>
                             </div>
                         </div>

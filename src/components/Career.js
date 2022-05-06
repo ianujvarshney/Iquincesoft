@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import { CareerData } from '../json/careers';
@@ -72,7 +72,7 @@ class Career extends Component {
 		};
 
 		return (
-			this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
+			this.state.Loading ? <div className="spinner"><TailSpin color="#00ccff" height={80} width={80} /></div> :
 				<>
 					<Header headerClass={'serv-head cr-head'} />
 					{CareerJson && CareerJson.map(CareerJsonS => {
@@ -85,7 +85,7 @@ class Career extends Component {
 											<div className="col-lg-5 col-md-7" data-aos="fade-right">
 												<h1>{CareerJsonS.name}</h1>
 												<p dangerouslySetInnerHTML={{ __html: CareerJsonS.content }}></p>
-												<Link to={'/jobOffer'}><h5>Job Offers <img src={arrow2} /></h5></Link>
+												<Link to={'/jobOffer'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}><h5>Job Offers <img src={arrow2} /></h5></Link>
 											</div>
 											<div className="col-lg-7 col-md-5" data-aos="fade-up"><a href="https://www.facebook.com/iquincesoft"><FaFacebook /></a> <a href="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></a> <a href="https://twitter.com/iquincesoft"><FaTwitter /></a> <a href="#"><FaLink /></a></div>
 										</div>

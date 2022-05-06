@@ -166,7 +166,7 @@ class Home extends Component {
 		};
 
 		return (
-			this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
+			this.state.Loading ? <div className="spinner"><TailSpin color="#00ccff" height={80} width={80} /></div> :
 				<>
 					<Header />
 					<div div div className="banner-sec" >

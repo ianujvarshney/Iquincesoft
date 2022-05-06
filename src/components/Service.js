@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import Header from './Header';
 import Footer from './Footer';
 import FormPopup from '../container/FormPopup';
@@ -115,7 +115,7 @@ class Service extends Component {
 		};
 
 		return (
-			this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
+			this.state.Loading ? <div className="spinner"><TailSpin color="#00ccff" height={80} width={80} /></div> :
 				<>
 					<Header headerClass={'serv-head'} />
 					<div className="service-banner service-banner-2">
@@ -175,7 +175,7 @@ class Service extends Component {
 																</div>
 															)}
 														</Popup>
-														<p className="para-link"><Link to={'EuquireSec'}><span>Or, Use this form to share your requirements.
+														<p className="para-link"><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}><span>Or, Use this form to share your requirements.
 															Get guaranteed response within 8 Hrs.</span></Link></p>
 													</div>
 												</div>

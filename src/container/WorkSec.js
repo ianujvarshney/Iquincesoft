@@ -5,7 +5,7 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import { Link } from 'react-router-dom';
 
-import { Work } from '../json/work';
+import { CaseStudies } from '../json/CaseStudies';
 
 class WorkSec extends Component {
 
@@ -17,7 +17,8 @@ class WorkSec extends Component {
     }
 
     componentDidMount() {
-        Work.getWork().then((work, err) => {
+        CaseStudies.getCase().then((work, err) => {
+            console.log("word", work)
             if (!err) {
                 this.setState({
                     workJson: work,
@@ -44,9 +45,6 @@ class WorkSec extends Component {
         };
 
         return (
-
-
-
             <div className="work-sec" data-aos="fade-up">
                 <h3>Case Studies & Stories</h3>
                 {workJson && workJson.map(workJsons => {
@@ -63,7 +61,7 @@ class WorkSec extends Component {
                             return (
                                 workJsons.name == 'Untitled' ? null :
                                     <div key={workJsons.id} className="work-box" >
-                                        <Link to={"/caseStudyDescription"}>
+                                        <Link to={`/caseStudyDescription/${workJsons.slug}`}>
                                             <img width="100%" src={workJsons.img} />
                                             <h6>{workJsons.corporate}</h6>
                                             <h4>{workJsons.name}</h4>
