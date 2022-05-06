@@ -11,12 +11,13 @@ export class Menu {
                         for (var i = 0; i < response.length; i++) {
                             data.push({
                                 "id": response[i].ID,
+                                "menu_id": response[i].menu_item_parent,
                                 "name": response[i].post_title || '',
                                 "class": 'nav-link',
                                 "liClassName": response[i].classes[0] || '',
                                 "img": response[i].image || '',
                                 "to": isNaN(response[i].xfn) ? response[i].xfn : '',
-                                "hash": isNaN(response[i].xfn) ? '' : 'tel:' + response[i].xfn
+                                "hash": isNaN(response[i].xfn) ? '' : 'tel:' + response[i].xfn,
                             });
                         }
 

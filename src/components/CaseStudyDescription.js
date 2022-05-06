@@ -8,7 +8,7 @@ import EuquireSec from '../container/EuquireSec';
 import AwardSec from '../container/AwardSec';
 import jsPDF from 'jspdf';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-
+import html2canvas from 'html2canvas';
 import caseBanner from '../images/case-des-banner.jpg';
 import caseMob from '../images/case-mob.jpg';
 import arrow4 from '../images/arrow4.png';
@@ -44,9 +44,40 @@ class CaseStudyDescription extends Component {
 		doc.html(document.querySelector("#content"), {
 			callback: function (pdf) {
 				pdf.save("mypdf.pdf");
+				pdf.setTextColor(255, 0, 0);
+				pdf.text(100, 25, 'USD.00');
+				pdf.setFillColor(255, 255, 200);
+				pdf.setDrawColor("red");
+				pdf.rect(100, 20, 10, 10, 'F')
+
 			}
 		})
+		doc.setTextColor(255, 0, 0);
+		doc.text(100, 25, 'USD.00');
+
+		doc.setFillColor(255, 255, 200);
+		doc.rect(100, 20, 10, 10, 'F')
 	}
+
+	// var pdf = new jsPDF('p', 'pt', 'a4');
+	// window.html2canvas = html2canvas;
+	// const doc = document.getElementsByTagName('div')[0];
+
+	// if (doc) {
+	// 	console.log("div is ");
+	// 	console.log(doc);
+	// 	console.log("hellowww");
+
+
+
+	// 	pdf.html(document.getElementById('doc'), {
+	// 		callback: function (pdf) {
+	// 			pdf.save('DOC.pdf');
+	// 		}
+	// 	})
+	// }
+
+
 
 	render() {
 		const { workJson } = this.state;
@@ -55,7 +86,7 @@ class CaseStudyDescription extends Component {
 				<Header headerClass={'serv-head'} />
 				{workJson && workJson.map(link => {
 					return (
-						<div className="about-banner">
+						<div className="about-banner" id="content">
 							<div className="about-box abt-desc">
 								<div className="container">
 									<div className="row">
@@ -68,7 +99,7 @@ class CaseStudyDescription extends Component {
 
 										<div className="col-lg-7 col-md-3">
 											<a href="#"><FaFacebook /></a> <a href="#"><FaLinkedin /></a> <a href="#"><FaTwitter /></a> <a href="#"><FaLink /></a>
-											<h6 onClick={this.generatepdf}><a href="#"><img src={PDF} /> DOWNLOAD CASE STUDY</a></h6>
+											<h6><a href="#" onClick={this.generatepdf} ><img src={PDF} /> DOWNLOAD CASE STUDY</a></h6>
 										</div>
 									</div>
 								</div>
@@ -85,6 +116,7 @@ class CaseStudyDescription extends Component {
 						<div className="case-tab">
 							<Tabs>
 								<TabList data-aos="fade-right">
+									<Tab>The About Us</Tab>
 									<Tab>THE CHALLENGE</Tab>
 									<Tab>THE SOLUTION</Tab>
 									<Tab>THE RESULT</Tab>
@@ -118,18 +150,48 @@ class CaseStudyDescription extends Component {
 											</div>
 										</div>
 									</div>
+
+									<div className="case-content">
+										<div className="container">
+											<div className="row">
+												<div className="col-lg-6 col-md-6">
+													<h3>The Solution</h3>
+													<p dangerouslySetInnerHTML={{ __html: link.solution }}></p>
+												</div>
+
+												<div className="col-lg-6 col-md-6">
+													<h4>{link.solution2}</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div className="case-content">
+										<div className="container">
+											<div className="row">
+												<div className="col-lg-6 col-md-6">
+													<h3>The Results</h3>
+													<p dangerouslySetInnerHTML={{ __html: link.result }}></p>
+												</div>
+
+												<div className="col-lg-6 col-md-6">
+													<h4>{link.result2}</h4>
+												</div>
+											</div>
+										</div>
+									</div>
 								</TabPanel>
 
 								<TabPanel>
 									<div className="container">
 										<div className="row">
 											<div className="col-lg-6 col-md-6">
-												<h3>The Solution</h3>
-												<p dangerouslySetInnerHTML={{ __html: link.solution }}></p>
+												<h3>The challenges</h3>
+												<p dangerouslySetInnerHTML={{ __html: link.challenges }}></p>
 											</div>
 
 											<div className="col-lg-6 col-md-6">
-												<h4>{link.solution2}</h4>
+												<h4>{link.challenges2}</h4>
 											</div>
 										</div>
 									</div>
@@ -140,6 +202,23 @@ class CaseStudyDescription extends Component {
 										<li><a href="#">REACT</a></li>
 										<li><a href="#">NODE</a></li>
 									</ul>
+								</TabPanel>
+
+								<TabPanel>
+									<div className="case-content dd-6">
+										<div className="container">
+											<div className="row">
+												<div className="col-lg-6 col-md-6">
+													<h3>The Solution</h3>
+													<p dangerouslySetInnerHTML={{ __html: link.solution }}></p>
+												</div>
+
+												<div className="col-lg-6 col-md-6">
+													<h4>{link.solution2}</h4>
+												</div>
+											</div>
+										</div>
+									</div>
 								</TabPanel>
 
 								<TabPanel>
@@ -193,7 +272,7 @@ class CaseStudyDescription extends Component {
 									</div>
 								</div>
 							</div>
-							<h5 data-aos="fade-right"><a href="#"><img src={casePDF} /> DOWNLOAD CASE STUDY</a></h5>
+							<h5 data-aos="fade-right"><a href="#" onClick={this.generatepdf} ><img src={casePDF} /> DOWNLOAD CASE STUDY</a></h5>
 						</div>
 					);
 				})}

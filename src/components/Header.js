@@ -85,8 +85,21 @@ class Header extends Component {
                                  {links.map(link => {
                                     if (link.hash) {
                                        return (<li key={link.id} className={link.liClassName}><a className={link.class} href={link.hash}><img src={link.img} /> {link.name}</a></li>);
-                                    } else {
+                                    }
+                                    else {
                                        return (<li key={link.id} className={link.liClassName}><NavLink className={link.class} activeClassName={"active"} to={`/${link.to}`} hash={link.hash}><img src={link.img} /> {link.name}</NavLink></li>);
+                                       // else {
+                                       //    if (link.menu_id == '23') {
+                                       //       return (
+                                       //          <li className={`${(this.state.toggleDropdown) ? 'show' : ''} dropdown`}>
+                                       //             <NavLink className={link.class} onClick={() => this.handleDropdownClick()}>{link.name}</NavLink>
+                                       //             <ul className={`${(this.state.toggleDropdown) ? 'show' : ''} dropdown-menu`}>
+                                       //                <li key={link.id} className={link.liClassName}><NavLink className={link.class} activeClassName={"active"} to={`/${link.to}`} hash={link.hash}><img src={link.img} /> {link.name}</NavLink></li>
+                                       //             </ul>
+                                       //          </li>
+                                       //       );
+                                       //    }
+                                       // }
                                     }
                                  })}
                               </ul>

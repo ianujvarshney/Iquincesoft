@@ -23,6 +23,10 @@ body {
   --main-color: #00ccff;
   --main-color-1: #fdca40;
 }
+
+#content {
+  color: red;
+}
 a,
 svg,
 button,
