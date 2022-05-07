@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import Header from '../Header';
 import Footer from '../Footer';
 import FormPopup from '../../container/FormPopup';
@@ -87,7 +87,7 @@ class Designers extends Component {
         }
 
         return (
-            this.state.Loading ? <div className="spinner"><TailSpin color="#00ccff" height={80} width={80} /></div>  :
+            this.state.Loading ? <div className="spinner"><TailSpin color="#00ccff" height={80} width={80} /></div> :
                 <>
                     <Header headerClass={'serv-head'} />
                     <div className="service-banner service-banner-cat">
@@ -254,7 +254,7 @@ class Designers extends Component {
                             </div>
                         </div>
                         <FormPopup />
-                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
                     </div>
 
                     <div className="whois-sec">
@@ -464,7 +464,7 @@ class Designers extends Component {
                             </div>
                         </div>
                         <FormPopup />
-                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
                     </div>
 
                     <div className="process-sec dd">
@@ -578,7 +578,7 @@ class Designers extends Component {
                         </div>
 
                         <FormPopup />
-                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
                     </div>
 
                     <ReviewSec />

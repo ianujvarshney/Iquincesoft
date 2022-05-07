@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import Header from './Header';
 import Footer from './Footer';
 import ReviewSec from '../container/ReviewSec';
@@ -74,7 +74,7 @@ class Service extends Component {
 
 										<div className="row">
 											<div className="col-lg-6 col-md-12" data-aos="fade-down">
-												<img className="dd-5" src={caseIcon} />
+												<img className="dd-5" src={CaseJsonS.brand_logo} />
 												<h3>{CaseJsonS.name}</h3>
 												<p dangerouslySetInnerHTML={{ __html: CaseJsonS.content }}></p>
 												<Link to={`/caseStudyDescription/${CaseJsonS.slug}`}>READ MORE <img src={arrow2} /></Link>
@@ -85,7 +85,7 @@ class Service extends Component {
 										<div className="row">
 											<div className="col-lg-6 col-md-12"><img width="100%" height="300px" src={CaseJsonS.img} /></div>
 											<div className="col-lg-6 col-md-12" data-aos="fade-up">
-												<img className="dd-5" src={caseIcon1} />
+												<img className="dd-5" src={CaseJsonS.brand_logo} />
 												<h3>{CaseJsonS.name}</h3>
 												<p dangerouslySetInnerHTML={{ __html: CaseJsonS.content }}></p>
 												<Link to={`/caseStudyDescription/${CaseJsonS.slug}`}>READ MORE <img src={arrow2} /></Link>

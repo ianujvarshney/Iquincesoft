@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Joboffers } from '../json/JobOffers';
 

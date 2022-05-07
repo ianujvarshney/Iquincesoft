@@ -16,6 +16,7 @@ export class CaseStudies {
                                 "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
+                                "brand_logo": response[i].brand_logo_url['medium'] || servBL,
                             });
                         }
 

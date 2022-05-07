@@ -20,7 +20,6 @@ export class Menu {
                                 "hash": isNaN(response[i].xfn) ? '' : 'tel:' + response[i].xfn,
                             });
                         }
-
                     }
                     resolve(data)
                 })

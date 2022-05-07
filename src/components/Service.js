@@ -239,7 +239,7 @@ class Service extends Component {
 						</div>
 
 						<FormPopup />
-						<h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+						<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 					</div >
 
 					<div className="stack-sec" data-aos="fade-right">
@@ -271,7 +271,7 @@ class Service extends Component {
 							</div>
 						</div>
 						<FormPopup />
-						<h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+						<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 					</div>
 
 					<EasySec />
@@ -320,7 +320,7 @@ class Service extends Component {
 						</div>
 
 						<FormPopup />
-						<h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+						<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 					</div>
 
 					<ReviewSec />

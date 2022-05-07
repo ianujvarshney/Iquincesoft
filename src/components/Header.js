@@ -43,6 +43,7 @@ class Header extends Component {
    componentDidMount() {
       window.scrollTo(0, 0);
       Menu.getMenu().then((menus, err) => {
+         console.log(menus)
          if (!err) {
             this.setState({
                links: menus,
@@ -82,25 +83,21 @@ class Header extends Component {
                            <div className={`${(this.state.toggleSidenav) ? 'show' : ''} navbar-collapse collapse`}>
                               <div className="mob-logo"><Link to="/"><img src={logo} /></Link></div>
                               <ul className="navbar-nav">
+                                 {/* <li key={link.id} className={link.liClassName}><NavLink className={link.class} activeClassName={"active"} to={`/${link.to}`} hash={link.hash}><img src={link.img} /> {link.name}</NavLink></li> */}
                                  {links.map(link => {
-                                    if (link.hash) {
-                                       return (<li key={link.id} className={link.liClassName}><a className={link.class} href={link.hash}><img src={link.img} /> {link.name}</a></li>);
-                                    }
-                                    else {
-                                       return (<li key={link.id} className={link.liClassName}><NavLink className={link.class} activeClassName={"active"} to={`/${link.to}`} hash={link.hash}><img src={link.img} /> {link.name}</NavLink></li>);
-                                       // else {
-                                       //    if (link.menu_id == '23') {
-                                       //       return (
-                                       //          <li className={`${(this.state.toggleDropdown) ? 'show' : ''} dropdown`}>
-                                       //             <NavLink className={link.class} onClick={() => this.handleDropdownClick()}>{link.name}</NavLink>
-                                       //             <ul className={`${(this.state.toggleDropdown) ? 'show' : ''} dropdown-menu`}>
-                                       //                <li key={link.id} className={link.liClassName}><NavLink className={link.class} activeClassName={"active"} to={`/${link.to}`} hash={link.hash}><img src={link.img} /> {link.name}</NavLink></li>
-                                       //             </ul>
-                                       //          </li>
-                                       //       );
-                                       //    }
-                                       // }
-                                    }
+                                    return (
+                                       <>
+                                          {link.menu_id != '23' ?
+                                             // <li className={`${(this.state.toggleDropdown) ? 'show' : ''} dropdown`}>
+                                             // <NavLink className={link.class} onClick={() => this.handleDropdownClick()}>{link.name}</NavLink>
+                                             <ul className={`${(this.state.toggleDropdown) ? 'show' : ''} dropdown-menu`}>
+                                                <li key={link.id} className={link.liClassName}><NavLink className={link.class} activeClassName={"active"} to={`/${link.to}`} hash={link.hash}><img src={link.img} /> {link.name}</NavLink></li>
+                                             </ul>
+                                             // </li>
+                                             : 0
+                                          }
+                                       </>
+                                    );
                                  })}
                               </ul>
                            </div>

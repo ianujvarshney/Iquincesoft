@@ -27,6 +27,7 @@ export class Work {
                                 "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
                                 "content": response[i].content.rendered || '',
                                 "corporate": response[i]['post-meta-fields'] && response[i]['post-meta-fields']['corporate'] || '',
+                                "brand_logo": response[i].brand_logo_url['medium'] || servBL,
                             });
                         }
 
@@ -39,5 +40,4 @@ export class Work {
                 });
         })
     }
-
 }

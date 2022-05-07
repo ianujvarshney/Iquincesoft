@@ -1,21 +1,17 @@
-
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import ReviewSec from '../container/ReviewSec';
 import EuquireSec from '../container/EuquireSec';
 import AwardSec from '../container/AwardSec';
 import jsPDF from 'jspdf';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import html2canvas from 'html2canvas';
-import caseBanner from '../images/case-des-banner.jpg';
 import caseMob from '../images/case-mob.jpg';
 import arrow4 from '../images/arrow4.png';
 import PDF from '../images/PDF.png';
 import casePDF from '../images/case-PDF.png';
 import { Work } from '../json/work';
-
 import { FaFacebook, FaLinkedin, FaTwitter, FaLink } from 'react-icons/fa';
 
 class CaseStudyDescription extends Component {
@@ -23,7 +19,7 @@ class CaseStudyDescription extends Component {
 		super(props)
 		this.state = {
 			workJson: [],
-			url: this.props.match.params.post
+			url: this.props.match.params.post,
 		}
 		console.log(this.state.url)
 	}
@@ -37,49 +33,51 @@ class CaseStudyDescription extends Component {
 				});
 			}
 		});
+
+		this.generatepdf = () => {
+			var doc = new jsPDF("p", "pt", "a4");
+			doc.html(document.querySelector("#content"), {
+				callback: function (pdf) {
+					pdf.save("Casestudy.pdf");
+				}
+			})
+			doc.setTextColor(0, 0, 0);
+			//doc.text(100, 25, 'USD.00');
+			doc.setFillColor(0, 0, 0);
+			doc.rect(100, 20, 10, 10, 'F')
+		}
+		// generatepdf() {
+		// 	var pdf = new jsPDF('p', 'pt', 'letter');
+		// 	var source = document.querySelector('#content')[0];
+		// 	var specialElementHandlers = {
+		// 		'#bypassme': function (element, renderer) {
+		// 			return true
+		// 		}
+		// 	};
+
+		// 	var margins = {
+		// 		top: 50,
+		// 		left: 60,
+		// 		width: 545
+		// 	};
+		// 	pdf.fromHTML(
+		// 		source // HTML string or DOM elem ref.
+		// 		, margins.left // x coord
+		// 		, margins.top // y coord
+		// 		, {
+		// 			'width': margins.width // max width of content on PDF
+		// 			, 'elementHandlers': specialElementHandlers
+		// 		},
+		// 		function (dispose) {
+		// 			// dispose: object with X, Y of the last line add to the PDF
+		// 			// this allow the insertion of new lines after html
+		// 			pdf.save('html2pdf.pdf');
+		// 		}
+		// 	)
+
 	}
-
-	generatepdf = () => {
-		var doc = new jsPDF("p", "pt", "a4");
-		doc.html(document.querySelector("#content"), {
-			callback: function (pdf) {
-				pdf.save("mypdf.pdf");
-				pdf.setTextColor(255, 0, 0);
-				pdf.text(100, 25, 'USD.00');
-				pdf.setFillColor(255, 255, 200);
-				pdf.setDrawColor("red");
-				pdf.rect(100, 20, 10, 10, 'F')
-
-			}
-		})
-		doc.setTextColor(255, 0, 0);
-		doc.text(100, 25, 'USD.00');
-
-		doc.setFillColor(255, 255, 200);
-		doc.rect(100, 20, 10, 10, 'F')
-	}
-
-	// var pdf = new jsPDF('p', 'pt', 'a4');
-	// window.html2canvas = html2canvas;
-	// const doc = document.getElementsByTagName('div')[0];
-
-	// if (doc) {
-	// 	console.log("div is ");
-	// 	console.log(doc);
-	// 	console.log("hellowww");
-
-
-
-	// 	pdf.html(document.getElementById('doc'), {
-	// 		callback: function (pdf) {
-	// 			pdf.save('DOC.pdf');
-	// 		}
-	// 	})
-	// }
-
-
-
 	render() {
+
 		const { workJson } = this.state;
 		return (
 			<>
@@ -90,16 +88,16 @@ class CaseStudyDescription extends Component {
 							<div className="about-box abt-desc">
 								<div className="container">
 									<div className="row">
-
 										<div className="col-lg-5 col-md-9" data-aos="fade-right">
 											<Link to="/caseStudies"><h4 style={{ color: "white" }}><img src={arrow4} /> CASE STUDIES</h4></Link>
+											<img className="dd-5" src={link.brand_logo} />
 											<h1>{link.name}</h1>
 											<p dangerouslySetInnerHTML={{ __html: link.content }}></p>
 										</div>
 
 										<div className="col-lg-7 col-md-3">
 											<a href="#"><FaFacebook /></a> <a href="#"><FaLinkedin /></a> <a href="#"><FaTwitter /></a> <a href="#"><FaLink /></a>
-											<h6><a href="#" onClick={this.generatepdf} ><img src={PDF} /> DOWNLOAD CASE STUDY</a></h6>
+											<h6><a href="#" onClick={this.generatepdf()} ><img src={PDF} /> DOWNLOAD CASE STUDY</a></h6>
 										</div>
 									</div>
 								</div>
@@ -116,7 +114,7 @@ class CaseStudyDescription extends Component {
 						<div className="case-tab">
 							<Tabs>
 								<TabList data-aos="fade-right">
-									<Tab>The About Us</Tab>
+									<Tab>ABOUT THE CLIENT</Tab>
 									<Tab>THE CHALLENGE</Tab>
 									<Tab>THE SOLUTION</Tab>
 									<Tab>THE RESULT</Tab>
@@ -275,7 +273,8 @@ class CaseStudyDescription extends Component {
 							<h5 data-aos="fade-right"><a href="#" onClick={this.generatepdf} ><img src={casePDF} /> DOWNLOAD CASE STUDY</a></h5>
 						</div>
 					);
-				})}
+				})
+				}
 				<ReviewSec />
 
 				<EuquireSec />

@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import Header from '../Header';
 import Footer from '../Footer';
 import FormPopup from '../../container/FormPopup';

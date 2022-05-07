@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import Header from '../Header';
 import Footer from '../Footer';
 import FormPopup from '../../container/FormPopup';
@@ -339,7 +339,7 @@ class WordPress extends Component {
                             </div>
                         </div>
                         <FormPopup />
-                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
                     </div>
 
                     <Partner />
@@ -405,7 +405,7 @@ class WordPress extends Component {
                             </div>
                         </div>
                         <FormPopup />
-                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
                     </div>
 
                     <div className="culture-sec insight-sec">
@@ -446,7 +446,7 @@ class WordPress extends Component {
                         </div>
 
                         <FormPopup />
-                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
                     </div>
 
                     <ReviewSec />

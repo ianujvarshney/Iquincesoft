@@ -11,7 +11,7 @@ import EuquireSec from '../../container/EuquireSec';
 import AwardSec from '../../container/AwardSec';
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import FAQ from '../../container/FAQ';
@@ -72,7 +72,7 @@ class NodeDev extends Component {
         };
 
         return (
-            this.state.Loading ? <div className="spinner"><TailSpin color="#00ccff" height={80} width={80} /></div>  :
+            this.state.Loading ? <div className="spinner"><TailSpin color="#00ccff" height={80} width={80} /></div> :
                 <>
                     <Header headerClass={'serv-head'} />
                     <div className="service-banner service-banner-cat">
@@ -304,7 +304,7 @@ class NodeDev extends Component {
                             </div>
                         </div>
                         <FormPopup />
-                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
                     </div>
 
                     <Partner />
@@ -388,7 +388,7 @@ class NodeDev extends Component {
                             </div>
                         </div>
                         <FormPopup />
-                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
                     </div>
 
                     <div className="culture-sec insight-sec">
@@ -429,7 +429,7 @@ class NodeDev extends Component {
                         </div>
 
                         <FormPopup />
-                        <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
                     </div>
 
                     <ReviewSec />

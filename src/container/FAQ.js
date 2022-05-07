@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import FormPopup from './FormPopup';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import { serviceapi } from '../json/serviceapi';
+import { HashLink as Link } from 'react-router-hash-link';
+
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class FAQ extends Component {
@@ -47,7 +49,7 @@ class FAQ extends Component {
                         </div>
                     </div>
                     <FormPopup />
-                    <h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+                    <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
                 </div>
             </>
         );

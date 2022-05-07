@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 import FormPopup from '../container/FormPopup';
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 import { CaseStudies } from '../json/CaseStudies';
 
@@ -64,8 +65,8 @@ class WorkSec extends Component {
                                         <Link to={`/caseStudyDescription/${workJsons.slug}`}>
                                             <img width="100%" src={workJsons.img} />
                                             <h6>{workJsons.corporate}</h6>
-                                            <h4>{workJsons.name}</h4>
-                                            <p dangerouslySetInnerHTML={{ __html: workJsons.content }}></p>
+                                            <h4>{workJsons.name.substr(0, 32) + '...'}</h4>
+                                            <p dangerouslySetInnerHTML={{ __html: workJsons.content.substr(0, 128) + '...' }}></p>
                                         </Link>
                                     </div>
                             );

@@ -12,7 +12,7 @@ import AwardSec from '../container/AwardSec';
 
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
-
+import { HashLink as Link } from 'react-router-hash-link';
 import serBanner from '../images/ser-banner.jpg';
 import servMob from '../images/serv-mob.jpg';
 import arrow4 from '../images/arrow4.png';
@@ -330,7 +330,7 @@ class ServiceDescription extends Component {
 						</div>
 					</div>
 					<FormPopup />
-					<h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+					<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 				</div>
 
 				<div className="stack-sec" data-aos="fade-right">
@@ -359,7 +359,7 @@ class ServiceDescription extends Component {
 						</div>
 					</div>
 					<FormPopup />
-					<h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+					<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 				</div>
 
 				<div className="culture-sec web-sec partner-sec">

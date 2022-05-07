@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';

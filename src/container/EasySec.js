@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import FormPopup from '../container/FormPopup';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import easy from '../images/easy-icon.png';
 import easy1 from '../images/easy-icon1.png';
@@ -35,7 +36,7 @@ class EasySec extends Component {
 						</div>
 					</div>
 					<FormPopup />
-					<h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+					<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 				</div>
 			</>
 		);

@@ -8,7 +8,7 @@ import WorkSec from '../container/WorkSec';
 import ReviewSec from '../container/ReviewSec';
 import EuquireSec from '../container/EuquireSec';
 import AwardSec from '../container/AwardSec';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import { Main } from '../json/Main';
 
 import OwlCarousel from 'react-owl-carousel2';
@@ -179,7 +179,7 @@ class Home extends Component {
 										<div className="col-lg-7 col-md-7">
 											<img className="arrow" src={arrow} />
 											<FormPopup />
-											<h5>Or, Use this form to share your requirements. Get guaranteed response within 8 Hrs.</h5>
+											<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 										</div>
 									</div>
 								</div>
@@ -332,9 +332,9 @@ class Home extends Component {
 								</div>
 							</div>
 						</div>
-						<h6><a href="#">View More Services </a></h6>
+						<h6><a href="/service">View More Services </a></h6>
 						<FormPopup />
-						<h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+						<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 					</div>
 
 					<WorkSec />
@@ -365,7 +365,7 @@ class Home extends Component {
 							</div>
 						</div>
 						<FormPopup />
-						<h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+						<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 					</div>
 
 					<div className="why-sec">
@@ -427,7 +427,7 @@ class Home extends Component {
 							</div>
 						</div>
 						<FormPopup />
-						<h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+						<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 					</div>
 
 					<div className="career-sec">

@@ -4,6 +4,7 @@ import FormPopup from '../container/FormPopup';
 
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import webImg from '../images/web-icon.png';
 import webImg1 from '../images/web-icon1.png';
@@ -117,7 +118,7 @@ class WebSec extends Component {
 						</div>
 					</div>
 					<FormPopup />
-					<h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+					<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 				</div>
 			</>
 		);
