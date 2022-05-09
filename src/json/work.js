@@ -28,6 +28,7 @@ export class Work {
                                 "content": response[i].content.rendered || '',
                                 "corporate": response[i]['post-meta-fields'] && response[i]['post-meta-fields']['corporate'] || '',
                                 "brand_logo": response[i].brand_logo_url['medium'] || servBL,
+                                "pdf_file": response[i].pdf['pdf_url'] || servBL,
                             });
                         }
 

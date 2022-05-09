@@ -33,49 +33,8 @@ class CaseStudyDescription extends Component {
 				});
 			}
 		});
-
-		this.generatepdf = () => {
-			var doc = new jsPDF("p", "pt", "a4");
-			doc.html(document.querySelector("#content"), {
-				callback: function (pdf) {
-					pdf.save("Casestudy.pdf");
-				}
-			})
-			doc.setTextColor(0, 0, 0);
-			//doc.text(100, 25, 'USD.00');
-			doc.setFillColor(0, 0, 0);
-			doc.rect(100, 20, 10, 10, 'F')
-		}
-		// generatepdf() {
-		// 	var pdf = new jsPDF('p', 'pt', 'letter');
-		// 	var source = document.querySelector('#content')[0];
-		// 	var specialElementHandlers = {
-		// 		'#bypassme': function (element, renderer) {
-		// 			return true
-		// 		}
-		// 	};
-
-		// 	var margins = {
-		// 		top: 50,
-		// 		left: 60,
-		// 		width: 545
-		// 	};
-		// 	pdf.fromHTML(
-		// 		source // HTML string or DOM elem ref.
-		// 		, margins.left // x coord
-		// 		, margins.top // y coord
-		// 		, {
-		// 			'width': margins.width // max width of content on PDF
-		// 			, 'elementHandlers': specialElementHandlers
-		// 		},
-		// 		function (dispose) {
-		// 			// dispose: object with X, Y of the last line add to the PDF
-		// 			// this allow the insertion of new lines after html
-		// 			pdf.save('html2pdf.pdf');
-		// 		}
-		// 	)
-
 	}
+
 	render() {
 
 		const { workJson } = this.state;
@@ -92,12 +51,12 @@ class CaseStudyDescription extends Component {
 											<Link to="/caseStudies"><h4 style={{ color: "white" }}><img src={arrow4} /> CASE STUDIES</h4></Link>
 											<img className="dd-5" src={link.brand_logo} />
 											<h1>{link.name}</h1>
-											<p dangerouslySetInnerHTML={{ __html: link.content }}></p>
+											<p className="about-banner-data" dangerouslySetInnerHTML={{ __html: link.content }}></p>
 										</div>
 
 										<div className="col-lg-7 col-md-3">
-											<a href="#"><FaFacebook /></a> <a href="#"><FaLinkedin /></a> <a href="#"><FaTwitter /></a> <a href="#"><FaLink /></a>
-											<h6><a href="#" onClick={this.generatepdf()} ><img src={PDF} /> DOWNLOAD CASE STUDY</a></h6>
+											<a href="#"><FaFacebook /></a> <a href="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></a> <a href="#"><FaTwitter /></a> <a href="#"><FaLink /></a>
+											<h6><a href={link.pdf_file} target="_blank"><img src={PDF} /> DOWNLOAD CASE STUDY</a></h6>
 										</div>
 									</div>
 								</div>
@@ -105,7 +64,7 @@ class CaseStudyDescription extends Component {
 							</div>
 
 							<img className="abt-img" width="100%" height="900px" src={link.img} />
-							<img className="abt-mob" width="100%" src={caseMob} />
+							<img className="abt-mob" width="100%" src={link.img} />
 						</div>
 					);
 				})}
@@ -270,7 +229,7 @@ class CaseStudyDescription extends Component {
 									</div>
 								</div>
 							</div>
-							<h5 data-aos="fade-right"><a href="#" onClick={this.generatepdf} ><img src={casePDF} /> DOWNLOAD CASE STUDY</a></h5>
+							<h5 data-aos="fade-right"><a href={link.pdf_file} target="_blank"><img src={casePDF} /> DOWNLOAD CASE STUDY</a></h5>
 						</div>
 					);
 				})
@@ -288,3 +247,44 @@ class CaseStudyDescription extends Component {
 }
 
 export default CaseStudyDescription;
+
+// this.generatepdf = () => {
+// 	var doc = new jsPDF("p", "pt", "a4");
+// 	doc.html(document.querySelector("#content"), {
+// 		callback: function (pdf) {
+// 			pdf.save("Casestudy.pdf");
+// 		}
+// 	})
+// 	doc.setTextColor(0, 0, 0);
+// 	//doc.text(100, 25, 'USD.00');
+// 	doc.setFillColor(0, 0, 0);
+// 	doc.rect(100, 20, 10, 10, 'F')
+// }
+// generatepdf() {
+// 	var pdf = new jsPDF('p', 'pt', 'letter');
+// 	var source = document.querySelector('#content')[0];
+// 	var specialElementHandlers = {
+// 		'#bypassme': function (element, renderer) {
+// 			return true
+// 		}
+// 	};
+
+// 	var margins = {
+// 		top: 50,
+// 		left: 60,
+// 		width: 545
+// 	};
+// 	pdf.fromHTML(
+// 		source // HTML string or DOM elem ref.
+// 		, margins.left // x coord
+// 		, margins.top // y coord
+// 		, {
+// 			'width': margins.width // max width of content on PDF
+// 			, 'elementHandlers': specialElementHandlers
+// 		},
+// 		function (dispose) {
+// 			// dispose: object with X, Y of the last line add to the PDF
+// 			// this allow the insertion of new lines after html
+// 			pdf.save('html2pdf.pdf');
+// 		}
+// 	)

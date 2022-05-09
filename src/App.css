@@ -26,6 +26,7 @@ body {
 
 #content {
   color: red;
+  position: relative;
 }
 a,
 svg,
@@ -3868,7 +3869,7 @@ footer li {
 
   /******************* about page media start here *******************/
   .abt-mob {
-    height: 600px;
+    height: 400px;
     object-fit: cover;
     object-position: top right;
   }
@@ -4196,7 +4197,10 @@ footer li {
     display: block;
     padding: 60px 0 0;
   }
-
+  .about-banner-data p {
+    top: 100px;
+    position: absolute;
+  }
   /******************* blog page media start here *******************/
   .blog-banner {
     padding: 70px 0;
