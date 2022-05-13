@@ -21,12 +21,10 @@ class CaseStudyDescription extends Component {
 			workJson: [],
 			url: this.props.match.params.post,
 		}
-		console.log(this.state.url)
 	}
 
 	componentDidMount() {
 		Work.getWork(this.state.url).then((work, err) => {
-			console.log(work)
 			if (!err) {
 				this.setState({
 					workJson: work,

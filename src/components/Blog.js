@@ -32,7 +32,13 @@ class Blog extends Component {
 				});
 			}
 		});
-
+		Inspired.getInspiredAllPost().then((Insights, err) => {
+			if (!err) {
+				this.setState({
+					allpost: Insights[0].totaljob,
+				});
+			}
+		})
 		Inspired.getInspired2(this.state.page).then((Insights, err) => {
 			if (!err) {
 				this.setState({
@@ -44,7 +50,6 @@ class Blog extends Component {
 		Inspired.getcate().then((Insights, err) => {
 			if (!err) {
 				this.setState({
-					allpost: Insights[0].blogpost,
 					catedata: Insights,
 					Loading: false,
 				});

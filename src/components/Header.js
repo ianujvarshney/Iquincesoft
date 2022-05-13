@@ -16,7 +16,7 @@ import arrow6 from '../images/arrow6.png';
 import arrow2 from '../images/arrow2.png';
 import arrow_white from '../images/arrow-white.png';
 
-import { FaRegCalendar, FaLockOpen, FaRegUserCircle, FaRegEnvelope, FaPhoneAlt, FaPaperPlane } from 'react-icons/fa';
+import { FaRegCalendar, FaLockOpen, FaRegUserCircle, FaRegEnvelope, FaPhoneAlt, FaPaperPlane, FaAngleDown } from 'react-icons/fa';
 
 
 
@@ -26,6 +26,8 @@ class Header extends Component {
       this.state = {
          toggleSidenav: false,
          toggleDropdown: false,
+         toggleDropdown1: false,
+         toggleDropdown2: false,
          links: []
          /*links : [
           {'id':1,'name':'Services','class':'nav-link','liClassName':'','img':mobIcon,'to':'service'},
@@ -40,24 +42,30 @@ class Header extends Component {
       }
    }
 
-   componentDidMount() {
-      window.scrollTo(0, 0);
-      Menu.getMenu().then((menus, err) => {
-         if (!err) {
-            this.setState({
-               links: menus,
-            });
-         }
-      });
-   }
+   // componentDidMount() {
+   //    window.scrollTo(0, 0);
+   //    Menu.getMenu().then((menus, err) => {
+   //       if (!err) {
+   //          this.setState({
+   //             links: menus,
+   //          });
+   //       }
+   //    });
+   // }
    handleClick = () => {
       this.setState({
          toggleSidenav: !this.state.toggleSidenav
       });
    }
 
+   handleDropdownClick = () => {
+      this.setState({
+         toggleDropdown: !this.state.toggleDropdown
+      });
+   }
+
    render() {
-      const { links } = this.state;
+      // const { links } = this.state;
 
       AOS.init({
          offset: 300,
@@ -80,15 +88,69 @@ class Header extends Component {
                               <span className="icon-bar"></span>
                            </button>
                            <div className={`${(this.state.toggleSidenav) ? 'show' : ''} navbar-collapse collapse`}>
-                              <div className="mob-logo"><Link to="/"><img src={logo} /></Link></div>
+                              <div className="mob-logo"><a href="#"><img src={logo} /></a></div>
                               <ul className="navbar-nav">
-                                 {links.map(link => {
-                                    if (link.hash) {
-                                       return (<li key={link.id} className={link.liClassName}><a className={link.class} href={link.hash}><img src={link.img} /> {link.name}</a></li>);
-                                    } else {
-                                       return (<li key={link.id} className={link.liClassName}><NavLink className={link.class} activeClassName={"active"} to={link.to} hash={link.hash}><img src={link.img} /> {link.name}</NavLink></li>);
-                                    }
-                                 })}
+
+                                 <li className={`${(this.state.toggleDropdown) ? 'show' : ''} dropdown`}>
+                                    <Link href="/service" className="nav-link">Services</Link> <span><FaAngleDown onClick={() => this.handleDropdownClick()} /></span>
+                                    <ul className={`${(this.state.toggleDropdown) ? 'show' : ''} dropdown-menu`}>
+                                       <li>
+                                          <h4>Front-end</h4>
+                                          <Link to={"/HireReactDevelopers"}>React.js</Link>
+                                          <Link to={"/HireVueDevelopers"}>Vue.js</Link>
+                                          <Link to={"/HireAngularDevelopers"}>Angular</Link>
+                                          <Link to={"/HireMERNStackDevelopers"}>MERN</Link>
+                                          <Link to={"/HireZendStackDevelopers"}>ZEND</Link>
+                                          <Link to={"/HireMeanstackDevelopers"}>MEAN</Link>
+                                       </li>
+                                       <li>
+                                          <h4>Backend</h4>
+                                          <Link to={"/HireNodeDevelopers"}>Node.js</Link>
+                                          <Link to={"/HirePHPDevelopers"}>PHP</Link>
+                                          <Link to={"/HireLaravelDevelopers"}>Laravel</Link>
+                                          <Link to={"/HireSymfonyDevelopers"}>Symfony</Link>
+                                          <Link to={"/HireCodeIgniterDevelopers"}>CodeIgniter</Link>
+                                       </li>
+
+                                       <li>
+                                          <h4>E-Commerce</h4>
+                                          <Link to={"/HireMagentoDevelopers"}>Magento</Link>
+                                          <Link to={"/HireWooCommerceDevelopers"}>WooCommerce</Link>
+                                          <Link to={"/HireShopifyDevelopers"}>Shopify</Link>
+                                          <Link to={"/HireopencartDevelopers"}>OpenCart</Link>
+                                          <Link to={"/HireWixDevelopers"}>Wix</Link>
+                                       </li>
+                                       <li>
+                                          <h4>CMS</h4>
+                                          <Link to={"/HireDrupalDevelopers"}>Drupal</Link>
+                                          <Link to={"/HireWordpressDevelopers"}>Wordpress</Link>
+                                       </li>
+                                       <li>
+                                          <h4>Mobile</h4>
+                                          <Link to={"/HireIosDevelopers"}>Ios</Link>
+                                          <Link to={"/HireAndroidDevelopers"}>Android</Link>
+                                          <Link to={"/HireReactNativeDevelopers"}>ReactNative</Link>
+                                          <Link to={"/HireionicDevelopers"}>Ionic</Link>
+                                       </li>
+                                       <li>
+                                          <h4>LowCode/No Code</h4>
+                                          {/* <a href="/Web_Development">Web Development</a>
+                                          <a href="/Web_Development">Web Development</a>
+                                          <a href="/Web_Development">Web Development</a>
+                                          <a href="/Web_Development">Web Development</a>
+                                          <a href="/Web_Development">Web Development</a> */}
+                                       </li>
+                                    </ul>
+                                 </li>
+
+
+                                 <li><Link className="nav-link" to={"/career"}>Career</Link></li>
+                                 <li><Link className="nav-link" to={"/casestudies"}>Case Studies</Link></li>
+                                 <li><Link className="nav-link" to={"/about"}>About Us</Link></li>
+                                 <li><Link className="nav-link" to={"/blog"}>Get Inspired</Link></li>
+                                 <li className="mob-link"><a className="nav-link" href="#">Talk to Sales</a></li>
+                                 <li className="mob-link"><a className="nav-link" href="#">Client Login</a></li>
+                                 <li className="mob-link"><a className="nav-link" href="tel:+1 (347) 960-4166"><img src={flag} /> +1 (347) 960-4166</a></li>
                               </ul>
                            </div>
                         </nav>

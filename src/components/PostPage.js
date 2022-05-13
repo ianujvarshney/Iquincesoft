@@ -17,7 +17,6 @@ class PostPage extends Component {
     }
     componentDidMount() {
         PostCate.getWoocommerceDetails(this.state.url).then((data, err) => {
-            console.log(data)
             if (!err) {
                 this.setState({
                     PostPageJson: data,

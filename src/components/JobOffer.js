@@ -17,24 +17,31 @@ class JobOffer extends Component {
 			url: this.props.location,
 			lastItem: '',
 			thePath: this.props.location.pathname,
-			totalsjob: ""
+			totalsjob: "",
+			items: '',
 		}
 	}
 
 	componentDidMount() {
-		Joboffers.getJoboffers().then((menus, data2, err) => {
+		Joboffers.getJoboffers2().then((menu, err) => {
 			if (!err) {
-				console.log("data2" + data2);
 				this.setState({
-					totalsjob: menus[0].totaljob,
+					totalsjob: menu[0].totaljob,
+				})
+			}
+		})
+
+		Joboffers.getJoboffers().then((menus, err) => {
+			if (!err) {
+				this.setState({
 					joblinks: menus,
 				});
 			}
 		})
 		Joboffers.getJoboffersDetails(this.state.thePath).then((menus, err) => {
 			if (!err) {
+				console.log("jobdetails", menus);
 				this.setState({
-					totalsjob: menus[0].totaljob,
 					joblinks2: menus,
 				});
 			}
@@ -65,6 +72,7 @@ class JobOffer extends Component {
 										<div className="row">
 											<div className="col-lg-3 col-md-3" data-aos="fade-up"><h3>Job Offers</h3></div>
 											<div className="col-lg-9 col-md-9">
+
 												<Tab> All ({totalsjob})</Tab>
 												{joblinks3 && joblinks3.map(link => {
 													return (
@@ -81,11 +89,10 @@ class JobOffer extends Component {
 												console.log("link", link)
 												return (
 													<div className="col-lg-4 col-md-6">
-														<Link to={'/jobDetail'}>
+														<Link to={`/jobDetail/${link.slug}`}>
 															<div className="job-box">
 																<h4>{link.name}</h4>
-																<p dangerouslySetInnerHTML={{ __html: link.content }}></p>
-																<p>UoP: 6,200 – 11,300 zł brutto</p>
+																<p dangerouslySetInnerHTML={{ __html: link.content1 }}></p>
 																<h6>{link.Address}</h6>
 															</div>
 														</Link>

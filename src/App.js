@@ -55,8 +55,6 @@ import DigitalMarket from '../src/components/Services/DigiMarket';
 import DedicateTeams from '../src/components/Services/DedicatedTeams';
 import Designers from '../src/components/Services/Designers';
 import Ecommerce from '../src/components/Services/Ecommerce';
-import Header from './components/Header';
-import Footer from './components/Footer';
 
 
 class App extends Component {
@@ -80,6 +78,7 @@ class App extends Component {
 					<Route exact path='/blog/:post' component={BlogTabs} />
 					<Route exact path='/PostPage/:post' component={PostPage} />
 					<Route exact path='/jobOffer/:post' component={jobCateDetails} />
+					<Route exact path='/jobDetail/:post' component={JobDetail} />
 					<Route exact path='/CaseStudyDescription/:post' component={CaseStudyDescription} />
 
 

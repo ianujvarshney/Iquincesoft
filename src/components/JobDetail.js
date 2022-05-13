@@ -2,7 +2,8 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-
+import { HashLink as Link } from 'react-router-hash-link';
+import { Joboffers } from '../json/JobOffers';
 import jobImg from '../images/job-img.png';
 import jobImg1 from '../images/job-img1.png';
 import jobImg2 from '../images/job-img2.png';
@@ -11,7 +12,27 @@ import jobImg4 from '../images/job-img4.png';
 import jobImg5 from '../images/job-img5.png';
 
 class JobDetail extends Component {
+	constructor(props) {
+		super(props)
+		this.state = {
+			InsightsJson: [],
+			page: 1,
+			url: this.props.match.params.post
+
+		}
+	}
+	componentDidMount() {
+		Joboffers.getJoboffersDetails2(this.state.url).then((Insights, err) => {
+			if (!err) {
+				this.setState({
+					InsightsJson: Insights,
+					Loading: false,
+				});
+			}
+		});
+	}
 	render() {
+		const { InsightsJson } = this.state;
 		return (
 			<>
 				<Header headerClass={'job-head'} />
@@ -23,15 +44,18 @@ class JobDetail extends Component {
 							<div className="col-lg-5 col-md-6"><img width="100%" src={jobImg} /></div>
 							<div className="col-lg-2"></div>
 							<div className="col-lg-4 col-md-6">
-								<div className="job-dt-box" data-aos="fade-up">
-									<h4>Node.js Developer</h4>
-									<p>B2B: 7,500 – 13,500 zł + VAT</p>
-									<p>UoP: 6,200 – 11,300 zł brutto</p>
-									<h6><span>Full Remote</span> Access to the office in Gliwice <a href="#">Apply Now</a></h6>
-									<h5>Requirements</h5>
-									<h5>Benefits</h5>
-									<h5>Recruitment process</h5>
-								</div>
+								{InsightsJson && InsightsJson.map(link => {
+									return (
+										<div className="job-dt-box" data-aos="fade-up">
+											<h4>{link.name}</h4>
+											<p dangerouslySetInnerHTML={{ __html: link.content }}></p>
+											<h6><span>{link.Job_Access}</span><a href="#">Apply Now</a></h6>
+											<h5><Link to={'#Requir'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Requirements</Link></h5>
+											<h5><Link to={'#Benefits'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Benefits</Link></h5>
+											<h5><Link to={'#process'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Recruitment processments</Link></h5>
+										</div>
+									)
+								})}
 							</div>
 						</div>
 					</div>
@@ -41,19 +65,15 @@ class JobDetail extends Component {
 					<div className="container">
 						<div className="row" data-aos="fade-down">
 							<div className="col-lg-8 col-md-12">
-								<h3>We expect from you :</h3>
-								<ul>
-									<li>a minimum of three years of experience as a DevOps Engineer or similar</li>
-									<li>excellent knowledge of containers</li>
-									<li>knowledge of how to build and maintain infrastructure in the cloud (Amazon Web Services, Google Cloud Platform, Azure)</li>
-									<li>embracing tools such as Ansible, Terraform</li>
-									<li>experience in working with tools for Continuous Integration and Continuous Delivery</li>
-									<li>communicate freely with the client in English</li>
-									<li>just like us, you value openness, constant development of skills and great atmosphere above all else</li>
-									<li>communicate freely with the client in English</li>
-								</ul>
+								<h3 id="Requir">We expect from you :</h3>
+								{InsightsJson && InsightsJson.map(link => {
+									return (
+										<p dangerouslySetInnerHTML={{ __html: link.content1 }}></p>
+									);
+								})}
 							</div>
 						</div>
+
 
 						<div className="row" data-aos="fade-right">
 							<div className="col-lg-10 col-md-12">
@@ -63,7 +83,7 @@ class JobDetail extends Component {
 
 						<div className="row">
 							<div className="col-lg-8 col-md-12" data-aos="fade-down">
-								<h3>It is worth joining us because:</h3>
+								<h3 id="Benefits">It is worth joining us because:</h3>
 								<ul>
 									<li>you will be part of a stable and organized organization, with the atmosphere of a small company, so if you value an intimate atmosphere, but want to work in a place with a reputation and know-how, this offer is for you</li>
 									<li>we offer participation in projects related to Cloud Native, Serverless</li>
@@ -77,7 +97,7 @@ class JobDetail extends Component {
 									<li>we actively run a <a href="#">corporate blog</a> where our employees can publish their own articles on technology and business</li>
 								</ul>
 
-								<h3>Recruitment process</h3>
+								<h3 id="process">Recruitment process</h3>
 								<p>You send us your CV and what next?</p>
 
 								<div className="row">

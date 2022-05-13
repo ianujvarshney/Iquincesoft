@@ -22,10 +22,16 @@ class jobCateDetails extends Component {
     }
 
     componentDidMount() {
+        Joboffers.getJoboffers2().then((menu, err) => {
+            if (!err) {
+                this.setState({
+                    totalsjob: menu[0].totaljob,
+                })
+            }
+        })
         Joboffers.getJoboffers().then((menus, err) => {
             if (!err) {
                 this.setState({
-                    totalsjob: menus[0].totaljob,
                     joblinks: menus,
                 });
             }
@@ -40,7 +46,6 @@ class jobCateDetails extends Component {
         Joboffers.getJoboffersCate().then((menus, err) => {
             if (!err) {
                 this.setState({
-                    totalsjob: menus[0].totaljob,
                     joblinks3: menus,
                 });
             }
@@ -55,7 +60,6 @@ class jobCateDetails extends Component {
         if (oldURLString !== newUrlString) {
             Joboffers.getJoboffersDetails(newUrlString).then((Insights, err) => {
                 if (!err) {
-                    console.log(Insights);
                     this.setState({
                         VisitedLink: newUrlString,
                         joblinks2: Insights,
@@ -80,7 +84,9 @@ class jobCateDetails extends Component {
                                         <div className="row">
                                             <div className="col-lg-3 col-md-3" data-aos="fade-up"><h3>Job Offers</h3></div>
                                             <div className="col-lg-9 col-md-9">
-                                                <p className="job-sec-p"><Link to={`/jobOffer`}>All ({totalsjob})</Link></p>
+                                                <p className="job-sec-p">
+                                                    <Link to={`/jobOffer`}>All ({totalsjob})</Link>
+                                                </p>
                                                 {joblinks3 && joblinks3.map(link => {
                                                     return (
                                                         link.slug == VisitedLink ? <p className="job-offer-2"><Link to={`/jobOffer/${link.slug}`}>{link.name} ({link.size})</Link></p> :
@@ -96,11 +102,10 @@ class jobCateDetails extends Component {
                                             {joblinks2.map(link => {
                                                 return (
                                                     <div className="col-lg-4 col-md-6">
-                                                        <Link to={'/jobDetail'}>
+                                                        <Link to={`/jobDetail/${link.slug}`}>
                                                             <div className="job-box">
                                                                 <h4>{link.name}</h4>
                                                                 <p dangerouslySetInnerHTML={{ __html: link.content }}></p>
-                                                                <p>UoP: 6,200 – 11,300 zł brutto</p>
                                                                 <h6>{link.Address}</h6>
                                                             </div>
                                                         </Link>

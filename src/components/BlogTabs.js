@@ -15,7 +15,7 @@ class BlogTabs extends Component {
             InsightsJson: [],
             page: 1,
             data: [],
-            data2: [],
+            // data2: [],
             Loading: true,
             allpost: '',
             VisitedLink: "",
@@ -35,16 +35,23 @@ class BlogTabs extends Component {
         Inspired.getcate().then((Insights, err) => {
             if (!err) {
                 this.setState({
-                    allpost: Insights[0].blogpost,
                     catedata: Insights,
                     Loading: false,
                 });
             }
         });
+        Inspired.getInspiredAllPost().then((Insights, err) => {
+            if (!err) {
+                this.setState({
+                    allpost: Insights[0].totaljob,
+                    Loading: false,
+                });
+            }
+        })
         Inspired.getInspired2(this.state.page).then((Insights, err) => {
             if (!err) {
                 this.setState({
-                    data2: Insights,
+                    data: Insights,
                     Loading: false,
                 });
             }
@@ -81,7 +88,7 @@ class BlogTabs extends Component {
         Inspired.getInspired3(this.state.page + 1, a).then((Insights, err) => {
             if (!err) {
                 this.setState({
-                    data2: this.state.data.concat(Insights),
+                    data: this.state.data.concat(Insights),
                     Loading: false,
                     page: this.state.page + 1,
                 });
@@ -103,34 +110,35 @@ class BlogTabs extends Component {
             this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
                 <>
                     <Header headerClass={'case-head'} />
-                    {/* {InsightsJson && InsightsJson.map((InsightsJsonS, index) => { */}
-                    // {/* return ( */}
-                    <div className="blog-banner">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-2"></div>
-                                <div className="col-lg-8 col-md-12" data-aos="fade-up">
-                                    <h1>hello</h1>
-                                    <p>hello world</p>
-                                    <div className="in-box"><input type="search" onChange={(event) => setsearchterm(event.target.value)} className="box" type="search" name="" placeholder="Supercharge your brain" /> <a href="#">Let's Learn</a></div>
-                                    {data2.filter((val) => {
-                                        if (setsearchterm == "")
-                                            return (
-                                                <h1>data in not have</h1>
-                                            )
-                                        else if (val)
-                                            return (
-                                                <>
-                                                    <h1>data in console</h1>
-                                                    {console.warn(val)}
-                                                </>
-                                            )
-                                    })}
+                    {InsightsJson && InsightsJson.map((InsightsJsonS, index) => {
+                        return (
+                            <div className="blog-banner">
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-lg-2"></div>
+                                        <div className="col-lg-8 col-md-12" data-aos="fade-up">
+                                            <h1>hello</h1>
+                                            <p>hello world</p>
+                                            <div className="in-box"><input type="search" onChange={(event) => setsearchterm(event.target.value)} className="box" type="search" name="" placeholder="Supercharge your brain" /> <a href="#">Let's Learn</a></div>
+                                            {/* {InsightsJsonS.filter((val) => {
+                                                if (setsearchterm == "")
+                                                    return (
+                                                        <h1>data in not have</h1>
+                                                    )
+                                                else if (val)
+                                                    return (
+                                                        <>
+                                                            <h1>data in console</h1>
+                                                            {console.warn(val)}
+                                                        </>
+                                                    ) */}
+                                            {/* })} */}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
+                        )
+                    })}
                     <div className="blog-sec">
                         <div className="container">
                             <div className="row">
@@ -140,7 +148,7 @@ class BlogTabs extends Component {
                                         <TabList>
                                             <div className="row">
                                                 <div className="col-lg-10 col-md-9">
-                                                    <Tab>All Posts ({allpost})</Tab>
+                                                    <p> <Link to={`/blog`}>All ({allpost})</Link></p>
                                                     {catedata && catedata.map((dataS, index) => {
                                                         return (
                                                             dataS.cateslug == thePath ? <p className="para"><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p> :
