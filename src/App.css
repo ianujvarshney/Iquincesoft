@@ -2562,6 +2562,9 @@ footer li {
   font-weight: normal;
   margin: 4px 0 0 50px;
 }
+.cr-sec h4 a {
+  color: #000;
+}
 .cr-sec h5 {
   font-size: 15px;
   font-weight: 700;

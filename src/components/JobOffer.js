@@ -40,7 +40,6 @@ class JobOffer extends Component {
 		})
 		Joboffers.getJoboffersDetails(this.state.thePath).then((menus, err) => {
 			if (!err) {
-				console.log("jobdetails", menus);
 				this.setState({
 					joblinks2: menus,
 				});
@@ -86,7 +85,6 @@ class JobOffer extends Component {
 									<TabPanel>
 										<div className="row">
 											{joblinks && joblinks.map(link => {
-												console.log("link", link)
 												return (
 													<div className="col-lg-4 col-md-6">
 														<Link to={`/jobDetail/${link.slug}`}>

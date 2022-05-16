@@ -311,7 +311,6 @@ class Drupal extends Component {
                                 <div className="col-lg-12 col-md-12">
                                     <OwlCarousel options={culture}>
                                         {DrupalJson && DrupalJson.map(DrupalJsonS => {
-                                            { console.log(DrupalJsonS) }
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>

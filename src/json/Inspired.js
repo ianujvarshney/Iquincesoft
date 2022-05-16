@@ -61,6 +61,32 @@ export class Inspired {
                 });
         })
     }
+    static allapidata = () => {
+        return new Promise(async (resolve, reject) => {
+            await fetch(process.env.REACT_APP_GET_INSPIRED2 + "&per_page=100", {
+                "method": "GET"
+            }).then(response => response.json())
+                .then(response => {
+                    var data = [];
+                    if (response) {
+                        for (var i = 0; i < response.length; i++) {
+                            data.push({
+                                "id": response[i].id,
+                                "name": response[i].title.rendered,
+                            });
+                        }
+
+                    }
+
+
+                    resolve(data)
+                })
+                .catch(err => {
+                    console.log(err);
+                    reject(err)
+                });
+        })
+    }
     static getInspiredAllPost = () => {
         return new Promise(async (resolve, reject) => {
             await fetch(process.env.REACT_APP_GET_INSPIRED2, {

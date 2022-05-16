@@ -43,7 +43,6 @@ class BootStrap extends Component {
         });
 
         // PostCate.getWoocommerceDetails(this.state.url).then((wooCommerce, err) => {
-        //     console.log(wooCommerce)
         //     if (!err) {
         //         this.setState({
         //             CommerceJson: wooCommerce,
@@ -341,7 +340,6 @@ class BootStrap extends Component {
 
                                     <div className="row">
                                         {CommerceJson && CommerceJson.map((CommerceJsonS, index) => {
-                                            // { console.log(CommerceJsonS,) }
                                             return (
                                                 <div className="col-lg-4 col-md-4">
                                                     <div className="insight-box" key={index}>

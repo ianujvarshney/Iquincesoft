@@ -2,7 +2,7 @@ export class Joboffers {
 
     static getJoboffers = () => {
         return new Promise(async (resolve, reject) => {
-            await fetch(process.env.REACT_APP_JOB_OFFER + '&category_slug=' + 'jobcate', {
+            await fetch(process.env.REACT_APP_JOB_OFFER + "&category_slug=jobcate", {
                 "method": "GET"
             }).then(response => response.json())
                 .then(response => {
@@ -14,12 +14,13 @@ export class Joboffers {
                                 "name": response[i].title.rendered || '',
                                 "content1": response[i]['acf'] && response[i]['acf']['job_type'] || '',
                                 "Address": response[i]['acf'] && response[i]['acf']['address'] || '',
-                                "slug": response[i]._embedded['wp:term'][0][1].slug,
+                                "slug": response[i].slug,
                                 // "cate": response[i]._embedded['wp:term'][0][0].name || 'name',
                                 "cate": response[i]._embedded['wp:term'][0][1].name || 'unknown',
                                 "cateSlug": response[i]._embedded['wp:term'][0][1].slug,
                             });
                         }
+                        console.log(data)
 
                     }
                     resolve(data)
@@ -52,13 +53,12 @@ export class Joboffers {
 
     static getJoboffersCate = () => {
         return new Promise(async (resolve, reject) => {
-            await fetch(process.env.REACT_APP_JOb_OFFER_CATE, {
+            await fetch(process.env.REACT_APP_JOB_OFFER_CATE, {
                 "method": "GET"
             }).then(response => response.json())
                 .then(response => {
                     var data = [];
                     if (response) {
-                        console.log('response==>', response);
                         for (var i = 0; i < response.length; i++) {
                             data.push({
                                 "id": response[i].id,
@@ -68,6 +68,8 @@ export class Joboffers {
                                 // "Address": response[i]['post-meta-fields'] && response[i]['post-meta-fields']['Address'] || '',
                                 // "slug": response[i].slug,
                                 "name": response[i].name || 'unknown',
+                                "looking": response[i].count,
+                                "description": response[i].description,
                                 "slug": response[i].slug,
                             });
                         }

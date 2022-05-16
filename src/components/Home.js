@@ -73,7 +73,6 @@ class Home extends Component {
 
 		Main.getTechnology().then((technology, err) => {
 			if (!err) {
-				console.log("acf===>", technology);
 				this.setState({
 					technologyJson: technology,
 					Loading: false,
@@ -117,7 +116,7 @@ class Home extends Component {
 	}
 
 	render() {
-		const { serviceJson, technologyJson, teamJson, careerJson, chooseJson, chooseJson2, Titlejson } = this.state;
+		const { serviceJson, teamJson, careerJson, chooseJson, chooseJson2 } = this.state;
 		const service = {
 			items: 4,
 			responsive: {
@@ -195,10 +194,10 @@ class Home extends Component {
 						<div className="mob-box">
 							<h4><span> We offer <del>services</del> solutions that meet your <del>needs</del> demands.</span></h4>
 							<ul>
-								<li><a href="/Web_Development">WEB</a></li>
-								<li><a href="#">SOFTWARE</a></li>
-								<li><a href="/Mobile_Developement">MOBILE</a></li>
-								<li><a href="/CloudDevelopment">CLOUD</a></li>
+								<li><Link to="/Web_Development">WEB</Link></li>
+								<li><Link to="#">SOFTWARE</Link></li>
+								<li><Link to="/Mobile_Developement">MOBILE</Link></li>
+								<li><Link to="/CloudDevelopment">CLOUD</Link></li>
 							</ul>
 							<FormPopup />
 						</div>
@@ -377,18 +376,16 @@ class Home extends Component {
 											(index == 0) ?
 												<>
 													<h3>Why Choose<span>iQuinceSOFT?</span></h3>
-													<p dangerouslySetInnerHTML={{ __html: Choosejson2S.content }}></p>
-													<div className="tech-box dd">
+													<p key={index} dangerouslySetInnerHTML={{ __html: Choosejson2S.content }}></p>
+													<div key={index} className="tech-box dd">
 														<div className="tech-dot"></div>
 														<h6>Corporate Social Responsibility</h6>
 														<img width="100%" src={Choosejson2S.img} />
 													</div>
 												</>
-
 												:
-
-												<div className="tech-box dd-1">
-													<div className="tech-dot"></div>
+												<div key={index} className="tech-box dd-1">
+													<div key={index} className="tech-dot"></div>
 													<img src={Choosejson2S.img} />
 													<h4>Technology Fast 50 Deloitte</h4>
 												</div>
@@ -403,13 +400,13 @@ class Home extends Component {
 											{chooseJson.map((ChoosejsonS, index) => {
 												return (
 													<div>
-														<div className="tech-box dd-1">
+														<div key={index} className="tech-box dd-1">
 															<div className="tech-dot"></div>
 															<img src={ChoosejsonS.img} />
 															<h4 dangerouslySetInnerHTML={{ __html: ChoosejsonS.name }}></h4>
 														</div>
 
-														<div className="tech-box dd-1">
+														<div key={index} className="tech-box dd-1">
 															<div className="tech-dot"></div>
 															<img src={ChoosejsonS.img} />
 															<h4 dangerouslySetInnerHTML={{ __html: ChoosejsonS.name }}></h4>
@@ -434,9 +431,9 @@ class Home extends Component {
 						<div className="container">
 							<div className="row">
 								<div className="col-lg-7 col-md-9" data-aos="fade-right">
-									{careerJson.length && careerJson.map(careerJsons => {
+									{careerJson.length && careerJson.map((careerJsons, index) => {
 										return (
-											<div key={careerJsons.id}>
+											<div key={index}>
 												<h3>{careerJsons.name}</h3>
 												<p dangerouslySetInnerHTML={{ __html: careerJsons.content }}></p>
 												<Link to={'/career'}><img src={arrow3} />search and apply</Link>

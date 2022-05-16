@@ -3,10 +3,8 @@ import React, { Component } from 'react';
 import './App.css';
 import './assets/css/js_composer.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import Home from './components/Home';
 import About from './components/About';
-import About1 from './components/About1';
 import Service from './components/Service';
 import ServiceDescription from './components/ServiceDescription';
 import CaseStudy from './components/CaseStudy';
@@ -60,11 +58,10 @@ import Ecommerce from '../src/components/Services/Ecommerce';
 class App extends Component {
 	render() {
 		return (
-			<Router>
+			<Router >
 				<Switch>
 					<Route exact path='/' component={Home} />
 					<Route exact path='/about' component={About} />
-					<Route exact path='/about1' component={About1} />
 					<Route exact path='/service' component={Service} />
 					<Route exact path='/serviceDescription' component={ServiceDescription} />
 					<Route exact path='/caseStudies' component={CaseStudy} />

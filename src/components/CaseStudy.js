@@ -6,14 +6,10 @@ import Footer from './Footer';
 import ReviewSec from '../container/ReviewSec';
 import EuquireSec from '../container/EuquireSec';
 import AwardSec from '../container/AwardSec';
-
-import caseIcon from '../images/case-icon.png';
-import caseIcon1 from '../images/case-icon1.png';
 import arrow2 from '../images/arrow2.png';
 import { CaseStudies } from '../json/CaseStudies';
 import { FaChevronRight } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner'
-import { Work } from '../json/work';
 class Service extends Component {
 
 	constructor(props) {
@@ -70,25 +66,25 @@ class Service extends Component {
 						<div className="container">
 							{CaseJson && CaseJson.map((CaseJsonS, index) => {
 								return (
-									(index % 2 == 0) ?
+									(index % 2 === 0) ?
 
 										<div className="row">
 											<div className="col-lg-6 col-md-12" data-aos="fade-down">
-												<img className="dd-5" src={CaseJsonS.brand_logo} />
+												<img alt="img" className="dd-5" src={CaseJsonS.brand_logo} />
 												<h3>{CaseJsonS.name}</h3>
 												<p dangerouslySetInnerHTML={{ __html: CaseJsonS.content }}></p>
-												<Link to={`/caseStudyDescription/${CaseJsonS.slug}`}>READ MORE <img src={arrow2} /></Link>
+												<Link to={`/caseStudyDescription/${CaseJsonS.slug}`}>READ MORE <img alt="img" src={arrow2} /></Link>
 											</div>
-											<div className="col-lg-6 col-md-12"><img width="100%" height="300px" src={CaseJsonS.img} /></div>
+											<div className="col-lg-6 col-md-12"><img alt="img" width="100%" height="300px" src={CaseJsonS.img} /></div>
 										</div>
 										:
 										<div className="row">
-											<div className="col-lg-6 col-md-12"><img width="100%" height="300px" src={CaseJsonS.img} /></div>
+											<div className="col-lg-6 col-md-12"><img alt="img" width="100%" height="300px" src={CaseJsonS.img} /></div>
 											<div className="col-lg-6 col-md-12" data-aos="fade-up">
-												<img className="dd-5" src={CaseJsonS.brand_logo} />
+												<img alt="img" className="dd-5" src={CaseJsonS.brand_logo} />
 												<h3>{CaseJsonS.name}</h3>
 												<p dangerouslySetInnerHTML={{ __html: CaseJsonS.content }}></p>
-												<Link to={`/caseStudyDescription/${CaseJsonS.slug}`}>READ MORE <img src={arrow2} /></Link>
+												<Link to={`/caseStudyDescription/${CaseJsonS.slug}`}>READ MORE <img alt="img" src={arrow2} /></Link>
 											</div>
 										</div>
 								);
@@ -107,26 +103,26 @@ class Service extends Component {
 								<div className="col-lg-12 col-md-12">
 									<ul class="case-drop">
 										<li>
-											<a className="dropdown-toggle" href="#">Services <FaChevronRight /></a>
+											<Link className="dropdown-toggle" to={"#"} >Services <FaChevronRight /></Link>
 											<ul>
-												<li><a href="#">All Industries</a></li>
-												<li><a href="#">Technology & Innovation</a></li>
-												<li><a href="#">Travel</a></li>
-												<li><a href="#">Fintech & Banking</a></li>
-												<li><a href="#">Real Estate</a></li>
-												<li><a href="#">Events</a></li>
+												<li><Link to={"#"}>All Industries</Link></li>
+												<li><Link to={"#"}>Technology & Innovation</Link></li>
+												<li><Link to={"#"}>Travel</Link></li>
+												<li><Link to={"#"}>Fintech & Banking</Link></li>
+												<li><Link to={"#"}>Real Estate</Link></li>
+												<li><Link to={"#"}>Events</Link></li>
 											</ul>
 										</li>
 
 										<li>
-											<a className="dropdown-toggle" href="#">Industry <FaChevronRight /></a>
+											<Link className="dropdown-toggle" href="#">Industry <FaChevronRight /></Link>
 											<ul>
-												<li><a href="#">All Industries</a></li>
-												<li><a href="#">Technology & Innovation</a></li>
-												<li><a href="#">Travel</a></li>
-												<li><a href="#">Fintech & Banking</a></li>
-												<li><a href="#">Real Estate</a></li>
-												<li><a href="#">Events</a></li>
+												<li><Link to={"#"}>All Industries</Link></li>
+												<li><Link to={"#"}>Technology & Innovation</Link></li>
+												<li><Link to={"#"}>Travel</Link></li>
+												<li><Link to={"#"}>Fintech & Banking</Link></li>
+												<li><Link to={"#"}>Real Estate</Link></li>
+												<li><Link to={"#"}>Events</Link></li>
 											</ul>
 										</li>
 									</ul>
@@ -137,12 +133,12 @@ class Service extends Component {
 								{Case2Json && Case2Json.map(Case2JsonS => {
 									return (
 										<div className="col-lg-4 col-md-6">
-											<img width="100%" src={Case2JsonS.img} />
+											<img alt="img" width="100%" src={Case2JsonS.img} />
 											<div className="case-box">
 												<h4>Case Study</h4>
 												<h3>{Case2JsonS.name}</h3>
 												<p><span>TECH STACK: {Case2JsonS.name}</span><p dangerouslySetInnerHTML={{ __html: Case2JsonS.content.substr(0, 128) + "...." }}></p></p>
-												<Link to={`caseStudyDescription/${Case2JsonS.slug}`}>READ MORE <img src={arrow2} /></Link>
+												<Link to={`caseStudyDescription/${Case2JsonS.slug}`}>READ MORE <img alt="img" src={arrow2} /></Link>
 											</div>
 										</div>
 
@@ -150,7 +146,7 @@ class Service extends Component {
 								})}
 							</div>
 						</div>
-						<h6><a href="#">View More Services </a></h6>
+						<h6><Link to={"#"}>View More Services </Link></h6>
 					</div>
 
 					<ReviewSec />

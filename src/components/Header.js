@@ -26,8 +26,6 @@ class Header extends Component {
       this.state = {
          toggleSidenav: false,
          toggleDropdown: false,
-         toggleDropdown1: false,
-         toggleDropdown2: false,
          links: []
          /*links : [
           {'id':1,'name':'Services','class':'nav-link','liClassName':'','img':mobIcon,'to':'service'},
@@ -42,16 +40,64 @@ class Header extends Component {
       }
    }
 
-   // componentDidMount() {
-   //    window.scrollTo(0, 0);
-   //    Menu.getMenu().then((menus, err) => {
-   //       if (!err) {
-   //          this.setState({
-   //             links: menus,
-   //          });
-   //       }
-   //    });
-   // }
+   componentDidMount() {
+      window.scrollTo(0, 0);
+      Menu.getMenu().then((menus, err) => {
+         if (!err) {
+            this.createMenu(menus);
+            /*this.setState({
+               links: menus,
+            });*/
+         }
+      });
+   }
+
+   createMenu = (items) => {
+      const menuArray = [];
+      var childMenu = [];
+      items.forEach((item) => {
+
+         if (item.menu_id === '0') {
+            menuArray.push({ ...item, 'children': [] })
+         } else {
+
+            const indexArray = menuArray.findIndex((findItem) => parseInt(findItem.id) == parseInt(item.menu_id));
+            if (indexArray !== -1) {
+               menuArray[indexArray].children.push({ ...item, 'children': [] });
+               if (menuArray[indexArray].children) {
+                  childMenu = [];
+                  childMenu.push(...menuArray[indexArray].children);
+               }
+
+            } else {
+               this.findChild(childMenu, item);
+            }
+
+         }
+      });
+
+      this.setState({
+         links: menuArray,
+      });
+
+      // console.log(menuArray)
+
+
+
+   }
+
+   findChild = (childMenu, item) => {
+
+      const indexArray = childMenu.findIndex((findItem) => parseInt(findItem.id) == parseInt(item.menu_id));
+      if (indexArray !== -1) {
+         childMenu[indexArray].children.push({ ...item, 'children': [] });
+         if (childMenu[indexArray].children) {
+            childMenu.push(...childMenu[indexArray].children);
+         }
+
+      }
+
+   }
    handleClick = () => {
       this.setState({
          toggleSidenav: !this.state.toggleSidenav
@@ -92,7 +138,7 @@ class Header extends Component {
                               <ul className="navbar-nav">
 
                                  <li className={`${(this.state.toggleDropdown) ? 'show' : ''} dropdown`}>
-                                    <Link href="/service" className="nav-link">Services</Link> <span><FaAngleDown onClick={() => this.handleDropdownClick()} /></span>
+                                    <Link to="/service" className="nav-link">Services</Link> <span><FaAngleDown onClick={() => this.handleDropdownClick()} /></span>
                                     <ul className={`${(this.state.toggleDropdown) ? 'show' : ''} dropdown-menu`}>
                                        <li>
                                           <h4>Front-end</h4>

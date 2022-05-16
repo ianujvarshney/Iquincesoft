@@ -342,7 +342,6 @@ class CodeIgniter extends Component {
                                 <div className="col-lg-12 col-md-12">
                                     <OwlCarousel options={culture}>
                                         {CodeigniterJson && CodeigniterJson.map(CodeigniterJsonS => {
-                                            { console.log(CodeigniterJsonS) }
                                             return (
                                                 <div className="cult-box">
                                                     <div class="tech-dot"></div>

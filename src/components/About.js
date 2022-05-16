@@ -21,14 +21,10 @@ import priImg1 from '../images/pri-img1.png';
 import priMob from '../images/pri-mob.png';
 import unsplash1 from '../images/unsplash1.png'
 import unsplash2 from '../images/unsplash2.png'
-import unsplash5 from '../images/unsplash5.png'
 import unsplash6 from '../images/unsplash6.png'
-import unsplash7 from '../images/unsplash7.png'
 import story from '../images/story-img.jpg'
 import { HashLink as Link } from 'react-router-hash-link';
-
 import priMob1 from '../images/pri-mob1.png';
-
 import { TailSpin } from 'react-loader-spinner'
 
 
@@ -45,7 +41,6 @@ class About extends Component {
 			Culturejson: [],
 			Loading: true,
 		}
-		// document.title = 'fsjhfgsdjhg';
 	}
 
 	componentDidMount() {
@@ -148,7 +143,7 @@ class About extends Component {
 											);
 										})
 										}
-										<Link to={'#story'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}><h5>About us <img src={arrow2} /></h5></Link>
+										<Link to={'#story'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}><h5>About us <img alt="img" src={arrow2} /></h5></Link>
 									</div>
 								</div>
 							</div>
@@ -158,8 +153,8 @@ class About extends Component {
 								<>
 									{HelpjsonS.name === 'Background' ?
 										<>
-											<img className="abt-img" width="100%" src={HelpjsonS.img} />
-											<img className="abt-mob" width="100%" src={HelpjsonS.img} />
+											<img alt="img" className="abt-img" width="100%" src={HelpjsonS.img} />
+											<img alt="img" className="abt-mob" width="100%" src={HelpjsonS.img} />
 										</> : null
 									}
 								</>
@@ -183,8 +178,8 @@ class About extends Component {
 										{Storyjson && Storyjson.map(StoryjsonS => {
 											return (
 												<>
-													{(StoryjsonS.name === 'img-1') ? <div className="col-lg-6 col-md-6"><img width="100%" src={StoryjsonS.img} /></div> : null}
-													{(StoryjsonS.name === 'img-2') ? <div className="col-lg-6 col-md-6"><img width="100%" src={StoryjsonS.img} /></div> : null}
+													{(StoryjsonS.name === 'img-1') ? <div className="col-lg-6 col-md-6"><img alt="img" width="100%" src={StoryjsonS.img} /></div> : null}
+													{(StoryjsonS.name === 'img-2') ? <div className="col-lg-6 col-md-6"><img alt="img" width="100%" src={StoryjsonS.img} /></div> : null}
 
 												</>
 											);
@@ -196,7 +191,7 @@ class About extends Component {
 												<>
 													{StoryjsonS.name === 'img-3' ?
 														<><div className="col-lg-1 col-md-1"></div>
-															<div className="col-lg-10 col-md-10"><img width="100%" src={StoryjsonS.img} /></div></>
+															<div className="col-lg-10 col-md-10"><img alt="img" width="100%" src={StoryjsonS.img} /></div></>
 														: null
 													}
 												</>
@@ -209,14 +204,14 @@ class About extends Component {
 												<>
 													{StoryjsonS.name === 'img-4' ?
 														<><div className="col-lg-6 col-md-6"></div>
-															<div className="col-lg-6 col-md-6"><img width="100%" src={StoryjsonS.img} /></div></>
+															<div className="col-lg-6 col-md-6"><img alt="img" width="100%" src={StoryjsonS.img} /></div></>
 														: null
 													}
 												</>
 											);
 										})}
 									</div>
-									<div className="sty-logo"><img src={storyLogo} /> <img src={storyLogo1} /> <img src={storyLogo2} /></div>
+									<div className="sty-logo"><img alt="img" src={storyLogo} /> <img alt="img" src={storyLogo1} /> <img alt="img" src={storyLogo2} /></div>
 								</div>
 
 								<div className="col-lg-4 col-md-5">
@@ -251,16 +246,16 @@ class About extends Component {
 
 								<div className="col-lg-6 col-md-7 sty-sec">
 									<div className="row">
-										<div className="col-lg-6 col-md-6"><img width="100%" src={unsplash1} /></div>
-										<div className="col-lg-6 col-md-6"><img width="100%" src={unsplash2} /></div>
+										<div className="col-lg-6 col-md-6"><img alt="img" width="100%" src={unsplash1} /></div>
+										<div className="col-lg-6 col-md-6"><img alt="img" width="100%" src={unsplash2} /></div>
 									</div>
 									<div className="row">
 										<div className="col-lg-1 col-md-1"></div>
-										<div className="col-lg-10 col-md-10"><img width="100%" src={story} /></div>
+										<div className="col-lg-10 col-md-10"><img alt="img" width="100%" src={story} /></div>
 									</div>
 									<div className="row">
 										<div className="col-lg-6 col-md-6"></div>
-										<div className="col-lg-6 col-md-6"><img width="100%" src={unsplash6} /></div>
+										<div className="col-lg-6 col-md-6"><img alt="img" width="100%" src={unsplash6} /></div>
 									</div>
 								</div>
 							</div>
@@ -275,35 +270,30 @@ class About extends Component {
 									<OwlCarousel options={culture}>
 										<div className="cult-box">
 											<div class="tech-dot"></div>
-											{/* <img src={webImg} /> */}
 											<h4>Philosophy</h4>
 											<p>We believe in delivering software solutions that can serve you with a sense of creative excellence and agile development. We provide next-level software solutions that can ease your business process and help you excel in a more relieving way. </p>
 										</div>
 
 										<div className="cult-box">
 											<div class="tech-dot"></div>
-											{/* <img src={webImg1} /> */}
 											<h4>Mission</h4>
 											<p>We strive to achieve a position of a global leader in the world of IT-enabled business solutions and services. </p>
 										</div>
 
 										<div className="cult-box">
 											<div class="tech-dot"></div>
-											{/* <img src={webImg2} /> */}
 											<h4>Vision</h4>
 											<p>iQuinceSoft is a visionary dream that manages long-lasting relationships and builds robust business solutions. This created a win-win situation for our clients and us. We tend to generate and provide ample career opportunities and make a significant change in the Quality of Life of people. </p>
 										</div>
 
 										<div className="cult-box">
 											<div class="tech-dot"></div>
-											{/* <img src={webImg3} /> */}
 											<h4>Core Values</h4>
 											<p>We understand our clients and their needs. That is why we deliver what is expected of us and earn a mutual relationship of respect and satisfaction. We add value to create business opportunities and strengthen business relationships. </p>
 										</div>
 
 										<div className="cult-box">
 											<div class="tech-dot"></div>
-											{/* <img src={webImg4} /> */}
 											<h4>Quality Management</h4>
 											<p>We do regular quality checks before delivering any project. We tend to improve our business process and the critical elements. We focus on testing-enabled solutions to offer you the utmost satisfaction and value-added services. </p>
 										</div>
@@ -311,32 +301,27 @@ class About extends Component {
 
 									<div className="row">
 										<div className="col-lg-4 col-md-4">
-											{/* <img src={webImg} /> */}
 											<h4>Philosophy</h4>
 											<p>We believe in delivering software solutions that can serve you with a sense of creative excellence and agile development. We provide next-level software solutions that can ease your business process and help you excel in a more relieving way. </p>
 										</div>
 
 										<div className="col-lg-4 col-md-4">
-											{/* <img src={webImg1} /> */}
 											<h4>Mission</h4>
 											<p>We strive to achieve a position of a global leader in the world of IT-enabled business solutions and services.
 											</p>
 										</div>
 
 										<div className="col-lg-4 col-md-4">
-											{/* <img src={webImg2} /> */}
 											<h4>Vision</h4>
 											<p>iQuinceSoft is a visionary dream that manages long-lasting relationships and builds robust business solutions. This created a win-win situation for our clients and us. We tend to generate and provide ample career opportunities and make a significant change in the Quality of Life of people. </p>
 										</div>
 
 										<div className="col-lg-6 col-md-4">
-											{/* <img src={webImg3} /> */}
 											<h4>Core Values</h4>
 											<p>We understand our clients and their needs. That is why we deliver what is expected of us and earn a mutual relationship of respect and satisfaction. We add value to create business opportunities and strengthen business relationships. </p>
 										</div>
 
 										<div className="col-lg-6 col-md-4">
-											{/* <img src={webImg4} /> */}
 											<h4>Quality Management</h4>
 											<p>We do regular quality checks before delivering any project. We tend to improve our business process and the critical elements. We focus on testing-enabled solutions to offer you the utmost satisfaction and value-added services. </p>
 										</div>
@@ -346,20 +331,6 @@ class About extends Component {
 						</div>
 					</div>
 
-					{/* <OwlCarousel options={officeSlide}> */}
-					{/* <h1>Philosophy</h1>
-					<p>We believe in delivering software solutions that can serve you with a sense of creative excellence and agile development. We provide next-level software solutions that can ease your business process and help you excel in a more relieving way. </p>
-					<br />
-					<h1>Mission</h1>
-					<p>We strive to achieve a position of a global leader in the world of IT-enabled business solutions and services. </p>
-					<h1>Vision</h1>
-					<p>iQuinceSoft is a visionary dream that manages long-lasting relationships and builds robust business solutions. This created a win-win situation for our clients and us. We tend to generate and provide ample career opportunities and make a significant change in the Quality of Life of people. </p>
-					<h1>CORE Values</h1>
-					<p>We understand our clients and their needs. That is why we deliver what is expected of us and earn a mutual relationship of respect and satisfaction. We add value to create business opportunities and strengthen business relationships. </p>
-					<h1>Quality Management</h1>
-					<p>We do regular quality checks before delivering any project. We tend to improve our business process and the critical elements. We focus on testing-enabled solutions to offer you the utmost satisfaction and value-added services.
-					</p> */}
-					{/* </OwlCarousel> */}
 					<div className="meet-sec">
 						<h4>Leadership Team</h4>
 						<h3>Meet the people who make it happen</h3>
@@ -368,13 +339,13 @@ class About extends Component {
 
 								{ContentData && ContentData.map(ContentDatas => {
 									return (
-										<div className="col-lg-2 col-md-3" key={ContentDatas.id}><img src={ContentDatas.img} /> <h5><span>{ContentDatas.name}</span> Leadership Team</h5></div>
+										<div className="col-lg-2 col-md-3" key={ContentDatas.id}><img alt="img" src={ContentDatas.img} /> <h5><span>{ContentDatas.name}</span> Leadership Team</h5></div>
 									);
 								})}
 
 							</div>
 						</div>
-						<a href="#">Meet the whole team</a>
+						<Link to={"#"} >Meet the whole team</Link>
 						<h6><span>The Office</span> Step inside our headquarters</h6>
 					</div>
 
@@ -389,19 +360,19 @@ class About extends Component {
 													<>
 														<div>
 															<h3 dangerouslySetInnerHTML={{ __html: OfficejsonS.name }}></h3>
-															<img width="100%" src={OfficejsonS.img} />
+															<img alt="img" width="100%" src={OfficejsonS.img} />
 															<p dangerouslySetInnerHTML={{ __html: OfficejsonS.content }}></p>
 														</div>
 
 														<div>
 															<h3 dangerouslySetInnerHTML={{ __html: OfficejsonS.name }}></h3>
-															<img width="100%" src={OfficejsonS.img} />
+															<img alt="img" width="100%" src={OfficejsonS.img} />
 															<p dangerouslySetInnerHTML={{ __html: OfficejsonS.content }}></p>
 														</div>
 
 														<div>
 															<h3 dangerouslySetInnerHTML={{ __html: OfficejsonS.name }}></h3>
-															<img width="100%" src={OfficejsonS.img} />
+															<img alt="img" width="100%" src={OfficejsonS.img} />
 															<p dangerouslySetInnerHTML={{ __html: OfficejsonS.content }}></p>
 														</div>
 
@@ -413,17 +384,17 @@ class About extends Component {
 								</div>
 								{Officejson && Officejson.map((OfficejsonS, index) => {
 									return (
-										(index % 2 == 0) ?
+										(index % 2 === 0) ?
 											<>
 												<div className="col-lg-6 col-md-6 off-txt" data-aos="fade-right" key={OfficejsonS.id}>
 													<h3 dangerouslySetInnerHTML={{ __html: OfficejsonS.name }}></h3>
 													<p dangerouslySetInnerHTML={{ __html: OfficejsonS.content }}></p>
 												</div>
-												<div className="col-lg-6 col-md-6"><img width="100%" src={OfficejsonS.img} /></div>
+												<div className="col-lg-6 col-md-6"><img alt="img" width="100%" src={OfficejsonS.img} /></div>
 											</>
 											:
 											<>
-												<div className="col-lg-6 col-md-6"><img width="100%" src={OfficejsonS.img} /></div>
+												<div className="col-lg-6 col-md-6"><img alt="img" width="100%" src={OfficejsonS.img} /></div>
 												<div className="col-lg-6 col-md-6 off-txt1" data-aos="fade-up">
 													<h3 dangerouslySetInnerHTML={{ __html: OfficejsonS.name }}></h3>
 													<p dangerouslySetInnerHTML={{ __html: OfficejsonS.content }}></p>
@@ -441,8 +412,8 @@ class About extends Component {
 						<h3>Pricing Models</h3>
 						<div className="container">
 							<div className="row">
-								<div className="col-lg-6 col-md-6" ><img className="pri-desk" src={priImg} /> <img className="pri-mob" src={priMob} /> <h4>Dedicated <span>Hiring</span></h4></div>
-								<div className="col-lg-6 col-md-6" ><img className="pri-desk" src={priImg1} /> <img className="pri-mob" src={priMob1} /> <h4>Fixed Cost <span>Projects</span></h4></div>
+								<div className="col-lg-6 col-md-6" ><img alt="img" className="pri-desk" src={priImg} /> <img alt="img" className="pri-mob" src={priMob} /> <h4>Dedicated <span>Hiring</span></h4></div>
+								<div className="col-lg-6 col-md-6" ><img alt="img" className="pri-desk" src={priImg1} /> <img alt="img" className="pri-mob" src={priMob1} /> <h4>Fixed Cost <span>Projects</span></h4></div>
 							</div>
 						</div>
 						<FormPopup />
@@ -462,7 +433,7 @@ class About extends Component {
 												return (
 													<div key={CulturejsonS.id} className="cult-box">
 														<div class="tech-dot"></div>
-														<img src={CulturejsonS.img} />
+														<img alt="img" src={CulturejsonS.img} />
 														<h4 dangerouslySetInnerHTML={{ __html: CulturejsonS.name }}></h4>
 														<span dangerouslySetInnerHTML={{ __html: CulturejsonS.content }}></span>
 													</div>
@@ -490,3 +461,6 @@ class About extends Component {
 }
 
 export default About;
+
+
+

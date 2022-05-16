@@ -2,7 +2,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Tabs, TabList, TabPanel } from 'react-tabs';
 import { Inspired } from '../json/Inspired';
 import { TailSpin } from 'react-loader-spinner';
 import arrow2 from '../images/arrow2.png';
@@ -15,7 +15,6 @@ class BlogTabs extends Component {
             InsightsJson: [],
             page: 1,
             data: [],
-            // data2: [],
             Loading: true,
             allpost: '',
             VisitedLink: "",
@@ -104,7 +103,7 @@ class BlogTabs extends Component {
 
     render() {
 
-        const { InsightsJson, data, page, data2, catedata, thePath, allpost, setsearchterm } = this.state;
+        const { InsightsJson, data, page, catedata, thePath, allpost, setsearchterm } = this.state;
 
         return (
             this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
@@ -117,22 +116,9 @@ class BlogTabs extends Component {
                                     <div className="row">
                                         <div className="col-lg-2"></div>
                                         <div className="col-lg-8 col-md-12" data-aos="fade-up">
-                                            <h1>hello</h1>
-                                            <p>hello world</p>
-                                            <div className="in-box"><input type="search" onChange={(event) => setsearchterm(event.target.value)} className="box" type="search" name="" placeholder="Supercharge your brain" /> <a href="#">Let's Learn</a></div>
-                                            {/* {InsightsJsonS.filter((val) => {
-                                                if (setsearchterm == "")
-                                                    return (
-                                                        <h1>data in not have</h1>
-                                                    )
-                                                else if (val)
-                                                    return (
-                                                        <>
-                                                            <h1>data in console</h1>
-                                                            {console.warn(val)}
-                                                        </>
-                                                    ) */}
-                                            {/* })} */}
+                                            <h1>Learn from our web development blog read by 1.2M tech leaders</h1>
+                                            <p><span>Get a bi-weekly email with <strong>the most popular stories</strong></span></p>
+                                            <div className="in-box"><input type="search" onChange={(event) => setsearchterm(event.target.value)} className="box" type="search" name="" placeholder="Supercharge your brain" /> <Link to={"#"}>Let's Learn</Link></div>
                                         </div>
                                     </div>
                                 </div>
@@ -151,7 +137,7 @@ class BlogTabs extends Component {
                                                     <p> <Link to={`/blog`}>All ({allpost})</Link></p>
                                                     {catedata && catedata.map((dataS, index) => {
                                                         return (
-                                                            dataS.cateslug == thePath ? <p className="para"><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p> :
+                                                            dataS.cateslug === thePath ? <p className="para"><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p> :
                                                                 <p><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p>
                                                         );
                                                     })}
@@ -171,11 +157,11 @@ class BlogTabs extends Component {
                                                         return (
                                                             <div className="col-lg-4 col-md-6">
                                                                 <div className="case-main">
-                                                                    <Link to={`/PostPage/${dataS.slug}`} ><h4>Read More</h4> <img width="100%" src={dataS.img} /></Link>
+                                                                    <Link to={`/PostPage/${dataS.slug}`} ><h4>Read More</h4> <img alt="img" width="100%" src={dataS.img} /></Link>
                                                                     <div className="case-box">
-                                                                        <h5><img src={dataS.author_profile} /> <span><strong>{dataS.author_name}</strong> QA Specialist</span></h5>
+                                                                        <h5><img alt="img" src={dataS.author_profile} /> <span><strong>{dataS.author_name}</strong> QA Specialist</span></h5>
                                                                         <h3>{dataS.name}</h3>
-                                                                        <h4><Link to={`/PostPage/${dataS.slug}`} >READ MORE <img src={arrow2} /></Link>Oct 10, 2021</h4>
+                                                                        <h4><Link to={`/PostPage/${dataS.slug}`} >READ MORE <img alt="img" src={arrow2} /></Link>Oct 10, 2021</h4>
                                                                     </div>
                                                                 </div>
                                                             </div>

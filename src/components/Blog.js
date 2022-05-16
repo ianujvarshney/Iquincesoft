@@ -5,7 +5,6 @@ import Footer from './Footer';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Inspired } from '../json/Inspired';
 import { TailSpin } from 'react-loader-spinner';
-import arrow2 from '../images/arrow2.png';
 import InfiniteScroll from "react-infinite-scroll-component";
 class Blog extends Component {
 	constructor(props) {
@@ -13,6 +12,7 @@ class Blog extends Component {
 		this.state = {
 			InsightsJson: [],
 			page: 1,
+			all: 0,
 			data: [],
 			data2: [],
 			catedata: [],
@@ -20,6 +20,8 @@ class Blog extends Component {
 			thePath: this.props.location.pathname,
 			allpost: '',
 			setsearchterm: [],
+			search: "",
+			searchdata: [],
 		}
 	}
 	componentDidMount() {
@@ -36,6 +38,14 @@ class Blog extends Component {
 			if (!err) {
 				this.setState({
 					allpost: Insights[0].totaljob,
+				});
+			}
+		})
+
+		Inspired.allapidata().then((Insights, err) => {
+			if (!err) {
+				this.setState({
+					searchdata: Insights,
 				});
 			}
 		})
@@ -84,20 +94,27 @@ class Blog extends Component {
 		return this.fetch(page);
 	};
 
-	handlefilter = (event) => {
-		const searchword = event.target.value;
-		console.log("serach", searchword, event)
-		const newfilter = this.state.data.filter((value) => {
-			return value.title.toLowerCase().include(searchword.toLowerCase());
-		})
+	handlefilter = (e) => {
+		if (e.target.name === '') {
+			this.setState({
+				data: this.state.searchdata,
+			})
+		}
+		else {
+			this.setState({
+				data: this.state.searchdata.filter(item => item.name.toLowercase().include(e.target.value.toLowerCase())),
+			})
+
+		}
 		this.setState({
-			setsearchterm: newfilter,
+			setsearchterm: e.target.value,
 		})
+
 	}
 
 	render() {
 
-		const { InsightsJson, data, page, data2, catedata, allpost, setsearchterm } = this.state;
+		const { data, page, catedata, allpost, search } = this.state;
 
 		return (
 			this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
@@ -108,15 +125,10 @@ class Blog extends Component {
 							<div className="row">
 								<div className="col-lg-2"></div>
 								<div className="col-lg-8 col-md-12" data-aos="fade-up">
-									<h1>hello</h1>
-									<p>hello world</p>
-									<div className="in-box"><input type="search" onChange={this.handlefilter} className="box" type="text" name="" placeholder="Supercharge your brain" />
-										{setsearchterm.map(val => {
-											return (
-												<div><p>Search</p></div>
-											)
-										})
-										}
+									<h1>Learn from our web development blog read by 1.2M tech leaders</h1>
+									<p><span>Get a bi-weekly email with <strong>the most popular stories</strong></span></p>
+									<div className="in-box">
+										<input value={search} onInput={(e) => this.handlefilter(e)} className="box" name="" placeholder="Supercharge your brain" />
 									</div>
 
 								</div>
@@ -141,7 +153,6 @@ class Blog extends Component {
 													})}
 
 												</div>
-
 												<div className="col-lg-2 col-md-3"><input className="box" type="text" name="" placeholder="Search" /></div>
 											</div>
 										</TabList>
@@ -157,11 +168,11 @@ class Blog extends Component {
 														return (
 															<div className="col-lg-4 col-md-6">
 																<div className="case-main">
-																	<Link to={`/PostPage/${dataS.slug}`} ><h4>Read More</h4> <img width="100%" src={dataS.img} /></Link>
+																	<Link to={`/PostPage/${dataS.slug}`} ><h4>Read More</h4> <img alt="img" width="100%" src={dataS.img} /></Link>
 																	<div className="case-box">
-																		<h5><img src={dataS.author_profile} /><span><strong>{dataS.author_name}</strong> QA Specialist</span></h5>
+																		<h5><img alt="img" src={dataS.author_profile} /><span><strong>{dataS.author_name}</strong> QA Specialist</span></h5>
 																		<Link to={`/PostPage/${dataS.slug}`} ><h3>{dataS.name}</h3></Link>
-																		{/* <h4>READ MORE <img src={arrow2} />Oct 10, 2021</h4> */}
+																		{/* <h4>READ MORE <img alt="img" src={arrow2} />Oct 10, 2021</h4> */}
 																	</div>
 																</div>
 															</div>

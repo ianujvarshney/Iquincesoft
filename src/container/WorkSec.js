@@ -19,7 +19,6 @@ class WorkSec extends Component {
 
     componentDidMount() {
         CaseStudies.getCase().then((work, err) => {
-            console.log("word", work)
             if (!err) {
                 this.setState({
                     workJson: work,

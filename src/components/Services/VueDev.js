@@ -380,7 +380,6 @@ class VueDev extends Component {
 
                                     <div className="row">
                                         {VueJson && VueJson.map((VueJsonS, index) => {
-                                            { console.log(VueJsonS) }
                                             return (
                                                 <div className="col-lg-4 col-md-4">
                                                     <div className="insight-box" key={index}>
