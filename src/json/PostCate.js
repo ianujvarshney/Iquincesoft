@@ -1,5 +1,4 @@
 import servBL from '../images/serv-blank.png';
-
 export class PostCate {
     static getWoocommerce = () => {
         return new Promise(async (resolve, reject) => {
@@ -72,12 +71,9 @@ export class PostCate {
                                 "slug": response[i].slug,
                             });
                         }
-
                     }
                     resolve(data)
-                })
-                .catch(err => {
-                    console.log(err);
+                }).catch(err => {
                     reject(err)
                 });
         })

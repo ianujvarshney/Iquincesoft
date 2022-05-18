@@ -120,6 +120,8 @@ class Career extends Component {
 								{/* data-aos="fade-down" */}
 								<div className="col-lg-4 col-md-6">
 									<h3>Join the best talent pool of Northern parts of Subcontinent</h3>
+								</div>
+								<div className="cr-data col-md-6">
 									{Career2Json.length && (
 										<OwlCarousel options={culture}>
 											{joblinks3.map(joblinks3S => {
@@ -136,8 +138,6 @@ class Career extends Component {
 									)}
 								</div>
 
-
-
 								{joblinks3 && joblinks3.map(joblinks3S => {
 									return (
 										<div className="col-lg-4 col-md-6">
@@ -150,7 +150,6 @@ class Career extends Component {
 										</div>
 									);
 								})}
-
 							</div>
 						</div>
 					</div >

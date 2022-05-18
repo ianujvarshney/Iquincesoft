@@ -136,8 +136,8 @@ class Service extends Component {
 											<img alt="img" width="100%" src={Case2JsonS.img} />
 											<div className="case-box">
 												<h4>Case Study</h4>
-												<h3>{Case2JsonS.name}</h3>
-												<p><span>TECH STACK: {Case2JsonS.name}</span><p dangerouslySetInnerHTML={{ __html: Case2JsonS.content.substr(0, 128) + "...." }}></p></p>
+												<h3>{Case2JsonS.name.substr(0, 40) + "...."}</h3>
+												<p><span>TECH STACK: {Case2JsonS.name.substr(0, 50) + "...."}</span><p dangerouslySetInnerHTML={{ __html: Case2JsonS.content.substr(0, 128) + "...." }}></p></p>
 												<Link to={`caseStudyDescription/${Case2JsonS.slug}`}>READ MORE <img alt="img" src={arrow2} /></Link>
 											</div>
 										</div>

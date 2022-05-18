@@ -33,10 +33,12 @@ import banimg from '../images/ban-img.png';
 import arrow from '../images/arrow.png';
 import arrow3 from '../images/arrow3.png';
 import bannerMob from '../images/banner-mob.jpg';
+import { ErrorBoundary } from 'react-error-boundary';
 
 import { TailSpin } from 'react-loader-spinner'
 
 import { FaArrowRight } from 'react-icons/fa';
+
 
 class Home extends Component {
 
@@ -50,25 +52,35 @@ class Home extends Component {
 			chooseJson: [],
 			Titlejson: [],
 			Loading: true,
+			error: false,
 		}
 	}
 
 	componentDidMount() {
 		Main.getMAIN_TITLE().then((title, err) => {
+
 			if (!err) {
 				this.setState({
 					Titlejson: title,
 					Loading: false,
 				});
 			}
+
 		});
 		Main.getService().then((services, err) => {
-			if (!err) {
+			try {
+				if (!err) {
+					this.setState({
+						serviceJson: services,
+						Loading: false,
+					});
+				}
+			} catch (error) {
 				this.setState({
-					serviceJson: services,
-					Loading: false,
-				});
+					error: true,
+				})
 			}
+
 		});
 
 		Main.getTechnology().then((technology, err) => {
@@ -114,8 +126,12 @@ class Home extends Component {
 			}
 		});
 	}
-
 	render() {
+
+		if (this.state.error === true) {
+			return (console.log("error api data not found"));
+		}
+
 		const { serviceJson, teamJson, careerJson, chooseJson, chooseJson2 } = this.state;
 		const service = {
 			items: 4,
@@ -165,293 +181,302 @@ class Home extends Component {
 		};
 
 		return (
+
 			this.state.Loading ? <div className="spinner"><TailSpin color="#00ccff" height={80} width={80} /></div> :
 				<>
-					<Header />
-					<div div div className="banner-sec" >
-						<div className="container">
-							<div className="row">
-								<div className="col-lg-8 col-md-8" data-aos="fade-right">
-									<h1><img src={star} /> <span> We offer <del>services</del> solutions<em>that meet your <del>needs</del> demands.</em></span></h1>
-									<div className="row">
-										<div className="col-lg-5 col-md-5"><h2>Web <span>software</span> <span>mobile</span> cloud<em>.</em></h2></div>
-										<div className="col-lg-7 col-md-7">
-											<img className="arrow" src={arrow} />
-											<FormPopup />
-											<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+					<ErrorBoundary fallbackRender={({ error, resetErrorBoundary, componentStack }) => (
+						<div>
+							<h1>An error occurred: {error.message}</h1>
+							<button onClick={resetErrorBoundary}>Try again</button>
+						</div>
+					)}
+					>
+						<Header />
+						<div className="banner-sec">
+							<div className="container">
+								<div className="row">
+									<div className="col-lg-8 col-md-8" data-aos="fade-right">
+										<h1><img src={star} /> <span> We offer <del>services</del> solutions<em>that meet your <del>needs</del> demands.</em></span></h1>
+										<div className="row">
+											<div className="col-lg-5 col-md-5"><h2>Web <span>software</span> <span>mobile</span> cloud<em>.</em></h2></div>
+											<div className="col-lg-7 col-md-7">
+												<img className="arrow" src={arrow} />
+												<FormPopup />
+												<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+											</div>
 										</div>
 									</div>
+
+
+									<div className="col-lg-4 col-md-4"><img src={banimg} /></div>
 								</div>
-
-
-								<div className="col-lg-4 col-md-4"><img src={banimg} /></div>
 							</div>
 						</div>
-					</div>
 
-					<div className="mob-sec">
-						<img width="100%" src={bannerMob} />
-						<div className="mob-box">
-							<h4><span> We offer <del>services</del> solutions that meet your <del>needs</del> demands.</span></h4>
-							<ul>
-								<li><Link to="/Web_Development">WEB</Link></li>
-								<li><Link to="#">SOFTWARE</Link></li>
-								<li><Link to="/Mobile_Developement">MOBILE</Link></li>
-								<li><Link to="/CloudDevelopment">CLOUD</Link></li>
-							</ul>
+						<div className="mob-sec">
+							<img width="100%" src={bannerMob} />
+							<div className="mob-box">
+								<h4><span> We offer <del>services</del> solutions that meet your <del>needs</del> demands.</span></h4>
+								<ul>
+									<li><Link to="/Web_Development">WEB</Link></li>
+									<li><Link to="#">SOFTWARE</Link></li>
+									<li><Link to="/Mobile_Developement">MOBILE</Link></li>
+									<li><Link to="/CloudDevelopment">CLOUD</Link></li>
+								</ul>
+								<FormPopup />
+							</div>
+						</div>
+
+						<FeatureSec />
+
+						<div className="service-sec" data-aos="fade-down">
+							<div className="container">
+
+								{serviceJson && serviceJson.map(ServicejsonS => {
+									return (
+										ServicejsonS.content == '' ? null :
+											<div className="row">
+												<div className="col-lg-2"></div>
+												<div className="col-lg-8 col-md-12">
+													<h3 dangerouslySetInnerHTML={{ __html: ServicejsonS.content }}></h3>
+												</div>
+											</div>
+									);
+								})}
+
+								<div className="row">
+									<div className="col-lg-1"></div>
+									<div className="col-lg-10 col-md-12">
+										<OwlCarousel loop options={service}>
+											<div className="serv-box">
+												<a href="/Web_Development">
+													<img src={img1} />
+													<h4>Web</h4>
+													<div className="arrow-icon"><FaArrowRight /></div>
+												</a>
+											</div>
+
+											<div className="serv-box">
+												<a href="/Mobile_Developement">
+													<img src={img2} />
+													<h4>Mobile</h4>
+													<div className="arrow-icon"><FaArrowRight /></div>
+												</a>
+											</div>
+
+											<div className="serv-box">
+												<a href="/DevOps">
+													<img src={img3} />
+													<h4>Dev Ops</h4>
+													<div className="arrow-icon"><FaArrowRight /></div>
+												</a>
+											</div>
+
+											<div className="serv-box">
+												<a href="/CloudDevelopment">
+													<img src={img4} />
+													<h4>Cloud Development</h4>
+													<div className="arrow-icon"><FaArrowRight /></div>
+												</a>
+											</div>
+
+										</OwlCarousel>
+
+									</div>
+								</div>
+							</div>
+							<h6><a href="/service">View More Services </a></h6>
 							<FormPopup />
 						</div>
-					</div>
 
-					<FeatureSec />
+						<div className="technology-sec">
+							<h3>Technologies</h3>
+							<div className="container">
+								<div className="row">
+									<div className="col-lg-12 col-md-12">
 
-					<div className="service-sec" data-aos="fade-down">
-						<div className="container">
-							{serviceJson && serviceJson.map(ServicejsonS => {
-								return (
-									ServicejsonS.content == '' ? null :
-										<div className="row">
-											<div className="col-lg-2"></div>
-											<div className="col-lg-8 col-md-12">
-												<h3 dangerouslySetInnerHTML={{ __html: ServicejsonS.content }}></h3>
+										<OwlCarousel options={technology}>
+											<div className="tech-box">
+												<a href="/CloudDevelopment">
+													<div className="tech-dot"></div>
+													<img src={imgs6} />
+													<h4>Cloud</h4>
+													<div className="arrow-icon"><FaArrowRight /></div>
+												</a>
 											</div>
-										</div>
-								);
-							})}
 
-							<div className="row">
-								<div className="col-lg-1"></div>
-								<div className="col-lg-10 col-md-12">
-									<OwlCarousel loop options={service}>
+											<div className="tech-box">
+												<a href="/ECommerceDevelopers">
+													<div className="tech-dot"></div>
+													<img src={imgs5} />
+													<h4>e-Commerce</h4>
+													<div className="arrow-icon"><FaArrowRight /></div>
+												</a>
+											</div>
 
-										<div className="serv-box">
-											<a href="/Web_Development">
-												<img src={img1} />
-												<h4>Web</h4>
-												<div className="arrow-icon"><FaArrowRight /></div>
-											</a>
-										</div>
+											<div className="tech-box">
+												<a href="/Mobile_Developement">
+													<div className="tech-dot"></div>
+													<img src={imgs4} />
+													<h4>Mobile</h4>
+													<div className="arrow-icon"><FaArrowRight /></div>
+												</a>
+											</div>
 
-										<div className="serv-box">
-											<a href="/Mobile_Developement">
-												<img src={img2} />
-												<h4>Mobile</h4>
-												<div className="arrow-icon"><FaArrowRight /></div>
-											</a>
-										</div>
+											<div className="tech-box">
+												<a href="#">
+													<div className="tech-dot"></div>
+													<img src={imgs3} />
+													<h4>Server-Side</h4>
+													<div className="arrow-icon"><FaArrowRight /></div>
+												</a>
+											</div>
 
-										<div className="serv-box">
-											<a href="/DevOps">
-												<img src={img3} />
-												<h4>Dev Ops</h4>
-												<div className="arrow-icon"><FaArrowRight /></div>
-											</a>
-										</div>
+											<div className="tech-box">
+												<a href="#">
+													<div className="tech-dot"></div>
+													<img src={imgs2} />
+													<h4>Product Design
+													</h4>
+													<div className="arrow-icon"><FaArrowRight /></div>
+												</a>
+											</div>
 
-										<div className="serv-box">
-											<a href="/CloudDevelopment">
-												<img src={img4} />
-												<h4>Cloud Development</h4>
-												<div className="arrow-icon"><FaArrowRight /></div>
-											</a>
-										</div>
+											<div className="tech-box">
+												<a href="#">
+													<div className="tech-dot"></div>
+													<img src={imgs1} />
+													<h4>CMS</h4>
+													<div className="arrow-icon"><FaArrowRight /></div>
+												</a>
+											</div>
+										</OwlCarousel>
 
-									</OwlCarousel>
-
+									</div>
 								</div>
 							</div>
+							<h6><a href="/service">View More Services </a></h6>
+							<FormPopup />
+							<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 						</div>
-						<h6><a href="/service">View More Services </a></h6>
-						<FormPopup />
-					</div>
 
-					<div className="technology-sec">
-						<h3>Technologies</h3>
-						<div className="container">
-							<div className="row">
-								<div className="col-lg-12 col-md-12">
+						<WorkSec />
 
-									<OwlCarousel options={technology}>
-										<div className="tech-box">
-											<a href="/CloudDevelopment">
-												<div className="tech-dot"></div>
-												<img src={imgs6} />
-												<h4>Cloud</h4>
-												<div className="arrow-icon"><FaArrowRight /></div>
-											</a>
-										</div>
-
-										<div className="tech-box">
-											<a href="/ECommerceDevelopers">
-												<div className="tech-dot"></div>
-												<img src={imgs5} />
-												<h4>e-Commerce</h4>
-												<div className="arrow-icon"><FaArrowRight /></div>
-											</a>
-										</div>
-
-										<div className="tech-box">
-											<a href="/Mobile_Developement">
-												<div className="tech-dot"></div>
-												<img src={imgs4} />
-												<h4>Mobile</h4>
-												<div className="arrow-icon"><FaArrowRight /></div>
-											</a>
-										</div>
-
-										<div className="tech-box">
-											<a href="#">
-												<div className="tech-dot"></div>
-												<img src={imgs3} />
-												<h4>Server-Side</h4>
-												<div className="arrow-icon"><FaArrowRight /></div>
-											</a>
-										</div>
-
-										<div className="tech-box">
-											<a href="#">
-												<div className="tech-dot"></div>
-												<img src={imgs2} />
-												<h4>Product Design
-												</h4>
-												<div className="arrow-icon"><FaArrowRight /></div>
-											</a>
-										</div>
-
-										<div className="tech-box">
-											<a href="#">
-												<div className="tech-dot"></div>
-												<img src={imgs1} />
-												<h4>CMS</h4>
-												<div className="arrow-icon"><FaArrowRight /></div>
-											</a>
-										</div>
-									</OwlCarousel>
-
+						<div className="team-sec" data-aos="fade-right">
+							<h3>Industry Experience</h3>
+							<h4>Our team is specialized in a wide array of industry verticals.</h4>
+							<div className="container">
+								<div className="row">
+									<div className="col-lg-12 col-md-12">
+										{teamJson.length && (
+											<OwlCarousel options={teamSlide}>
+												{teamJson.map((teamJsons, index, teamJson) => {
+													index *= 3;
+													if (index < (teamJson.length - teamJson.length % 3)) {
+														return (
+															<div>
+																<div key={teamJson[index].id} className="team-box">{teamJson[index].name} <img src={teamJson[index].img} /></div>
+																<div key={teamJson[index + 1].id} className="team-box">{teamJson[index + 1].name} <img src={teamJson[index + 1].img} /></div>
+																<div key={teamJson[index + 2].id} className="team-box">{teamJson[index + 2].name} <img src={teamJson[index + 2].img} /></div>
+															</div>
+														);
+													}
+												})}
+											</OwlCarousel>
+										)}
+									</div>
 								</div>
 							</div>
+							<FormPopup />
+							<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 						</div>
-						<h6><a href="/service">View More Services </a></h6>
-						<FormPopup />
-						<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
-					</div>
 
-					<WorkSec />
+						<div className="why-sec">
+							<div className="container">
+								<div className="row">
+									<div className="col-lg-4 col-md-4" data-aos="fade-up">
+										{chooseJson2 && chooseJson2.map((Choosejson2S, index) => {
+											return (
+												(index == 0) ?
+													<>
+														<h3>Why Choose<span>iQuinceSOFT?</span></h3>
+														<p key={index} dangerouslySetInnerHTML={{ __html: Choosejson2S.content }}></p>
+														<div key={index} className="tech-box dd">
+															<div className="tech-dot"></div>
+															<h6>Corporate Social Responsibility</h6>
+															<img width="100%" src={Choosejson2S.img} />
+														</div>
+													</>
+													:
+													<div key={index} className="tech-box dd-1">
+														<div key={index} className="tech-dot"></div>
+														<img src={Choosejson2S.img} />
+														<h4>Technology Fast 50 Deloitte</h4>
+													</div>
 
-					<div className="team-sec" data-aos="fade-right">
-						<h3>Industry Experience</h3>
-						<h4>Our team is specialized in a wide array of industry verticals.</h4>
-						<div className="container">
-							<div className="row">
-								<div className="col-lg-12 col-md-12">
-									{teamJson.length && (
-										<OwlCarousel options={teamSlide}>
-											{teamJson.map((teamJsons, index, teamJson) => {
-												index *= 3;
-												if (index < (teamJson.length - teamJson.length % 3)) {
+											);
+										})}
+									</div>
+
+									<div className="col-lg-8 col-md-8">
+										{chooseJson.length && (
+											<OwlCarousel options={whySlide}>
+												{chooseJson.map((ChoosejsonS, index) => {
 													return (
 														<div>
-															<div key={teamJson[index].id} className="team-box">{teamJson[index].name} <img src={teamJson[index].img} /></div>
-															<div key={teamJson[index + 1].id} className="team-box">{teamJson[index + 1].name} <img src={teamJson[index + 1].img} /></div>
-															<div key={teamJson[index + 2].id} className="team-box">{teamJson[index + 2].name} <img src={teamJson[index + 2].img} /></div>
+															<div key={index} className="tech-box dd-1">
+																<div className="tech-dot"></div>
+																<img src={ChoosejsonS.img} />
+																<h4 dangerouslySetInnerHTML={{ __html: ChoosejsonS.name }}></h4>
+															</div>
+
+															<div key={index} className="tech-box dd-1">
+																<div className="tech-dot"></div>
+																<img src={ChoosejsonS.img} />
+																<h4 dangerouslySetInnerHTML={{ __html: ChoosejsonS.name }}></h4>
+															</div>
 														</div>
 													);
-												}
-											})}
-										</OwlCarousel>
-									)}
+												})}
+											</OwlCarousel>
+										)}
+										<div className="tech-box dd">
+											<div className="tech-dot"></div>
+											<img width="100%" src={whyVd} />
+										</div>
+									</div>
 								</div>
 							</div>
+							<FormPopup />
+							<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 						</div>
-						<FormPopup />
-						<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
-					</div>
 
-					<div className="why-sec">
-						<div className="container">
-							<div className="row">
-								<div className="col-lg-4 col-md-4" data-aos="fade-up">
-									{chooseJson2 && chooseJson2.map((Choosejson2S, index) => {
-										return (
-											(index == 0) ?
-												<>
-													<h3>Why Choose<span>iQuinceSOFT?</span></h3>
-													<p key={index} dangerouslySetInnerHTML={{ __html: Choosejson2S.content }}></p>
-													<div key={index} className="tech-box dd">
-														<div className="tech-dot"></div>
-														<h6>Corporate Social Responsibility</h6>
-														<img width="100%" src={Choosejson2S.img} />
-													</div>
-												</>
-												:
-												<div key={index} className="tech-box dd-1">
-													<div key={index} className="tech-dot"></div>
-													<img src={Choosejson2S.img} />
-													<h4>Technology Fast 50 Deloitte</h4>
+						<div className="career-sec">
+							<div className="container">
+								<div className="row">
+									<div className="col-lg-7 col-md-9" data-aos="fade-right">
+										{careerJson.length && careerJson.map((careerJsons, index) => {
+											return (
+												<div key={index}>
+													<h3>{careerJsons.name}</h3>
+													<p dangerouslySetInnerHTML={{ __html: careerJsons.content }}></p>
+													<Link to={'/career'}><img src={arrow3} />search and apply</Link>
 												</div>
-
-										);
-									})}
-								</div>
-
-								<div className="col-lg-8 col-md-8">
-									{chooseJson.length && (
-										<OwlCarousel options={whySlide}>
-											{chooseJson.map((ChoosejsonS, index) => {
-												return (
-													<div>
-														<div key={index} className="tech-box dd-1">
-															<div className="tech-dot"></div>
-															<img src={ChoosejsonS.img} />
-															<h4 dangerouslySetInnerHTML={{ __html: ChoosejsonS.name }}></h4>
-														</div>
-
-														<div key={index} className="tech-box dd-1">
-															<div className="tech-dot"></div>
-															<img src={ChoosejsonS.img} />
-															<h4 dangerouslySetInnerHTML={{ __html: ChoosejsonS.name }}></h4>
-														</div>
-													</div>
-												);
-											})}
-										</OwlCarousel>
-									)}
-									<div className="tech-box dd">
-										<div className="tech-dot"></div>
-										<img width="100%" src={whyVd} />
+											);
+										})}
 									</div>
 								</div>
 							</div>
 						</div>
-						<FormPopup />
-						<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
-					</div>
 
-					<div className="career-sec">
-						<div className="container">
-							<div className="row">
-								<div className="col-lg-7 col-md-9" data-aos="fade-right">
-									{careerJson.length && careerJson.map((careerJsons, index) => {
-										return (
-											<div key={index}>
-												<h3>{careerJsons.name}</h3>
-												<p dangerouslySetInnerHTML={{ __html: careerJsons.content }}></p>
-												<Link to={'/career'}><img src={arrow3} />search and apply</Link>
-											</div>
-										);
-									})}
-								</div>
-							</div>
-						</div>
-					</div>
+						<ReviewSec />
 
-					<ReviewSec />
+						<EuquireSec />
 
-					<EuquireSec />
+						<AwardSec />
 
-					<AwardSec />
-
-					<Footer />
+						<Footer />
+					</ErrorBoundary>
 				</>
 		);
 	}

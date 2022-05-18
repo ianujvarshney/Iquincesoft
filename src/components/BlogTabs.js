@@ -109,22 +109,20 @@ class BlogTabs extends Component {
             this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
                 <>
                     <Header headerClass={'case-head'} />
-                    {InsightsJson && InsightsJson.map((InsightsJsonS, index) => {
-                        return (
-                            <div className="blog-banner">
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col-lg-2"></div>
-                                        <div className="col-lg-8 col-md-12" data-aos="fade-up">
-                                            <h1>Learn from our web development blog read by 1.2M tech leaders</h1>
-                                            <p><span>Get a bi-weekly email with <strong>the most popular stories</strong></span></p>
-                                            <div className="in-box"><input type="search" onChange={(event) => setsearchterm(event.target.value)} className="box" type="search" name="" placeholder="Supercharge your brain" /> <Link to={"#"}>Let's Learn</Link></div>
-                                        </div>
-                                    </div>
+                    <div className="blog-banner">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2"></div>
+                                <div className="col-lg-8 col-md-12" data-aos="fade-up">
+                                    <h1>Learn from our web development blog read by 1.2M tech leaders</h1>
+                                    <p><span>Get a bi-weekly email with <strong>the most popular stories</strong></span></p>
+                                    <div className="in-box">
+                                        <input type="search" className="box" type="search" name="" placeholder="Supercharge your brain" />
+                                        <Link to={"#"}>Let's Learn</Link></div>
                                 </div>
                             </div>
-                        )
-                    })}
+                        </div>
+                    </div>
                     <div className="blog-sec">
                         <div className="container">
                             <div className="row">

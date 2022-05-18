@@ -141,7 +141,16 @@ header .col-lg-6,
 .service-banner-cat .col-lg-7 {
   align-self: center;
 }
-
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.error h1 {
+  font-size: 100px;
+}
 .head-sec {
   text-align: right;
 }
@@ -695,7 +704,7 @@ header .dropdown-menu li a {
 .tech-box {
   background-color: #fff;
   border: 1px solid var(--main-color);
-  cursor: pointer;
+  cursor: grabbing;
   margin: 0 15px 15px;
   padding: 5px 5px 12px;
   position: relative;
@@ -850,7 +859,7 @@ header .dropdown-menu li a {
   align-items: center;
   border: 1px solid var(--main-color);
   border-radius: 5px;
-  cursor: pointer;
+  cursor: grabbing;
   display: flex;
   font-size: 16px;
   justify-content: space-between;
@@ -1008,6 +1017,7 @@ header .dropdown-menu li a {
   margin: 0 20px;
   padding: 0 30px 80px;
   max-height: 332px;
+  cursor: grabbing;
 }
 .review-sec .owl-carousel .owl-item img {
   border-radius: 50%;
@@ -1482,6 +1492,7 @@ footer li {
 }
 .cult-box {
   margin: 0 15px;
+  cursor: grabbing;
 }
 .about-txt h1 {
   color: var(--main-color);
@@ -1736,8 +1747,11 @@ footer li {
   padding: 30px;
 }
 .web-sec {
-  background-image: none;
-  padding: 75px 0;
+  background-image: url(images/meet-pattern.png), url(images/meet-pattern1.png);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  /* background-image: none; */
+  /* padding: 75px 0; */
 }
 .web-sec .col-lg-4 {
   margin: 0 0 50px;
@@ -2369,6 +2383,9 @@ footer li {
   font-size: 18px;
   font-weight: 500;
 }
+.blog-sec .react-tabs__tab-list p a:hover {
+  color: var(--main-color);
+}
 .blog-sec .react-tabs__tab-list .para a {
   color: var(--main-color);
 }
@@ -2530,6 +2547,9 @@ footer li {
   padding: 0 0 28px;
   clear: both;
 }
+.cr-sec .cr-data {
+  display: none;
+}
 .cr-sec .mid-border {
   text-align: start;
 }
@@ -2563,7 +2583,7 @@ footer li {
   margin: 4px 0 0 50px;
 }
 .cr-sec h4 a {
-  color: #000;
+  color: black;
 }
 .cr-sec h5 {
   font-size: 15px;
@@ -4330,6 +4350,9 @@ footer li {
   /******************* career page media start here *******************/
   .cr-sec {
     padding-top: 70px;
+  }
+  .cr-sec .cr-data {
+    display: block;
   }
   .cr-sec h3 {
     font-size: 24px;

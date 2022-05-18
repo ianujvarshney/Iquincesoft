@@ -1,25 +1,25 @@
 import React, { Component } from 'react'
 import { HashLink as Link } from 'react-router-hash-link';
 
-import award from '../images/award-img.png';
-import award1 from '../images/award-img1.png';
-import award2 from '../images/award-img2.png';
-import award3 from '../images/award-img3.png';
-import award4 from '../images/award-img4.png';
-import award5 from '../images/award-img5.png';
-import award6 from '../images/award-img6.png';
-import award7 from '../images/award-img7.png';
-import award8 from '../images/award-img8.png';
-import Client1 from '../images/Client1.png'
+// import award from '../images/award-img.png';
+// import award1 from '../images/award-img1.png';
+// import award2 from '../images/award-img2.png';
+// import award3 from '../images/award-img3.png';
+// import award4 from '../images/award-img4.png';
+// import award5 from '../images/award-img5.png';
+// import award6 from '../images/award-img6.png';
+// import award7 from '../images/award-img7.png';
+// import award8 from '../images/award-img8.png';
+// import Client1 from '../images/Client1.png'
 
 import talk from '../images/talk.png';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import EuquireSec from './EuquireSec';
+// import EuquireSec from './EuquireSec';
 
 import popupImg from '../images/popup-img.png';
-import arrow6 from '../images/arrow6.png';
-import arrow2 from '../images/arrow2.png';
+// import arrow6 from '../images/arrow6.png';
+// import arrow2 from '../images/arrow2.png';
 import arrow_white from '../images/arrow-white.png';
 import FormPopup from './FormPopup';
 import { FaRegCalendar, FaLockOpen, FaRegUserCircle, FaRegEnvelope, FaPhoneAlt, FaPaperPlane } from 'react-icons/fa';

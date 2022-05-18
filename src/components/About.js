@@ -129,6 +129,7 @@ class About extends Component {
 					</Helmet>
 
 					<Header headerClass={'about-head'} />
+
 					<div div className="about-banner" >
 						<div className="about-box">
 							<div className="container">
