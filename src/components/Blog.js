@@ -6,7 +6,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Inspired } from '../json/Inspired';
 import { TailSpin } from 'react-loader-spinner';
 import InfiniteScroll from "react-infinite-scroll-component";
-import { ErrorBoundary } from 'react-error-boundary';
+import MyErrorBoundary from '../container/MyErrorBoundary';
 import Blogtabs from '../components/BlogTabs';
 
 class Blog extends Component {
@@ -143,103 +143,103 @@ class Blog extends Component {
 								</div>
 							</div>
 						</div>
-
-						<div className="blog-sec">
-							<div className="container">
-								<div className="row">
-									<div className="col-lg-12 col-md-12">
-										<h2>Recent articles from our web development blog </h2>
-										<Tabs>
-											<TabList>
-												<div className="row">
-													<div className="col-lg-10 col-md-9">
-														<Tab>All Posts ({allpost})</Tab>
-														{catedata && catedata.map((dataS, index) => {
-															return (
-																<p><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p>
-															);
-														})}
+						<MyErrorBoundary>
+							<div className="blog-sec">
+								<div className="container">
+									<div className="row">
+										<div className="col-lg-12 col-md-12">
+											<h2>Recent articles from our web development blog </h2>
+											<Tabs>
+												<TabList>
+													<div className="row">
+														<div className="col-lg-10 col-md-9">
+															<Tab>All Posts ({allpost})</Tab>
+															{catedata && catedata.map((dataS, index) => {
+																return (
+																	<p><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p>
+																);
+															})}
+														</div>
+														<div className="col-lg-2 col-md-3"><input className="box" type="text" name="" placeholder="Search" /></div>
 													</div>
-													<div className="col-lg-2 col-md-3"><input className="box" type="text" name="" placeholder="Search" /></div>
-												</div>
-											</TabList>
+												</TabList>
 
-											<TabPanel data-aos="fade-down" >
-												<InfiniteScroll style={{ overflow: 'hidden' }}
-													dataLength={data.length}
-													next={() => this.fetchMoreData(page)}
-													hasMore={true}
-												>
-													<div className="row case-txt" >
-														{data.map(dataS => {
-															return (
-																<div className="col-lg-4 col-md-6">
-																	<div className="case-main">
-																		<Link to={`/PostPage/${dataS.slug}`} ><h4>Read More</h4> <img alt="img" width="100%" src={dataS.img} /></Link>
-																		<div className="case-box">
-																			<h5><img alt="img" src={dataS.author_profile} /><span><strong>{dataS.author_name}</strong> QA Specialist</span></h5>
-																			<Link to={`/PostPage/${dataS.slug}`} ><h3>{dataS.name}</h3></Link>
-																			{/* <h4>READ MORE <img alt="img" src={arrow2} />Oct 10, 2021</h4> */}
+												<TabPanel data-aos="fade-down" >
+													<InfiniteScroll style={{ overflow: 'hidden' }}
+														dataLength={data.length}
+														next={() => this.fetchMoreData(page)}
+														hasMore={true}
+													>
+														<div className="row case-txt" >
+															{data.map(dataS => {
+																return (
+																	<div className="col-lg-4 col-md-6">
+																		<div className="case-main">
+																			<Link to={`/PostPage/${dataS.slug}`} ><h4>Read More</h4> <img alt="img" width="100%" src={dataS.img} /></Link>
+																			<div className="case-box">
+																				<h5><img alt="img" src={dataS.author_profile} /><span><strong>{dataS.author_name}</strong> QA Specialist</span></h5>
+																				<Link to={`/PostPage/${dataS.slug}`} ><h3>{dataS.name}</h3></Link>
+																				{/* <h4>READ MORE <img alt="img" src={arrow2} />Oct 10, 2021</h4> */}
+																			</div>
 																		</div>
 																	</div>
-																</div>
 
-															);
-														})}
-													</div>
-												</InfiniteScroll>
+																);
+															})}
+														</div>
+													</InfiniteScroll>
 
-											</TabPanel>
-
+												</TabPanel>
 
 
-											<TabPanel>
-												<h3>Any content 2</h3>
-											</TabPanel>
 
-											<TabPanel>
-												<h3>Any content 3</h3>
-											</TabPanel>
+												<TabPanel>
+													<h3>Any content 2</h3>
+												</TabPanel>
 
-											<TabPanel>
-												<h3>Any content 4</h3>
-											</TabPanel>
+												<TabPanel>
+													<h3>Any content 3</h3>
+												</TabPanel>
 
-											<TabPanel>
-												<h3>Any content 5</h3>
-											</TabPanel>
+												<TabPanel>
+													<h3>Any content 4</h3>
+												</TabPanel>
 
-											<TabPanel>
-												<h3>Any content 6</h3>
-											</TabPanel>
+												<TabPanel>
+													<h3>Any content 5</h3>
+												</TabPanel>
 
-											<TabPanel>
-												<h3>Any content 7</h3>
-											</TabPanel>
+												<TabPanel>
+													<h3>Any content 6</h3>
+												</TabPanel>
 
-											<TabPanel>
-												<h3>Any content 8</h3>
-											</TabPanel>
+												<TabPanel>
+													<h3>Any content 7</h3>
+												</TabPanel>
 
-											<TabPanel>
-												<h3>Any content 9</h3>
-											</TabPanel>
+												<TabPanel>
+													<h3>Any content 8</h3>
+												</TabPanel>
 
-											<TabPanel>
-												<h3>Any content 10</h3>
-											</TabPanel>
+												<TabPanel>
+													<h3>Any content 9</h3>
+												</TabPanel>
 
-											<TabPanel>
-												<h3>Any content 11</h3>
-											</TabPanel>
-										</Tabs>
+												<TabPanel>
+													<h3>Any content 10</h3>
+												</TabPanel>
+
+												<TabPanel>
+													<h3>Any content 11</h3>
+												</TabPanel>
+											</Tabs>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+						</MyErrorBoundary>
 						<Footer />
 					</>
-
 			);
 		}
 	}

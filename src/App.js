@@ -53,6 +53,7 @@ import DigitalMarket from '../src/components/Services/DigiMarket';
 import DedicateTeams from '../src/components/Services/DedicatedTeams';
 import Designers from '../src/components/Services/Designers';
 import Ecommerce from '../src/components/Services/Ecommerce';
+import Jobform from './container/Jobform';
 
 
 class App extends Component {
@@ -61,6 +62,7 @@ class App extends Component {
 			<Router >
 				<Switch>
 					<Route exact path='/' component={Home} />
+					<Route exact path='/Jobform' component={Jobform} />
 					<Route exact path='/about' component={About} />
 					<Route exact path='/service' component={Service} />
 					<Route exact path='/serviceDescription' component={ServiceDescription} />

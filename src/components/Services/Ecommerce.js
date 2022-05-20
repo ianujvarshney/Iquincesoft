@@ -207,7 +207,6 @@ class Ecommerce extends Component {
                                             <li>Legacy system integration.</li>
                                             <li>Scalability with total feature capacity. </li>
                                         </ul>
-                                        <Link to="#">For more clarity, </Link>
                                     </div>
                                 </div>
                                 <div className="col-lg-6 col-md-6">
@@ -228,27 +227,6 @@ class Ecommerce extends Component {
                                 <div className="col-lg-10 col-md-12">
                                     <h1>Advanced eCommerce Solutions</h1>
                                     <p>Advanced eCommerce Solutions are also considered the optimal solution for beginners. In this system, the beginner gets access to a shopping cart system, an integrated product catalog tool, and a website tailored to brand identity. </p>
-                                </div>
-                            </div>
-
-                            <div className="row">
-                                <div className="col-lg-1"></div>
-                                <div className="col-lg-5 col-md-6">
-                                    <div className="ecom-part">
-                                        <h3>In addition to this, apart from the available resources, the additional features are:</h3>
-                                        <ul>
-                                            <li>Open-Source.</li>
-                                            <li>Custom application interface programming.</li>
-                                            <li>Product database integration.</li>
-                                            <li>Legacy system integration.</li>
-                                            <li>Scalability with total feature capacity. </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-md-6">
-                                    <div className="ecom-image">
-                                        <img src={image_body} />
-                                    </div>
                                 </div>
                             </div>
 

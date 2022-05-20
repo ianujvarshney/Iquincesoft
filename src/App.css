@@ -1598,6 +1598,9 @@ footer li {
   padding: 0;
   font-size: 15px;
 }
+.award-form-sec .para-link a:hover {
+  color: var(--main-color);
+}
 .serv-sec {
   background-color: #f2f2f2;
   padding: 80px 0;
@@ -2607,6 +2610,9 @@ footer li {
 .cr-sec .col-lg-4 {
   margin: 0 0 38px;
 }
+.cr-sec .cult-box a {
+  color: black;
+}
 .cr-sec .cult-box .tech-dot {
   display: block;
   float: left;
@@ -2800,6 +2806,9 @@ footer li {
   font-weight: normal;
   margin: 20px 0 0;
 }
+.job-dt-box h5 a {
+  color: var(--main-color);
+}
 .job-dt-box h6 {
   border-bottom: 1px solid var(--main-color);
   border-top: 1px solid var(--main-color);
@@ -2812,10 +2821,10 @@ footer li {
   padding: 0 0 8px;
 }
 .job-dt-box h6 a {
-  float: right;
   font-family: Avenir-semi;
-  margin: -28px 0 0;
   padding: 10px 14px;
+  width: 100%;
+  text-align: center;
 }
 
 .job-txt {
@@ -2868,6 +2877,32 @@ footer li {
   top: 26px;
   width: 10px;
 }
+
+/**********************Job form ************************* */
+.jobform {
+  background: var(--main-color);
+  height: 100vh;
+}
+.jobform .form {
+  background: white;
+  height: 80vh;
+}
+.button,
+.wpcf7-submit {
+  display: inline-block;
+  text-align: center;
+  border-radius: 15.9375rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  background: #000ee6;
+  color: #fff;
+  border: 0.0625rem solid transparent;
+  font-weight: 700;
+  opacity: 1;
+  transition: background 0.1s ease-in-out, color 0.1s ease-in-out,
+    opacity 0.1s ease-in-out;
+}
 /********************Category pages Css here to start**************/
 
 .award-form-sec .row:nth-child(2) .col-lg-12 {
@@ -2897,6 +2932,7 @@ footer li {
   font-family: Avenir-semi;
   font-size: 17px;
   padding: 16px 20px;
+  cursor: pointer;
   border: none;
 }
 .award-form-sec .row:first-child ul {

@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-
+import { HashLink as Link } from 'react-router-hash-link';
 import contImg from '../images/cont-img.jpg';
 import contImg1 from '../images/cont-img1.jpg';
 import contImg2 from '../images/cont-img2.jpg';
@@ -114,7 +114,7 @@ class ContactUs extends Component {
 						</div>
 					</div>
 
-					<div className="cont-social" data-aos="fade-right"><a href="#"><FaFacebook /></a> <a href="#"><FaTwitter /></a> <a href="#"><FaInstagram /></a> <a href="#"><FaLinkedin /></a> <a href="#"><FaPinterest /></a> <a href="#"><FaYoutube /></a></div>
+					<div className="cont-social" data-aos="fade-right"><a href="https://www.facebook.com/iquincesoft"><FaFacebook /></a> <a href="https://twitter.com/iquincesoft"><FaTwitter /></a> <a href="https://www.instagram.com/iquincesoft"><FaInstagram /></a> <a href="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></a> <a href="https://in.pinterest.com/iquincesoft/"><FaPinterest /></a> <a href="https://www.youtube.com/c/Iquincesoft"><FaYoutube /></a></div>
 				</div>
 
 				<Footer />

@@ -90,12 +90,11 @@ class Career extends Component {
 							<div className="about-banner">
 								<div className="about-box">
 									<div className="container">
-
 										<div className="row">
 											<div className="col-lg-5 col-md-7" data-aos="fade-right">
 												<h1>{CareerJsonS.name}</h1>
 												<p dangerouslySetInnerHTML={{ __html: CareerJsonS.content }}></p>
-												<Link to={'/jobOffer'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}><h5>Job Offers <img alt="img" src={arrow2} /></h5></Link>
+												<Link to={'/jobOffer'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}><h5><img alt="img" src={arrow2} />Job Offers</h5></Link>
 											</div>
 											<div className="col-lg-7 col-md-5" data-aos="fade-up"><a href="https://www.facebook.com/iquincesoft"><FaFacebook /></a> <a href="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></a> <a href="https://twitter.com/iquincesoft"><FaTwitter /></a> <Link to={"#"}><FaLink /></Link></div>
 										</div>
@@ -122,7 +121,7 @@ class Career extends Component {
 									<h3>Join the best talent pool of Northern parts of Subcontinent</h3>
 								</div>
 								<div className="cr-data col-md-6">
-									{Career2Json.length && (
+									{joblinks3.length && (
 										<OwlCarousel options={culture}>
 											{joblinks3.map(joblinks3S => {
 												return (
@@ -140,12 +139,16 @@ class Career extends Component {
 
 								{joblinks3 && joblinks3.map(joblinks3S => {
 									return (
+
 										<div className="col-lg-4 col-md-6">
+
 											<div className="cult-box">
-												<div class="tech-dot"></div>
-												<h4><Link to={`/joboffer/${joblinks3S.slug}`} >{joblinks3S.name}</Link></h4>
-												<p dangerouslySetInnerHTML={{ __html: joblinks3S.description }}></p>
-												<h5><span><Link to={`/joboffer/${joblinks3S.slug}`} >{joblinks3S.looking} Open Positions</Link></span> </h5>
+												<Link to={`/joboffer/${joblinks3S.slug}`} >
+													<div class="tech-dot"></div>
+													<h4>{joblinks3S.name}</h4>
+													<p dangerouslySetInnerHTML={{ __html: joblinks3S.description }}></p>
+													<h5><span><Link to={`/joboffer/${joblinks3S.slug}`} >{joblinks3S.looking} Open Positions</Link></span> </h5>
+												</Link>
 											</div>
 										</div>
 									);

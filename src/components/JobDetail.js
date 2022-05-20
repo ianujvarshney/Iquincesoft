@@ -46,7 +46,7 @@ class JobDetail extends Component {
 							<div className="col-lg-4 col-md-6">
 								{InsightsJson && InsightsJson.map(link => {
 									return (
-										<div className="job-dt-box" data-aos="fade-up">
+										<div className="job-dt-box">
 											<h4>{link.name}</h4>
 											<p dangerouslySetInnerHTML={{ __html: link.content }}></p>
 											<h6><span>{link.Job_Access}</span><a href="#">Apply Now</a></h6>
@@ -63,28 +63,28 @@ class JobDetail extends Component {
 
 				<div className="job-txt">
 					<div className="container">
-						<div className="row" data-aos="fade-down">
+						<div className="row">
 							<div className="col-lg-8 col-md-12">
-								<h3 id="Requir">We expect from you :</h3>
+								<h3>We expect from you :</h3>
 								{InsightsJson && InsightsJson.map(link => {
 									return (
-										<p dangerouslySetInnerHTML={{ __html: link.content1 }}></p>
+										<p id="Requir" dangerouslySetInnerHTML={{ __html: link.content1 }}></p>
 									);
 								})}
 							</div>
 						</div>
 
 
-						<div className="row" data-aos="fade-right">
+						<div className="row">
 							<div className="col-lg-10 col-md-12">
 								<h4>You don't meet <span>all the requirements?</span> Try it anyway!</h4>
 							</div>
 						</div>
 
 						<div className="row">
-							<div className="col-lg-8 col-md-12" data-aos="fade-down">
+							<div className="col-lg-8 col-md-12">
 								<h3 id="Benefits">It is worth joining us because:</h3>
-								<ul>
+								<ul >
 									<li>you will be part of a stable and organized organization, with the atmosphere of a small company, so if you value an intimate atmosphere, but want to work in a place with a reputation and know-how, this offer is for you</li>
 									<li>we offer participation in projects related to Cloud Native, Serverless</li>
 									<li>we give you the opportunity to work with very good DevOps and programmers from whom you can learn a lot and share your knowledge with them</li>
@@ -101,7 +101,7 @@ class JobDetail extends Component {
 								<p>You send us your CV and what next?</p>
 
 								<div className="row">
-									<div className="col-lg-6 col-md-6" data-aos="fade-up">
+									<div className="col-lg-6 col-md-6">
 										<h5>We arrange an initial interview</h5>
 										<img width="100%" src={jobImg1} />
 										<p>Our recruiters will be happy to talk about your professional experience and expectations towards The Software House. If you have doubts or questions - go ahead, this conversation is exactly for that.</p>
@@ -119,7 +119,7 @@ class JobDetail extends Component {
 								</div>
 
 								<div className="row">
-									<div className="col-lg-6 col-md-6" data-aos="fade-up">
+									<div className="col-lg-6 col-md-6">
 										<h5>We invite you to an interview</h5>
 										<img width="100%" src={jobImg3} />
 										<p>End of blind date, fire up the camera because it's time to see yourself virtually. Of course, everything is safe on Google Meets. In addition to people from the HR department, you will meet your future superiors or team leaders who will redirect the conversation to more technical tracks.</p>
@@ -137,7 +137,7 @@ class JobDetail extends Component {
 								</div>
 
 								<div className="row">
-									<div className="col-lg-6 col-md-6" data-aos="fade-up">
+									<div className="col-lg-6 col-md-6">
 										<h5>Failed to?</h5>
 										<img width="100%" src={jobImg5} />
 										<p>Regardless of the result of the recruitment, you will receive extensive feedback from us, which could still be a bit of work. Don't worry - we don't say "no" forever because we value ambitious people a lot. We have quite a few people on board that we've hired for the second pass, so never get discouraged and try again later.</p>

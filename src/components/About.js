@@ -144,7 +144,7 @@ class About extends Component {
 											);
 										})
 										}
-										<Link to={'#story'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}><h5>About us <img alt="img" src={arrow2} /></h5></Link>
+										<Link to={'#story'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}><h5> <img alt="img" src={arrow2} />About us</h5></Link>
 									</div>
 								</div>
 							</div>
