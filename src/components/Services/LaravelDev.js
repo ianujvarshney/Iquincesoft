@@ -79,14 +79,10 @@ class LaravelDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Laravel Developer</strong><br /></h1>
+                                    <h1><strong>IQuinceSoft is serving the global markets with the right set of Laravel developers from the vetted pool of talented developers. </strong><br /></h1>
                                     <ul>
-                                        <p>The iQuinceSoft Advantage ensures you:</p>
-                                        <li>Higher revenues by a significant margin.</li>
-                                        <li>Guaranteed results</li>
-                                        <li>Regular updates and insights on the ongoing projects</li>
-                                        <li>Swift initiation with the process</li>
-                                        <li>skilled team to deliver meaningful outputs outcomes. </li>
+                                        <li>Get the maximum out of this talent pool to ensure scalable and secure web apps and systems.</li>
+                                        <li>Hire Laravel developers to ensure you high growth systems and increase the capabilities.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

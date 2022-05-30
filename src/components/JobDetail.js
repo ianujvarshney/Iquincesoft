@@ -10,6 +10,8 @@ import jobImg2 from '../images/job-img2.png';
 import jobImg3 from '../images/job-img3.png';
 import jobImg4 from '../images/job-img4.png';
 import jobImg5 from '../images/job-img5.png';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 class JobDetail extends Component {
 	constructor(props) {
@@ -49,7 +51,46 @@ class JobDetail extends Component {
 										<div className="job-dt-box">
 											<h4>{link.name}</h4>
 											<p dangerouslySetInnerHTML={{ __html: link.content }}></p>
-											<h6><span>{link.Job_Access}</span><a href="#">Apply Now</a></h6>
+											<h6><span>{link.Job_Access}</span>
+												<Popup className="job-popup" trigger={<button type="button">Schedule an Appointment</button>}
+													modal lockScroll={true} >
+													{close => (
+														<div className="modal">
+															<button className="close" onClick={close}>&times; </button>
+															<div className="content">
+																<h3>You are applying for a Senior DevOps Engineer</h3>
+																<form>
+																	<h4>Required:</h4>
+																	<div className="row">
+																		<div className="col-lg-6 col-md-6"><input class="box-2" type="text" name="" placeholder="First Name" /></div>
+																		<div className="col-lg-6 col-md-6"><input class="box-2" type="text" name="" placeholder="Last Name" /></div>
+																	</div>
+																	<input class="box-2" type="text" name="" placeholder="Email" />
+																	<input class="box-2" type="file" name="" placeholder="Choose file" />
+																	<p><input type="checkbox" value="" /> <span>I agree to the processing of my personal data contained in this document by The Software House sp. Z oo with its seat in Gliwice for the purposes of current and future recruitment processes (including for other positions).</span></p>
+																	<p><input type="checkbox" value="" />
+
+																		<span>I was informed by the data administrator: The Software House sp. Z oo with its seat in Gliwice (44-100) at ul. Dolnych Wałów 8 (contact: praca@tsh.io ) that:
+																			<ul>
+																				<li>1. Providing personal data in the CV is voluntary, but necessary to carry out the recruitment process. The consequence of not providing personal data will be the inability to conduct the recruitment procedure. Personal data will be processed on the basis of art. 6 paragraph 1 point a and c of the General Regulation on the Protection of Personal Data of April 27, 2016 (GDPR).</li>
+																				<li>2. I have the right to access my personal data and the right to rectify, delete, limit processing, the right to transfer data, the right to object, the right to withdraw consent to their processing at any time without affecting the lawfulness of the processing that has been carried out. on the basis of consent before its withdrawal. In order to exercise the above-mentioned rights, an e-mail with the selected request should be sent to the following address: praca@tsh.io.</li>
+																				<li>3. I have the right to lodge a complaint with GIODO when I find that the processing of my personal data violates the provisions of the Personal Data Protection Act or the General Data Protection Regulation of 27 April 2016 (GDPR).</li>
+																				<li>4. By sending my CV to praca@tsh.io my personal data will be entrusted for processing to the Google group (Google LLC, Google Ireland Limited, Google Commerce Limited, Google Asia Pacific Pte. Ltd, Google Australia Pty Ltd).</li>
+																				<li>5. Personal data will be stored until the end of recruitment procedures, but not longer than for 10 years from the date of sending the CV.</li>
+																				<li>6. My personal data will not be processed automatically.</li>
+																			</ul>
+																		</span></p>
+																	<h4>Optional:</h4>
+																	<input class="box-2" type="text" name="" placeholder="Telephone" />
+																	<textarea class="box-2" rows="4" placeholder="Message"></textarea>
+																	<a href="#">Send</a>
+																</form>
+															</div>
+														</div>
+													)
+													}
+												</Popup>
+											</h6>
 											<h5><Link to={'#Requir'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Requirements</Link></h5>
 											<h5><Link to={'#Benefits'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Benefits</Link></h5>
 											<h5><Link to={'#process'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Recruitment processments</Link></h5>
@@ -58,8 +99,8 @@ class JobDetail extends Component {
 								})}
 							</div>
 						</div>
-					</div>
-				</div>
+					</div >
+				</div >
 
 				<div className="job-txt">
 					<div className="container">

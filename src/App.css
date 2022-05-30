@@ -1162,6 +1162,35 @@ header .dropdown-menu li a {
   background-color: transparent;
   color: var(--main-color);
 }
+.input-box {
+  position: relative;
+}
+.input-box #file-upload {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+}
+.input-box label {
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+  color: #555;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  height: 54px;
+  margin: 0;
+  padding: 15px;
+}
+.input-box i {
+  color: var(--main-color);
+  cursor: pointer;
+  font-size: 18px;
+  position: absolute;
+  right: 15px;
+  top: 18px;
+}
 
 .award-sec {
   padding: 40px 0 10px;
@@ -1382,7 +1411,7 @@ footer li {
 }
 
 .meet-sec {
-  background-image: url(images/meet-pattern.png), url(images/meet-pattern1.png);
+  /* background-image: url(images/meet-pattern.png), url(images/meet-pattern1.png); */
   background-position: top left, bottom right;
   background-repeat: no-repeat;
   padding: 40px 0 55px;
@@ -2304,7 +2333,7 @@ footer li {
 .send-btn:hover,
 .job-btn:hover,
 .check-sec a:hover,
-.job-dt-box h6 a:hover {
+.job-dt-box h6 button:hover {
   background-color: #fff;
   color: var(--main-color);
 }
@@ -2337,7 +2366,7 @@ footer li {
   display: block;
   letter-spacing: 0;
   margin: 0;
-  padding: 0;
+  padding: 10px 0 0 0;
   text-align: right;
 }
 .case-txt img {
@@ -2466,7 +2495,7 @@ footer li {
 }
 .send-btn,
 .check-sec a,
-.job-dt-box h6 a {
+.job-dt-box h6 button {
   background-color: var(--main-color);
   border: 2px solid var(--main-color);
   border-radius: 30px;
@@ -2820,7 +2849,8 @@ footer li {
   font-size: 18px;
   padding: 0 0 8px;
 }
-.job-dt-box h6 a {
+.job-dt-box h6 button {
+  cursor: pointer;
   font-family: Avenir-semi;
   padding: 10px 14px;
   width: 100%;
@@ -2877,7 +2907,102 @@ footer li {
   top: 26px;
   width: 10px;
 }
+.job-popup.popup-overlay {
+  background: var(--main-color) !important;
+}
+.job-popup-content.popup-content {
+  border: none;
+  padding: 25px;
+}
+.job-popup-content form {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 450px;
+}
+.job-popup-content form::-webkit-scrollbar {
+  display: none;
+}
+.job-popup-content input[type="file"]::file-selector-button {
+  display: none;
+}
+.job-popup-content .close {
+  position: absolute;
+  right: -17px;
+  top: -17px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  height: 35px;
+  width: 35px;
+  font-size: 26px;
+  border: 2px solid #fff;
+}
+.job-popup-content h3 {
+  font-size: 26px;
+  text-align: center;
+  margin: 4px 0px 26px;
+  border-bottom: 1px solid var(--main-color);
+  padding: 0 0 26px;
+}
+.job-popup-content h4 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 0 15px;
+}
+.box-2 {
+  border: 1px solid #7a7a7a;
+  color: #7a7a7a;
+  font-size: 16px;
+  outline: none;
+  margin: 0 0 20px;
+  padding: 14px 10px;
+  width: 100%;
+}
+.box-2:focus {
+  border: 1px solid var(--main-color);
+  color: #7a7a7a;
+}
+.box-2::placeholder {
+  color: #7a7a7a;
+  opacity: 1;
+}
+.job-popup-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 17px;
+}
+.job-popup-content p input {
+  float: left;
+  position: relative;
+  top: 3px;
+}
+.job-popup-content p input[type="checkbox" i] {
+  border: 1px solid red;
+}
+.job-popup-content p span {
+  display: block;
+  padding-left: 25px;
+}
+.job-popup-content p li {
+  padding-bottom: 10px;
+}
 
+.job-popup-content a {
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color);
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 0;
+  text-align: center;
+}
+.job-popup-content a:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
 /**********************Job form ************************* */
 .jobform {
   background: var(--main-color);

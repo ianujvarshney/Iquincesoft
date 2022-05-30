@@ -80,13 +80,11 @@ class Web_Development extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire Expert Web Developers</strong><br /></h1>
+                                    <h1><strong>iQuinceSoft offers dedicated web developers who can:</strong><br /></h1>
                                     <ul>
-                                        <p>iQuinceSoft Advantage offer you to: </p>
-                                        <li>Achieve enhanced profits with reduced operating cost significantly.</li>
-                                        <li>Call, talk and get insights from the developer whenever you want.</li>
-                                        <li>Hire skilled developers and craft the results you desire.</li>
-                                        <li>Initiate instantaneous within 24 hours with minimum or no commitments.</li>
+                                        <p>Understand your market </p>
+                                        <li>Analyze your business viz-a-viz competitor and.</li>
+                                        <li>Customize the web solutions to help you reach and attain your business goals.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -99,8 +97,10 @@ class Web_Development extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Why Choose Web ?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
+                                    <h3>Hire Web Developers with the trust of iQuinceSoft</h3>
+                                    <p>We provide dedicated web developers who can serve your software needs hourly/full-time and project basis. Use
+                                        the skills of the best developers from the trust of iQuinceSoft. We help you increase the overall productivity by
+                                        slashing down the time-to-market and overall costing that suits your budget and business.</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>

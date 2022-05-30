@@ -33,12 +33,9 @@ export default class Jobform extends Component {
                                     <input></input>
                                     <input></input>
                                     <input></input>
-                                    <label type="">
-
-                                    </label>
-
+                                    <label for="enter"></label>
+                                    <input type="file" name="enter"></input>
                                 </div>
-
                             </div>
                         </div>
                     </div>

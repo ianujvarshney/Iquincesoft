@@ -79,15 +79,10 @@ class CodeIgniter extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire CodeIgniter Developers</strong><br /></h1>
+                                    <h1><strong>Hire an expert and seasoned CodeIgniter developers. Hire our CodeIgniter developers, programmers, coders, and engineers on-demand.</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional CodeIgniter developers.  </li>
+                                        <li>Stop wasting time searching for average developers when you have the chance to hire someone who is skilled and maps according to the assigned projects.</li>
+                                        <li>Hire CodeIgniter developers from a company known for offshore services in backend development. </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

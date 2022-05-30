@@ -79,15 +79,10 @@ class VueDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Vue.js Services</strong><br /></h1>
+                                    <h1><strong>leverage the expertise and mapping skills to fit in your project demands and optimal business solutions with hiring our Vue JS developers. </strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional Vue developers.  </li>
+                                        <li>Hire the near shore talent with vetted, skilled, and seasoned Vue JS developers to scale and augment your team's performance.</li>
+                                        <li>We ensure you get quality outcomes with our ready-to-hire Vue JS developers that can deliver from day 1 of joining the team.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

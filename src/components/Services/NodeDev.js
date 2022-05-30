@@ -79,15 +79,10 @@ class NodeDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire Node developers</strong><br /></h1>
+                                    <h1><strong>Get benefitted by the Node JS from the trust and expertise of iQuinceSoft</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Design, Build, Test, and scale custom Node.js Solutions.</li>
-                                        <li>Flexibility in resourcing projects.</li>
-                                        <li>Stay in touch with the developer and have control over your work.</li>
-                                        <li>Get regular updates on any and every project.</li>
-                                        <li>Get streamlined results as per your business goals.  </li>
-                                        <li>Highly skilled and professional CodeIgniter developers.   </li>
+                                        <li>Leverage the skills and experience of our ready-to-hire Node JS developers. Build small web apps to sophisticated web systems that may suit your business and help you attain your business goals. </li>
+                                        <li>Hire the node JS developers with the trust of iQuinceSoft.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

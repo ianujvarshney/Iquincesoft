@@ -9,7 +9,9 @@ import AwardSec from '../container/AwardSec';
 import arrow2 from '../images/arrow2.png';
 import { CaseStudies } from '../json/CaseStudies';
 import { FaChevronRight } from 'react-icons/fa';
-import { TailSpin } from 'react-loader-spinner'
+import { TailSpin } from 'react-loader-spinner';
+import Pagination from "react-js-pagination";
+// import "bootstrap/less/bootstrap.less";
 class Service extends Component {
 
 	constructor(props) {
@@ -18,6 +20,8 @@ class Service extends Component {
 			CaseJson: [],
 			Case2Json: [],
 			Loading: true,
+			start: 1,
+			activePage: 15
 
 		}
 	}
@@ -42,8 +46,14 @@ class Service extends Component {
 			}
 		});
 	}
+	handlePageChange(pageNumber) {
+		console.log(`active page is ${pageNumber}`);
+		this.setState({ activePage: pageNumber });
+	}
+
 	render() {
 		const { CaseJson, Case2Json } = this.state;
+
 		return (
 			this.state.Loading ? <div className="spinner"><TailSpin color="#00ccff" height={80} width={80} /></div> :
 				<>
@@ -54,40 +64,47 @@ class Service extends Component {
 							<div className="row">
 								<div className="col-lg-2"></div>
 								<div className="col-lg-8 col-md-12" data-aos="fade-right">
-									<h4>AN AGILE PARTNER FOR 140+ COMPANIES WORLDWIDE</h4>
-									<h1>Meet the innovators who reached new markets with us</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, eligendi laudantium! Porro natus at quos.Lorem ipsum dolor sit amet, </p>
+									<h4>we keep businesses perform with data-driven processes</h4>
+									<h1>Case Studies for the world, Success Stories for us.</h1>
+									<p>These case studies are the challenge thrown to us, out of which we made some resilient software solutions that helped businesses achieve goals. </p>
 								</div>
 							</div>
 						</div>
 					</div>
-
 					<div className="case-sec">
+						<Pagination
+							activePage={this.state.activePage}
+							itemsCountPerPage={10}
+							totalItemsCount={450}
+							pageRangeDisplayed={5}
+							onChange={this.handlePageChange.bind(this)}
+						/>
 						<div className="container">
 							{CaseJson && CaseJson.map((CaseJsonS, index) => {
-								return (
-									(index % 2 === 0) ?
-
-										<div className="row">
-											<div className="col-lg-6 col-md-12" data-aos="fade-down">
-												<img alt="img" className="dd-5" src={CaseJsonS.brand_logo} />
-												<h3>{CaseJsonS.name}</h3>
-												<p dangerouslySetInnerHTML={{ __html: CaseJsonS.content }}></p>
-												<Link to={`/caseStudyDescription/${CaseJsonS.slug}`}>READ MORE <img alt="img" src={arrow2} /></Link>
+								if (index < 4) {
+									return (
+										(index % 2 === 0) ?
+											<div className="row">
+												<div className="col-lg-6 col-md-12" data-aos="fade-down" key={index}>
+													<img alt="img" className="dd-5" src={CaseJsonS.brand_logo} />
+													<h3>{CaseJsonS.name}</h3>
+													<p dangerouslySetInnerHTML={{ __html: CaseJsonS.content }}></p>
+													<Link to={`/caseStudyDescription/${CaseJsonS.slug}`}>READ MORE <img alt="img" src={arrow2} /></Link>
+												</div>
+												<div className="col-lg-6 col-md-12"><img alt="img" width="100%" height="300px" src={CaseJsonS.img} /></div>
 											</div>
-											<div className="col-lg-6 col-md-12"><img alt="img" width="100%" height="300px" src={CaseJsonS.img} /></div>
-										</div>
-										:
-										<div className="row">
-											<div className="col-lg-6 col-md-12"><img alt="img" width="100%" height="300px" src={CaseJsonS.img} /></div>
-											<div className="col-lg-6 col-md-12" data-aos="fade-up">
-												<img alt="img" className="dd-5" src={CaseJsonS.brand_logo} />
-												<h3>{CaseJsonS.name}</h3>
-												<p dangerouslySetInnerHTML={{ __html: CaseJsonS.content }}></p>
-												<Link to={`/caseStudyDescription/${CaseJsonS.slug}`}>READ MORE <img alt="img" src={arrow2} /></Link>
+											:
+											<div className="row">
+												<div className="col-lg-6 col-md-12"><img alt="img" width="100%" height="300px" src={CaseJsonS.img} /></div>
+												<div className="col-lg-6 col-md-12" data-aos="fade-up" >
+													<img alt="img" className="dd-5" src={CaseJsonS.brand_logo} />
+													<h3>{CaseJsonS.name}</h3>
+													<p dangerouslySetInnerHTML={{ __html: CaseJsonS.content }}></p>
+													<Link to={`/caseStudyDescription/${CaseJsonS.slug}`}>READ MORE <img alt="img" src={arrow2} /></Link>
+												</div>
 											</div>
-										</div>
-								);
+									);
+								}
 							})}
 						</div>
 					</div>
@@ -101,7 +118,7 @@ class Service extends Component {
 								</div>
 
 								<div className="col-lg-12 col-md-12">
-									<ul class="case-drop">
+									<ul className="case-drop">
 										<li>
 											<Link className="dropdown-toggle" to={"#"} >Services <FaChevronRight /></Link>
 											<ul>

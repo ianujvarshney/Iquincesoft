@@ -59,13 +59,13 @@ class EuquireSec extends Component {
 									<div className="in-box"><FaPhoneAlt /> <input className="box" type="text" name="" placeholder="Phone Number" /></div>
 									<div className="in-box"><FaMapMarkerAlt /> <input className="box" type="text" name="" placeholder="Company" /></div>
 									<div className="in-box"><FaEnvelopeOpenText /> <textarea className="box" rows="3" placeholder="Message / Response*"></textarea></div>
-									<button type="button">Attach files if any.</button>
+									<input id="file-upload" name="" type="file" />
 									<a href="#">Enquire Now</a>
 								</form>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div >
 			</>
 		);
 	}

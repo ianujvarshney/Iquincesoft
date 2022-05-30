@@ -79,15 +79,10 @@ class Meanstack extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>MEAN Stack Developer to Hire</strong><br /></h1>
+                                    <h1><strong>Do you wish to hire MEAN developers?</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional MEAN Stack developers.  </li>
+                                        <li>We are a team of experts in MongoDB, Express JS, Angular, and Node JS that can serve your project needs with the optimal skillsets that match the project needs and offer you scalable, secure, and user-friendly web applications. </li>
+                                        <li>Hire our MEAN developers to take your capabilities and business to the next level and manage the hired talents as your extended remote team.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

@@ -84,15 +84,11 @@ class MernStack extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire MERN Stack Developer</strong><br /></h1>
+                                    <h1><strong>Scale your business and programming capabilities with the help of our professional developers and their mapping skills with the critical project needs and demands.</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional MERN developers.  </li>
+                                        <li>Get scalable, fast, robust, user-friendly, and intuitive web applications and systems.</li>
+                                        <li>Our developers are well-versed with the MongoDB, Express JS, React JS, and Node JS frameworks with python programming to deliver what your project demands. </li>
+                                        <li>Hire our developers as you need their skills hourly, project, or monthly. </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

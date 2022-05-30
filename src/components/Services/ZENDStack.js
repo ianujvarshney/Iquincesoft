@@ -77,15 +77,10 @@ class ZENDStack extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire Zend Developer</strong><br /></h1>
+                                    <h1><strong>Looking for ZEND developers with expertise to build sophisticated yet simple web applications and systems?</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional Zend developers. </li>
+                                        <li>Hire the ZEND developers from the house of iQuinceSoft. We offer you job mapping talent skills to meet your development needs, wants, and demands.</li>
+                                        <li>We are skilled, experienced, and vetted talent, ensuring comfort, clear communication, and ease of working with our developers. Manage the best 1% of the ZEND developers as your remote team.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

@@ -79,15 +79,10 @@ class ReactDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>React.js Services</strong><br /></h1>
+                                    <h1><strong>Hire React JS developers with the Silicon Valley standards at half of the cost.</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals.</li>
-                                        <li>Highly skilled and professional React.js developers.</li>
+                                        <li>We offer you top 1% of the 5.8 million engineers from the land of Sundar Pichai, Satya Nadela and Sabeer Bhatia.</li>
+                                        <li>Leverage the skills and expertise of our vetted react JS developers to scale and automate your business process with fast, scalable and vertically-integrated options.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

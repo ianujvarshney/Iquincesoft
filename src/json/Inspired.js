@@ -73,6 +73,13 @@ export class Inspired {
                             data.push({
                                 "id": response[i].id,
                                 "name": response[i].title.rendered,
+                                "img": response[i]._embedded['wp:featuredmedia'] && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
+                                "slug": response[i].slug,
+                                "author_name": response[i]._embedded['author'][0].name,
+                                "author_profile": response[i]._embedded['author'] && response[i]._embedded['author'][0].avatar_urls['96'] || servBL,
+                                "content": response[i].content.rendered || '',
+                                "cate": response[i]._embedded['wp:term'][0][0].name,
+                                "cateslug": response[i]._embedded['wp:term'][0][0].slug,
                             });
                         }
 

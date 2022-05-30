@@ -83,13 +83,10 @@ class HirePHPDevelopers extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire PHP Developers</strong><br /></h1>
+                                    <h1><strong>Hire on-demand skilled PHP developers with eminent experience and expertise to offer robust and scalable apps to sophisticated systems.</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Use our PHP Developers to get the results you desire.</li>
-                                        <li>PHP Developer – Your projects, Our Resources. Make them count deliver substantial results.</li>
-                                        <li>Your Project + Our Developer Team = Success is unparalleled. Hire the developers to achieve timely and satisfying deliverables.</li>
-                                        <li>Hire as per your project and budget base needs, make a remote team that functions as your in-house team. Hire from our pool of developers.</li>
+                                        <li>Get the PHP developers that fit your project needs and demands and can scale your business to the next level.</li>
+                                        <li>Explore the skillsets that map with the project and company demands, part-time to full-time developers, on an hourly to project basis. </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

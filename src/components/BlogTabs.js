@@ -103,7 +103,7 @@ class BlogTabs extends Component {
 
     render() {
 
-        const { InsightsJson, data, page, catedata, thePath, allpost, setsearchterm } = this.state;
+        const { data, page, catedata, thePath, allpost } = this.state;
 
         return (
             this.state.Loading ? <div className="spinner"><TailSpin color="#864fe9" height={80} width={80} /></div> :
@@ -134,10 +134,12 @@ class BlogTabs extends Component {
                                                 <div className="col-lg-10 col-md-9">
                                                     <p> <Link to={`/blog`}>All ({allpost})</Link></p>
                                                     {catedata && catedata.map((dataS, index) => {
-                                                        return (
-                                                            dataS.cateslug === thePath ? <p className="para"><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p> :
-                                                                <p><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p>
-                                                        );
+                                                        if (dataS.size !== 0 && dataS.catename !== 'Uncategorized') {
+                                                            return (
+                                                                dataS.cateslug === thePath ? <p key={index} className="para"><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p> :
+                                                                    <p key={index} ><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p>
+                                                            );
+                                                        }
                                                     })}
                                                 </div>
                                                 <div className="col-lg-2 col-md-3"><input className="box" type="text" name="" placeholder="Search" /></div>

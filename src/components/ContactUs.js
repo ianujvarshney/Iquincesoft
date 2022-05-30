@@ -38,13 +38,13 @@ class ContactUs extends Component {
 								<div className="in-box"><textarea className="box" rows="3" placeholder="Tell us about your project or the challenge you have *"></textarea></div>
 
 								<div className="row">
-									<div className="col-lg-5 col-md-12"><a className="send-btn" href="#">Send us a Message</a></div>
-									<div className="col-lg-7 col-md-12"><h5>Or contact us directly at <a href="mailto:info@iquincesoft.com">info@iquincesoft.com</a></h5></div>
+									<div className="col-lg-5 col-md-12"><Link className="send-btn" href="#">Send us a Message</Link></div>
+									<div className="col-lg-7 col-md-12"><h5>Or contact us directly at <Link href="mailto:info@iquincesoft.com">info@iquincesoft.com</Link></h5></div>
 								</div>
 							</div>
 
 							<div className="col-lg-5 col-md-5 cont-box">
-								<img src={contImg} />
+								<img alt="img" src={contImg} />
 								<h4>They are more than just a software company. They are the partner who will help you achieve what you want to achieve.</h4>
 								<FaStar /> <FaStar /> <FaStar /> <FaStar /> <FaStar />
 								<h6><span>Jaylon Calzoni</span> Managing Director at Speakers Corner</h6>
@@ -58,63 +58,63 @@ class ContactUs extends Component {
 					<div className="container">
 						<div className="row">
 							<div className="col-lg-4 col-md-6">
-								<img width="100%" src={contImg1} />
+								<img alt="img" width="100%" src={contImg1} />
 								<div className="case-box">
 									<h3>iQuinceSOFT India</h3>
 									<p><FaMapMarkerAlt /> <span>Mani Casadona, Unit No 8E4, Action Area #2 F, New Town, Kolkata 700156, West Bengal, India</span></p>
-									<p><FaPhoneAlt /> <span><a href="#">+91-33-6799-2222</a></span></p>
+									<p><FaPhoneAlt /> <span><Link href="#">+91-33-6799-2222</Link></span></p>
 								</div>
 							</div>
 
 							<div className="col-lg-4 col-md-6">
-								<img width="100%" src={contImg2} />
+								<img alt="img" width="100%" src={contImg2} />
 								<div className="case-box">
 									<h3>iQuinceSOFT Australia</h3>
 									<p><FaMapMarkerAlt /> <span>Mani Casadona, Unit No 8E4, Action Area #2 F, New Town, Kolkata 700156, West Bengal, India</span></p>
-									<p><FaPhoneAlt /> <span><a href="#">+91-33-6799-2222</a></span></p>
+									<p><FaPhoneAlt /> <span><Link href="#">+91-33-6799-2222</Link></span></p>
 								</div>
 							</div>
 
 							<div className="col-lg-4 col-md-6">
-								<img width="100%" src={contImg3} />
+								<img alt="img" width="100%" src={contImg3} />
 								<div className="case-box">
 									<h3>iQuinceSOFT New York</h3>
 									<p><FaMapMarkerAlt /> <span>Mani Casadona, Unit No 8E4, Action Area #2 F, New Town, Kolkata 700156, West Bengal, India</span></p>
-									<p><FaPhoneAlt /> <span><a href="#">+91-33-6799-2222</a></span></p>
+									<p><FaPhoneAlt /> <span><Link to="#">+91-33-6799-2222</Link></span></p>
 								</div>
 							</div>
 
 							<div className="col-lg-4 col-md-6">
-								<img width="100%" src={contImg4} />
+								<img alt="img" width="100%" src={contImg4} />
 								<div className="case-box">
 									<h3>iQuinceSOFT India</h3>
 									<p><FaMapMarkerAlt /> <span>Mani Casadona, Unit No 8E4, Action Area #2 F, New Town, Kolkata 700156, West Bengal, India</span></p>
-									<p><FaPhoneAlt /> <span><a href="#">+91-33-6799-2222</a></span></p>
+									<p><FaPhoneAlt /> <span><Link href="#">+91-33-6799-2222</Link></span></p>
 								</div>
 							</div>
 
 							<div className="col-lg-4 col-md-6">
-								<img width="100%" src={contImg5} />
+								<img alt="img" width="100%" src={contImg5} />
 								<div className="case-box">
 									<h3>iQuinceSOFT Australia</h3>
 									<p><FaMapMarkerAlt /> <span>Mani Casadona, Unit No 8E4, Action Area #2 F, New Town, Kolkata 700156, West Bengal, India</span></p>
-									<p><FaPhoneAlt /> <span><a href="#">+91-33-6799-2222</a></span></p>
+									<p><FaPhoneAlt /> <span><Link href="#">+91-33-6799-2222</Link></span></p>
 								</div>
 							</div>
 
 
 							<div className="col-lg-4 col-md-6">
-								<img width="100%" src={contImg6} />
+								<img alt="img" width="100%" src={contImg6} />
 								<div className="case-box">
 									<h3>iQuinceSOFT India</h3>
 									<p><FaMapMarkerAlt /> <span>Mani Casadona, Unit No 8E4, Action Area #2 F, New Town, Kolkata 700156, West Bengal, India</span></p>
-									<p><FaPhoneAlt /> <span><a href="#">+91-33-6799-2222</a></span></p>
+									<p><FaPhoneAlt /> <span><Link href="#">+91-33-6799-2222</Link></span></p>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div className="cont-social" data-aos="fade-right"><a href="https://www.facebook.com/iquincesoft"><FaFacebook /></a> <a href="https://twitter.com/iquincesoft"><FaTwitter /></a> <a href="https://www.instagram.com/iquincesoft"><FaInstagram /></a> <a href="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></a> <a href="https://in.pinterest.com/iquincesoft/"><FaPinterest /></a> <a href="https://www.youtube.com/c/Iquincesoft"><FaYoutube /></a></div>
+					<div className="cont-social" data-aos="fade-right"><Link href="https://www.facebook.com/iquincesoft"><FaFacebook /></Link> <Link href="https://twitter.com/iquincesoft"><FaTwitter /></Link> <Link href="https://www.instagram.com/iquincesoft"><FaInstagram /></Link> <Link href="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></Link> <Link href="https://in.pinterest.com/iquincesoft/"><FaPinterest /></Link> <Link href="https://www.youtube.com/c/Iquincesoft"><FaYoutube /></Link></div>
 				</div>
 
 				<Footer />

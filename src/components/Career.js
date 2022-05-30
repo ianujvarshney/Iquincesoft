@@ -70,7 +70,7 @@ class Career extends Component {
 		});
 	}
 	render() {
-		const { CareerJson, Career2Json, Career3Json, joblinks3 } = this.state;
+		const { CareerJson, Career3Json, joblinks3 } = this.state;
 		const culture = {
 			items: 1,
 			responsive: {

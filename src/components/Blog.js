@@ -7,7 +7,6 @@ import { Inspired } from '../json/Inspired';
 import { TailSpin } from 'react-loader-spinner';
 import InfiniteScroll from "react-infinite-scroll-component";
 import MyErrorBoundary from '../container/MyErrorBoundary';
-import Blogtabs from '../components/BlogTabs';
 
 class Blog extends Component {
 	constructor(props) {
@@ -16,6 +15,7 @@ class Blog extends Component {
 			InsightsJson: [],
 			page: 1,
 			all: 0,
+			data3: [],
 			data: [],
 			data2: [],
 			catedata: [],
@@ -100,21 +100,18 @@ class Blog extends Component {
 	};
 
 	handlefilter = (e) => {
-		if (e.target.name === '') {
+		if (e.target.value === '') {
 			this.setState({
 				data: this.state.searchdata,
 			})
 		}
 		else {
-			this.setState({
-				data: this.state.searchdata.filter(item => item.name.toLowercase().include(e.target.value.toLowerCase())),
-			})
-
+			this.state.searchdata.filter(person => person.name.toLowerCase().includes(e.target.value.toLowerCase())).map(filteredName => (
+				this.setState({
+					dat3: filteredName.name,
+				})
+			))
 		}
-		this.setState({
-			setsearchterm: e.target.value,
-		})
-
 	}
 
 	render() {
@@ -136,7 +133,7 @@ class Blog extends Component {
 										<h1>Learn from our web development blog read by 1.2M tech leaders</h1>
 										<p><span>Get a bi-weekly email with <strong>the most popular stories</strong></span></p>
 										<div className="in-box">
-											<input value={search} onInput={(e) => this.handlefilter(e)} className="box" name="" placeholder="Supercharge your brain" />
+											<input onInput={(e) => this.handlefilter(e)} className="box" name="" placeholder="Supercharge your brain" />
 										</div>
 
 									</div>
@@ -155,9 +152,11 @@ class Blog extends Component {
 														<div className="col-lg-10 col-md-9">
 															<Tab>All Posts ({allpost})</Tab>
 															{catedata && catedata.map((dataS, index) => {
-																return (
-																	<p><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p>
-																);
+																if (dataS.size !== 0 && dataS.catename !== 'Uncategorized') {
+																	return (
+																		<p key={index}><Link to={`/blog/${dataS.cateslug}`}>{dataS.catename} ({dataS.size})</Link></p>
+																	);
+																}
 															})}
 														</div>
 														<div className="col-lg-2 col-md-3"><input className="box" type="text" name="" placeholder="Search" /></div>
@@ -190,8 +189,6 @@ class Blog extends Component {
 													</InfiniteScroll>
 
 												</TabPanel>
-
-
 
 												<TabPanel>
 													<h3>Any content 2</h3>

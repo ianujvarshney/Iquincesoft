@@ -78,17 +78,8 @@ class CloudDevelopment extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>WooCommerce Services</strong><br /></h1>
-                                    <h3>We offer a platform to outsource talented WooCommerce developers as per your hourly, weekly, monthly or fixed needs and get reduced cost and enhanced business revenues. </h3>
-                                    <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional CodeIgniter developers.  </li>
-                                    </ul>
+                                    <h1><strong>Streamline your cloud development like a conglomerate</strong><br /></h1>
+                                    <h4>We help you slash down the cloud cost, automate the monitoring and take the architectural flexibility to the next level.</h4>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
                             </div>

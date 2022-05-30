@@ -29,7 +29,7 @@ export class CaseStudies {
                 });
         })
     }
-    static getCase_2 = () => {
+    static getCase_2 = (start) => {
         return new Promise(async (resolve, reject) => {
             await fetch(process.env.REACT_APP_CASE_STUDIES_2, {
                 "method": "GET"
