@@ -82,15 +82,10 @@ class Shopify extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Shopify Services</strong><br /></h1>
+                                    <h1><strong>Connect the dots of outstanding customer experience across all points of eCommerce.</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional Shopify developers.  </li>
+                                        <li>Hire dedicated Shopify experts that can deliver you the results you aim for. We help you reach more target audiences, achieve more sales, and generate more revenue.</li>
+                                        <li>Hire our expert professionals who suit your business and budget on an hourly, project, or full-time. </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

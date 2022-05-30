@@ -77,14 +77,11 @@ class WordPress extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Wordpress Services</strong><br /></h1>
+                                    <h1><strong>Hire a WordPress developer that suits your business with the talent pool of iQuinceSoft.</strong><br /></h1>
                                     <ul>
-                                        <p>The iQuinceSoft Advantage ensures you:</p>
-                                        <li>Higher revenues by a significant margin.</li>
-                                        <li>Guaranteed results</li>
-                                        <li>Regular updates and insights on the ongoing projects</li>
-                                        <li>Swift initiation with the process</li>
-                                        <li>Skilled team to deliver meaningful <del>outputs</del> outcomes. </li>
+                                        <li>Hire the best-in-business WordPress developers with cutting-edge expertise and job-mapping skills to fit your business and projects.</li>
+                                        <li>Customize, build and deploy new WordPress themes, Plugins, and flexible features that help you develop the ease and robust web app for sophisticated web systems.</li>
+                                        <li>Hire dedicated offshore skilled WordPress Developers to outshine the competition. </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

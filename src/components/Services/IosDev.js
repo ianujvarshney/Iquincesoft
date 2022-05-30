@@ -79,15 +79,11 @@ class IOSDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>IOS Services</strong><br /></h1>
+                                    <h1><strong>Getting an iOS developer in this tech-savvy world is easy
+                                        Finding a reliable and skilled is in the tricky world is tough.</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional iOS developers.  </li>
+                                        <li>Hire dedicated offshore iOS experts from the house of trust, commitment, and time-bound delivery, iQuinceSoft.</li>
+                                        <li>Get iOS apps to take your business to the next level of traffic, leads, and enhanced business opportunities.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

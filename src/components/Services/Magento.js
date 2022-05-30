@@ -81,15 +81,10 @@ class Magento extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Customized Magento Services</strong><br /></h1>
+                                    <h1><strong>Are you looking for customized, tailor-made Magento development services?</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional Magento developers.  </li>
+                                        <li>Hire our dedicated offshore Magento developers who can deliver you a store website that complies with your day-to-day business practices.</li>
+                                        <li>iQuinceSoft is renowned for the trust and value addition to the teams we work with. Sign up for seven day free trial before welcoming us on board.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

@@ -79,15 +79,10 @@ class IonicDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire Ionic Developers</strong><br /></h1>
+                                    <h1><strong>We amplify your voice, and we make your presence felt on the app stores with the help of our dedicated Ionic developers.</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional Ionic developers.  </li>
+                                        <li>Make your presence felt across the platforms with scalable, engaging, and customized tailor-made apps that can meet your unmet needs.</li>
+                                        <li>Hire ionic developers from iQuinceSoft with the trust, measurable outcomes, and high-end web and app store.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

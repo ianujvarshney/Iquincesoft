@@ -88,15 +88,10 @@ class WooCommerce extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>WooCommerce Services</strong><br /></h1>
+                                    <h1><strong>Are you willing to build an online WooCommerce store with the BIG idea in mind?</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional CodeIgniter developers.  </li>
+                                        <li>Hire dedicated WooCommerce developers with the trust of iQuinceSoft to develop, customize and maintain an eCommerce store that reveals your true spirits.</li>
+                                        <li>We help you achieve your business goals with the expertise of our dedicated WooCommerce developer. Hire WooCommerce developer from iQuinceSoft on an hourly, full time or project basis. </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

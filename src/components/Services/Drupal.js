@@ -79,15 +79,10 @@ class Drupal extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Drupal Developers for Hire</strong><br /></h1>
+                                    <h1><strong>Hire Drupal developers from the iQuinceSoft talent pool to get visually-appealing layouts, eye-popping designs, and intuitive web solutions for your business and brand.</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional Drupal developers.  </li>
+                                        <li>Hire our Drupal developers and architects for all your Drupal projects with the flexibility to hire on a fixed cost, project, or hourly and monthly basis.</li>
+                                        <li>Get customized, business-centric web solutions that are scalable and secure with the trust of iQuinceSoft.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

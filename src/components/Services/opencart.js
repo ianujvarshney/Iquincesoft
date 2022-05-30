@@ -82,15 +82,10 @@ class opencart extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire Open Cart Developers</strong><br /></h1>
+                                    <h1><strong>Hire dedicated offshore Opencart developers to scale up your ecommerce store capabilities.</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional  OpenCart developers.  </li>
+                                        <li> Our skilled and seasoned developers are available on an hourly, monthly, and full-time basis for project-specific needs. </li>
+                                        <li>Build an online store that can outshine the competition and create a buzz of shine across the market about your online store with the expertise of the dedicated offshore developers from iQuinceSoft.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

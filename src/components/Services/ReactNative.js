@@ -83,15 +83,10 @@ class ReactNative extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>React Native Services</strong><br /></h1>
+                                    <h1><strong>Slash down your hiring cost by 75% by hiring dedicated offshore React Native developers with the trust and commitment to engage and scale complex and sophisticated apps.</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional React Native developers.  </li>
+                                        <li>Hybrid, Custom to Native, our dedicated developers can offer a sigh of relief by saving your time, cost, and efforts with seamless fitting in the development team to work on the projects.</li>
+                                        <li>Hire us to get scalable, secure, and high-end apps to conquer the competition.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

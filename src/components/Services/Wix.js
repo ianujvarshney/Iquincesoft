@@ -78,15 +78,10 @@ class Wix extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Wix Developers to Hire</strong><br /></h1>
+                                    <h1><strong>Develop, Design, and Define the new dimensions of web development with our expert Wix Developers.</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional Wix developers.  </li>
+                                        <li>Connect, Communicate and Cleanse the business goals by hiring dedicated offshore developers with the trust and expertise of iQuinceSoft. </li>
+                                        <li>We help you with scalable web apps and systems that can revamp your business process and goals. </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

@@ -79,9 +79,9 @@ class ReactDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire React JS developers with the Silicon Valley standards at half of the cost.</strong><br /></h1>
+                                    <h1><strong>Slash down your hiring cost by 75% by hiring dedicated offshore React Native developers with the trust and commitment to engage and scale complex and sophisticated apps.</strong><br /></h1>
                                     <ul>
-                                        <li>We offer you top 1% of the 5.8 million engineers from the land of Sundar Pichai, Satya Nadela and Sabeer Bhatia.</li>
+                                        <li>Hybrid, Custom to Native, our dedicated developers can offer a sigh of relief by saving your time, cost, and efforts with seamless fitting in the development team to work on the projects.</li>
                                         <li>Leverage the skills and expertise of our vetted react JS developers to scale and automate your business process with fast, scalable and vertically-integrated options.</li>
                                     </ul>
                                 </div>
