@@ -15,7 +15,6 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner'
 import AwardFormsec from '../../container/AwardFormsec';
 import Partner from '../../container/Partner';
@@ -55,24 +54,6 @@ class BootStrap extends Component {
     }
     render() {
         const { CommerceJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -91,7 +72,7 @@ class BootStrap extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Bootstrap Developers to Hire</strong><br /></h1>
+                                    <h1><strong>Get fast, easy and customized websites with the expertise of our vetted bootstrap developers to hire</strong><br /></h1>
                                     <ul>
                                         <p>What is my benefit in it?</p>
                                         <li>Reduce the operating cost</li>

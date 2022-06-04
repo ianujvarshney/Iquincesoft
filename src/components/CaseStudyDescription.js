@@ -51,7 +51,7 @@ class CaseStudyDescription extends Component {
 										</div>
 
 										<div className="col-lg-7 col-md-3">
-											<Link to={"#"}><FaFacebook /></Link> <a href="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></a> <a href="#"><FaTwitter /></a> <a href="#"><FaLink /></a>
+											<Link to={"#"}><FaFacebook /></Link> <Link href="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></Link> <Link href="#"><FaTwitter /></Link> <Link href="#"><FaLink /></Link>
 											<h6><a href={link.pdf_file} target="_blank" rel="noreferrer" ><img alt="img" src={PDF} /> DOWNLOAD CASE STUDY</a></h6>
 										</div>
 									</div>

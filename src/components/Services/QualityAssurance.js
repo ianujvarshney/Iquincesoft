@@ -14,9 +14,7 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
-import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
@@ -44,24 +42,6 @@ class QualityAssurance extends Component {
     }
     render() {
         const { Quality_AssuranceJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,

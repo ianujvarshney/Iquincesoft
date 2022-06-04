@@ -16,7 +16,6 @@ import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 
@@ -43,24 +42,6 @@ class IOSDev extends Component {
     }
     render() {
         const { IOSJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -186,48 +167,48 @@ class IOSDev extends Component {
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
+                                            {/* <img alt="imsrc={webImg} /> */}
                                             <h4>App Development and Deployment</h4>
                                             <p>We offer fully-featured and user-friendly iOS apps for diverse industry verticals. We have the requisite skill set and experience to develop and deploy robust iOS apps that match your need-based business. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg1} /> */}
+                                            {/* <img alt="imsrc={webImg1} /> */}
                                             <h4>IOS App Design</h4>
                                             <p>We design incredible prototypes, interfaces, and tailor-made POCs for your iOS apps. We extensively enhance the animations and logo icons with themes, backgrounds, transitions on the screen, and other core graphics to meet your expectations. Connect with us to design compelling app designs and layouts for iPads, iPhones, and other iOS devices.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg2} /> */}
+                                            {/* <img alt="imsrc={webImg2} /> */}
                                             <h4>IOS Migration Services</h4>
                                             <p>We are well-versed with porting apps to new platforms, OS, and scripting languages that slash down the maintenance cost. We increase your reach with advanced app porting services while keeping data secure, safe and intact. Connect with us for any iOS migration services.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
+                                            {/* <img alt="imsrc={webImg3} /> */}
                                             <h4>IOS Consultancy Services</h4>
                                             <p>We offer consultancy services related to iOS app layout, UI/UX evaluation, database planning, documentation development, security mechanism, code reusability, and Application Lifecycle Management (ALM). Connect with us to capitalize on our skillset and experience in the iOS market. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg4} /> */}
+                                            {/* <img alt="imsrc={webImg4} /> */}
                                             <h4>IOS Maintenance Services</h4>
                                             <p>IQuinceSoft is renowned for its swift and prompt support and maintenance. We are experts in server performance optimization, security enhancement processes, and UI/UX enhancements to OS updates. Call us to ensure you are in the right company. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>QA and Testing services</h4>
                                             <p>We test apps with a multidimensional approach. We ensure you have a bug-free launch, effective and cost-efficient testing approach that fits your budget and specific needs. We test the apps in multiple environments and devices to align them right and release them for a successful launch.</p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>Partner with iQuinceSoft:</h4>
                                             <p>We are here to assist, support and help businesses. We strive to make businesses succeed. Hence, we partner with multiple businesses, regardless of their industry and business volume:  </p>
                                         </div>
@@ -235,38 +216,38 @@ class IOSDev extends Component {
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
+                                            {/* <img alt="imsrc={webImg} /> */}
                                             <h4>App Development and Deployment</h4>
                                             <p>We offer fully-featured and user-friendly iOS apps for diverse industry verticals. We have the requisite skill set and experience to develop and deploy robust iOS apps that match your need-based business. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg1} /> */}
+                                            {/* <img alt="imsrc={webImg1} /> */}
                                             <h4>IOS App Design</h4>
                                             <p>We design incredible prototypes, interfaces, and tailor-made POCs for your iOS apps. We extensively enhance the animations and logo icons with themes, backgrounds, transitions on the screen, and other core graphics to meet your expectations. Connect with us to design compelling app designs and layouts for iPads, iPhones, and other iOS devices.</p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg2} /> */}
+                                            {/* <img alt="imsrc={webImg2} /> */}
                                             <h4>IOS Migration Services</h4>
                                             <p>We are well-versed with porting apps to new platforms, OS, and scripting languages that slash down the maintenance cost. We increase your reach with advanced app porting services while keeping data secure, safe and intact. Connect with us for any iOS migration services.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
+                                            {/* <img alt="imsrc={webImg3} /> */}
                                             <h4>IOS Consultancy Services</h4>
                                             <p>We offer consultancy services related to iOS app layout, UI/UX evaluation, database planning, documentation development, security mechanism, code reusability, and Application Lifecycle Management (ALM). Connect with us to capitalize on our skillset and experience in the iOS market. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg4} /> */}
+                                            {/* <img alt="imsrc={webImg4} /> */}
                                             <h4>IOS Maintenance Services</h4>
                                             <p>IQuinceSoft is renowned for its swift and prompt support and maintenance. We are experts in server performance optimization, security enhancement processes, and UI/UX enhancements to OS updates. Call us to ensure you are in the right company. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>QA and Testing services</h4>
                                             <p>We test apps with a multidimensional approach. We ensure you have a bug-free launch, effective and cost-efficient testing approach that fits your budget and specific needs. We test the apps in multiple environments and devices to align them right and release them for a successful launch.</p>
                                         </div>
@@ -274,7 +255,7 @@ class IOSDev extends Component {
                                         <div className="col-lg-4 col-md-4"> </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>Partner with iQuinceSoft:</h4>
                                             <p>We are here to assist, support and help businesses. We strive to make businesses succeed. Hence, we partner with multiple businesses, regardless of their industry and business volume:  </p>
                                         </div>

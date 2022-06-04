@@ -14,9 +14,8 @@ export class CareerData {
                             data.push({
                                 "id": response[i].id,
                                 "name": response[i].title.rendered || '',
-                                "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || reviewBL,
+                                "img": (response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url) || reviewBL,
                                 "content": response[i].content.rendered || '',
-                                // "designation":response[i]['post-meta-fields'] && response[i]['post-meta-fields']['Designation'] || '',
                             });
                         }
 
@@ -41,11 +40,9 @@ export class CareerData {
                             data.push({
                                 "id": response[i].id,
                                 "name": response[i].title.rendered || '',
-                                // "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || reviewBL,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
                                 "looking": response[i].menu_order || 0,
-                                // "designation":response[i]['post-meta-fields'] && response[i]['post-meta-fields']['Designation'] || '',
                             });
                         }
 
@@ -70,9 +67,8 @@ export class CareerData {
                             data.push({
                                 "id": response[i].id,
                                 "name": response[i].title.rendered || '',
-                                "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || reviewBL,
+                                "img": (response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url) || reviewBL,
                                 "content": response[i].content.rendered || '',
-                                // "designation":response[i]['post-meta-fields'] && response[i]['post-meta-fields']['Designation'] || '',
                             });
                         }
 

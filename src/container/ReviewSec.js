@@ -2,10 +2,8 @@
 import React, { Component } from 'react';
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
-
 import { Review } from '../json/review';
-
-import review from '../images/review-img.png';
+import { HashLink as Link } from 'react-router-hash-link';
 import review1 from '../images/review-icon.png';
 import review2 from '../images/review-icon1.png';
 import review3 from '../images/review-icon2.png';
@@ -60,7 +58,7 @@ class ReviewSec extends Component {
 										{reviewJson.map(reviewJsons => {
 											return (
 												<div key={reviewJsons.id} className="review-box">
-													<img src={reviewJsons.img} />
+													<img alt="img" src={reviewJsons.img} />
 													<h5><span>{reviewJsons.name}</span> {reviewJsons.designation}</h5>
 													<p id="akash-bhai" dangerouslySetInnerHTML={{ __html: reviewJsons.content }}></p>
 													<div className="rw-icon"><FaQuoteRight /></div>
@@ -72,14 +70,14 @@ class ReviewSec extends Component {
 							</div>
 						</div>
 					</div>
-					<h6><a href="#">Read more reviews </a></h6>
+					<h6><Link to="#">Read more reviews </Link></h6>
 					<ul>
-						<li><img src={review1} /></li>
-						<li><img src={review2} /></li>
-						<li><img src={review3} /></li>
-						<li><img src={review4} /></li>
+						<li><img alt="img" src={review1} /></li>
+						<li><img alt="img" src={review2} /></li>
+						<li><img alt="img" src={review3} /></li>
+						<li><img alt="img" src={review4} /></li>
 					</ul>
-					<a class="book-btn" href="#">Book Appointment</a>
+					<Link class="book-btn" to="#">Book Appointment</Link>
 				</div>
 			</>
 		);

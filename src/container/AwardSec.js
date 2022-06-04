@@ -22,15 +22,15 @@ class AwardSec extends Component {
 							<div className="col-lg-1"></div>
 							<div className="col-lg-10 col-md-12">
 								<ul>
-									<li><img src={award} /></li>
-									<li><img src={award1} /></li>
-									<li><img src={award2} /></li>
-									<li><img src={award3} /></li>
-									<li><img src={award4} /></li>
-									<li><img src={award5} /></li>
-									<li><img src={award6} /></li>
-									<li><img src={award7} /></li>
-									<li><img src={award8} /></li>
+									<li><img alt="img" src={award} /></li>
+									<li><img alt="img" src={award1} /></li>
+									<li><img alt="img" src={award2} /></li>
+									<li><img alt="img" src={award3} /></li>
+									<li><img alt="img" src={award4} /></li>
+									<li><img alt="img" src={award5} /></li>
+									<li><img alt="img" src={award6} /></li>
+									<li><img alt="img" src={award7} /></li>
+									<li><img alt="img" src={award8} /></li>
 								</ul>
 							</div>
 						</div>

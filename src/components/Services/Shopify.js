@@ -16,7 +16,6 @@ import { PostCate } from '../../json/PostCate';
 import FAQ from '../../container/FAQ';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 
@@ -45,26 +44,7 @@ class Shopify extends Component {
         });
     }
     render() {
-        const { QuestionJson, ShopifyJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
+        const { ShopifyJson } = this.state;
         const culture = {
             items: 1,
             responsive: {

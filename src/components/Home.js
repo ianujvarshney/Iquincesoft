@@ -196,11 +196,11 @@ class Home extends Component {
 							<div className="container">
 								<div className="row">
 									<div className="col-lg-8 col-md-8" data-aos="fade-right">
-										<h1><img src={star} /> <span> We offer <del>services</del> solutions<em>that meet your <del>needs</del> demands.</em></span></h1>
+										<h1><img alt="img" src={star} /> <span> We offer <del>services</del> solutions<em>that meet your <del>needs</del> demands.</em></span></h1>
 										<div className="row">
 											<div className="col-lg-5 col-md-5"><h2>Web <span>software</span> <span>mobile</span> cloud<em>.</em></h2></div>
 											<div className="col-lg-7 col-md-7">
-												<img className="arrow" src={arrow} />
+												<img alt="img" className="arrow" src={arrow} />
 												<FormPopup />
 												<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 											</div>
@@ -208,13 +208,13 @@ class Home extends Component {
 									</div>
 
 
-									<div className="col-lg-4 col-md-4"><img src={banimg} /></div>
+									<div className="col-lg-4 col-md-4"><img alt="img" src={banimg} /></div>
 								</div>
 							</div>
 						</div>
 
 						<div className="mob-sec">
-							<img width="100%" src={bannerMob} />
+							<img alt="img" width="100%" src={bannerMob} />
 							<div className="mob-box">
 								<h4><span> We offer <del>services</del> solutions that meet your <del>needs</del> demands.</span></h4>
 								<ul>
@@ -234,7 +234,7 @@ class Home extends Component {
 
 								{serviceJson && serviceJson.map(ServicejsonS => {
 									return (
-										ServicejsonS.content == '' ? null :
+										ServicejsonS.content === '' ? null :
 											<div className="row">
 												<div className="col-lg-2"></div>
 												<div className="col-lg-8 col-md-12">
@@ -250,7 +250,7 @@ class Home extends Component {
 										<OwlCarousel loop options={service}>
 											<div className="serv-box">
 												<a href="/Web_Development">
-													<img src={img1} />
+													<img alt="img" src={img1} />
 													<h4>Web</h4>
 													<div className="arrow-icon"><FaArrowRight /></div>
 												</a>
@@ -258,7 +258,7 @@ class Home extends Component {
 
 											<div className="serv-box">
 												<a href="/Mobile_Developement">
-													<img src={img2} />
+													<img alt="img" src={img2} />
 													<h4>Mobile</h4>
 													<div className="arrow-icon"><FaArrowRight /></div>
 												</a>
@@ -266,7 +266,7 @@ class Home extends Component {
 
 											<div className="serv-box">
 												<a href="/DevOps">
-													<img src={img3} />
+													<img alt="img" src={img3} />
 													<h4>Dev Ops</h4>
 													<div className="arrow-icon"><FaArrowRight /></div>
 												</a>
@@ -274,7 +274,7 @@ class Home extends Component {
 
 											<div className="serv-box">
 												<a href="/CloudDevelopment">
-													<img src={img4} />
+													<img alt="img" src={img4} />
 													<h4>Cloud Development</h4>
 													<div className="arrow-icon"><FaArrowRight /></div>
 												</a>
@@ -299,7 +299,7 @@ class Home extends Component {
 											<div className="tech-box">
 												<a href="/CloudDevelopment">
 													<div className="tech-dot"></div>
-													<img src={imgs6} />
+													<img alt="img" src={imgs6} />
 													<h4>Cloud</h4>
 													<div className="arrow-icon"><FaArrowRight /></div>
 												</a>
@@ -308,7 +308,7 @@ class Home extends Component {
 											<div className="tech-box">
 												<a href="/ECommerceDevelopers">
 													<div className="tech-dot"></div>
-													<img src={imgs5} />
+													<img alt="img" src={imgs5} />
 													<h4>e-Commerce</h4>
 													<div className="arrow-icon"><FaArrowRight /></div>
 												</a>
@@ -317,38 +317,38 @@ class Home extends Component {
 											<div className="tech-box">
 												<a href="/Mobile_Developement">
 													<div className="tech-dot"></div>
-													<img src={imgs4} />
+													<img alt="img" src={imgs4} />
 													<h4>Mobile</h4>
 													<div className="arrow-icon"><FaArrowRight /></div>
 												</a>
 											</div>
 
 											<div className="tech-box">
-												<a href="#">
+												<Link to="#">
 													<div className="tech-dot"></div>
-													<img src={imgs3} />
+													<img alt="img" src={imgs3} />
 													<h4>Server-Side</h4>
 													<div className="arrow-icon"><FaArrowRight /></div>
-												</a>
+												</Link>
 											</div>
 
 											<div className="tech-box">
-												<a href="#">
+												<Link to="#">
 													<div className="tech-dot"></div>
-													<img src={imgs2} />
+													<img alt="img" src={imgs2} />
 													<h4>Product Design
 													</h4>
 													<div className="arrow-icon"><FaArrowRight /></div>
-												</a>
+												</Link>
 											</div>
 
 											<div className="tech-box">
-												<a href="#">
+												<Link to="#">
 													<div className="tech-dot"></div>
-													<img src={imgs1} />
+													<img alt="img" src={imgs1} />
 													<h4>CMS</h4>
 													<div className="arrow-icon"><FaArrowRight /></div>
-												</a>
+												</Link>
 											</div>
 										</OwlCarousel>
 
@@ -375,9 +375,9 @@ class Home extends Component {
 													if (index < (teamJson.length - teamJson.length % 3)) {
 														return (
 															<div>
-																<div key={teamJson[index].id} className="team-box">{teamJson[index].name} <img src={teamJson[index].img} /></div>
-																<div key={teamJson[index + 1].id} className="team-box">{teamJson[index + 1].name} <img src={teamJson[index + 1].img} /></div>
-																<div key={teamJson[index + 2].id} className="team-box">{teamJson[index + 2].name} <img src={teamJson[index + 2].img} /></div>
+																<div key={teamJson[index].id} className="team-box">{teamJson[index].name} <img alt="img" src={teamJson[index].img} /></div>
+																<div key={teamJson[index + 1].id} className="team-box">{teamJson[index + 1].name} <img alt="img" src={teamJson[index + 1].img} /></div>
+																<div key={teamJson[index + 2].id} className="team-box">{teamJson[index + 2].name} <img alt="img" src={teamJson[index + 2].img} /></div>
 															</div>
 														);
 													}
@@ -397,20 +397,20 @@ class Home extends Component {
 									<div className="col-lg-4 col-md-4" data-aos="fade-up">
 										{chooseJson2 && chooseJson2.map((Choosejson2S, index) => {
 											return (
-												(index == 0) ?
+												(index === 0) ?
 													<>
 														<h3>Why Choose<span>iQuinceSOFT?</span></h3>
 														<p key={index} dangerouslySetInnerHTML={{ __html: Choosejson2S.content }}></p>
 														<div key={index} className="tech-box dd">
 															<div className="tech-dot"></div>
 															<h6>Corporate Social Responsibility</h6>
-															<img width="100%" src={Choosejson2S.img} />
+															<img alt="img" width="100%" src={Choosejson2S.img} />
 														</div>
 													</>
 													:
 													<div key={index} className="tech-box dd-1">
 														<div key={index} className="tech-dot"></div>
-														<img src={Choosejson2S.img} />
+														<img alt="img" src={Choosejson2S.img} />
 														<h4>Technology Fast 50 Deloitte</h4>
 													</div>
 
@@ -426,13 +426,13 @@ class Home extends Component {
 														<div>
 															<div key={index} className="tech-box dd-1">
 																<div className="tech-dot"></div>
-																<img src={ChoosejsonS.img} />
+																<img alt="img" src={ChoosejsonS.img} />
 																<h4 dangerouslySetInnerHTML={{ __html: ChoosejsonS.name }}></h4>
 															</div>
 
 															<div key={index} className="tech-box dd-1">
 																<div className="tech-dot"></div>
-																<img src={ChoosejsonS.img} />
+																<img alt="img" src={ChoosejsonS.img} />
 																<h4 dangerouslySetInnerHTML={{ __html: ChoosejsonS.name }}></h4>
 															</div>
 														</div>
@@ -442,7 +442,7 @@ class Home extends Component {
 										)}
 										<div className="tech-box dd">
 											<div className="tech-dot"></div>
-											<img width="100%" src={whyVd} />
+											<img alt="img" width="100%" src={whyVd} />
 										</div>
 									</div>
 								</div>
@@ -460,7 +460,7 @@ class Home extends Component {
 												<div key={index}>
 													<h3>{careerJsons.name}</h3>
 													<p dangerouslySetInnerHTML={{ __html: careerJsons.content }}></p>
-													<Link to={'/career'}><img src={arrow3} />search and apply</Link>
+													<Link to={'/career'}><img alt="img" src={arrow3} />search and apply</Link>
 												</div>
 											);
 										})}

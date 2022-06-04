@@ -22,9 +22,9 @@ export class Work {
                                 "result2": response[i].the_result2,
                                 "solution": response[i].the_solution,
                                 "solution2": response[i].the_solution2,
-                                "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
+                                "img": (response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url) || servBL,
                                 "content": response[i].content.rendered || '',
-                                "corporate": response[i]['post-meta-fields'] && response[i]['post-meta-fields']['corporate'] || '',
+                                "corporate": (response[i]['post-meta-fields'] && response[i]['post-meta-fields']['corporate']) || '',
                                 "brand_logo": response[i].brand_logo_url['medium'] || servBL,
                                 "pdf_file": response[i].pdf['pdf_url'] || servBL,
                             });

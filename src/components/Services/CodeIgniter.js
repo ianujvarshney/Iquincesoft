@@ -15,7 +15,6 @@ import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 
@@ -43,24 +42,6 @@ class CodeIgniter extends Component {
     }
     render() {
         const { CodeigniterJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -79,7 +60,7 @@ class CodeIgniter extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire an expert and seasoned CodeIgniter developers. Hire our CodeIgniter developers, programmers, coders, and engineers on-demand.</strong><br /></h1>
+                                    <h1><strong>Vetted CodeIgniter developers for hire to get scalable, secure and performing apps</strong><br /></h1>
                                     <ul>
                                         <li>Stop wasting time searching for average developers when you have the chance to hire someone who is skilled and maps according to the assigned projects.</li>
                                         <li>Hire CodeIgniter developers from a company known for offshore services in backend development. </li>
@@ -96,45 +77,45 @@ class CodeIgniter extends Component {
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
                                     <h3>Why CodeIgniter?</h3>
-                                    <p>CodeIgniter developers are the most sought after professionals because the CodeIgniter is:</p>
+                                    <p>CodeIgniter developers are the most sought after professionals because the CodeIgniter is</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Secured Framework: </h4>
+                                        <h4>Secured Framework </h4>
                                         <p>It keeps you safe against CSRF and XSS attacks because of the in-built protection.  </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>User-friendly Interface:</h4>
+                                        <h4>User-friendly Interface</h4>
                                         <p>CodeIgniter offers a user-friendly interface. It offers vibrant functionality and a responsive platform.
                                         </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Customization:</h4>
+                                        <h4>Customization</h4>
                                         <p>It easily customizes existing libraries, shortcodes, and writing newer libraries. Thus, it is preferred across the available PHP frameworks.</p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Less Coding needed:</h4>
+                                        <h4>Less Coding needed</h4>
                                         <p>It needs short and more petite codes. Thus offers fast development.
                                         </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Sound Performance: </h4>
+                                        <h4>Sound Performance </h4>
                                         <p>lightweight and a better performer across the frameworks. </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>SEO Friendly:</h4>
+                                        <h4>SEO Friendly</h4>
                                         <p>It helps your website rank faster on the SERPs.  </p>
                                     </div>
 
@@ -145,7 +126,7 @@ class CodeIgniter extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Secured Framework: </h4>
+                                        <h4>Secured Framework </h4>
                                         <p>It keeps you safe against CSRF and XSS attacks because of the in-built protection.  </p>
                                     </div>
                                 </div>
@@ -153,7 +134,7 @@ class CodeIgniter extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>User-friendly Interface:</h4>
+                                        <h4>User-friendly Interface</h4>
                                         <p>CodeIgniter offers a user-friendly interface. It offers vibrant functionality and a responsive platform.
                                         </p>
                                     </div>
@@ -162,7 +143,7 @@ class CodeIgniter extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Customization:</h4>
+                                        <h4>Customization</h4>
                                         <p>It easily customizes existing libraries, shortcodes, and writing newer libraries. Thus, it is preferred across the available PHP frameworks.</p>
                                     </div>
                                 </div>
@@ -170,7 +151,7 @@ class CodeIgniter extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Less Coding needed:</h4>
+                                        <h4>Less Coding needed</h4>
                                         <p>It needs short and more petite codes. Thus offers fast development.
                                         </p>
                                     </div>
@@ -179,7 +160,7 @@ class CodeIgniter extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Sound Performance: </h4>
+                                        <h4>Sound Performance</h4>
                                         <p>lightweight and a better performer across the frameworks. </p>
                                     </div>
                                 </div>
@@ -187,7 +168,7 @@ class CodeIgniter extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>SEO Friendly:</h4>
+                                        <h4>SEO Friendly</h4>
                                         <p>It helps your website rank faster on the SERPs.  </p>
                                     </div>
                                 </div>
@@ -205,28 +186,24 @@ class CodeIgniter extends Component {
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
                                             <h4>Web Development</h4>
                                             <p>We create beautiful websites with the help of the CI framework. We create websites across the length and breadth of industries like eCommerce, brands and profiles.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg1} /> */}
                                             <h4>App Development</h4>
                                             <p>Create scalable, secured and error-free applications with iQuinceSoft. We serve your business goals with a customized, tailor-made app to help you grow. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg2} /> */}
                                             <h4>Cloud Solutions</h4>
                                             <p>We offer cloud solutions to businesses. We excel in a wide range of services, from small app development to massive web systems. We are experienced and skilled enough to serve with the need-based cloud solutions. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
                                             <h4>Migration</h4>
                                             <p>We help you migrate your apps from the peer frameworks to CodeIgniter with no loss of any data or functionality.
                                             </p>
@@ -234,7 +211,6 @@ class CodeIgniter extends Component {
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg4} /> */}
                                             <h4>Customized Database Development</h4>
                                             <p>We create the need-based customized database with the help of popular databases like microsoft sql server, db2, oracle and many more.
                                             </p>
@@ -242,19 +218,16 @@ class CodeIgniter extends Component {
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
                                             <h4>CodeIgniter Unit and Automated Testing</h4>
                                             <p>We create and make sure to develop you error-free apps. we use selenium as well to run automated tests as well.</p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Maintenance & Support</h4>
                                             <p>You stay focused on business; we'll keep your apps error-free. we will take care of the issues, security, performance, backups and bug removal with server updates.   </p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Consulting</h4>
                                             <p>We help you to get the benefits of CodeIgniter into your business. We offer project consultations and reviews of the current applications and projects.    </p>
                                         </div>
@@ -262,51 +235,46 @@ class CodeIgniter extends Component {
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
                                             <h4>Web Development</h4>
                                             <p>We create beautiful websites with the help of the CI framework. We create websites across the length and breadth of industries like eCommerce, brands and profiles.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg1} /> */}
                                             <h4>App Development</h4>
                                             <p>Create scalable, secured and error-free applications with iQuinceSoft. We serve your business goals with a customized, tailor-made app to help you grow. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg2} /> */}
                                             <h4>Cloud Solutions</h4>
                                             <p>We offer cloud solutions to businesses. We excel in a wide range of services, from small app development to massive web systems. We are experienced and skilled enough to serve with the need-based cloud solutions.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
                                             <h4>Migration</h4>
                                             <p>We help you migrate your apps from the peer frameworks to CodeIgniter with no loss of any data or functionality.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg4} /> */}
                                             <h4>Customized Database Development</h4>
                                             <p>We create the need-based customized database with the help of popular databases like microsoft sql server, db2, oracle and many more.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
                                             <h4>CodeIgniter Unit and Automated Testing</h4>
                                             <p>We create and make sure to develop you error-free apps. we use selenium as well to run automated tests as well.</p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Maintenance & Support</h4>
                                             <p>You stay focused on business; we'll keep your apps error-free. we will take care of the issues, security, performance, backups and bug removal with server updates.   </p>
                                         </div>
+
+                                        <div className="col-lg-4 col-md-4"></div>
+
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Consulting</h4>
                                             <p>We help you to get the benefits of CodeIgniter into your business. We offer project consultations and reviews of the current applications and projects.    </p>
                                         </div>
@@ -325,8 +293,6 @@ class CodeIgniter extends Component {
                     <WebSec />
 
                     <WorkSec />
-
-                    <FAQ />
 
                     <FAQ />
 

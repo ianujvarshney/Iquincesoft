@@ -16,7 +16,6 @@ import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 
@@ -46,24 +45,6 @@ class opencart extends Component {
     }
     render() {
         const { OpenCartJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -204,28 +185,24 @@ class opencart extends Component {
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
                                             <h4>OpenCart Web Development</h4>
                                             <p>Launch your eCommerce website and build your digital marketplace from scratch. We create a long-lasting impression on your customer with our OpenCart Website development services. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg1} /> */}
                                             <h4>OpenCart Migration Services</h4>
                                             <p>Improve the performance, usability and security by migrating your online store to the updated version of OpenCart. We take minimal time with no loss of data.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg2} /> */}
                                             <h4>OpenCart App development </h4>
                                             <p>IQuinceSoft developers can offer you a highly scalable OpenCart app development solution. We ensure you an improved experience with the help of intuitive layout design and an appealing app.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
                                             <h4>Theme Customization</h4>
                                             <p>Explore more alluring themes with iQuinceSoft theme customization services. We customize and offer the most advanced and appealing themes for your website.  </p>
                                         </div>
@@ -233,26 +210,24 @@ class opencart extends Component {
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
                                             <h4>OpenCart Web Development</h4>
                                             <p>Launch your eCommerce website and build your digital marketplace from scratch. We create a long-lasting impression on your customer with our OpenCart Website development services. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg1} /> */}
                                             <h4>OpenCart Migration Services</h4>
                                             <p>Improve the performance, usability and security by migrating your online store to the updated version of OpenCart. We take minimal time with no loss of data.</p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg2} /> */}
                                             <h4>OpenCart App development </h4>
                                             <p>IQuinceSoft developers can offer you a highly scalable OpenCart app development solution. We ensure you an improved experience with the help of intuitive layout design and an appealing app.
                                             </p>
                                         </div>
 
+                                        <div className="col-lg-4 col-md-4"></div>
+
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
                                             <h4>Theme Customization</h4>
                                             <p>Explore more alluring themes with iQuinceSoft theme customization services. We customize and offer the most advanced and appealing themes for your website.  </p>
                                         </div>

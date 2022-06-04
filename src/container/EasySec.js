@@ -17,7 +17,7 @@ class EasySec extends Component {
 							<div className="col-lg-1"></div>
 							<div className="col-lg-5 col-md-6" data-aos="fade-up">
 								<div className="easy-box">
-									<img src={easy} />
+									<img alt="img" src={easy} />
 									<h4><span>Please send me a fixed Price Quote</span> Starting from</h4>
 									<h6>$<span>20/</span>Hr</h6>
 									<p>We serve you by keeping your details confidential at just $20/Hr. </p>
@@ -26,7 +26,7 @@ class EasySec extends Component {
 
 							<div className="col-lg-5 col-md-6" data-aos="fade-down">
 								<div className="easy-box">
-									<img src={easy1} />
+									<img alt="img" src={easy1} />
 									<h4><span>I need to hire a developer.</span> Starting from</h4>
 									<h6>$<span>2400/</span>Month</h6>
 									<p>We ensure you get what you need. Hire a dedicated web developer who’ll work as per your instruction for 8Hr/day and 160 hours per month with a monthly rolling contract.

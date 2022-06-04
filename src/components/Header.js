@@ -1,10 +1,10 @@
 
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Menu } from '../json/menu';
-
+import axios from 'axios';
 import logo from '../images/logo.png';
 // import aboutLogo from '../images/about-logo.png';
 import flag from '../images/flag.jpg';
@@ -12,7 +12,6 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
 import popupImg from '../images/popup-img.png';
-import { ErrorBoundary } from 'react-error-boundary';
 import arrow_white from '../images/arrow-white.png';
 
 import { FaRegCalendar, FaLockOpen, FaRegUserCircle, FaRegEnvelope, FaPhoneAlt, FaPaperPlane, FaAngleDown } from 'react-icons/fa';
@@ -39,6 +38,8 @@ class Header extends Component {
       }
    }
 
+
+
    componentDidMount() {
       window.scrollTo(0, 0);
       Menu.getMenu().then((menus, err) => {
@@ -51,6 +52,42 @@ class Header extends Component {
       });
    }
 
+   // form post function
+   submitForm = e => {
+
+
+      let formData = new FormData()
+
+      formData.set("your-name", this.state.name)
+      formData.set("your-email", this.state.email)
+      formData.set("your-number", this.state.number)
+      axios
+         .post(
+            'https://dev.iquincesoft.com/iqsandbox/wp-json/contact-form-7/v1/contact-forms/1674/feedback',
+            formData,
+            {
+               headers: {
+                  "content-type": "multipart/form-data",
+               },
+            }
+         )
+         .then(res => {
+            res.data.status === "mail_sent"
+               ? this.setState({
+                  name: "",
+                  email: "",
+                  Number: "",
+
+               })
+               : this.setState({ errorMessage: res.data.message }, () => {
+                  setTimeout(() => {
+                     this.setState({ errorMessage: "" })
+                  }, 2000)
+               })
+         })
+   }
+
+
    createMenu = (items) => {
       const menuArray = [];
       var childMenu = [];
@@ -60,7 +97,7 @@ class Header extends Component {
             menuArray.push({ ...item, 'children': [] })
          } else {
 
-            const indexArray = menuArray.findIndex((findItem) => parseInt(findItem.id) == parseInt(item.menu_id));
+            const indexArray = menuArray.findIndex((findItem) => parseInt(findItem.id) === parseInt(item.menu_id));
             if (indexArray !== -1) {
                menuArray[indexArray].children.push({ ...item, 'children': [] });
                if (menuArray[indexArray].children) {
@@ -87,7 +124,7 @@ class Header extends Component {
 
    findChild = (childMenu, item) => {
 
-      const indexArray = childMenu.findIndex((findItem) => parseInt(findItem.id) == parseInt(item.menu_id));
+      const indexArray = childMenu.findIndex((findItem) => parseInt(findItem.id) === parseInt(item.menu_id));
       if (indexArray !== -1) {
          childMenu[indexArray].children.push({ ...item, 'children': [] });
          if (childMenu[indexArray].children) {
@@ -122,7 +159,7 @@ class Header extends Component {
          <header className={this.props.headerClass}>
             <div className="container">
                <div className="row">
-                  <div className="col-lg-1 col-md-2"><Link className="logo" to="/"><img src={logo} /></Link></div>
+                  <div className="col-lg-1 col-md-2"><Link className="logo" to="/"><img alt="img" src={logo} /></Link></div>
                   <div className="col-lg-6 col-md-1">
                      <div className="bottom-head">
                         <nav className="navbar navbar-expand-md">
@@ -133,7 +170,7 @@ class Header extends Component {
                               <span className="icon-bar"></span>
                            </button>
                            <div className={`${(this.state.toggleSidenav) ? 'show' : ''} navbar-collapse collapse`}>
-                              <div className="mob-logo"><a href="#"><img src={logo} /></a></div>
+                              <div className="mob-logo"><Link to="#"><img alt="img" src={logo} /></Link></div>
                               <ul className="navbar-nav">
 
                                  <li className={`${(this.state.toggleDropdown) ? 'show' : ''} dropdown`}>
@@ -180,10 +217,6 @@ class Header extends Component {
                                        <li>
                                           <h4>LowCode/No Code</h4>
                                           <Link to={"/Web_Development"}>Web Flow</Link>
-                                          {/* <a href="/Web_Development">Web Development</a>
-                                          <a href="/Web_Development">Web Development</a>
-                                          <a href="/Web_Development">Web Development</a>
-                                          <a href="/Web_Development">Web Development</a> */}
                                        </li>
                                     </ul>
                                  </li>
@@ -193,9 +226,9 @@ class Header extends Component {
                                  <li><Link className="nav-link" to={"/casestudies"}>Case Studies</Link></li>
                                  <li><Link className="nav-link" to={"/about"}>About Us</Link></li>
                                  <li><Link className="nav-link" to={"/blog"}>Get Inspired</Link></li>
-                                 <li className="mob-link"><a className="nav-link" href="#">Talk to Sales</a></li>
-                                 <li className="mob-link"><a className="nav-link" href="#">Client Login</a></li>
-                                 <li className="mob-link"><a className="nav-link" href="tel:+1 (347) 960-4166"><img src={flag} /> +1 (347) 960-4166</a></li>
+                                 <li className="mob-link"><Link className="nav-link" to="#">Talk to Sales</Link></li>
+                                 <li className="mob-link"><Link className="nav-link" to="#">Client Login</Link></li>
+                                 <li className="mob-link"><Link className="nav-link" to="tel:+1 (347) 960-4166"><img alt="img" src={flag} /> +1 (347) 960-4166</Link></li>
                               </ul>
                            </div>
                         </nav>
@@ -212,7 +245,7 @@ class Header extends Component {
                                  <div className="content">
                                     <div className="row">
                                        <div className="col-lg-6 col-md-6">
-                                          <img src={popupImg} />
+                                          <img alt="img" src={popupImg} />
                                           <div className="popup-box">
                                              <h4>Schedule a 15 minute Free Consultation</h4>
                                              <p>If we can help you in any way, please don’t hesitate to set a time to meet or talk, or leave your details and we will get back to you.</p>
@@ -221,11 +254,11 @@ class Header extends Component {
 
                                        <div className="col-lg-6 col-md-6">
                                           <form>
-                                             <h3>Start Here <img src={arrow_white} /></h3>
-                                             <div className="in-box"><FaRegUserCircle /> <input className="box" type="text" name="" placeholder="Name" /></div>
-                                             <div className="in-box"><FaRegEnvelope /> <input className="box" type="text" name="" placeholder="Work e-Mail*" /></div>
-                                             <div className="in-box"><FaPhoneAlt /> <input className="box" type="text" name="" placeholder="Phone Number" /></div>
-                                             <a href="#"><FaPaperPlane /></a>
+                                             <h3>Start Here <img alt="img" src={arrow_white} /></h3>
+                                             <div className="in-box"><FaRegUserCircle /> <input onChange={e => this.setState({ name: e.target.value })} className="box" type="text" name="" placeholder="Name" /></div>
+                                             <div className="in-box"><FaRegEnvelope /> <input onChange={(e) => this.setState({ email: e.target.value })} className="box" type="text" name="" placeholder="Work e-Mail*" /></div>
+                                             <div className="in-box"><FaPhoneAlt /> <input onChange={(e) => this.setState({ number: e.target.value })} className="box" type="text" name="" placeholder="Phone Number" /></div>
+                                             <Link to="#"><FaPaperPlane onClick={() => this.submitForm()} /></Link>
                                              <ul>
                                                 <li><FaRegCalendar /> <p>Pick a date & time of your choice</p></li>
                                                 <li><FaLockOpen /> <p>No obligation. Cancel any time.</p></li>
@@ -237,8 +270,8 @@ class Header extends Component {
                               </div>
                            )}
                         </Popup></li>
-                        <li><a className="clt-btn" href="#">Client Login</a></li>
-                        <li><img src={flag} /> <a href="tel:+1 (347) 960-4166">+1 (347) 960-4166</a></li>
+                        <li><Link className="clt-btn" to="#">Client Login</Link></li>
+                        <li><img alt="img" src={flag} /> <Link to="tel:+1 (347) 960-4166">+1 (347) 960-4166</Link></li>
                      </ul>
                   </div>
                </div>

@@ -16,7 +16,6 @@ import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 
@@ -43,24 +42,6 @@ class Drupal extends Component {
     }
     render() {
         const { DrupalJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -203,42 +184,42 @@ class Drupal extends Component {
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
+                                            {/* <img alt="imsrc={webImg} /> */}
                                             <h4>Drupal Web Development</h4>
                                             <p>Complex and Customized, SEO-friendly and mobile-responsive websites. We are a team of ace Drupal developers who are proficient enough to offer you a web solution that meet your need of a web solution.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg1} /> */}
+                                            {/* <img alt="imsrc={webImg1} /> */}
                                             <h4>Drupal e-Market Store</h4>
                                             <p>We offer fully-featured ecommerce sites with using multifaceted approach and well-defined workflows, data structures and displays. We offer flexibility in the functionalities like shipping, order management, inventory management, payment gateways and more. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg2} /> */}
+                                            {/* <img alt="imsrc={webImg2} /> */}
                                             <h4>Drupal Migration</h4>
                                             <p>We assess your current website with the modules that are necessary to migrate and those which are needed to build from scratch. We ensure flawless migration.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
+                                            {/* <img alt="imsrc={webImg3} /> */}
                                             <h4>Drupal Staff Augmentation</h4>
                                             <p>Our staff augmentation services assists you in reducing the risk, manage the cost and add flexibility. We offer need-based tech capability for startups, communication agencies and web development teams. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg4} /> */}
+                                            {/* <img alt="imsrc={webImg4} /> */}
                                             <h4>Drupal Integrations</h4>
                                             <p>We offer integration services including API and web services integration, seamless SMS, third party integrations, CMS and CRM integration and custom development. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>Drupal Maintenance and Support</h4>
                                             <p>Keep your applications and web systems technically sound. We fix the prevalent bugs, offer security upgrades, rules and blocks and amend user roles.</p>
                                         </div>
@@ -246,38 +227,38 @@ class Drupal extends Component {
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
+                                            {/* <img alt="imsrc={webImg} /> */}
                                             <h4>Drupal Web Development</h4>
                                             <p>Complex and Customized, SEO-friendly and mobile-responsive websites. We are a team of ace Drupal developers who are proficient enough to offer you a web solution that meet your need of a web solution.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg1} /> */}
+                                            {/* <img alt="imsrc={webImg1} /> */}
                                             <h4>Drupal e-Market Store</h4>
                                             <p>We manage every single facet of an online store with the help of Drupal e-Market Store. We connect the PHP app to the WooCommerce store with SCALABILITY.</p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg2} /> */}
+                                            {/* <img alt="imsrc={webImg2} /> */}
                                             <h4>Drupal Migration</h4>
                                             <p>We assess your current website with the modules that are necessary to migrate and those which are needed to build from scratch. We ensure flawless migration.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
+                                            {/* <img alt="imsrc={webImg3} /> */}
                                             <h4>Drupal Staff Augmentation</h4>
                                             <p>Our staff augmentation services assists you in reducing the risk, manage the cost and add flexibility. We offer need-based tech capability for startups, communication agencies and web development teams. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg4} /> */}
+                                            {/* <img alt="imsrc={webImg4} /> */}
                                             <h4>Drupal Integrations</h4>
                                             <p>We offer integration services including API and web services integration, seamless SMS, third party integrations, CMS and CRM integration and custom development. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>Drupal Maintenance and Support</h4>
                                             <p>Keep your applications and web systems technically sound. We fix the prevalent bugs, offer security upgrades, rules and blocks and amend user roles.</p>
                                         </div>

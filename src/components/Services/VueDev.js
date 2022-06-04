@@ -12,11 +12,9 @@ import EuquireSec from '../../container/EuquireSec';
 import AwardSec from '../../container/AwardSec';
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
-import FAQ from '../../container/FAQ';
 import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
@@ -43,24 +41,6 @@ class VueDev extends Component {
     }
     render() {
         const { VueJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -79,7 +59,7 @@ class VueDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>leverage the expertise and mapping skills to fit in your project demands and optimal business solutions with hiring our Vue JS developers. </strong><br /></h1>
+                                    <h1><strong>Hire VueJS developers to build and scale super fast, light and peak performing web apps </strong><br /></h1>
                                     <ul>
                                         <li>Hire the near shore talent with vetted, skilled, and seasoned Vue JS developers to scale and augment your team's performance.</li>
                                         <li>We ensure you get quality outcomes with our ready-to-hire Vue JS developers that can deliver from day 1 of joining the team.</li>

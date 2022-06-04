@@ -14,7 +14,6 @@ export class Main {
                             data.push({
                                 "id": response[i].id,
                                 "name": response[i].title.rendered || '',
-                                // "img": response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
                                 "content": response[i].content.rendered || '',
                             });
                         }
@@ -41,7 +40,7 @@ export class Main {
                             data.push({
                                 "id": response[i].id,
                                 "name": response[i].title.rendered || '',
-                                "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
+                                "img": (response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url) || servBL,
                                 "content": response[i].content.rendered || '',
                             });
                         }
@@ -67,7 +66,7 @@ export class Main {
                             data.push({
                                 "id": response[i].id,
                                 "name": response[i].title.rendered || '',
-                                "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
+                                "img": (response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url) || servBL,
                                 "acf": response[i].acf,
                             });
                         }
@@ -94,7 +93,7 @@ export class Main {
                             data.push({
                                 "id": response[i].id,
                                 "name": response[i].title.rendered || '',
-                                "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
+                                "img": (response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url) || servBL,
                             });
                         }
 

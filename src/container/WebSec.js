@@ -35,42 +35,42 @@ class WebSec extends Component {
 								<OwlCarousel options={culture}>
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={webImg} />
+										<img alt="img" src={webImg} />
 										<h4>Reliable Services</h4>
 										<p>Services that make your details 100% confidential and safe. You can bank on us.</p>
 									</div>
 
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={webImg1} />
+										<img alt="img" src={webImg1} />
 										<h4>Ratings and Reviews</h4>
 										<p>Reviews and Ratings across the globe to validate what we speak of ourselves.</p>
 									</div>
 
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={webImg2} />
+										<img alt="img" src={webImg2} />
 										<h4>Best Talent Pool to offer:</h4>
 										<p>We recruit the best. Our developers are highly skilled, up-to-date, and professionals who deliver what you expect out of them.</p>
 									</div>
 
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={webImg3} />
+										<img alt="img" src={webImg3} />
 										<h4>Best place to work for:</h4>
 										<p>We provide a healthy and happy work environment to sustain, grow and achieve more. </p>
 									</div>
 
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={webImg4} />
+										<img alt="img" src={webImg4} />
 										<h4>AI-driven Workflow:</h4>
 										<p>Overcome the issues before the chances of getting troubled by them. </p>
 									</div>
 
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={webImg5} />
+										<img alt="img" src={webImg5} />
 										<h4>Save – Time & Money:</h4>
 										<p>We are iQuinceSoft. We put that extra mile of effort to save your time and cost.</p>
 									</div>
@@ -78,38 +78,38 @@ class WebSec extends Component {
 
 								<div className="row">
 									<div className="col-lg-4 col-md-4">
-										<img src={webImg} />
+										<img alt="img" src={webImg} />
 										<h4>Reliable Services</h4>
 										<p>Services that make your details 100% confidential and safe. You can bank on us.</p>
 									</div>
 
 									<div className="col-lg-4 col-md-4">
-										<img src={webImg1} />
+										<img alt="img" src={webImg1} />
 										<h4>Ratings and Reviews</h4>
 										<p>Reviews and Ratings across the globe to validate what we speak of ourselves.</p>
 									</div>
 
 									<div className="col-lg-4 col-md-4">
-										<img src={webImg2} />
+										<img alt="img" src={webImg2} />
 										<h4>Best Talent Pool to offer</h4>
 										<p>We recruit the best. Our developers are highly skilled, up-to-date, and professionals who deliver what you expect out of them.
 										</p>
 									</div>
 
 									<div className="col-lg-4 col-md-4">
-										<img src={webImg3} />
+										<img alt="img" src={webImg3} />
 										<h4>Best place to work for</h4>
 										<p>We provide a healthy and happy work environment to sustain, grow and achieve more. </p>
 									</div>
 
 									<div className="col-lg-4 col-md-4">
-										<img src={webImg4} />
+										<img alt="img" src={webImg4} />
 										<h4>AI-driven Workflow</h4>
 										<p>Overcome the issues before the chances of getting troubled by them. </p>
 									</div>
 
 									<div className="col-lg-4 col-md-4">
-										<img src={webImg5} />
+										<img alt="img" src={webImg5} />
 										<h4>Save – Time & Money</h4>
 										<p>We are iQuinceSoft. We put that extra mile of effort to save your time and cost.</p>
 									</div>

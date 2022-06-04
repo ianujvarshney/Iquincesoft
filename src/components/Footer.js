@@ -48,15 +48,15 @@ class Footer extends Component {
 				<div className="container">
 					<div className="row desk-footer">
 						<div className="col-lg-3 col-md-6">
-							<Link to="/"><img src={logo1} /></Link>
-							<div><a href="https://www.facebook.com/iquincesoft"><FaFacebook /></a><a href="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></a><a href="https://twitter.com/iquincesoft"><FaTwitter /></a><a href="https://www.instagram.com/iquincesoft/"><FaInstagram /></a></div>
+							<Link to="/"><img alt="img" src={logo1} /></Link>
+							<div><a href="https://www.facebook.com/iquincesoft"><FaFacebook /></a><Link href="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></Link><a href="https://twitter.com/iquincesoft"><FaTwitter /></a><a href="https://www.instagram.com/iquincesoft/"><FaInstagram /></a></div>
 						</div>
 
 						<div className="col-lg-2 col-md-12">
 							<h3>Services</h3>
 							<ul>
 								{Servicelinks.map(link => {
-									return (<li key={link.id}><a href={link.to}></a><NavLink className={link.class} activeClassName={"active"} to={`/${link.to}`} hash={link.hash}>{link.name}</NavLink></li>);
+									return (<li key={link.id}><Link to={link.to}></Link><NavLink className={link.class} activeClassName={"active"} to={`/${link.to}`} hash={link.hash}>{link.name}</NavLink></li>);
 								})}
 							</ul>
 						</div>
@@ -64,7 +64,7 @@ class Footer extends Component {
 							<h3>Hire Developers</h3>
 							<ul>
 								{Hirelinks.map(link => {
-									return (<li key={link.id}><a href={link.to}></a><NavLink className={link.class} activeClassName={"active"} to={`/${link.to}`} hash={link.hash}>{link.name}</NavLink></li>);
+									return (<li key={link.id}><Link to={link.to}></Link><NavLink className={link.class} activeClassName={"active"} to={`/${link.to}`} hash={link.hash}>{link.name}</NavLink></li>);
 								})}
 							</ul>
 						</div>
@@ -73,7 +73,7 @@ class Footer extends Component {
 							<h3>Quick Links</h3>
 							<ul>
 								{links.map(link => {
-									return (<li key={link.id}><a href={link.to}></a><NavLink className={link.class} activeClassName={"active"} to={link.to} >{link.name}</NavLink></li>);
+									return (<li key={link.id}><Link to={link.to}></Link><NavLink className={link.class} activeClassName={"active"} to={link.to} >{link.name}</NavLink></li>);
 								})}
 							</ul>
 						</div>
@@ -85,17 +85,17 @@ class Footer extends Component {
 							<div className="row">
 								<div className="col-lg-3 col-md-4">
 									<h3>Headquarters</h3>
-									<h6><a href="#">ul. Dolnych Wałów 8 Gliwice, 44-100 Poland</a></h6>
+									<h6><Link to="#">ul. Dolnych Wałów 8 Gliwice, 44-100 Poland</Link></h6>
 								</div>
 
 								<div className="col-lg-3 col-md-4">
 									<h3>India Office</h3>
-									<h6><a href="#">NH-2 Agra Delhi Highway	Mathura – 281001</a></h6>
+									<h6><Link to="#">NH-2 Agra Delhi Highway	Mathura – 281001</Link></h6>
 								</div>
 
 								<div className="col-lg-3 col-md-4">
 									<h3>Sales</h3>
-									<h6><a href="#">ul. Dolnych Wałów 8 Gliwice, 44-100 Poland</a></h6>
+									<h6><Link to="#">ul. Dolnych Wałów 8 Gliwice, 44-100 Poland</Link></h6>
 								</div>
 							</div>
 						</div>
@@ -103,17 +103,17 @@ class Footer extends Component {
 
 					<div className="row mob-footer">
 						<div className="col-lg-12 col-md-12">
-							<a href="#"><FaFacebook /></a><a href="#"><FaLinkedin /></a><a href="#"><FaTwitter /></a><a href="#"><FaInstagram /></a>
-							<h4>Drop us a line: <a href="mailto:info@iquincesoft.com">info@iquincesoft.com</a></h4>
+							<Link to="#"><FaFacebook /></Link><Link to="#"><FaLinkedin /></Link><Link to="#"><FaTwitter /></Link><Link to="#"><FaInstagram /></Link>
+							<h4>Drop us a line: <Link to="mailto:info@iquincesoft.com">info@iquincesoft.com</Link></h4>
 							<h3>Quick Links</h3>
 							<ul>
 								{links.map(link => {
-									return (<li key={link.id}><a href={link.to}></a><NavLink className={link.class} activeClassName={"active"} to={`/${link.to}`} hash={link.hash}>{link.name}</NavLink></li>);
+									return (<li key={link.id}><Link to={link.to}></Link><NavLink className={link.class} activeClassName={"active"} to={`/${link.to}`} hash={link.hash}>{link.name}</NavLink></li>);
 								})}
 							</ul>
 
 							<input className="box-1" type="text" name="" placeholder="e-Mail Address" />
-							<a className="sub-btn" href="#">Subscribe to Newsletter</a>
+							<Link className="sub-btn" to="#">Subscribe to Newsletter</Link>
 						</div>
 					</div>
 				</div>

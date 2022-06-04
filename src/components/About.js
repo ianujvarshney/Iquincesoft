@@ -421,8 +421,6 @@ class About extends Component {
 						<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 					</div>
 
-					<ReviewSec />
-
 					<div className="culture-sec" >
 						<h3>Culture</h3>
 						<div className="container">

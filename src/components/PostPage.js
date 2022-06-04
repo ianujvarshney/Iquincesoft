@@ -36,13 +36,13 @@ class PostPage extends Component {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-8 col-md-7">
-                                        <h3><img src={arrow1} /><a href="/blog">Back to all the blogposts</a></h3>
+                                        <h3><img alt="img" src={arrow1} /><a href="/blog">Back to all the blogposts</a></h3>
                                         <h4>{PostPageJsonS.date}abc</h4>
                                         <h1><strong>{PostPageJsonS.name}</strong></h1>
-                                        <h5><img src={blog_img} /> <span><strong>{PostPageJsonS.author}</strong> QA Specialist</span></h5>
+                                        <h5><img alt="img" src={blog_img} /> <span><strong>{PostPageJsonS.author}</strong> QA Specialist</span></h5>
                                     </div>
                                     <div className="col-lg-4 col-md-5">
-                                        <img width="100%" src={PostPageJsonS.img} />
+                                        <img alt="img" width="100%" src={PostPageJsonS.img} />
                                     </div>
                                 </div>
                                 <div className="row">

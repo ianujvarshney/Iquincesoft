@@ -16,7 +16,6 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import AwardFormsec from '../../container/AwardFormsec';
 import 'react-accessible-accordion/dist/fancy-example.css';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner'
 import Partner from '../../container/Partner';
 
@@ -41,24 +40,6 @@ class ZENDStack extends Component {
     }
     render() {
         const { InsightsJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -99,37 +80,37 @@ class ZENDStack extends Component {
 
                                 <OwlCarousel options={culture}>
                                     <div className="cult-box">
-                                        <div class="tech-dot"></div>
+                                        <div className="tech-dot"></div>
                                         <h4>Highly flexible & Secure </h4>
                                         <p>Zend is an OOP-based framework. This offer Zend advanced features that enable developers to build highly flexible and secure web application. </p>
                                     </div>
 
                                     <div className="cult-box">
-                                        <div class="tech-dot"></div>
+                                        <div className="tech-dot"></div>
                                         <h4>MVC features </h4>
                                         <p>Multiple components are available to build fully-featured web apps, catering to multiple enterprise goals.</p>
                                     </div>
 
                                     <div className="cult-box">
-                                        <div class="tech-dot"></div>
+                                        <div className="tech-dot"></div>
                                         <h4>Transparent </h4>
                                         <p>Zend comprises vast classes and libraries collection that aided the developers in building multi-functional web apps.</p>
                                     </div>
 
                                     <div className="cult-box">
-                                        <div class="tech-dot"></div>
+                                        <div className="tech-dot"></div>
                                         <h4>Integration </h4>
                                         <p>Zend helps to integrate third-party applications into web applications seamlessly.</p>
                                     </div>
 
                                     <div className="cult-box">
-                                        <div class="tech-dot"></div>
+                                        <div className="tech-dot"></div>
                                         <h4>Cost-effective </h4>
                                         <p>Zend helps to build web applications in a short time at affordable prices.</p>
                                     </div>
 
                                     <div className="cult-box">
-                                        <div class="tech-dot"></div>
+                                        <div className="tech-dot"></div>
                                         <h4>Multiple Database Support </h4>
                                         <p>Zend supports Multiple Databases compatible with all databases like SQLite, PostgreSQL, MySQL, Oracle, etc. </p>
                                     </div>
@@ -140,7 +121,7 @@ class ZENDStack extends Component {
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
-                                        <div class="tech-dot"></div>
+                                        <div className="tech-dot"></div>
                                         <h4>Highly flexible & Secure </h4>
                                         <p>Zend is an OOP-based framework. This offer Zend advanced features that enable developers to build highly flexible and secure web application. </p>
                                     </div>
@@ -148,7 +129,7 @@ class ZENDStack extends Component {
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
-                                        <div class="tech-dot"></div>
+                                        <div className="tech-dot"></div>
                                         <h4>MVC features </h4>
                                         <p>Multiple components are available to build fully-featured web apps, catering to multiple enterprise goals.</p>
                                     </div>
@@ -156,7 +137,7 @@ class ZENDStack extends Component {
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
-                                        <div class="tech-dot"></div>
+                                        <div className="tech-dot"></div>
                                         <h4>Transparent </h4>
                                         <p>Zend comprises vast classes and libraries collection that aided the developers in building multi-functional web apps.</p>
                                     </div>
@@ -164,7 +145,7 @@ class ZENDStack extends Component {
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
-                                        <div class="tech-dot"></div>
+                                        <div className="tech-dot"></div>
                                         <h4>Integration </h4>
                                         <p>Zend helps to integrate third-party applications into web applications seamlessly. </p>
                                     </div>
@@ -172,7 +153,7 @@ class ZENDStack extends Component {
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
-                                        <div class="tech-dot"></div>
+                                        <div className="tech-dot"></div>
                                         <h4>Cost-effective </h4>
                                         <p>Zend helps to build web applications in a short time at affordable prices. </p>
                                     </div>
@@ -180,7 +161,7 @@ class ZENDStack extends Component {
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
-                                        <div class="tech-dot"></div>
+                                        <div className="tech-dot"></div>
                                         <h4>Multiple Database Support </h4>
                                         <p>Zend supports Multiple Databases compatible with all databases like SQLite, PostgreSQL, MySQL, Oracle, etc. </p>
                                     </div>
@@ -198,36 +179,31 @@ class ZENDStack extends Component {
                                 <div className="col-lg-10 col-md-12" data-aos="fade-up">
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
+                                            <div className="tech-dot"></div>
                                             <h4>Zend CMS Development</h4>
                                             <p>Zend framework offer CMS solutions with great effectiveness. It enables the users to handle their projects efficiently and apply the updates well. </p>
                                         </div>
 
                                         <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img src={webImg1} /> */}
+                                            <div className="tech-dot"></div>
                                             <h4>Zend Support & Maintenance</h4>
                                             <p>iQuinceSoft offers round-the-clock support in the ongoing and post-project development phase to remain focused on your business. </p>
                                         </div>
 
                                         <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img src={webImg2} /> */}
+                                            <div className="tech-dot"></div>
                                             <h4>Zend Enterprise Solutions</h4>
                                             <p>Get scalable and secure enterprise-level web apps according to the need of your business.</p>
                                         </div>
 
                                         <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
+                                            <div className="tech-dot"></div>
                                             <h4>Zend Web Development</h4>
                                             <p>iQuinceSoft provides scalable, secure, and fully-featured Zend web applications. We can deliver competitive and latest web development services. </p>
                                         </div>
 
                                         <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img src={webImg4} /> */}
+                                            <div className="tech-dot"></div>
                                             <h4>Zend Migration Services</h4>
                                             <p>Migrate your website to visually appealing UI from a platform to Zend.  </p>
                                         </div>
@@ -237,32 +213,29 @@ class ZENDStack extends Component {
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
                                             <h4>Zend CMS Development</h4>
                                             <p>Zend framework offer CMS solutions with great effectiveness. It enables the users to handle their projects efficiently and apply the updates well. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg1} /> */}
                                             <h4>Zend Support & Maintenance</h4>
                                             <p>We manage every single facet of an online store with the help of API integration. We connect the PHP app to the Zend store with REST API.</p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg2} /> */}
                                             <h4>Zend Enterprise Solutions</h4>
                                             <p>Get scalable and secure enterprise-level web apps according to the need of your business.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
                                             <h4>Zend Web Development</h4>
                                             <p>iQuinceSoft provides scalable, secure, and fully-featured Zend web applications. We can deliver competitive and latest web development services. </p>
                                         </div>
 
+                                        <div className="col-lg-4 col-md-4"></div>
+
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg4} /> */}
                                             <h4>Zend Migration Services</h4>
                                             <p>Migrate your website to visually appealing UI from a platform to Zend.  </p>
                                         </div>
@@ -290,10 +263,10 @@ class ZENDStack extends Component {
                             <div className="row">
                                 <div className="col-lg-12 col-md-12">
                                     <OwlCarousel options={culture}>
-                                        {InsightsJson && InsightsJson.map(InsightsJsonS => {
+                                        {InsightsJson && InsightsJson.map((InsightsJsonS, index) => {
                                             return (
-                                                <div className="cult-box">
-                                                    <div class="tech-dot"></div>
+                                                <div className="cult-box" key={index}>
+                                                    <div className="tech-dot"></div>
                                                     <h4>{InsightsJsonS.name}</h4>
                                                     <p dangerouslySetInnerHTML={{ __html: InsightsJsonS.content.substr(0, 100) + '...' }}></p>
                                                     <Link to={`/PostPage/${InsightsJsonS.slug}`} >READ MORE </Link>
@@ -307,7 +280,7 @@ class ZENDStack extends Component {
                                             return (
 
                                                 <div className="col-lg-4 col-md-4">
-                                                    <div className="insight-box" key={InsightsJsonS.id}>
+                                                    <div className="insight-box" key={index}>
                                                         <h4>{InsightsJsonS.name}</h4>
                                                         <p dangerouslySetInnerHTML={{ __html: InsightsJsonS.content.substr(0, 100) + '...' }}></p>
                                                         <Link to={`/PostPage/${InsightsJsonS.slug}`} >READ MORE </Link>

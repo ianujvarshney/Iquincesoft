@@ -13,10 +13,9 @@ export class serviceapi {
                             data.push({
                                 "id": response[i].id,
                                 "name": response[i].title.rendered || '',
-                                "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
+                                "img": (response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url) || servBL,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
-                                // "corporate": response[i]['post-meta-fields'] && response[i]['post-meta-fields']['corporate'] || '',
                             });
                         }
 
@@ -41,10 +40,9 @@ export class serviceapi {
                             data.push({
                                 "id": response[i].id,
                                 "name": response[i].title.rendered || '',
-                                "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
+                                "img": (response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url) || servBL,
                                 "content": response[i].content.rendered || '',
                                 "slug": response[i].slug,
-                                // "corporate": response[i]['post-meta-fields'] && response[i]['post-meta-fields']['corporate'] || '',
                             });
                         }
 
@@ -70,9 +68,7 @@ export class serviceapi {
                             data.push({
                                 "id": response[i].id,
                                 "name": response[i].title.rendered || '',
-                                // "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
                                 "content": response[i].content.rendered || '',
-                                // "corporate": response[i]['post-meta-fields'] && response[i]['post-meta-fields']['corporate'] || '',
                             });
                         }
 
@@ -98,9 +94,7 @@ export class serviceapi {
                                 "id": response[i].id,
                                 "name": response[i].title.rendered || '',
                                 "slug": response[i].slug || '',
-                                // "img": response[i]._embedded && response[i]._embedded['wp:featuredmedia'][0].source_url || servBL,
                                 "content": response[i].content.rendered || '',
-                                // "corporate": response[i]['post-meta-fields'] && response[i]['post-meta-fields']['corporate'] || '',
                             });
                         }
 

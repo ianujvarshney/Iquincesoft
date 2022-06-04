@@ -16,7 +16,6 @@ import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 
@@ -43,24 +42,6 @@ class IonicDev extends Component {
     }
     render() {
         const { IonicJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -215,28 +196,24 @@ class IonicDev extends Component {
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
                                             <h4>Custom Ionic App Development</h4>
                                             <p>IQuinceSoft offers a need-based customized Ionic app. We bridge the gap between your needs and services with the help of our visually appealing Ionic apps. We offer Ionic app development services to provide you with business solutions such as engaging and converting apps for android and iOS. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg1} /> */}
                                             <h4>Migration Services</h4>
                                             <p>We help you migrate your apps to the Ionic framework. We are proficient professionals to support you with migration services. We ensure improved security, greater flexibility, quick deployment time, and fewer infrastructure complexities.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg2} /> */}
                                             <h4>Ionic Support & Maintenance</h4>
                                             <p>We offer support & maintenance services to keep your apps high-performing, up-to-date, competitive and seamless. The ionic experts at iQuinceSoft offer unparalleled support. We are experts in bug-removing, third-party maintenance, CDN optimization and code reviews with feature extensions and app version upgrades.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
                                             <h4>Ionic eCommerce App development</h4>
                                             <p>We build high-performing e-commerce apps on Ionic that render flawless experience to the users with visually appealing UI and UX. We at iQuinceSoft excels with Ionic-based eCommerce applications with payment gateway integrations, custom plugins, smooth checkouts, multivendor solutions. Write a line to us about your specific needs and enjoy the attractive and engaging eCommerce applications. </p>
                                         </div>
@@ -246,26 +223,24 @@ class IonicDev extends Component {
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
                                             <h4>Custom Ionic App Development</h4>
                                             <p>IQuinceSoft offers a need-based customized Ionic app. We bridge the gap between your needs and services with the help of our visually appealing Ionic apps. We offer Ionic app development services to provide you with business solutions such as engaging and converting apps for android and iOS. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg1} /> */}
                                             <h4>Migration Services</h4>
                                             <p>We help you migrate your apps to the Ionic framework. We are proficient professionals to support you with migration services. We ensure improved security, greater flexibility, quick deployment time, and fewer infrastructure complexities.</p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg2} /> */}
                                             <h4>Ionic Support & Maintenance</h4>
                                             <p>We offer support & maintenance services to keep your apps high-performing, up-to-date, competitive and seamless. The ionic experts at iQuinceSoft offer unparalleled support. We are experts in bug-removing, third-party maintenance, CDN optimization and code reviews with feature extensions and app version upgrades.
                                             </p>
                                         </div>
 
+                                        <div className="col-lg-4 col-md-4"></div>
+
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
                                             <h4>Ionic eCommerce App development</h4>
                                             <p>We build high-performing e-commerce apps on Ionic that render flawless experience to the users with visually appealing UI and UX. We at iQuinceSoft excels with Ionic-based eCommerce applications with payment gateway integrations, custom plugins, smooth checkouts, multivendor solutions. Write a line to us about your specific needs and enjoy the attractive and engaging eCommerce applications. </p>
                                         </div>

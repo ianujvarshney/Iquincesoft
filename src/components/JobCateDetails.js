@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import { HashLink as Link } from 'react-router-hash-link';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Tabs, TabList, TabPanel } from 'react-tabs';
 import { Joboffers } from '../json/JobOffers';
 
 class jobCateDetails extends Component {
@@ -70,7 +70,7 @@ class jobCateDetails extends Component {
         }
     }
     render() {
-        const { joblinks, joblinks2, joblinks3, VisitedLink, lastItem, thePath, totalsjob } = this.state;
+        const { joblinks2, joblinks3, VisitedLink, totalsjob } = this.state;
         return (
             <>
                 <Header headerClass={'job-head'} />
@@ -89,7 +89,7 @@ class jobCateDetails extends Component {
                                                 </p>
                                                 {joblinks3 && joblinks3.map(link => {
                                                     return (
-                                                        link.slug == VisitedLink ? <p className="job-offer-2"><Link to={`/jobOffer/${link.slug}`}>{link.name} ({link.size})</Link></p> :
+                                                        link.slug === VisitedLink ? <p className="job-offer-2"><Link to={`/jobOffer/${link.slug}`}>{link.name} ({link.size})</Link></p> :
                                                             <p className="job-sec-p"><Link to={`/jobOffer/${link.slug}`}>{link.name} ({link.size})</Link></p>
                                                     )
                                                 })}

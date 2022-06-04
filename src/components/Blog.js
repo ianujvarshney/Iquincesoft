@@ -46,13 +46,7 @@ class Blog extends Component {
 			}
 		})
 
-		Inspired.allapidata().then((Insights, err) => {
-			if (!err) {
-				this.setState({
-					searchdata: Insights,
-				});
-			}
-		})
+
 		Inspired.getInspired2(this.state.page).then((Insights, err) => {
 			if (!err) {
 				this.setState({
@@ -106,17 +100,21 @@ class Blog extends Component {
 			})
 		}
 		else {
-			this.state.searchdata.filter(person => person.name.toLowerCase().includes(e.target.value.toLowerCase())).map(filteredName => (
-				this.setState({
-					dat3: filteredName.name,
-				})
-			))
+			Inspired.searchdata(e.target.value).then((Insights, err) => {
+				if (!err) {
+					this.setState({
+						data: Insights,
+					});
+				}
+			})
+
+			console.log("a===" + e.target.value)
 		}
 	}
 
 	render() {
 
-		const { data, page, catedata, allpost, search, error } = this.state;
+		const { data, page, catedata, allpost, error } = this.state;
 		if (error) {
 			return <p>hello wolrd</p>;
 		}
@@ -133,7 +131,7 @@ class Blog extends Component {
 										<h1>Learn from our web development blog read by 1.2M tech leaders</h1>
 										<p><span>Get a bi-weekly email with <strong>the most popular stories</strong></span></p>
 										<div className="in-box">
-											<input onInput={(e) => this.handlefilter(e)} className="box" name="" placeholder="Supercharge your brain" />
+											<input className="box" name="" placeholder="Supercharge your brain" />
 										</div>
 
 									</div>
@@ -159,7 +157,7 @@ class Blog extends Component {
 																}
 															})}
 														</div>
-														<div className="col-lg-2 col-md-3"><input className="box" type="text" name="" placeholder="Search" /></div>
+														<div className="col-lg-2 col-md-3"><input onInput={(e) => this.handlefilter(e)} className="box" type="text" name="" placeholder="Search" /></div>
 													</div>
 												</TabList>
 
@@ -243,3 +241,22 @@ class Blog extends Component {
 }
 export default Blog;
 
+// handlefilter = (e) => {
+// 	if (e.target.value === '') {
+// 		this.setState({
+// 			data: this.state.searchdata,
+// 		})
+// 	}
+// 	else {
+// 		this.state.searchdata.filter(person => person.name.toLowerCase().includes(e.target.value.toLowerCase())).map(filteredName => (
+// 			this.setState({
+// 				dat3: filteredName.name,
+// 			})
+// 		))
+// 	}
+// }
+// this.state.searchdata.filter(person => person.name.toLowerCase().includes(e.target.value.toLowerCase())).map(filteredName => (
+			// 	this.setState({
+			// 		data: filteredName.name,
+			// 	})
+			// ))

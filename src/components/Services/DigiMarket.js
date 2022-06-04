@@ -16,7 +16,6 @@ import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 
@@ -43,24 +42,6 @@ class DigiMarket extends Component {
     }
     render() {
         const { LaravelJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -205,60 +186,60 @@ class DigiMarket extends Component {
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
+                                            {/* <img alt="imsrc={webImg} /> */}
                                             <h4>Laravel App Development</h4>
                                             <p>Think of Laravel applications that fit your processes seamlessly. Think of applications that generate scalable output outcomes for your organizations. We help you design, build and manage that kind of application.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg1} /> */}
+                                            {/* <img alt="imsrc={webImg1} /> */}
                                             <h4>SaaS Application Development</h4>
                                             <p>We help you develop customized SaaS applications. We use Laravel Cashier, Spark, Passport, and Socialite, among such Laravel packages. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg2} /> */}
+                                            {/* <img alt="imsrc={webImg2} /> */}
                                             <h4>Website Development</h4>
                                             <p>We add custom features to your website with the help of Laravel. We help create a customized website based on Laravel based CMS like Statamic and October. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
+                                            {/* <img alt="imsrc={webImg3} /> */}
                                             <h4>Browser Testing and automation</h4>
                                             <p>IQuinceSoft offers complete test automation of websites and applications.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg4} /> */}
+                                            {/* <img alt="imsrc={webImg4} /> */}
                                             <h4>Migrate</h4>
                                             <p>From Java, Python, .NET, or any other framework, we help you migrate your apps to Laravel with no loss of any functionality or data.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>Web Services and API Development</h4>
                                             <p>We power your iOS & Android mobile apps. We offer easy access to the platform data with safe, stable, and well-documented web services and apis. </p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>Consulting</h4>
                                             <p>If your systems are not going smooth, or you seek innovative ideas for your business, we can help. We offer Laravel consulting services like pre-project and review of current services. we help you make a call to improve the business process with laravel. </p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>Maintenance and Support</h4>
                                             <p>We make sure your apps run error-free. We provide all kinds of maintenance and support to keep your business on Laravel smooth and easy. </p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>Full-Text Search</h4>
                                             <p>We implement fast full-text search on your website. </p>
                                         </div>
@@ -266,54 +247,54 @@ class DigiMarket extends Component {
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
+                                            {/* <img alt="imsrc={webImg} /> */}
                                             <h4>Laravel App Development</h4>
                                             <p>Think of Laravel applications that fit your processes seamlessly. Think of applications that generate scalable output outcomes for your organizations. We help you design, build and manage that kind of application.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg1} /> */}
+                                            {/* <img alt="imsrc={webImg1} /> */}
                                             <h4>SaaS Application Development</h4>
                                             <p>We help you develop customized SaaS applications. We use Laravel Cashier, Spark, Passport, and Socialite, among such Laravel packages. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg2} /> */}
+                                            {/* <img alt="imsrc={webImg2} /> */}
                                             <h4>Website Development</h4>
                                             <p>We add custom features to your website with the help of Laravel. We help create a customized website based on Laravel based CMS like Statamic and October.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
+                                            {/* <img alt="imsrc={webImg3} /> */}
                                             <h4>Browser Testing and automation</h4>
                                             <p>IQuinceSoft offers complete test automation of websites and applications.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg4} /> */}
+                                            {/* <img alt="imsrc={webImg4} /> */}
                                             <h4>Migrate</h4>
                                             <p>From Java, Python, .NET, or any other framework, we help you migrate your apps to Laravel with no loss of any functionality or data.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>Web Services and API Development</h4>
                                             <p>We power your iOS & Android mobile apps. We offer easy access to the platform data with safe, stable, and well-documented web services and apis. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>Consulting</h4>
                                             <p>If your systems are not going smooth, or you seek innovative ideas for your business, we can help. We offer Laravel consulting services like pre-project and review of current services. we help you make a call to improve the business process with laravel. </p>
                                         </div>
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>Maintenance and Support</h4>
                                             <p>We make sure your apps run error-free. We provide all kinds of maintenance and support to keep your business on Laravel smooth and easy.</p>
                                         </div>
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
+                                            {/* <img alt="imsrc={webImg5} /> */}
                                             <h4>Full-Text Search</h4>
                                             <p>We implement fast full-text search on your website.</p>
                                         </div>

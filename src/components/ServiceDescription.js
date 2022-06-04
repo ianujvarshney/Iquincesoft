@@ -76,17 +76,17 @@ class ServiceDescription extends Component {
 						<div className="container">
 							<div className="row">
 								<div className="col-lg-5 col-md-7" data-aos="fade-right">
-									<h4><img src={arrow4} /> SERVICES</h4>
+									<h4><img alt="img" src={arrow4} /> SERVICES</h4>
 									<h1>Hire PHP Developers</h1>
 									<p>Hire Developers on a full-time, hourly, or fixed cost project basis and manage them as your extended team.</p>
 								</div>
 
-								<div className="col-lg-7 col-md-5" data-aos="fade-up"><a href="#"><FaFacebook /></a> <a href="#"><FaLinkedin /></a> <a href="#"><FaTwitter /></a> <a href="#"><FaLink /></a></div>
+								<div className="col-lg-7 col-md-5" data-aos="fade-up"><Link to="#"><FaFacebook /></Link>  <Link to="#"><FaLinkedin /></Link>  <Link to="#"><FaTwitter /></Link>  <Link to="#"><FaLink /></Link> </div>
 							</div>
 						</div>
 					</div>
-					<img className="abt-img" width="100%" src={serBanner} />
-					<img className="abt-mob" width="100%" src={servMob} />
+					<img alt="img" className="abt-img" width="100%" src={serBanner} />
+					<img alt="img" className="abt-mob" width="100%" src={servMob} />
 				</div>
 
 				<FeatureSec />
@@ -100,69 +100,69 @@ class ServiceDescription extends Component {
 								<OwlCarousel options={culture}>
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={serDesc} />
+										<img alt="img" src={serDesc} />
 										<p><span>Opensource</span> This is why most agencies prefer to work with PHP. Its cost-free with no license fee or third-party charges making it a better choice for most business owners.</p>
 									</div>
 
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={serDesc5} />
+										<img alt="img" src={serDesc5} />
 										<p><span>Opensource</span> This is why most agencies prefer to work with PHP. Its cost-free with no license fee or third-party charges making it a better choice for most business owners.</p>
 									</div>
 
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={serDesc4} />
+										<img alt="img" src={serDesc4} />
 										<p><span>Powers 80% of the Web</span> As of August 2019, PHP was used as the server-side programming language on 79.1% of websites.</p>
 									</div>
 
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={serDesc3} />
+										<img alt="img" src={serDesc3} />
 										<p><span>Cross-Platform</span> PHP’s cross-platform integration is excellent as it can work on different platforms such as Linux, UNIX, Solaris, and Windows.</p>
 									</div>
 
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={serDesc2} />
+										<img alt="img" src={serDesc2} />
 										<p><span>Scalable</span> PHP can be deployed to scale horizontally to accommodate additional users and traffic without any decline performance.</p>
 									</div>
 
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={serDesc1} />
+										<img alt="img" src={serDesc1} />
 										<p><span>Rapid Development</span> PHP offers several frameworks for Rapid Application Development including PRADO, CakePHP, Symfony, CodeIgniter, Laravel, Yii Framework, Phalcon, and Zend Framework.</p>
 									</div>
 								</OwlCarousel>
 
 								<div className="row">
 									<div className="col-lg-4 col-md-4">
-										<img src={serDesc} />
+										<img alt="img" src={serDesc} />
 										<p><span>Opensource</span> This is why most agencies prefer to work with PHP. Its cost-free with no license fee or third-party charges making it a better choice for most business owners.</p>
 									</div>
 
 									<div className="col-lg-4 col-md-4">
-										<img src={serDesc5} />
+										<img alt="img" src={serDesc5} />
 										<p><span>Powers 80% of the Web</span> As of August 2019, PHP was used as the server-side programming language on 79.1% of websites.</p>
 									</div>
 
 									<div className="col-lg-4 col-md-4">
-										<img src={serDesc4} />
+										<img alt="img" src={serDesc4} />
 										<p><span>Built for the Web</span> PHP is fundamentally an Internet-aware system with built-in modules for accessing FTP servers and many database servers, including PostgreSQL, MySQL, Microsoft SQL Server, LDAP servers, and others.</p>
 									</div>
 
 									<div className="col-lg-4 col-md-4">
-										<img src={serDesc3} />
+										<img alt="img" src={serDesc3} />
 										<p><span>Cross-Platform</span> PHP’s cross-platform integration is excellent as it can work on different platforms such as Linux, UNIX, Solaris, and Windows.</p>
 									</div>
 
 									<div className="col-lg-4 col-md-4">
-										<img src={serDesc2} />
+										<img alt="img" src={serDesc2} />
 										<p><span>Scalable</span> PHP can be deployed to scale horizontally to accommodate additional users and traffic without any decline performance.</p>
 									</div>
 
 									<div className="col-lg-4 col-md-4">
-										<img src={serDesc1} />
+										<img alt="img" src={serDesc1} />
 										<p><span>Rapid Development</span> PHP offers several frameworks for Rapid Application Development including PRADO, CakePHP, Symfony, CodeIgniter, Laravel, Yii Framework, Phalcon, and Zend Framework.</p>
 									</div>
 								</div>
@@ -177,68 +177,68 @@ class ServiceDescription extends Component {
 							<div className="col-lg-4 col-md-6">
 								<h3>PHP Services</h3>
 								<p>We offer our diverse client-base leading PHP development services including:</p>
-								<em><a href="#">Schedule an Appointment</a></em>
-								<em><a href="#">Read Case Study</a></em>
+								<em><Link to="#">Schedule an Appointment</Link> </em>
+								<em><Link to="#">Read Case Study</Link> </em>
 
 								<OwlCarousel options={servSlide}>
 									<div className="serv-txt">
 										<h4><span><FaCode /></span> CMS based Websites</h4>
 										<p>Our developers have experience building websites for almost every industry and virtually every platform, including WordPress, Drupal, and Joomla.</p>
-										<a href="#">Learn more about CMS based Websites</a>
+										<Link to="#">Learn more about CMS based Websites</Link>
 									</div>
 
 									<div className="serv-txt">
 										<h4><span><FaCode /></span> Front-end Development</h4>
 										<p>We work with modern frameworks like React.js, Angular, Vue.js, Nuxt, Next, and Gatsby to create next-generation user experiences that integrate and interact seamlessly with your database and APIs.</p>
-										<a href="#">Learn more about CMS based Websites</a>
+										<Link to="#">Learn more about CMS based Websites</Link>
 									</div>
 
 									<div className="serv-txt">
 										<h4><span><FaCode /></span> Back-end Development</h4>
 										<p>Leverage our expertise with Cloud, DevOps, PHP, Node.js, Python, .NET, Java, and RoR to build custom, secure and reliable backends and APIs for web or mobile apps across multiple domains.</p>
-										<a href="#">Learn more about CMS based Websites</a>
+										<Link to="#">Learn more about CMS based Websites</Link>
 									</div>
 
 									<div className="serv-txt">
 										<h4><span><FaCode /></span> ECommerce Applications</h4>
 										<p>If you have a store or need a new one, our web application development services can surely help you. We can create a store for you from scratch or leverage popular platforms such as WooCommerce, Shopify, or Magento.</p>
-										<a href="#">Learn more about CMS based Websites</a>
+										<Link to="#">Learn more about CMS based Websites</Link>
 									</div>
 
 									<div className="serv-txt">
 										<h4><span><FaCode /></span> Web Applications</h4>
 										<p>As a web application development company, we have built all sorts of web applications, from online forms and workflows to whole management systems. We work on projects both big and small.</p>
-										<a href="#">Learn more about CMS based Websites</a>
+										<Link to="#">Learn more about CMS based Websites</Link>
 									</div>
 
 									<div className="serv-txt">
 										<h4><span><FaCode /></span> Business Automation</h4>
 										<p>Do you have a manual process that you need to automate? Our web application development team can develop a customized, secure, and scalable system as per your business needs.</p>
-										<a href="#">Learn more about CMS based Websites</a>
+										<Link to="#">Learn more about CMS based Websites</Link>
 									</div>
 
 									<div className="serv-txt">
 										<h4><span><FaCode /></span> API Development and Documentation</h4>
 										<p>We can help you if you need to build or consume an API. Our teams have worked with all sort of APIs, including Voice, Video, Payment, Cloud, Accounting, etc</p>
-										<a href="#">Learn more about CMS based Websites</a>
+										<Link to="#">Learn more about CMS based Websites</Link>
 									</div>
 
 									<div className="serv-txt">
 										<h4><span><FaCode /></span> Software Development</h4>
 										<p>Our engineering team has a lot of experience developing complex web-based business systems with multiple users and roles and that connect with CRM, Accounting, Inventory, and Other Systems.</p>
-										<a href="#">Learn more about CMS based Websites</a>
+										<Link to="#">Learn more about CMS based Websites</Link>
 									</div>
 
 									<div className="serv-txt">
 										<h4><span><FaCode /></span> Dedicated Web Developer</h4>
 										<p>Hiring dedicated Web developers remotely can help your business scale faster. You can hire dedicated Web developers 40h/week at a fixed monthly rate.</p>
-										<a href="#">Learn more about CMS based Websites</a>
+										<Link to="#">Learn more about CMS based Websites</Link>
 									</div>
 
 									<div className="serv-txt">
 										<h4><span><FaCode /></span> Integrations and Extensions</h4>
 										<p>Extend the power of our CRM platform. With more than 875+ integrations and the ability to create custom apps, you can customize HubSpot to fit your business.</p>
-										<a href="#">Learn more about CMS based Websites</a>
+										<Link to="#">Learn more about CMS based Websites</Link>
 									</div>
 								</OwlCarousel>
 							</div>
@@ -247,7 +247,7 @@ class ServiceDescription extends Component {
 								<div className="serv-txt">
 									<h4><span><FaCode /></span> CMS based Websites</h4>
 									<p>Our developers have experience building websites for almost every industry and virtually every platform, including WordPress, Drupal, and Joomla.</p>
-									<a href="#">Learn more about CMS based Websites</a>
+									<Link to="#">Learn more about CMS based Websites</Link>
 								</div>
 							</div>
 
@@ -255,7 +255,7 @@ class ServiceDescription extends Component {
 								<div className="serv-txt">
 									<h4><span><FaCode /></span> Front-end Development</h4>
 									<p>We work with modern frameworks like React.js, Angular, Vue.js, Nuxt, Next, and Gatsby to create next-generation user experiences that integrate and interact seamlessly with your database and APIs.</p>
-									<a href="#">Learn more about CMS based Websites</a>
+									<Link to="#">Learn more about CMS based Websites</Link>
 								</div>
 							</div>
 
@@ -263,7 +263,7 @@ class ServiceDescription extends Component {
 								<div className="serv-txt">
 									<h4><span><FaCode /></span> Back-end Development</h4>
 									<p>Leverage our expertise with Cloud, DevOps, PHP, Node.js, Python, .NET, Java, and RoR to build custom, secure and reliable backends and APIs for web or mobile apps across multiple domains.</p>
-									<a href="#">Learn more about CMS based Websites</a>
+									<Link to="#">Learn more about CMS based Websites</Link>
 								</div>
 							</div>
 
@@ -271,7 +271,7 @@ class ServiceDescription extends Component {
 								<div className="serv-txt">
 									<h4><span><FaCode /></span> ECommerce Applications</h4>
 									<p>If you have a store or need a new one, our web application development services can surely help you. We can create a store for you from scratch or leverage popular platforms such as WooCommerce, Shopify, or Magento.</p>
-									<a href="#">Learn more about CMS based Websites</a>
+									<Link to="#">Learn more about CMS based Websites</Link>
 								</div>
 							</div>
 
@@ -279,7 +279,7 @@ class ServiceDescription extends Component {
 								<div className="serv-txt">
 									<h4><span><FaCode /></span> Web Applications</h4>
 									<p>As a web application development company, we have built all sorts of web applications, from online forms and workflows to whole management systems. We work on projects both big and small.</p>
-									<a href="#">Learn more about CMS based Websites</a>
+									<Link to="#">Learn more about CMS based Websites</Link>
 								</div>
 							</div>
 
@@ -287,7 +287,7 @@ class ServiceDescription extends Component {
 								<div className="serv-txt">
 									<h4><span><FaCode /></span> Business Automation</h4>
 									<p>Do you have a manual process that you need to automate? Our web application development team can develop a customized, secure, and scalable system as per your business needs.</p>
-									<a href="#">Learn more about CMS based Websites</a>
+									<Link to="#">Learn more about CMS based Websites</Link>
 								</div>
 							</div>
 
@@ -295,7 +295,7 @@ class ServiceDescription extends Component {
 								<div className="serv-txt">
 									<h4><span><FaCode /></span> API Development and Documentation</h4>
 									<p>We can help you if you need to build or consume an API. Our teams have worked with all sort of APIs, including Voice, Video, Payment, Cloud, Accounting, etc</p>
-									<a href="#">Learn more about CMS based Websites</a>
+									<Link to="#">Learn more about CMS based Websites</Link>
 								</div>
 							</div>
 
@@ -303,7 +303,7 @@ class ServiceDescription extends Component {
 								<div className="serv-txt">
 									<h4><span><FaCode /></span> Software Development</h4>
 									<p>Our engineering team has a lot of experience developing complex web-based business systems with multiple users and roles and that connect with CRM, Accounting, Inventory, and Other Systems.</p>
-									<a href="#">Learn more about CMS based Websites</a>
+									<Link to="#">Learn more about CMS based Websites</Link>
 								</div>
 							</div>
 
@@ -311,7 +311,7 @@ class ServiceDescription extends Component {
 								<div className="serv-txt">
 									<h4><span><FaCode /></span> Dedicated Web Developer</h4>
 									<p>Hiring dedicated Web developers remotely can help your business scale faster. You can hire dedicated Web developers 40h/week at a fixed monthly rate.</p>
-									<a href="#">Learn more about CMS based Websites</a>
+									<Link to="#">Learn more about CMS based Websites</Link>
 								</div>
 							</div>
 
@@ -321,9 +321,9 @@ class ServiceDescription extends Component {
 										<div className="col-lg-6 col-md-6">
 											<h4><span><FaCode /></span> Integrations and Extensions</h4>
 											<p>Extend the power of our CRM platform. With more than 875+ integrations and the ability to create custom apps, you can customize HubSpot to fit your business.</p>
-											<a href="#">Learn more about CMS based Websites</a>
+											<Link to="#">Learn more about CMS based Websites</Link>
 										</div>
-										<div className="col-lg-6 col-md-6"><img src={servImg} /></div>
+										<div className="col-lg-6 col-md-6"><img alt="img" src={servImg} /></div>
 									</div>
 								</div>
 							</div>
@@ -341,18 +341,18 @@ class ServiceDescription extends Component {
 							<div className="col-lg-10 col-md-12">
 								<OwlCarousel options={stackSlide}>
 									<div>
-										<div className="team-box">Laravel <img src={stack} /></div>
-										<div className="team-box">VueJS <img src={serDesc8} /></div>
+										<div className="team-box">Laravel <img alt="img" src={stack} /></div>
+										<div className="team-box">VueJS <img alt="img" src={serDesc8} /></div>
 									</div>
 
 									<div>
-										<div className="team-box">DotNet <img src={serDesc6} /></div>
-										<div className="team-box">WordPress <img src={serDesc9} /></div>
+										<div className="team-box">DotNet <img alt="img" src={serDesc6} /></div>
+										<div className="team-box">WordPress <img alt="img" src={serDesc9} /></div>
 									</div>
 
 									<div>
-										<div className="team-box">Python <img src={serDesc7} /></div>
-										<div className="team-box">Magento <img src={serDesc10} /></div>
+										<div className="team-box">Python <img alt="img" src={serDesc7} /></div>
+										<div className="team-box">Magento <img alt="img" src={serDesc10} /></div>
 									</div>
 								</OwlCarousel>
 							</div>
@@ -370,25 +370,25 @@ class ServiceDescription extends Component {
 								<OwlCarousel options={culture}>
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={partIcon} />
+										<img alt="img" src={partIcon} />
 										<p><span>Startups</span> We are a one-stop shop for your project, helping you at every stage of the entrepreneurial adventure - from crafting your idea, through design and development, up to product launch and scaling your business.</p>
 									</div>
 
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={partIcon1} />
+										<img alt="img" src={partIcon1} />
 										<p><span>Small Businesses</span> Small and Mid-Sized businesses need top development skills for scaling their products. We set up dedicated teams that handle new features, maintenance, and scaling for you.</p>
 									</div>
 
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={partIcon2} />
+										<img alt="img" src={partIcon2} />
 										<p><span>Enterprise</span> We help enterprise clients achieve better results, automate processes, and cut costs with solutions that bring actionable business insight and pave the way to scaling any business.</p>
 									</div>
 
 									<div className="cult-box">
 										<div class="tech-dot"></div>
-										<img src={partIcon3} />
+										<img alt="img" src={partIcon3} />
 										<p><span>Software Companies</span> We know how difficult it is to source talent. We provide developer teams to support in-house resources or create interdisciplinary, self-reliant tech units to address your needs.</p>
 									</div>
 								</OwlCarousel>
@@ -396,28 +396,28 @@ class ServiceDescription extends Component {
 								<div className="row">
 									<div className="col-lg-3 col-md-6" data-aos="fade-up">
 										<div className="partner-box">
-											<img src={partIcon} />
+											<img alt="img" src={partIcon} />
 											<p><span>Startups</span> We are a one-stop shop for your project, helping you at every stage of the entrepreneurial adventure - from crafting your idea, through design and development, up to product launch and scaling your business.</p>
 										</div>
 									</div>
 
 									<div className="col-lg-3 col-md-6" data-aos="fade-down">
 										<div className="partner-box">
-											<img src={partIcon1} />
+											<img alt="img" src={partIcon1} />
 											<p><span>Small Businesses</span> Small and Mid-Sized businesses need top development skills for scaling their products. We set up dedicated teams that handle new features, maintenance, and scaling for you.</p>
 										</div>
 									</div>
 
 									<div className="col-lg-3 col-md-6" data-aos="fade-up">
 										<div className="partner-box">
-											<img src={partIcon2} />
+											<img alt="img" src={partIcon2} />
 											<p><span>Enterprise</span> We help enterprise clients achieve better results, automate processes, and cut costs with solutions that bring actionable business insight and pave the way to scaling any business.</p>
 										</div>
 									</div>
 
 									<div className="col-lg-3 col-md-6" data-aos="fade-down">
 										<div className="partner-box">
-											<img src={partIcon3} />
+											<img alt="img" src={partIcon3} />
 											<p><span>Software Companies</span> We know how difficult it is to source talent. We provide developer teams to support in-house resources or create interdisciplinary, self-reliant tech units to address your needs.</p>
 										</div>
 									</div>

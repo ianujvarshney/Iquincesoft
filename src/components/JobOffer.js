@@ -57,7 +57,7 @@ class JobOffer extends Component {
 
 
 	render() {
-		const { joblinks, joblinks2, joblinks3, totalsjob } = this.state;
+		const { joblinks, joblinks3, totalsjob } = this.state;
 		return (
 			<>
 				<Header headerClass={'job-head'} />

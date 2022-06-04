@@ -15,7 +15,6 @@ import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import AwardFormsec from '../../container/AwardFormsec';
 import FAQ from '../../container/FAQ';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner'
 import Partner from '../../container/Partner';
 
@@ -41,24 +40,6 @@ class AngularDev extends Component {
     }
     render() {
         const { InsightsJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -77,7 +58,7 @@ class AngularDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>If you are willing to upscale your development capabilities, connect with the best in the business. </strong><br /></h1>
+                                    <h1><strong>Hire our skilled Angular developers to upscale your development capabilities </strong><br /></h1>
                                     <ul>
                                         <li>We can help you take your project outcomes to the next level with the help of our skilled and seasoned angular developers – on an hourly, project, or full-time basis. </li>
                                         <li>We ensure the results you always aim at with the vetted and skilled angular developers.  </li>

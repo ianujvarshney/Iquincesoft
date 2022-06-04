@@ -16,7 +16,6 @@ import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 import icon1 from '../../images/design-icon1.svg';
@@ -43,24 +42,6 @@ class Designers extends Component {
     }
     render() {
         const { LaravelJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -122,15 +103,15 @@ class Designers extends Component {
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-4 col-md-12">
                                     <ul>
-                                        <li><img src={icon1} /> <span>Work with some of the best creative minds in the industry</span></li>
-                                        <li><img src={icon1} /> <span>Build your designer team and clear your creative bottlenecks.</span></li>
-                                        <li><img src={icon1} /> <span>Increase your productivity.</span></li>
+                                        <li><img alt="img" src={icon1} /> <span>Work with some of the best creative minds in the industry</span></li>
+                                        <li><img alt="img" src={icon1} /> <span>Build your designer team and clear your creative bottlenecks.</span></li>
+                                        <li><img alt="img" src={icon1} /> <span>Increase your productivity.</span></li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-4 col-md-12">
                                     <ul>
-                                        <li><img src={icon1} /> <span>Hire dedicated designers and use their skills to benefit your brand directly.</span></li>
-                                        <li><img src={icon1} /> <span>Higher revenues by a significant margin.</span></li>
+                                        <li><img alt="img" src={icon1} /> <span>Hire dedicated designers and use their skills to benefit your brand directly.</span></li>
+                                        <li><img alt="img" src={icon1} /> <span>Higher revenues by a significant margin.</span></li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-1">
@@ -155,17 +136,17 @@ class Designers extends Component {
                             <div className="row">
                                 <OwlCarousel options={Designer}>
                                     <div className="Design-owl">
-                                        <img src={icon1} />
+                                        <img alt="img" src={icon1} />
                                         <h4>Web Designs</h4>
                                         <p>Do you wish to make customized layouts for your websites? We offer design services with more informative and engaging means. Web design by iQuinceSoft includes website mockups, visualization and consultations. We make you a part of the process.  </p>
                                     </div>
                                     <div className="Design-owl">
-                                        <img src={icon1} />
+                                        <img alt="img" src={icon1} />
                                         <h4>Web Designs</h4>
                                         <p>Do you wish to make customized layouts for your websites? We offer design services with more informative and engaging means. Web design by iQuinceSoft includes website mockups, visualization and consultations. We make you a part of the process.  </p>
                                     </div>
                                     <div className="Design-owl">
-                                        <img src={icon1} />
+                                        <img alt="img" src={icon1} />
                                         <h4>Web Designs</h4>
                                         <p>Do you wish to make customized layouts for your websites? We offer design services with more informative and engaging means. Web design by iQuinceSoft includes website mockups, visualization and consultations. We make you a part of the process.  </p>
                                     </div>
@@ -176,7 +157,7 @@ class Designers extends Component {
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img src={icon1} />
+                                                <img alt="img" src={icon1} />
                                                 <h4>Web Designs</h4>
                                                 <p>Do you wish to make customized layouts for your websites? We offer design services with more informative and engaging means. Web design by iQuinceSoft includes website mockups, visualization and consultations. We make you a part of the process.  </p>
                                                 <Link className="design-btn" to="/Web_Development">Learn More</Link>
@@ -184,7 +165,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img src={icon1} />
+                                                <img alt="img" src={icon1} />
                                                 <h4>Social Ads</h4>
                                                 <p>Do you want a visually appealing ad campaign that looks wow? iQuinceSoft designers can grab attention and get the eye-popping designs towards the message. Set yourself apart from the competition with stylish and modern visuals. </p>
                                                 <Link className="design-btn" to="#">Learn More</Link>
@@ -192,7 +173,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img src={icon1} />
+                                                <img alt="img" src={icon1} />
                                                 <h4>Social Media Graphics</h4>
                                                 <p>We can help you design professional and appealing social media graphics for Instagram, Twitter, Pinterest, Snapchat, LinkedIn, Facebook, etc. We can timely deliver you quotes, blog images, GIFs, infographics, cover art, screenshots, and logos. </p>
                                                 <Link className="design-btn" to="#">Learn More</Link>
@@ -200,7 +181,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img src={icon1} />
+                                                <img alt="img" src={icon1} />
                                                 <h4>UI/UX designs</h4>
                                                 <p>We can deliver amazing design mockups that highlight your ideal goals. We keep the best practices in mind with mobile-first implementations.  </p>
                                                 <Link className="design-btn" to="/HireDesigners">Learn More</Link>
@@ -208,7 +189,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img src={icon1} />
+                                                <img alt="img" src={icon1} />
                                                 <h4>Custom Graphic Designs</h4>
                                                 <p>Let us know your design needs, and we’ll deliver that requirement. We recruit some of the best creative minds from the cream layer of the talent pools. We can help you differentiate your brand from the rest of the crowd and make it a top-ranked brand with no extra costs. </p>
                                                 <Link className="design-btn" to="#">Learn More</Link>
@@ -216,7 +197,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img src={icon1} />
+                                                <img alt="img" src={icon1} />
                                                 <h4>Flyers and Brochures</h4>
                                                 <p>The print has never been off-track. It is again very much ‘in-trend’ now. You can put your information online at a place, but you can not override the power of the printed brochures.
                                                     iQuincesoft can deliver you all types of brochures in full color.  </p>
@@ -225,7 +206,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img src={icon1} />
+                                                <img alt="img" src={icon1} />
                                                 <h4>Animated Videos</h4>
                                                 <p>Video marketing is the new normal in the domains of marketing. Videos are the most influential type of marketing that can create an impact. Increase your video marketing with the help of custom-designed animated videos.
                                                     Team iQuinceSoft can create bespoke videos and explainer videos for you. Each video is different and helps your brand stand out from the other.   </p>
@@ -234,7 +215,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img src={icon1} />
+                                                <img alt="img" src={icon1} />
                                                 <h4>Brand Designs</h4>
                                                 <p>Your brand design is the basic reflection of your business. Therefore, make it classic, elegant and impactful. Team iQuinceSoft can offer a wide range of finishes, looks and papers so that you can have them in any way you wish.   </p>
                                                 <Link className="design-btn" to="#">Learn More</Link>
@@ -242,7 +223,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img src={icon1} />
+                                                <img alt="img" src={icon1} />
                                                 <h4>Landing Page Designs</h4>
                                                 <p>We deliver insightful UX wireframes and high-fidelity UI designs that can be used for Marketing, Product and Digital teams. Connect us to explore the types of landing page designs. </p>
                                                 <Link className="design-btn" to="#">Learn More</Link>
@@ -265,7 +246,7 @@ class Designers extends Component {
                                 <div className="col-lg-10 col-md-12">
                                     <div className="whois-box">
                                         <div className="whois-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="whois-part2">
                                             <h3>For Agencies</h3>
@@ -285,7 +266,7 @@ class Designers extends Component {
                                 <div className="col-lg-10 col-md-12">
                                     <div className="whois-box">
                                         <div className="whois-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="whois-part2">
                                             <h3>For small businesses</h3>
@@ -305,7 +286,7 @@ class Designers extends Component {
                                 <div className="col-lg-10 col-md-12">
                                     <div className="whois-box">
                                         <div className="whois-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="whois-part2">
                                             <h3>For Marketing Teams</h3>
@@ -336,7 +317,7 @@ class Designers extends Component {
                                 <OwlCarousel options={hires}>
                                     <div className="hire-owl">
                                         <div className="hire-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>Unmatched Quality</h2>
@@ -345,7 +326,7 @@ class Designers extends Component {
                                         </div>
                                     </div> <div className="hire-owl">
                                         <div className="hire-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>Unmatched Quality</h2>
@@ -355,7 +336,7 @@ class Designers extends Component {
                                     </div>
                                     <div className="hire-owl">
                                         <div className="hire-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>Unmatched Quality</h2>
@@ -365,7 +346,7 @@ class Designers extends Component {
                                     </div>
                                     <div className="hire-owl">
                                         <div className="hire-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>Unmatched Quality</h2>
@@ -375,7 +356,7 @@ class Designers extends Component {
                                     </div>
                                     <div className="hire-owl">
                                         <div className="hire-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>Unmatched Quality</h2>
@@ -388,7 +369,7 @@ class Designers extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>Unmatched Quality</h2>
@@ -400,7 +381,7 @@ class Designers extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>Increased Efficiency</h2>
@@ -415,7 +396,7 @@ class Designers extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>Image Building</h2>
@@ -426,7 +407,7 @@ class Designers extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>Images last long: Use the best ones:</h2>
@@ -440,7 +421,7 @@ class Designers extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>We help you gain Trust.</h2>
@@ -451,7 +432,7 @@ class Designers extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
-                                            <img src={icon1} />
+                                            <img alt="img" src={icon1} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>The Promise of Quality</h2>
@@ -478,7 +459,7 @@ class Designers extends Component {
                             </div>
                             <div className="row">
                                 <div className="col-lg-5 col-md-6">
-                                    <picture><img src={icon1} /></picture>
+                                    <picture><img alt="img" src={icon1} /></picture>
                                 </div>
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-5 col-md-6">
@@ -499,12 +480,12 @@ class Designers extends Component {
                                 </div>
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-5 col-md-6">
-                                    <picture><img src={icon1} /></picture>
+                                    <picture><img alt="img" src={icon1} /></picture>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-5 col-md-6">
-                                    <picture><img src={icon1} /></picture>
+                                    <picture><img alt="img" src={icon1} /></picture>
                                 </div>
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-5 col-md-6">
@@ -525,7 +506,7 @@ class Designers extends Component {
                                 </div>
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-5 col-md-6">
-                                    <picture><img src={icon1} /></picture>
+                                    <picture><img alt="img" src={icon1} /></picture>
                                 </div>
                             </div>
                         </div>
@@ -553,7 +534,7 @@ class Designers extends Component {
                                                     <div class="tech-dot"></div>
                                                     <h4>{LaravelJson.name}</h4>
                                                     <p dangerouslySetInnerHTML={{ __html: LaravelJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <Link to="#">Read More</Link>
                                                 </div>
                                             );
                                         })}
@@ -594,43 +575,3 @@ class Designers extends Component {
 }
 
 export default Designers;
-
-{/* <OwlCarousel options={culture}>
-                                //     <div className="cult-box">
-                                //         <div class="tech-dot"></div>
-                                //         <h4>Object-oriented Libraries</h4>
-                                //         <p>Laravel composes of 20+ libraries. It offers CSRF protection, database security, and encryption.  </p>
-                                //     </div>
-
-                                //     <div className="cult-box">
-                                //         <div class="tech-dot"></div>
-                                //         <h4>Ease of Documentation</h4>
-                                //         <p>Laravel comes with Model View Controller (MVC) pattern. This pattern ensures high-End architecture and neat and organized documentation efficiently. </p>
-                                //     </div>
-
-                                //     <div className="cult-box">
-                                //         <div class="tech-dot"></div>
-                                //         <h4>Blade Template Engine</h4>
-                                //         <p>Laravel ensures easy data display and extends web layouts while maintaining the app's speed. </p>
-                                //     </div>
-
-                                //     <div className="cult-box">
-                                //         <div class="tech-dot"></div>
-                                //         <h4>Unit-Testing</h4>
-                                //         <p>Smooth and easy to perform unit-tests of an existing web function or new feature is accessible with Laravel. </p>
-                                //     </div>
-
-                                //     <div className="cult-box">
-                                //         <div class="tech-dot"></div>
-                                //         <h4>Caching</h4>
-                                //         <p>APC, Redis, and Memcached caching systems are easy to integrate. It helps to enhance the app's performance. </p>
-                                //     </div>
-
-                                //     <div className="cult-box">
-                                //         <div class="tech-dot"></div>
-                                //         <h4>Security</h4>
-                                //         <p>Laravel prevents illegal access. Thus, it ensures the security of the web app and systems with proper authentication.  </p>
-                                //     </div>
-
-
-// </OwlCarousel>*/}

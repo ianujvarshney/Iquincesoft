@@ -16,7 +16,6 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner'
 import { PostCate } from '../../json/PostCate';
 
@@ -41,24 +40,6 @@ class AndroidDev extends Component {
     }
     render() {
         const { InsightsJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -77,7 +58,7 @@ class AndroidDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Need android developers with the skills of the next level??</strong><br /></h1>
+                                    <h1><strong>hire seasoned android developers to outshine the competition with quality apps and rule the app market</strong><br /></h1>
                                     <ul>
                                         <li>Hire one or a team of developers from iQuinceSoft that can ensure you high-quality android apps with features that fit in fine with your business goals.</li>
                                         <li>Whether you need native, hybrid or custom apps with superior UI/UX and engaging apps, a dedicated iOS developer from iQuinceSoft can deliver you what you aim for.</li>
@@ -204,54 +185,46 @@ class AndroidDev extends Component {
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
                                             <h4>Custom Application Development</h4>
                                             <p>IQuinceSoft offers custom android apps with diverse solutions to run flawlessly across android devices. Our android app developers can create custom apps to serve diversified industry verticals. We effectively cater to the needs of small and large companies with the help of SDKs.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg1} /> */}
                                             <h4>Native App Development</h4>
                                             <p>We are experienced in leveraging Android Native Development Kit (NDK) for building native apps for SMEs and big businesses. We help you with performance optimization to integrations with technological advancements.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg2} /> */}
                                             <h4>Hybrid Android App Development</h4>
                                             <p>IQuinceSoft is a team of experts building affordable and scalable Android apps through a hybrid development approach that needs to write code once for uninterrupted usage across multiple platforms. We can create and build a hybrid android app with numerous plugins, cross-platform support, and code reusability. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
                                             <h4>Android App Testing</h4>
                                             <p>We are the experts in ensuring high app installs and bug-free launches. We use stringent tests with emulators, simulators, and other tools. Our quality analysts operate to ensure that the android app performs smoothly over the devices with no technical issues.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg4} /> */}
                                             <h4>Android App UX/UI Design</h4>
                                             <p>We offer UI/UX design services to meet your needs. Our UI/UX team collaborates to help you visualize the app before the development process. We make sure that your innovation gets transformed into meaningful stories. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Android App Migration</h4>
                                             <p>We offer migration services. We help you with zero impact on your routine business operations or users by the transition process. We are skilled at finding and implementing compatible paths.</p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Android App Maintenance</h4>
                                             <p>We are skilled at offering the best-in-class support and maintenance services for your Android apps if you need us to get support for Android software and platforms. </p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Hire Android Developers</h4>
                                             <p>Hire iQuinceSoft developers to save more money and time. Developers from iQuinceSoft can contribute to your business success and save your operating cost.  </p>
                                         </div>
@@ -259,48 +232,43 @@ class AndroidDev extends Component {
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
                                             <h4>Custom Application Development</h4>
                                             <p>IQuinceSoft offers custom android apps with diverse solutions to run flawlessly across android devices. Our android app developers can create custom apps to serve diversified industry verticals. We effectively cater to the needs of small and large companies with the help of SDKs.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg1} /> */}
                                             <h4>Native App Development</h4>
                                             <p>We are experienced in leveraging Android Native Development Kit (NDK) for building native apps for SMEs and big businesses. We help you with performance optimization to integrations with technological advancements.</p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg2} /> */}
                                             <h4>Hybrid Android App Development</h4>
                                             <p>IQuinceSoft is a team of experts building affordable and scalable Android apps through a hybrid development approach that needs to write code once for uninterrupted usage across multiple platforms. We can create and build a hybrid android app with numerous plugins, cross-platform support, and code reusability.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
                                             <h4>Android App Testing</h4>
                                             <p>We are the experts in ensuring high app installs and bug-free launches. We use stringent tests with emulators, simulators, and other tools. Our quality analysts operate to ensure that the android app performs smoothly over the devices with no technical issues.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg4} /> */}
                                             <h4>Android App UX/UI Design</h4>
                                             <p>We offer UI/UX design services to meet your needs. Our UI/UX team collaborates to help you visualize the app before the development process. We make sure that your innovation gets transformed into meaningful stories. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Android App Migration</h4>
                                             <p>We offer migration services. We help you with zero impact on your routine business operations or users by the transition process. We are skilled at finding and implementing compatible paths.</p>
                                         </div>
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Android App Maintenance</h4>
                                             <p>We are skilled at offering the best-in-class support and maintenance services for your Android apps if you need us to get support for Android software and platforms. </p>
                                         </div>
+
+                                        <div className="col-lg-4 col-md-4"></div>
+
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Hire Android Developers</h4>
                                             <p>Hire iQuinceSoft developers to save more money and time. Developers from iQuinceSoft can contribute to your business success and save your operating cost.  </p>
                                         </div>

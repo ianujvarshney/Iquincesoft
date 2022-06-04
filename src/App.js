@@ -54,6 +54,7 @@ import DedicateTeams from '../src/components/Services/DedicatedTeams';
 import Designers from '../src/components/Services/Designers';
 import Ecommerce from '../src/components/Services/Ecommerce';
 import Jobform from './container/Jobform';
+import Error from './container/Error';
 
 
 class App extends Component {
@@ -79,6 +80,7 @@ class App extends Component {
 					<Route exact path='/jobOffer/:post' component={jobCateDetails} />
 					<Route exact path='/jobDetail/:post' component={JobDetail} />
 					<Route exact path='/CaseStudyDescription/:post' component={CaseStudyDescription} />
+
 
 
 					<Route exact path='/Web_Development' component={Web_Development} />
@@ -116,6 +118,7 @@ class App extends Component {
 					<Route exact path='/HireDesigners' component={Designers} />
 					<Route exact path='/AwardFormsec' component={AwardFormsec} />
 					<Route exact path='/DevOps' component={DevOps} />
+					<Route exact path='*' component={Error} />
 				</Switch>
 			</Router>
 

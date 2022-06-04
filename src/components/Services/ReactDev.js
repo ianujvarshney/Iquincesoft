@@ -15,9 +15,7 @@ import 'react-owl-carousel2/src/owl.carousel.css';
 import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner'
-import FAQ from '../../container/FAQ';
 import Partner from '../../container/Partner';
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
@@ -43,24 +41,6 @@ class ReactDev extends Component {
     }
     render() {
         const { ReactJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -79,7 +59,7 @@ class ReactDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Slash down your hiring cost by 75% by hiring dedicated offshore React Native developers with the trust and commitment to engage and scale complex and sophisticated apps.</strong><br /></h1>
+                                    <h1><strong> Hire react developers for peak performance and clean code</strong><br /></h1>
                                     <ul>
                                         <li>Hybrid, Custom to Native, our dedicated developers can offer a sigh of relief by saving your time, cost, and efforts with seamless fitting in the development team to work on the projects.</li>
                                         <li>Leverage the skills and expertise of our vetted react JS developers to scale and automate your business process with fast, scalable and vertically-integrated options.</li>

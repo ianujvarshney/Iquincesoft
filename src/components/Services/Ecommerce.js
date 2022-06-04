@@ -16,7 +16,6 @@ import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 import image_body from '../../images/body-img3.webp';
@@ -44,24 +43,6 @@ class Ecommerce extends Component {
     }
     render() {
         const { LaravelJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -211,7 +192,7 @@ class Ecommerce extends Component {
                                 </div>
                                 <div className="col-lg-6 col-md-6">
                                     <div className="ecom-image">
-                                        <img src={image_body} />
+                                        <img alt="img" src={image_body} />
                                     </div>
                                 </div>
                             </div>
@@ -235,7 +216,7 @@ class Ecommerce extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="ecom-part2">
                                         <div>
-                                            <span><img src={magento} /></span><h2>Magento</h2>
+                                            <span><img alt="img" src={magento} /></span><h2>Magento</h2>
                                         </div>
                                         <p>If you are clear about eCommerce or your eCommerce goals, <span>Magento</span> is the optimal option. Magento is the first preference to build eCommerce systems. Magento is the largest supplier of eCommerce tools across the globe.
                                         </p>
@@ -251,7 +232,7 @@ class Ecommerce extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="ecom-part2">
                                         <div>
-                                            <span><img src={magento} /></span><h2>WooCommerce</h2>
+                                            <span><img alt="img" src={magento} /></span><h2>WooCommerce</h2>
                                         </div>
                                         <p>WooCommerce is the most popular WordPress plugin that is free to use. WooCommerce is packed full of features and integrated into a self-hosted WordPress Website. WooCommerce is practical Easy and most preferred for businesses, too.
                                         </p>
@@ -367,28 +348,28 @@ class Ecommerce extends Component {
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
+                                            {/* <img alt="img"src={webImg} /> */}
                                             <h4>We help you take complete control</h4>
                                             <p>With iQuinceSoft, you get access to a dedicated development team under your supervision and control. You control and decide on behalf of your team, assignments, and processes. That is how you know your business's what, when, why, and how.   </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg1} /> */}
+                                            {/* <img alt="img"src={webImg1} /> */}
                                             <h4>Access to the Experts</h4>
                                             <p>We make sure that you get access to the talent pool of eCommerce developers. After stringent and challenging screening tests, these developers came on board that it isn’t easy to crack for an ordinary developer.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg2} /> */}
+                                            {/* <img alt="img"src={webImg2} /> */}
                                             <h4>Zero Overheads</h4>
                                             <p>We take care of all the expenses part with our developers. We take control of the perks, perquisites, payroll, and other things to keep you focused on the primary business functions. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
+                                            {/* <img alt="img"src={webImg3} /> */}
                                             <h4>Ratings and Reviews</h4>
                                             <p>We are one of the best companies to hire eCommerce developers from. Our reviews and ratings are the testimonials of trust and confidence our clients have in us. We have proved our worth with every project.
                                             </p>
@@ -396,7 +377,7 @@ class Ecommerce extends Component {
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg4} /> */}
+                                            {/* <img alt="img"src={webImg4} /> */}
                                             <h4>Hassle-free Process</h4>
                                             <p>We make sure that you face no issues from our developers and they work under the perfect working conditions.  </p>
                                         </div>
@@ -404,33 +385,33 @@ class Ecommerce extends Component {
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
+                                            {/* <img alt="img"src={webImg} /> */}
                                             <h4>We help you take complete control</h4>
                                             <p>With iQuinceSoft, you get access to a dedicated development team under your supervision and control. You control and decide on behalf of your team, assignments, and processes. That is how you know your business's what, when, why, and how.   </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg1} /> */}
+                                            {/* <img alt="img"src={webImg1} /> */}
                                             <h4>Access to the Experts</h4>
                                             <p>We make sure that you get access to the talent pool of eCommerce developers. After stringent and challenging screening tests, these developers came on board that it isn’t easy to crack for an ordinary developer.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg2} /> */}
+                                            {/* <img alt="img"src={webImg2} /> */}
                                             <h4>Zero Overheads</h4>
                                             <p>We take care of all the expenses part with our developers. We take control of the perks, perquisites, payroll, and other things to keep you focused on the primary business functions.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
+                                            {/* <img alt="img"src={webImg3} /> */}
                                             <h4>Ratings and Reviews</h4>
                                             <p>We are one of the best companies to hire eCommerce developers from. Our reviews and ratings are the testimonials of trust and confidence our clients have in us. We have proved our worth with every project.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg4} /> */}
+                                            {/* <img alt="img"src={webImg4} /> */}
                                             <h4>Hassle-free Process</h4>
                                             <p>We make sure that you face no issues from our developers and they work under the perfect working conditions.  </p>
                                         </div>
@@ -464,7 +445,7 @@ class Ecommerce extends Component {
                                                     <div class="tech-dot"></div>
                                                     <h4>{LaravelJson.name}</h4>
                                                     <p dangerouslySetInnerHTML={{ __html: LaravelJsonS.content }}></p>
-                                                    <a href="#">Read More</a>
+                                                    <Link to="#">Read More</Link>
                                                 </div>
                                             );
                                         })}

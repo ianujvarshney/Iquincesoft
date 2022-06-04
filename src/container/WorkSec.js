@@ -59,10 +59,10 @@ class WorkSec extends Component {
                     <OwlCarousel loop options={workSlide}>
                         {workJson.map(workJsons => {
                             return (
-                                workJsons.name == 'Untitled' ? null :
+                                workJsons.name === 'Untitled' ? null :
                                     <div key={workJsons.id} className="work-box" >
                                         <Link to={`/caseStudyDescription/${workJsons.slug}`}>
-                                            <img width="100%" src={workJsons.img} />
+                                            <img alt="img" width="100%" src={workJsons.img} />
                                             <h6>{workJsons.corporate}</h6>
                                             <h4>{workJsons.name.substr(0, 32) + '...'}</h4>
                                             <p dangerouslySetInnerHTML={{ __html: workJsons.content.substr(0, 128) + '...' }}></p>

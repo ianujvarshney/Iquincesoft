@@ -15,7 +15,6 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner'
 import AwardFormsec from '../../container/AwardFormsec';
 import Partner from '../../container/Partner';
@@ -41,25 +40,6 @@ class Symfony extends Component {
     }
     render() {
         const { CommerceJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
         const culture = {
             items: 1,
             responsive: {
@@ -77,7 +57,7 @@ class Symfony extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire Symfony developers from the most referred and preferred Symfony development company.</strong><br /></h1>
+                                    <h1><strong>Hire Symfony developers for clean codes, and secure web apps</strong><br /></h1>
                                     <ul>
                                         <li>With the expertise of our vetted talent pool of developers, we ensure that you get the best from the top 1% of a country of more than 1 billion people.</li>
                                         <li>Hire Symfony developers for the trust and confidence of iQuinceSoft.</li>
@@ -199,54 +179,46 @@ class Symfony extends Component {
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
                                             <h4>Consulting and strategy</h4>
                                             <p>We assess your business needs and identify and address the requirements by suggesting high-end solutions.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg1} /> */}
                                             <h4>Application Development </h4>
                                             <p>We design, develop and support a customized web, mobile, enterprise, and cloud solution to fulfill your business needs.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg2} /> */}
                                             <h4>App Customization and Enhancement</h4>
                                             <p>We customize solutions as per your business needs.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
                                             <h4>App Integrations</h4>
                                             <p>We integrate the app with CRM, ERP, and other systems.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg4} /> */}
                                             <h4>Migration</h4>
                                             <p>Migrate your current apps to Symfony.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Maintenance and Support</h4>
                                             <p>We maintain the current Symfony applications and offer support for new Symfony apps. We Test, Troubleshoot and build patches for the Symfony applications. </p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Cloud Application Development </h4>
                                             <p>We can help you transform your business with the applications. These applications are scalable and quick to build. We develop applications and integrate them into the cloud. We also optimize testing capabilities, API and microservices architecture, and DevOps.  </p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Access to a talent pool of Symfony Developers </h4>
                                             <p>We grant you access to highly skilled and experienced Symfony developers. </p>
                                         </div>
@@ -254,48 +226,43 @@ class Symfony extends Component {
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
                                             <h4>Consulting and strategy</h4>
                                             <p>We assess your business needs and identify and address the requirements by suggesting high-end solutions.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg1} /> */}
                                             <h4>Application Development </h4>
                                             <p>We design, develop and support a customized web, mobile, enterprise, and cloud solution to fulfill your business needs.</p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg2} /> */}
                                             <h4>App Customization and Enhancement</h4>
                                             <p>We customize solutions as per your business needs.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
                                             <h4>App Integrations</h4>
                                             <p>We integrate the app with CRM, ERP, and other systems.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg4} /> */}
                                             <h4>Migration</h4>
                                             <p>Migrate your current apps to Symfony.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Maintenance and Support</h4>
                                             <p>We maintain the current Symfony applications and offer support for new Symfony apps. We Test, Troubleshoot and build patches for the Symfony applications. </p>
                                         </div>
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Cloud Application Development </h4>
                                             <p>We can help you transform your business with the applications. These applications are scalable and quick to build. We develop applications and integrate them into the cloud. We also optimize testing capabilities, API and microservices architecture, and DevOps.  </p>
                                         </div>
+
+                                        <div className="col-lg-4 col-md-4"></div>
+
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Access to a talent pool of Symfony Developers </h4>
                                             <p>We grant you access to highly skilled and experienced Symfony developers.   </p>
                                         </div>

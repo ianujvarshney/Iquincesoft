@@ -117,7 +117,7 @@ class BlogTabs extends Component {
                                     <h1>Learn from our web development blog read by 1.2M tech leaders</h1>
                                     <p><span>Get a bi-weekly email with <strong>the most popular stories</strong></span></p>
                                     <div className="in-box">
-                                        <input type="search" className="box" type="search" name="" placeholder="Supercharge your brain" />
+                                        <input type="search" className="box" name="" placeholder="Supercharge your brain" />
                                         <Link to={"#"}>Let's Learn</Link></div>
                                 </div>
                             </div>

@@ -16,7 +16,6 @@ import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
-import { FaCode } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 
@@ -43,24 +42,6 @@ class Meanstack extends Component {
     }
     render() {
         const { MeanStackJson } = this.state;
-        const servSlide = {
-            items: 1,
-            responsive: {
-                320: { items: 1, }
-            },
-            loop: true
-        };
-
-        const stackSlide = {
-            items: 3,
-            responsive: {
-                1200: { items: 3, },
-                768: { items: 3 },
-                480: { items: 2 },
-                320: { items: 1, }
-            },
-            loop: true
-        };
 
         const culture = {
             items: 1,
@@ -188,14 +169,12 @@ class Meanstack extends Component {
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
                                             <h4>MEAN Stack Web Development</h4>
                                             <p>Are you looking for scalable MEAN Stack web development? We serve you with the same. We create fast, secure and feature-rich web apps. From Logistics, Edutech and eCommerce, we earn appreciation from industry leaders. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg1} /> */}
                                             <h4>MEAN Stack eCommerce Development</h4>
                                             <p>We serve the industry verticals with MEAN Stack eCommerce development services. We build intuitive, comprehensive and fast-paced eCommerce web portals.
                                                 Connect with iQuinceSoft, if you wish to build a marketplace with features and an excellent user experience. </p>
@@ -203,7 +182,6 @@ class Meanstack extends Component {
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg2} /> */}
                                             <h4>MEAN Stack API Development</h4>
                                             <p>We configure APIs for mobile and web apps. We resolve business logic, data sharing, content, and communications issues.
                                             </p>
@@ -211,14 +189,12 @@ class Meanstack extends Component {
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
                                             <h4>Migration</h4>
                                             <p>We migrate and port multiple enterprises to MEAN Stack frameworks. We ensure cost-effective migration of current platforms to MEAN Stack with analysis, testing and safety of data and information. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg4} /> */}
                                             <h4>Maintenance and Support</h4>
                                             <p>App maintenance is not an area of concern now with iQuinceSoft. We offer support and maintenance services for fault analysis, upgrades, cover design updates and software maintenance with testing.
                                             </p>
@@ -227,20 +203,17 @@ class Meanstack extends Component {
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
                                             <h4>MEAN Stack Web Development</h4>
                                             <p>Are you looking for scalable MEAN Stack web development? We serve you with the same. We create fast, secure and feature-rich web apps. From Logistics, Edutech and eCommerce, we earn appreciation from industry leaders. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg1} /> */}
                                             <h4>MEAN Stack eCommerce Development</h4>
                                             <p>We serve the industry verticals with MEAN Stack eCommerce development services. We build intuitive, comprehensive and fast-paced eCommerce web portals.
                                                 Connect with iQuinceSoft, if you wish to build a marketplace with features and an excellent user experience. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg2} /> */}
                                             <h4>MEAN Stack API Development</h4>
                                             <p>We configure APIs for mobile and web apps. We resolve business logic, data sharing, content, and communications issues.
 
@@ -248,13 +221,13 @@ class Meanstack extends Component {
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
                                             <h4>Migration</h4>
                                             <p>We migrate and port multiple enterprises to MEAN Stack frameworks. We ensure cost-effective migration of current platforms to MEAN Stack with analysis, testing and safety of data and information. </p>
                                         </div>
 
+                                        <div className="col-lg-4 col-lg-4"></div>
+
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg4} /> */}
                                             <h4>Maintenance and Support</h4>
                                             <p>App maintenance is not an area of concern now with iQuinceSoft. We offer support and maintenance services for fault analysis, upgrades, cover design updates and software maintenance with testing.
                                             </p>
