@@ -18,6 +18,7 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner'
 import { PostCate } from '../../json/PostCate';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class AndroidDev extends Component {
     constructor(props) {
@@ -58,10 +59,11 @@ class AndroidDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>hire seasoned android developers to outshine the competition with quality apps and rule the app market</strong><br /></h1>
+                                    <p>ANDROID</p>
+                                    <h1><strong>Hire Android developers to outshine the competition with quality apps and rule the app market</strong><br /></h1>
                                     <ul>
-                                        <li>Hire one or a team of developers from iQuinceSoft that can ensure you high-quality android apps with features that fit in fine with your business goals.</li>
-                                        <li>Whether you need native, hybrid or custom apps with superior UI/UX and engaging apps, a dedicated iOS developer from iQuinceSoft can deliver you what you aim for.</li>
+                                        <li>Hire one or a team of developers from iQuinceSoft that can ensure you high-quality Android apps with features that fit in fine with your business goals.</li>
+                                        <li>Whether you need native, hybrid or custom apps with superior UI/UX and engaging apps, a dedicated Android developer from iQuinceSoft can deliver you what you aim for.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -74,8 +76,8 @@ class AndroidDev extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Why develop Android Apps?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
+                                    <h3>Android Apps Development Services</h3>
+                                    <p>We serve our hugh client base with optimal app development services with easy-to-use, customizable UI and smooth Mobile Apps</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -107,7 +109,7 @@ class AndroidDev extends Component {
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
                                         <h4>Greater Innovative Potential</h4>
-                                        <p>android is fun to play around with. Android app development encourages new ideas. It is instrumental in creating apps that add value to users’ lives. </p>
+                                        <p>Android is fun to play around with. Android app development encourages new ideas. It is instrumental in creating apps that add value to users’ lives. </p>
                                     </div>
 
                                     <div className="cult-box">
@@ -159,7 +161,7 @@ class AndroidDev extends Component {
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
                                         <h4>Greater Innovative Potential</h4>
-                                        <p>Fandroid is fun to play around with. Android app development encourages new ideas. It is instrumental in creating apps that add value to users’ lives. </p>
+                                        <p>Android is fun to play around with. Android app development encourages new ideas. It is instrumental in creating apps that add value to users’ lives. </p>
                                     </div>
                                 </div>
 
@@ -226,7 +228,7 @@ class AndroidDev extends Component {
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             <h4>Hire Android Developers</h4>
-                                            <p>Hire iQuinceSoft developers to save more money and time. Developers from iQuinceSoft can contribute to your business success and save your operating cost.  </p>
+                                            <p>Hire iQuinceSoft developers to save money and time. Developers from iQuinceSoft can contribute to your business success and save your operating cost.  </p>
                                         </div>
                                     </OwlCarousel>
 
@@ -270,7 +272,7 @@ class AndroidDev extends Component {
 
                                         <div className="col-lg-4 col-md-4">
                                             <h4>Hire Android Developers</h4>
-                                            <p>Hire iQuinceSoft developers to save more money and time. Developers from iQuinceSoft can contribute to your business success and save your operating cost.  </p>
+                                            <p>Hire iQuinceSoft developers to save money and time. Developers from iQuinceSoft can contribute to your business success and save your operating cost.  </p>
                                         </div>
                                     </div>
                                 </div>
@@ -288,7 +290,70 @@ class AndroidDev extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How can I hire Android developers from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Share with us the requirements. We share with you the CVs, as per your choice, screen and take interviews of the selected profiles.
+                                                Once you confirm the joining part, we will set up everything and get you access to contact the developer to start working on the project.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What all your Android developers can do for our business?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                The Android developers from iQuinceSoft can significantly benefit you with the following services:
+                                                <ul>
+                                                    <li>Android App Consultation</li>
+                                                    <li>App Migration</li>
+                                                    <li>Android Maintenance and Support</li>
+                                                    <li>Android App Testing</li>
+                                                    <li>Custom App Development</li>
+                                                    <li>Android App Designing.</li>
+                                                </ul>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I hire them on a project basis?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We offer different hiring models for hiring a developer, and a project basis is one of them.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How much do you cost to hire an Android App developer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                It depends on various factors, such as the type of app you need, the complexity of the design, the number of pages, features, and functionalities with the maintenance cost, etc.
+                                                You can hire developers on an hourly or fixed cost basis too.u
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I ask for more developers if I need them?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. You can ramp up the number of developers to comply with the project needs.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

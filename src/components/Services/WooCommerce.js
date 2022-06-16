@@ -18,7 +18,7 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 import { TailSpin } from 'react-loader-spinner'
 import AwardFormsec from '../../container/AwardFormsec';
 import Partner from '../../container/Partner';
-
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class WooCommerce extends Component {
     constructor(props) {
@@ -69,7 +69,8 @@ class WooCommerce extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Are you willing to build an online WooCommerce store with the BIG idea in mind?</strong><br /></h1>
+                                    <p>WOOCOMMERCE</p>
+                                    <h1><strong>Hire WooCommerce to build an online store that can Attract, Engage and Convert the visitor into customer.</strong><br /></h1>
                                     <ul>
                                         <li>Hire dedicated WooCommerce developers with the trust of iQuinceSoft to develop, customize and maintain an eCommerce store that reveals your true spirits.</li>
                                         <li>We help you achieve your business goals with the expertise of our dedicated WooCommerce developer. Hire WooCommerce developer from iQuinceSoft on an hourly, full time or project basis. </li>
@@ -85,9 +86,9 @@ class WooCommerce extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Why WooCommerce?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
-                                    <p>We encourage, never force!</p>
+                                    <h3>WooCommerce Development Services</h3>
+                                    <p>Scale your eCom store with intuitive designs and engaging websites with high chances of customer retention and conversion optimization</p>
+
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -300,7 +301,76 @@ class WooCommerce extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why hire WooCommerce developers?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                A WooCommerce developer can benefit your business in diverse sections. He can develop the product and streamline the process. He can advise you correctly about the business.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is my benefit in hiring WooCommerce developers from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Hire WooCommerce developers from iQuinceSoft for the following reasons
+                                                <ul>
+                                                    <h4>Unmatched Success Rate: </h4>
+                                                    <li>As an organization, we have a more than 98% success rate. With more than 3000 successful projects to our credit, we retain clients because of the skills and development capabilities.</li>
+                                                </ul>
+                                                <ul>
+                                                    <h4>Time-bound delivery:  </h4>
+                                                    <li>No matter how complex the structure and type of the web app is, we deliver it on or before the finish line.</li>
+                                                </ul>
+                                                <ul>
+                                                    <h4>Impeccable Post-development support:</h4>
+                                                    <li>We stay in touch with the clients even after the development and support them as much as possible.</li>
+                                                </ul>
+                                                <ul>
+                                                    <h4>Optimized Cost:</h4>
+                                                    <li>Our clients prefer us for most of their projects because we help them optimize the cost of the projectsh4</li>
+                                                </ul>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do I have control over the developer and the development process?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. You take control of the development process, and the developer will work according to your instructions.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I hire the developer on an hourly basis?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. Our vetted WooCommerce developers can work on an hourly basis also, as per the project needs.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you integrate tools like CRM?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. Our WooCommerce developers can integrate the ERP and CRM systems with the WooCommerce websites.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

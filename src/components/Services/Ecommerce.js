@@ -18,7 +18,8 @@ import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
-import image_body from '../../images/body-img3.webp';
+import image_body from '../../images/body-img3.svg';
+import woocommerce from '../../images/woocommerce.svg'
 import magento from '../../images/magento-icon.svg';
 
 class Ecommerce extends Component {
@@ -69,6 +70,7 @@ class Ecommerce extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <p>ECOMMERCE</p>
                                     <h1><strong>Ecommerce Developers</strong><br /></h1>
                                     <ul>
                                         <p>The iQuinceSoft Advantage ensures you:</p>
@@ -232,7 +234,7 @@ class Ecommerce extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="ecom-part2">
                                         <div>
-                                            <span><img alt="img" src={magento} /></span><h2>WooCommerce</h2>
+                                            <span><img alt="img" src={woocommerce} /></span><h2>WooCommerce</h2>
                                         </div>
                                         <p>WooCommerce is the most popular WordPress plugin that is free to use. WooCommerce is packed full of features and integrated into a self-hosted WordPress Website. WooCommerce is practical Easy and most preferred for businesses, too.
                                         </p>
@@ -374,7 +376,6 @@ class Ecommerce extends Component {
                                             <p>We are one of the best companies to hire eCommerce developers from. Our reviews and ratings are the testimonials of trust and confidence our clients have in us. We have proved our worth with every project.
                                             </p>
                                         </div>
-
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img alt="img"src={webImg4} /> */}
@@ -409,6 +410,8 @@ class Ecommerce extends Component {
                                             <p>We are one of the best companies to hire eCommerce developers from. Our reviews and ratings are the testimonials of trust and confidence our clients have in us. We have proved our worth with every project.
                                             </p>
                                         </div>
+
+                                        <div className="col-lg-4 col-md-4"></div>
 
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img alt="img"src={webImg4} /> */}

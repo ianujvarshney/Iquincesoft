@@ -18,6 +18,7 @@ import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 
 class IOSDev extends Component {
@@ -60,10 +61,10 @@ class IOSDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Getting an iOS developer in this tech-savvy world is easy
-                                        Finding a reliable and skilled is in the tricky world is tough.</strong><br /></h1>
+                                    <p>IOS</p>
+                                    <h1><strong>Hire vetted iOS developers for the apps that can sets you apart.</strong><br /></h1>
                                     <ul>
-                                        <li>Hire dedicated offshore iOS experts from the house of trust, commitment, and time-bound delivery, iQuinceSoft.</li>
+                                        <li>Hire dedicated offshore iOS experts from the house of trust, commitment, and time-bound delivery - iQuinceSoft.</li>
                                         <li>Get iOS apps to take your business to the next level of traffic, leads, and enhanced business opportunities.</li>
                                     </ul>
                                 </div>
@@ -77,7 +78,7 @@ class IOSDev extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Why develop iOS Apps?</h3>
+                                    <h3>iOS Application Development Services</h3>
                                     <p>iOS means unparalleled user experience. Catchy UI animations, split screens to swiping, multi-layered designs engage with the users and help the businesses deliver the incredible UI experience to their customers.</p>
                                 </div>
 
@@ -209,7 +210,7 @@ class IOSDev extends Component {
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img alt="imsrc={webImg5} /> */}
-                                            <h4>Partner with iQuinceSoft:</h4>
+                                            <h4>Partner with iQuinceSoft</h4>
                                             <p>We are here to assist, support and help businesses. We strive to make businesses succeed. Hence, we partner with multiple businesses, regardless of their industry and business volume:  </p>
                                         </div>
                                     </OwlCarousel>
@@ -256,7 +257,7 @@ class IOSDev extends Component {
 
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img alt="imsrc={webImg5} /> */}
-                                            <h4>Partner with iQuinceSoft:</h4>
+                                            <h4>Partner with iQuinceSoft</h4>
                                             <p>We are here to assist, support and help businesses. We strive to make businesses succeed. Hence, we partner with multiple businesses, regardless of their industry and business volume:  </p>
                                         </div>
                                     </div>
@@ -275,7 +276,61 @@ class IOSDev extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How do I hire an iOS developer from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                It's pretty simple. All you need to do is share with us your requirements. Once we receive your project details, we'll contact you and select some of the vetted developers from the talent pool and allow you to interview and choose the one that suits your project needs the most.
+                                                Once this process is through, we allow access to the developer and proceed with the initiation process.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How can iQuinceSoft help me with my projects?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We can ensure you the best iOS App Consultation, UI/UX design, testing and QA, migration and support, and custom iOS App development that can help you with the best solutions.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can iQuinceSoft allow us to hire developers for flexible needs?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We offer flexible models to cater to the needs of your business models. We offer project-based, hourly, and fixed price models.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why should I hire dedicated iOS developers from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                For optimum optimization, flexibility, better outcomes, skills of the next level, and swift and prompt response, hire dedicated iOS developers from iQuinceSoft.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How much does it cost to hire a dedicated developer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                It depends on the various facets like the complexity of the design, features and functionality, app type, number of pages, etc.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

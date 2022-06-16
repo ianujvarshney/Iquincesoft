@@ -59,6 +59,7 @@ class NodeDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <p>NODE</p>
                                     <h1><strong>Hire our seasoned Node.js developers to get peak performance and secured systems</strong><br /></h1>
                                     <ul>
                                         <li>Leverage the skills and experience of our ready-to-hire Node JS developers. Build small web apps to sophisticated web systems that may suit your business and help you attain your business goals. </li>
@@ -77,7 +78,7 @@ class NodeDev extends Component {
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
                                     <h3>Why Node.js?</h3>
                                     <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
-                                    <p>We encourage, never force!</p>
+                                    <p>We build, scale and develop web apps with the trust of iQuinceSoft.</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -339,10 +340,12 @@ class NodeDev extends Component {
                                             </AccordionItemButton>
                                             <AccordionItemPanel>
                                                 Node.js offers multiple benefits in web development. Some of the benefits are as follows:
-                                                • Cost-effective hosting and cloud scalability.
-                                                • Multiple platform compatible codes.
-                                                • Rapid minimum viable product (MVP) delivery.
-                                                • Many packages and extensions availability.
+                                                <ul>
+                                                    <li>Cost-effective hosting and cloud scalability.</li>
+                                                    <li>Multiple platform compatible codes.</li>
+                                                    <li>Rapid minimum viable product (MVP) delivery.</li>
+                                                    <li>any packages and extensions availability.</li>
+                                                </ul>
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                         <AccordionItem>
@@ -351,11 +354,13 @@ class NodeDev extends Component {
                                             </AccordionItemButton>
                                             <AccordionItemPanel>
                                                 Hiring a Node.js developer from iQuinceSoft can:
-                                                • Ensure risk minimization and assured quality.
-                                                • Developer work as a part of your team.
-                                                • Control over the entire process.
-                                                • Work with dedicated and skilled developers.
-                                                • Get a dedicated project manager to work on your project at no extra charge.
+                                                <ul>
+                                                    <li>Ensure risk minimization and assured quality.</li>
+                                                    <li>Developer work as a part of your team.</li>
+                                                    <li>Control over the entire process.</li>
+                                                    <li>Work with dedicated and skilled developers.</li>
+                                                    <li>Get a dedicated project manager to work on your project at no extra charge.</li>
+                                                </ul>
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                     </Accordion>

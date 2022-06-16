@@ -4,7 +4,6 @@ import FormPopup from './FormPopup';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import { serviceapi } from '../json/serviceapi';
 import { HashLink as Link } from 'react-router-hash-link';
-
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class FAQ extends Component {

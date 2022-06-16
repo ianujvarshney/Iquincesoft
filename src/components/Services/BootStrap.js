@@ -18,6 +18,7 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 import { TailSpin } from 'react-loader-spinner'
 import AwardFormsec from '../../container/AwardFormsec';
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class BootStrap extends Component {
     constructor(props) {
@@ -72,15 +73,11 @@ class BootStrap extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <p>BOOTSTRAP</p>
                                     <h1><strong>Get fast, easy and customized websites with the expertise of our vetted bootstrap developers to hire</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional bootstrap developers.   </li>
+                                        <li>Hire Bootstrap developers with the trust of iQuinceSoft</li>
+
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -94,7 +91,7 @@ class BootStrap extends Component {
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
                                     <h3>Why choose bootstrap?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
+                                    <p>Bootstrap is a free front-end framework. it ensures fast and easy web development.</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -113,7 +110,7 @@ class BootStrap extends Component {
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Easy</h4>
+                                        <h4>Easy Installation</h4>
                                         <p>Bootstrap offers easy and hassle-free installation.</p>
                                     </div>
 
@@ -127,7 +124,7 @@ class BootStrap extends Component {
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
                                         <h4>Open Source</h4>
-                                        <p>easy modifications according to the need of the project are easily doable with bootstrap. The fellow community developers also support and contribute their insights to keep it moving gradually. </p>
+                                        <p>Bootstrap ensures easy modifications according to the need of the project are easily doable. The fellow community developers also support and contribute their insights to keep it moving gradually. </p>
                                     </div>
 
                                     <div className="cult-box">
@@ -160,7 +157,7 @@ class BootStrap extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Easy</h4>
+                                        <h4>Easy Installation</h4>
                                         <p>Bootstrap offers easy and hassle-free installation.</p>
                                     </div>
                                 </div>
@@ -178,7 +175,7 @@ class BootStrap extends Component {
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
                                         <h4>Open Source</h4>
-                                        <p>easy modifications according to the need of the project are easily doable with bootstrap. The fellow community developers also support and contribute their insights to keep it moving gradually. </p>
+                                        <p>Bootstrap ensures easy modifications according to the need of the project are easily doable. The fellow community developers also support and contribute their insights to keep it moving gradually. </p>
                                     </div>
                                 </div>
 
@@ -205,7 +202,7 @@ class BootStrap extends Component {
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg} /> */}
                                             <h4>Bootstrap Development</h4>
-                                            <p>We build websites and apps more responsive. We develop advanced features with the help of HTML and CSS to make your website visually appealing and eye-catchy designs. </p>
+                                            <p>We build more responsive websites and apps. We develop advanced features with the help of HTML and CSS to make your website visually appealing and eye-catchy designs. </p>
                                         </div>
 
                                         <div className="cult-box">
@@ -248,13 +245,13 @@ class BootStrap extends Component {
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg} /> */}
                                             <h4>Bootstrap Development</h4>
-                                            <p>We build websites and apps more responsive. We develop advanced features with the help of HTML and CSS to make your website visually appealing and eye-catchy designs. </p>
+                                            <p>We build more responsive websites and apps. We develop advanced features with the help of HTML and CSS to make your website visually appealing and eye-catchy designs. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg1} /> */}
                                             <h4>Bootstrap Consultancy Services</h4>
-                                            <p>IQuinceSoft is a pioneer in offering Bootstrap consultancy services. We provide technical support to ensure you get the best bootstrap functionalities and framework.</p>
+                                            <p>iQuinceSoft is a pioneer in offering Bootstrap consultancy services. We provide technical support to ensure you get the best bootstrap functionalities and framework.</p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
@@ -297,7 +294,52 @@ class BootStrap extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What pricing models do you offer to hire a Bootstrap developer at iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                IQuinceSoft offers all the flexibility to work with; we offer three engagement models: fixed Price, hourly, and project based. We charge $25/hour and $2500/month monthly project.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can you help us increase the number of Bootstrap developers per the project needs?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We can help you increase the number of Bootstrap developers according to the project needs. We can ramp down the developers as well in case the project needs.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you offer a risk-free trial period?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We offer a trial period of one week to make you stress-free.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you sign NDA?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We sign non-disclosure agreements with the customers to keep your source code and information intact.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

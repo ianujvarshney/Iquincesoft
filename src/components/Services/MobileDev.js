@@ -60,6 +60,7 @@ class Mobile_Developementjs extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <p>MOBILE DEVELOPMENT</p>
                                     <h1><strong>Hire Mobile App Developers</strong><br /></h1>
                                     <ul>
                                         <p>What is my benefit in it?</p>

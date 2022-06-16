@@ -19,6 +19,16 @@ import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
 import icon1 from '../../images/design-icon1.svg';
+import WebDesign from '../../images/WebDesign.svg';
+import SocialAds1 from '../../images/Hamendra.svg';
+import Brochure from '../../images/Brochure.svg';
+import UiUx from '../../images/UiUx.svg';
+import Anime from '../../images/Anime.svg';
+import Brand from '../../images/Brand.svg';
+import SocialAnnouncement from '../../images/SocialAnnouncement.svg';
+import Graphicdesign from '../../images/Graphicdesign.svg';
+import LandingPage from '../../images/LandingPage.svg';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class Designers extends Component {
     constructor(props) {
@@ -75,16 +85,9 @@ class Designers extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Design Team you always ‘wished for</strong><br /></h1>
+                                    <p>DESIGNERS</p>
+                                    <h1><strong>Draw, Design, and Decorate your systems with iQuinceSoft's vetted designers. </strong><br /></h1>
                                     <h2>We build brands with great web, social, mobile, and print designs.<br /></h2>
-                                    {/*<ul>
-                                        <p>The iQuinceSoft Advantage ensures you:</p>
-                                        <li>Higher revenues by a significant margin.</li>
-                                        <li>Guaranteed results</li>
-                                        <li>Regular updates and insights on the ongoing projects</li>
-                                        <li>Swift initiation with the process</li>
-                                        <li>skilled team to deliver meaningful outputs outcomes. </li>
-                                    </ul>*/}
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
                             </div>
@@ -135,20 +138,61 @@ class Designers extends Component {
                             </div>
                             <div className="row">
                                 <OwlCarousel options={Designer}>
-                                    <div className="Design-owl">
-                                        <img alt="img" src={icon1} />
+                                    <div className="Design-owl design-box">
+                                        <img alt="img" src={WebDesign} />
                                         <h4>Web Designs</h4>
                                         <p>Do you wish to make customized layouts for your websites? We offer design services with more informative and engaging means. Web design by iQuinceSoft includes website mockups, visualization and consultations. We make you a part of the process.  </p>
+                                        <Link className="design-btn" to="/Web_Development">Learn More</Link>
                                     </div>
-                                    <div className="Design-owl">
-                                        <img alt="img" src={icon1} />
-                                        <h4>Web Designs</h4>
-                                        <p>Do you wish to make customized layouts for your websites? We offer design services with more informative and engaging means. Web design by iQuinceSoft includes website mockups, visualization and consultations. We make you a part of the process.  </p>
+                                    <div className="Design-owl design-box">
+                                        <img alt="img" src={SocialAds1} />
+                                        <h4>Social Ads</h4>
+                                        <p>Do you want a visually appealing ad campaign that looks wow? iQuinceSoft designers can grab attention and get the eye-popping designs towards the message. Set yourself apart from the competition with stylish and modern visuals. </p>
+                                        <Link className="design-btn" to="#">Learn More</Link>
                                     </div>
-                                    <div className="Design-owl">
-                                        <img alt="img" src={icon1} />
-                                        <h4>Web Designs</h4>
-                                        <p>Do you wish to make customized layouts for your websites? We offer design services with more informative and engaging means. Web design by iQuinceSoft includes website mockups, visualization and consultations. We make you a part of the process.  </p>
+                                    <div className="Design-owl design-box">
+                                        <img alt="img" src={SocialAnnouncement} />
+                                        <h4>Social Media Graphics</h4>
+                                        <p>We can help you design professional and appealing social media graphics for Instagram, Twitter, Pinterest, Snapchat, LinkedIn, Facebook, etc. We can timely deliver you quotes, blog images, GIFs, infographics, cover art, screenshots, and logos. </p>
+                                        <Link className="design-btn" to="#">Learn More</Link>
+                                    </div>
+                                    <div className="Design-owl design-box">
+                                        <img alt="img" src={UiUx} />
+                                        <h4>UI/UX designs</h4>
+                                        <p>We can deliver amazing design mockups that highlight your ideal goals. We keep the best practices in mind with mobile-first implementations.  </p>
+                                        <Link className="design-btn" to="/HireDesigners">Learn More</Link>
+                                    </div>
+                                    <div className="Design-owl design-box">
+                                        <img alt="img" src={Graphicdesign} />
+                                        <h4>Custom Graphic Designs</h4>
+                                        <p>Let us know your design needs, and we’ll deliver that requirement. We recruit some of the best creative minds from the cream layer of the talent pools. We can help you differentiate your brand from the rest of the crowd and make it a top-ranked brand with no extra costs. </p>
+                                        <Link className="design-btn" to="#">Learn More</Link>
+                                    </div>
+                                    <div className="Design-owl design-box">
+                                        <img alt="img" src={Brochure} />
+                                        <h4>Flyers and Brochures</h4>
+                                        <p>The print has never been off-track. It is again very much ‘in-trend’ now. You can put your information online at a place, but you can not override the power of the printed brochures.
+                                            iQuincesoft can deliver you all types of brochures in full color.  </p>
+                                        <Link className="design-btn" to="#">Learn More</Link>
+                                    </div>
+                                    <div className="Design-owl design-box">
+                                        <img alt="img" src={Anime} />
+                                        <h4>Animated Videos</h4>
+                                        <p>Video marketing is the new normal in the domains of marketing. Videos are the most influential type of marketing that can create an impact. Increase your video marketing with the help of custom-designed animated videos.
+                                            Team iQuinceSoft can create bespoke videos and explainer videos for you. Each video is different and helps your brand stand out from the other.   </p>
+                                        <Link className="design-btn" to="#">Learn More</Link>
+                                    </div>
+                                    <div className="Design-owl design-box">
+                                        <img alt="img" src={Brand} />
+                                        <h4>Brand Designs</h4>
+                                        <p>Your brand design is the basic reflection of your business. Therefore, make it classic, elegant and impactful. Team iQuinceSoft can offer a wide range of finishes, looks and papers so that you can have them in any way you wish.   </p>
+                                        <Link className="design-btn" to="#">Learn More</Link>
+                                    </div>
+                                    <div className="Design-owl design-box">
+                                        <img alt="img" src={LandingPage} />
+                                        <h4>Landing Page Designs</h4>
+                                        <p>We deliver insightful UX wireframes and high-fidelity UI designs that can be used for Marketing, Product and Digital teams. Connect us to explore the types of landing page designs. </p>
+                                        <Link className="design-btn" to="#">Learn More</Link>
                                     </div>
                                 </OwlCarousel>
 
@@ -157,7 +201,7 @@ class Designers extends Component {
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={WebDesign} />
                                                 <h4>Web Designs</h4>
                                                 <p>Do you wish to make customized layouts for your websites? We offer design services with more informative and engaging means. Web design by iQuinceSoft includes website mockups, visualization and consultations. We make you a part of the process.  </p>
                                                 <Link className="design-btn" to="/Web_Development">Learn More</Link>
@@ -165,7 +209,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={SocialAds1} />
                                                 <h4>Social Ads</h4>
                                                 <p>Do you want a visually appealing ad campaign that looks wow? iQuinceSoft designers can grab attention and get the eye-popping designs towards the message. Set yourself apart from the competition with stylish and modern visuals. </p>
                                                 <Link className="design-btn" to="#">Learn More</Link>
@@ -173,7 +217,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={SocialAnnouncement} />
                                                 <h4>Social Media Graphics</h4>
                                                 <p>We can help you design professional and appealing social media graphics for Instagram, Twitter, Pinterest, Snapchat, LinkedIn, Facebook, etc. We can timely deliver you quotes, blog images, GIFs, infographics, cover art, screenshots, and logos. </p>
                                                 <Link className="design-btn" to="#">Learn More</Link>
@@ -181,7 +225,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={UiUx} />
                                                 <h4>UI/UX designs</h4>
                                                 <p>We can deliver amazing design mockups that highlight your ideal goals. We keep the best practices in mind with mobile-first implementations.  </p>
                                                 <Link className="design-btn" to="/HireDesigners">Learn More</Link>
@@ -189,7 +233,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={Graphicdesign} />
                                                 <h4>Custom Graphic Designs</h4>
                                                 <p>Let us know your design needs, and we’ll deliver that requirement. We recruit some of the best creative minds from the cream layer of the talent pools. We can help you differentiate your brand from the rest of the crowd and make it a top-ranked brand with no extra costs. </p>
                                                 <Link className="design-btn" to="#">Learn More</Link>
@@ -197,7 +241,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={Brochure} />
                                                 <h4>Flyers and Brochures</h4>
                                                 <p>The print has never been off-track. It is again very much ‘in-trend’ now. You can put your information online at a place, but you can not override the power of the printed brochures.
                                                     iQuincesoft can deliver you all types of brochures in full color.  </p>
@@ -206,7 +250,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={Anime} />
                                                 <h4>Animated Videos</h4>
                                                 <p>Video marketing is the new normal in the domains of marketing. Videos are the most influential type of marketing that can create an impact. Increase your video marketing with the help of custom-designed animated videos.
                                                     Team iQuinceSoft can create bespoke videos and explainer videos for you. Each video is different and helps your brand stand out from the other.   </p>
@@ -215,7 +259,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={Brand} />
                                                 <h4>Brand Designs</h4>
                                                 <p>Your brand design is the basic reflection of your business. Therefore, make it classic, elegant and impactful. Team iQuinceSoft can offer a wide range of finishes, looks and papers so that you can have them in any way you wish.   </p>
                                                 <Link className="design-btn" to="#">Learn More</Link>
@@ -223,7 +267,7 @@ class Designers extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-4">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={LandingPage} />
                                                 <h4>Landing Page Designs</h4>
                                                 <p>We deliver insightful UX wireframes and high-fidelity UI designs that can be used for Marketing, Product and Digital teams. Connect us to explore the types of landing page designs. </p>
                                                 <Link className="design-btn" to="#">Learn More</Link>
@@ -459,7 +503,7 @@ class Designers extends Component {
                             </div>
                             <div className="row">
                                 <div className="col-lg-5 col-md-6">
-                                    <picture><img alt="img" src={icon1} /></picture>
+                                    <picture><img alt="img" src={WebDesign} /></picture>
                                 </div>
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-5 col-md-6">
@@ -520,7 +564,75 @@ class Designers extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What kind of UI/UX design services do iQuinceSoft offer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We offer dedicated design developers to support you in the following categories:
+                                                <ul>
+                                                    <li>Graphic design</li>
+                                                    <li>Logo and Brand Design </li>
+                                                    <li>App Design </li>
+                                                    <li>Web Design</li>
+                                                </ul>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is the main difference between UX and UI designs?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                UX stands for User Experience. It validates whether the app offers an excellent experience to the user or not.
+                                                Whereas UI is used as an acronym for the user interface. It ensures the user can experience the app or website with content, colors, buttons, images, etc.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Which are the tools you use for UI/UX design?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We use the following tools for our UI/UX design projects:
+                                                <ul>
+                                                    <li>Figma</li>
+                                                    <li>Adobe Photoshop</li>
+                                                    <li>Adobe Illustrator</li>
+                                                    <li>Adobe XD</li>
+                                                    <li>Zeplin</li>
+                                                    <li>Iconscout </li>
+                                                </ul>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is the cost to hire dedicated UI/UX developers from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                The cost starts from USD 25 per hour and varies as per the designers' skills and experience, plus the project's complexity.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why should I hire a UI UX developer from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Hiring a UI UX developer from iQuinceSoft from iQuinceSoft can unveil a way to execute the business operations. We have talented designers who can help you get the freedom from the complex hiring process and support after the post-development phase.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

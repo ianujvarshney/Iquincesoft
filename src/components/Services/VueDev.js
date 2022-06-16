@@ -59,10 +59,11 @@ class VueDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <p>VUE</p>
                                     <h1><strong>Hire VueJS developers to build and scale super fast, light and peak performing web apps </strong><br /></h1>
                                     <ul>
-                                        <li>Hire the near shore talent with vetted, skilled, and seasoned Vue JS developers to scale and augment your team's performance.</li>
-                                        <li>We ensure you get quality outcomes with our ready-to-hire Vue JS developers that can deliver from day 1 of joining the team.</li>
+                                        <li>Hire the pre-vetted, skilled, and seasoned Vue JS developers to scale and augment your team's performance.</li>
+                                        <li>We ensure you get quality outcomes with our ready-to-hire VueJS developers that can deliver from day 1 of joining the team.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -94,7 +95,7 @@ class VueDev extends Component {
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Easy to Learn: </h4>
+                                        <h4>Easy to Learn </h4>
                                         <p>The learning curve of Vue.js is slightly easy. Hence, it is easy for anyone to keep the tabs and remove the coding errors.</p>
                                     </div>
 
@@ -133,7 +134,7 @@ class VueDev extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Easy to Learn: </h4>
+                                        <h4>Easy to Learn </h4>
                                         <p>The learning curve of Vue.js is slightly easy. Hence, it is easy for anyone to keep the tabs and remove the coding errors.</p>
                                     </div>
                                 </div>

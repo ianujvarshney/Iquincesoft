@@ -10,7 +10,7 @@ import arrow2 from '../images/arrow2.png';
 import { CaseStudies } from '../json/CaseStudies';
 import { FaChevronRight } from 'react-icons/fa';
 import { TailSpin } from 'react-loader-spinner';
-import Pagination from "react-js-pagination";
+// import Pagination from "react-js-pagination";
 // import "bootstrap/less/bootstrap.less";
 class Service extends Component {
 
@@ -72,13 +72,13 @@ class Service extends Component {
 						</div>
 					</div>
 					<div className="case-sec">
-						<Pagination
+						{/* <Pagination
 							activePage={this.state.activePage}
 							itemsCountPerPage={10}
 							totalItemsCount={450}
 							pageRangeDisplayed={5}
 							onChange={this.handlePageChange.bind(this)}
-						/>
+						/> */}
 						<div className="container">
 							{CaseJson && CaseJson.map((CaseJsonS, index) => {
 								if (index < 4) {

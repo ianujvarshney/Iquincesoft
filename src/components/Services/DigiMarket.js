@@ -60,6 +60,7 @@ class DigiMarket extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <p>DIGITAL MAKETTING</p>
                                     <h1><strong>Data-driven digital marketing services</strong><br /></h1>
                                     <ul>
                                         <p>The iQuinceSoft Advantage ensures you:</p>

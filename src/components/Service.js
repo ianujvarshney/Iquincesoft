@@ -30,7 +30,7 @@ import { TailSpin } from 'react-loader-spinner';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import axios from 'axios';
-import service_img from '../images/service-img.png';
+import service_img from '../images/service-img.svg';
 import popupImg from '../images/popup-img.png';
 import arrow_white from '../images/arrow-white.png';
 import { FaRegCalendar, FaLockOpen, FaRegUserCircle, FaRegEnvelope, FaPhoneAlt, FaPaperPlane } from 'react-icons/fa';
@@ -161,11 +161,11 @@ class Service extends Component {
 						<div className="container">
 							<div className="row">
 								<div className="col-lg-7 col-md-12" data-aos="fade-up">
+									<p>Our Services</p>
 									{servicesJson && servicesJson.map(servicesJsonS => {
 										return (
 											<>
-												<h1><b>Hire Developers to meet your unmet needs</b><br /><br /><h5>{servicesJsonS.name}</h5></h1>
-												<h2 style={{ margin: "30px 0 30px 0" }}>iQuinceSoft Advantage offer you to: </h2>
+												<h1><b></b><br /><br /><h5>{servicesJsonS.name}</h5></h1>
 												<ul dangerouslySetInnerHTML={{ __html: servicesJsonS.content }} >
 												</ul>
 											</>
@@ -226,57 +226,450 @@ class Service extends Component {
 						</div>
 					</div>
 
-					<div className="serv-sec">
+					<div className="serv-sec serv-sec-1">
 						<div className="container">
 							<div className="row" data-aos="fade-down">
 								<div className="col-lg-4 col-md-6">
-									<h3>Web Development</h3>
-									<p>Remote Web Developers can scale your business swiftly. We offer you the facility to hire a remote web developer for 40 hours/week at a fixed rate.</p>
-									<em><Link to="/Web_Development">Schedule an Appointment</Link></em>
-									<em><a href="/caseStudies">Read Case Study</a></em>
-
-									{appJson && (
-										<OwlCarousel options={servSlide}>
-											{appJson.map((appJsonS, index) => {
-												return (
-													(index === 0) ? null :
-														<div className="serv-txt">
-															<h4><span><FaCode /><Link to={`/${appJsonS.slug}`}>{appJsonS.name}</Link></span></h4>
-															<p dangerouslySetInnerHTML={{ __html: appJsonS.content }}></p>
-															<h4><Link to={`/${appJsonS.slug}`} >Read more</Link></h4>
-														</div>
-												);
-											})}
-										</OwlCarousel>
-									)}
+									<h3>Our Frontend</h3>
+									<p>Regardless of how complex or even small your needs are, our dedicated in-house team of web developers and project managers will ensure that the job gets done with the highest level of professionalism and most cost affordably.</p>
+									<em><Link to="/serviceDescription">Schedule an Appointment</Link></em>
+									<em><a href="#">Read Case Study</a></em>
+									<OwlCarousel options={servSlide}>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireReactDevelopers">React.js</Link></span></h4>
+											<p>Hire dedicated React.JS developers can save your time, cost, and efforts with seamless fitting in the development team to work on the projects.
+											</p>
+											<h4><Link to="/HireReactDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireVueDevelopers" >Vue.js</Link></span></h4>
+											<p> Hire the pre-vetted, skilled, and seasoned Vue JS developers to scale and augment your team's performance. </p>
+											<h4><Link to="/HireVueDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireAngularDevelopers" >Angular</Link></span></h4>
+											<p> We can help you take your project outcomes to the next level with the help of our skilled and seasoned angular developers – on an hourly, project, or full-time basis. </p>
+											<h4><Link to="/HireAngularDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireMERNStackDevelopers" >MERN Stack</Link></span></h4>
+											<p> we help you deliver results with the help of our expert developers of php, Laravel, node.js, Express.js, </p>
+											<h4><Link to="/HireMERNStackDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireZendStackDevelopers" >ZEND Stack</Link></span></h4>
+											<p> Hire the ZEND developers from the house of iQuinceSoft. We offer you project mapping on-demand skills to meet your development needs, wants, and demands.
+											</p>
+											<h4><Link to="/HireZendStackDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireMeanstackDevelopers" >MEAN Stack</Link></span></h4>
+											<p> We are a team of experts in MongoDB, Express JS, Angular, and Node JS that can serve your project needs with the optimal skillsets that match the project needs and offer you scalable, secure, and user-friendly web applications.
+											</p>
+											<h4><Link to="/HireMeanstackDevelopers" >Read more</Link></h4>
+										</div>
+									</OwlCarousel>
 								</div>
 
-								{appJson && appJson.map((appJsonS, index) => {
-									return (
-										<div className="col-lg-4 col-md-6">
-											<div className="serv-txt">
-												<h4><span><FaCode /><Link to={`/${appJsonS.slug}`} >{appJsonS.name}</Link></span></h4>
-												<p dangerouslySetInnerHTML={{ __html: appJsonS.content }}></p>
-												<h4><Link to={`/${appJsonS.slug}`} >Read more</Link></h4>
-											</div>
-										</div>
-									);
-								})}
-								<div className="col-lg-8 col-md-12">
+
+								<div className="col-lg-4 col-md-6">
 									<div className="serv-txt">
-										<div className="row">
-											<div className="col-lg-6 col-md-6">
-												<h4><span><FaCode /><Link to='#'>Integrations and Extensions</Link></span></h4>
-												<p>We have integrated several platforms and can serve you with the same. Explore the best-in-class CRM platform services with us.</p>
-												<h4><Link to={"#"} >Read more</Link></h4>
-											</div>
-											<div className="col-lg-6 col-md-6"><img alt="img" src={service_img} /></div>
-										</div>
+										<h4><span><FaCode /><Link to="/HireReactDevelopers">React.js</Link></span></h4>
+										<p>Hire dedicated React.JS developers can save your time, cost, and efforts with seamless fitting in the development team to work on the projects.
+										</p>
+										<h4><Link to="/HireReactDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireVueDevelopers" >Vue.js</Link></span></h4>
+										<p> Hire the pre-vetted, skilled, and seasoned Vue JS developers to scale and augment your team's performance. </p>
+										<h4><Link to="/HireVueDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireAngularDevelopers" >Angular</Link></span></h4>
+										<p> We can help you take your project outcomes to the next level with the help of our skilled and seasoned angular developers – on an hourly, project, or full-time basis. </p>
+										<h4><Link to="/HireAngularDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireMERNStackDevelopers" >MERN Stack</Link></span></h4>
+										<p> we help you deliver results with the help of our expert developers of php, Laravel, node.js, Express.js, </p>
+										<h4><Link to="/HireMERNStackDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireZendStackDevelopers" >ZEND Stack</Link></span></h4>
+										<p> Hire the ZEND developers from the house of iQuinceSoft. We offer you project mapping on-demand skills to meet your development needs, wants, and demands.
+										</p>
+										<h4><Link to="/HireZendStackDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireMeanstackDevelopers" >MEAN Stack</Link></span></h4>
+										<p> We are a team of experts in MongoDB, Express JS, Angular, and Node JS that can serve your project needs with the optimal skillsets that match the project needs and offer you scalable, secure, and user-friendly web applications.
+										</p>
+										<h4><Link to="/HireMeanstackDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 							</div>
 						</div>
+						<FormPopup />
+						<h5>Or, Use this form to share your requirements. <span>Get guaranteed response within 8 Hrs.</span></h5>
+					</div>
 
+
+
+
+
+					<div className="serv-sec serv-sec-2">
+						<div className="container">
+							<div className="row" data-aos="fade-down">
+								<div className="col-lg-4 col-md-6">
+									{/* <h2 className="serv-sec-h2">Backend</h2> */}
+									<h3>Our Backend</h3>
+									<p>Regardless of how complex or even small your needs are, our dedicated in-house team of web developers and project managers will ensure that the job gets done with the highest level of professionalism and most cost affordably.</p>
+									<em><Link to="/serviceDescription">Schedule an Appointment</Link></em>
+									<em><a href="#">Read Case Study</a></em>
+									<OwlCarousel options={servSlide}>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireNodeDevelopers" >Node.js</Link></span></h4>
+											<p> Leverage the skills and experience of our ready-to-hire Node JS developers. Build small web apps to sophisticated web systems that may suit your business and help you attain your business goals.  </p>
+											<h4><Link to="/HireNodeDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HirePHPDevelopers" >PHP</Link></span></h4>
+											<p> Hire the PHP developers that fit your project demands and scale your business to the next level. </p>
+											<h4><Link to="/HirePHPDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireLaravelDevelopers" >Laravel</Link></span></h4>
+											<p> Get the tangible outcomes with the help opf our skilled developers to ensure scalable and secure web apps and systems. </p>
+											<h4><Link to="/HireLaravelDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireSymfonyDevelopers" >Symfony</Link></span></h4>
+											<p> With the expertise of our vetted talent pool of developers, we ensure that you get the best from the top 1% of a country of more than 1 billion people. </p>
+											<h4><Link to="/HireSymfonyDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireCodeIgniterDevelopers" >CodeIgniter</Link></span></h4>
+											<p>Stop wasting time searching for average developers when you have the chance to hire someone who is skilled and maps according to the assigned projects.
+											</p>
+											<h4><Link to="/HireCodeIgniterDevelopers" >Read more</Link></h4>
+										</div>
+									</OwlCarousel>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireNodeDevelopers" >Node.js</Link></span></h4>
+										<p> Leverage the skills and experience of our ready-to-hire Node JS developers. Build small web apps to sophisticated web systems that may suit your business and help you attain your business goals.  </p>
+										<h4><Link to="/HireNodeDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HirePHPDevelopers" >PHP</Link></span></h4>
+										<p> Hire the PHP developers that fit your project demands and scale your business to the next level. </p>
+										<h4><Link to="/HirePHPDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireLaravelDevelopers" >Laravel</Link></span></h4>
+										<p> Get the tangible outcomes with the help opf our skilled developers to ensure scalable and secure web apps and systems. </p>
+										<h4><Link to="/HireLaravelDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireSymfonyDevelopers" >Symfony</Link></span></h4>
+										<p> With the expertise of our vetted talent pool of developers, we ensure that you get the best from the top 1% of a country of more than 1 billion people. </p>
+										<h4><Link to="/HireSymfonyDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireCodeIgniterDevelopers" >CodeIgniter</Link></span></h4>
+										<p>Stop wasting time searching for average developers when you have the chance to hire someone who is skilled and maps according to the assigned projects.
+										</p>
+										<h4><Link to="/HireCodeIgniterDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<FormPopup />
+						<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+					</div>
+
+					<div className="serv-sec serv-sec-1">
+						<div className="container">
+							<div className="row" data-aos="fade-down">
+								<div className="col-lg-4 col-md-6">
+									<h3>Our eCommerce</h3>
+									<p>Regardless of how complex or even small your needs are, our dedicated in-house team of web developers and project managers will ensure that the job gets done with the highest level of professionalism and most cost affordably.</p>
+									<em><Link to="/serviceDescription">Schedule an Appointment</Link></em>
+									<em><a href="#">Read Case Study</a></em>
+									<OwlCarousel options={servSlide}>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireMagentoDevelopers" >Magento</Link></span></h4>
+											<p> Hire our dedicated offshore Magento developers who can deliver you a store website that complies with your day-to-day business practices. </p>
+											<h4><Link to="/HireMagentoDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireWooCommerceDevelopers" >WooCommerce</Link></span></h4>
+											<p>Hire dedicated WooCommerce developers with the trust of iQuinceSoft to develop, customize and maintain an eCommerce store that reveals your true spirits </p>
+											<h4><Link to="/HireWooCommerceDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireShopifyDevelopers" >Shopify</Link></span></h4>
+											<p> Hire dedicated Shopify experts that can deliver you the results you aim for. We help you reach more specific target audiences, achieve more sales, and generate more revenue. </p>
+											<h4><Link to="/HireShopifyDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireopencartDevelopers" >OpenCart</Link></span></h4>
+											<p> Our skilled and seasoned developers are available on an hourly, monthly, and full-time basis for project-specific needs.  </p>
+											<h4><Link to="/HireopencartDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireWixDevelopers" >Wix</Link></span></h4>
+											<p> Connect, Communicate and Curate the business goals by hiring dedicated offshore developers with the trust and expertise of iQuinceSoft. </p>
+											<h4><Link to="/HireWixDevelopers" >Read more</Link></h4>
+										</div>
+									</OwlCarousel>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireMagentoDevelopers" >Magento</Link></span></h4>
+										<p> Hire our dedicated offshore Magento developers who can deliver you a store website that complies with your day-to-day business practices. </p>
+										<h4><Link to="/HireMagentoDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireWooCommerceDevelopers" >WooCommerce</Link></span></h4>
+										<p>Hire dedicated WooCommerce developers with the trust of iQuinceSoft to develop, customize and maintain an eCommerce store that reveals your true spirits </p>
+										<h4><Link to="/HireWooCommerceDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireShopifyDevelopers" >Shopify</Link></span></h4>
+										<p> Hire dedicated Shopify experts that can deliver you the results you aim for. We help you reach more specific target audiences, achieve more sales, and generate more revenue. </p>
+										<h4><Link to="/HireShopifyDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireopencartDevelopers" >OpenCart</Link></span></h4>
+										<p> Our skilled and seasoned developers are available on an hourly, monthly, and full-time basis for project-specific needs.  </p>
+										<h4><Link to="/HireopencartDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireWixDevelopers" >Wix</Link></span></h4>
+										<p> Connect, Communicate and Curate the business goals by hiring dedicated offshore developers with the trust and expertise of iQuinceSoft. </p>
+										<h4><Link to="/HireWixDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<FormPopup />
+						<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+					</div>
+
+					<div className="serv-sec serv-sec-2">
+						<div className="container">
+							<div className="row" data-aos="fade-down">
+								<div className="col-lg-4 col-md-6">
+									<h3>Our CMS</h3>
+									<p>Regardless of how complex or even small your needs are, our dedicated in-house team of web developers and project managers will ensure that the job gets done with the highest level of professionalism and most cost affordably.</p>
+									<em><Link to="/serviceDescription">Schedule an Appointment</Link></em>
+									<em><a href="#">Read Case Study</a></em>
+									<OwlCarousel options={servSlide}>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireDrupalDevelopers" >Drupal</Link></span></h4>
+											<p> Hire our Drupal developers and architects for all your Drupal projects with the flexibility to hire on a fixed cost, project, or hourly and monthly basis. </p>
+											<h4><Link to="/HireDrupalDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireWordpressDevelopers" >Wordpress</Link></span></h4>
+											<p> Customize, build and deploy new WordPress themes, Plugins, and flexible features that help you develop the ease and robust web app for sophisticated web systems.
+											</p>
+											<h4><Link to="/HireWordpressDevelopers" >Read more</Link></h4>
+										</div>
+									</OwlCarousel>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireDrupalDevelopers" >Drupal</Link></span></h4>
+										<p> Hire our Drupal developers and architects for all your Drupal projects with the flexibility to hire on a fixed cost, project, or hourly and monthly basis. </p>
+										<h4><Link to="/HireDrupalDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireWordpressDevelopers" >Wordpress</Link></span></h4>
+										<p> Customize, build and deploy new WordPress themes, Plugins, and flexible features that help you develop the ease and robust web app for sophisticated web systems.
+										</p>
+										<h4><Link to="/HireWordpressDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div className="serv-sec serv-sec-1">
+						<div className="container">
+							<div className="row" data-aos="fade-down">
+								<div className="col-lg-4 col-md-6">
+									<h3>Our Mobile</h3>
+									<p>Regardless of how complex or even small your needs are, our dedicated in-house team of web developers and project managers will ensure that the job gets done with the highest level of professionalism and most cost affordably.</p>
+									<em><Link to="/serviceDescription">Schedule an Appointment</Link></em>
+									<em><a href="#">Read Case Study</a></em>
+									<OwlCarousel options={servSlide}>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireIosDevelopers" >Ios</Link></span></h4>
+											<p> Hire dedicated offshore iOS experts from the house of trust, commitment, and time-bound delivery - iQuinceSoft. </p>
+											<h4><Link to="/HireIosDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireReactNativeDevelopers" >ReactNative</Link></span></h4>
+											<p> Hire our skilled React Native developers for Hybrid, Custom or Native apps with saving your time, cost, and efforts with seamless fitting in the development team to work on the projects. </p>
+											<h4><Link to="/HireReactNativeDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireAndroidDevelopers" >Android</Link></span></h4>
+											<p> Hire one or a team of developers from iQuinceSoft that can ensure you high-quality Android apps with features that fit in fine with your business goals. </p>
+											<h4><Link to="/HireAndroidDevelopers" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="/HireionicDevelopers" >Ionic</Link></span></h4>
+											<p> Make your presence felt across the platforms with scalable, engaging, and customized tailor-made apps that can meet your unmet needs. </p>
+											<h4><Link to="/HireionicDevelopers" >Read more</Link></h4>
+										</div>
+									</OwlCarousel>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireIosDevelopers" >Ios</Link></span></h4>
+										<p> Hire dedicated offshore iOS experts from the house of trust, commitment, and time-bound delivery - iQuinceSoft. </p>
+										<h4><Link to="/HireIosDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireAndroidDevelopers" >Android</Link></span></h4>
+										<p> Hire one or a team of developers from iQuinceSoft that can ensure you high-quality Android apps with features that fit in fine with your business goals. </p>
+										<h4><Link to="/HireAndroidDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireReactNativeDevelopers" >ReactNative</Link></span></h4>
+										<p> Hire our skilled React Native developers for Hybrid, Custom or Native apps with saving your time, cost, and efforts with seamless fitting in the development team to work on the projects. </p>
+										<h4><Link to="/HireReactNativeDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="/HireionicDevelopers" >Ionic</Link></span></h4>
+										<p> Make your presence felt across the platforms with scalable, engaging, and customized tailor-made apps that can meet your unmet needs. </p>
+										<h4><Link to="/HireionicDevelopers" >Read more</Link></h4>
+									</div>
+								</div>
+							</div>
+							<FormPopup />
+							<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+						</div>
+					</div>
+
+					<div className="serv-sec ser-sec-2">
+						<div className="container">
+							<div className="row" data-aos="fade-down">
+								<div className="col-lg-4 col-md-6">
+									<h3>Our Digital Marketing</h3>
+									<p>Regardless of how complex or even small your needs are, our dedicated in-house team of web developers and project managers will ensure that the job gets done with the highest level of professionalism and most cost affordably.</p>
+									<em><Link to="/serviceDescription">Schedule an Appointment</Link></em>
+									<em><a href="#">Read Case Study</a></em>
+									<OwlCarousel options={servSlide}>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="#">React.js</Link></span></h4>
+											<p> we help you deliver results with the help of our expert developers of php, Laravel, node.js, Express.js, </p>
+											<h4><Link to="#" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="#" >Vue.js</Link></span></h4>
+											<p> we help you deliver results with the help of our expert developers of php, Laravel, node.js, Express.js, </p>
+											<h4><Link to="#" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="#" >Vue.js</Link></span></h4>
+											<p> we help you deliver results with the help of our expert developers of php, Laravel, node.js, Express.js, </p>
+											<h4><Link to="#" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="#" >Vue.js</Link></span></h4>
+											<p> we help you deliver results with the help of our expert developers of php, Laravel, node.js, Express.js, </p>
+											<h4><Link to="#" >Read more</Link></h4>
+										</div>
+										<div className="serv-txt">
+											<h4><span><FaCode /><Link to="#" >Vue.js</Link></span></h4>
+											<p> we help you deliver results with the help of our expert developers of php, Laravel, node.js, Express.js, </p>
+											<h4><Link to="#" >Read more</Link></h4>
+										</div>
+									</OwlCarousel>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="#" >Node.js</Link></span></h4>
+										<p> we help you deliver results with the help of our expert developers of php, Laravel, node.js, Express.js, </p>
+										<h4><Link to="#" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="#" >Node.js</Link></span></h4>
+										<p> we help you deliver results with the help of our expert developers of php, Laravel, node.js, Express.js, </p>
+										<h4><Link to="#" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="#" >Node.js</Link></span></h4>
+										<p> we help you deliver results with the help of our expert developers of php, Laravel, node.js, Express.js, </p>
+										<h4><Link to="#" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="#" >Node.js</Link></span></h4>
+										<p> we help you deliver results with the help of our expert developers of php, Laravel, node.js, Express.js, </p>
+										<h4><Link to="#" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="#" >Node.js</Link></span></h4>
+										<p> we help you deliver results with the help of our expert developers of php, Laravel, node.js, Express.js, </p>
+										<h4><Link to="#" >Read more</Link></h4>
+									</div>
+								</div>
+								<div className="col-lg-4 col-md-6">
+									<div className="serv-txt">
+										<h4><span><FaCode /><Link to="#" >Node.js</Link></span></h4>
+										<p> we help you deliver results with the help of our expert developers of php, Laravel, node.js, Express.js, </p>
+										<h4><Link to="#" >Read more</Link></h4>
+									</div>
+								</div>
+							</div >
+						</div >
 						<FormPopup />
 						<h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
 					</div >
@@ -376,3 +769,19 @@ class Service extends Component {
 
 export default Service;
 
+{/* <h3>Web Development</h3>
+									<p>Remote Web Developers can scale your business swiftly. We offer you the facility to hire a remote web developer for 40 hours/week at a fixed rate.</p>
+									<em><Link to="/Web_Development">Schedule an Appointment</Link></em>
+									<em><a href="/caseStudies">Read Case Study</a></em> */}
+{/* <div className="col-lg-8 col-md-12">
+									<div className="serv-txt">
+										<div className="row">
+											<div className="col-lg-6 col-md-6">
+												<h4><span><FaCode /><Link to='#'>Integrations and Extensions</Link></span></h4>
+												<p>We have integrated several platforms and can serve you with the same. Explore the best-in-class CRM platform services with us.</p>
+												<h4><Link to={"#"} >Read more</Link></h4>
+											</div>
+											<div className="col-lg-6 col-md-6"><img alt="img" src={service_img} /></div>
+										</div>
+									</div>
+								</div> */}

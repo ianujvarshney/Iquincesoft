@@ -61,6 +61,7 @@ class Web_Development extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <p>WEB</p>
                                     <h1><strong>iQuinceSoft offers dedicated web developers who can:</strong><br /></h1>
                                     <ul>
                                         <p>Understand your market </p>

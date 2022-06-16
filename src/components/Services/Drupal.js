@@ -18,6 +18,7 @@ import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 
 class Drupal extends Component {
@@ -60,10 +61,11 @@ class Drupal extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire Drupal developers from the iQuinceSoft talent pool to get visually-appealing layouts, eye-popping designs, and intuitive web solutions for your business and brand.</strong><br /></h1>
+                                    <p>DRUPAL</p>
+                                    <h1><strong> Scalable and Optimized Drupal Solutions.</strong><br /></h1>
                                     <ul>
                                         <li>Hire our Drupal developers and architects for all your Drupal projects with the flexibility to hire on a fixed cost, project, or hourly and monthly basis.</li>
-                                        <li>Get customized, business-centric web solutions that are scalable and secure with the trust of iQuinceSoft.</li>
+                                        <li>Get Customized, Business-Centric Web Solutions that are scalable and secure with the trust of iQuinceSoft.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -76,8 +78,8 @@ class Drupal extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Why Choose Drupal?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
+                                    <h3>Drupal Development Services</h3>
+                                    <p>Build large scale web apps and websites that are Scalable and Customizable</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -278,7 +280,67 @@ class Drupal extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Where is iQuinceSoft based in?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We are based in India. We have hundreds of in-house skilled software developers, and for Drupal, we have 25 + in-house developers with an average experience of 5 + years.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Will I have ownership of the project?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. You'll be the owner of your project. We sign NDAs with you to ensure the copyright, source code, IPR, etc.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you offer flexible pricing models?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We offer flexible models to cater to the needs of your business models. We offer project-based, hourly, and fixed price models.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you re-use the code?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                No. we do not use the license keys, patented processes, trademarks, and proprietary algorithms.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why should I use the dedicated developers from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We jot down some of the benefits with the help of dedicated developers from iQuinceSoft:
+                                                <ul>
+                                                    <li>Access to skilled and expert developers</li>
+                                                    <li>The developer works as your extended in-house team</li>
+                                                    <li>Dedicated project manager</li>
+                                                    <li>Quality Assurance and minimal risk</li>
+                                                    <li>Total control over the process</li>
+                                                </ul>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

@@ -18,7 +18,7 @@ import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
-
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class opencart extends Component {
     constructor(props) {
@@ -63,16 +63,17 @@ class opencart extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire dedicated offshore Opencart developers to scale up your ecommerce store capabilities.</strong><br /></h1>
+                                    <p>OPENCART</p>
+                                    <h1><strong>Beat the Heat of scorching competition with iQuinceSoft's OpenCart Expert developers.</strong><br /></h1>
                                     <ul>
                                         <li> Our skilled and seasoned developers are available on an hourly, monthly, and full-time basis for project-specific needs. </li>
-                                        <li>Build an online store that can outshine the competition and create a buzz of shine across the market about your online store with the expertise of the dedicated offshore developers from iQuinceSoft.</li>
+                                        <li>Build an online store that can outshine the competition and create a buzz across the market about your online store with the expertise of the dedicated offshore developers from iQuinceSoft.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
                             </div>
                         </div>
-                    </div>
+                    </div >
 
                     <div className="culture-sec cr-sec">
                         <div className="container">
@@ -80,7 +81,7 @@ class opencart extends Component {
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
                                     <h3>Why Open Cart?</h3>
-                                    <p>OpenCart is one of the finest tools for e-commerce development. It is featured with customized solutions that meet your business needs.</p>
+                                    <p>OpenCart is one of the finest tools for e-Commerce development. It is featured with customized solutions that meet your business needs.</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -247,7 +248,52 @@ class opencart extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I hire an OpenCart developer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We have a dedicated team of OpenCart developers for hire. Our developers are highly skilled and seasoned in making eCommerce apps that stand out from the competition.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I manage these developers on my own?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We ensure you control and supervise the entire process with the continuous supervision of the developers.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How experienced are the developers from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We have a skilled team of OpenCart developers with an average of 7+ years.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why choose OpenCart developer from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We are renowned as the best OpenCart developers with a rich legacy of building scalable, flexible, and fully-featured eCommerce stores. We ensure you a successful eCommerce store that can attract, engage and convert prospects into customers.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

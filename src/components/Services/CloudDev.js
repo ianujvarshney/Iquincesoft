@@ -59,6 +59,7 @@ class CloudDevelopment extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <p>CLOUD DEVELOPMENT</p>
                                     <h1><strong>Streamline your cloud development like a conglomerate</strong><br /></h1>
                                     <h4>We help you slash down the cloud cost, automate the monitoring and take the architectural flexibility to the next level.</h4>
                                 </div>

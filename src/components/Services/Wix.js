@@ -18,6 +18,7 @@ import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner'
 import FAQ from '../../container/FAQ';
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class Wix extends Component {
     constructor(props) {
@@ -59,9 +60,10 @@ class Wix extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Develop, Design, and Define the new dimensions of web development with our expert Wix Developers.</strong><br /></h1>
+                                    <p>WIX</p>
+                                    <h1><strong>Hire Wix developers for Intuitive Designs, Secured Website with Scalable Options </strong><br /></h1>
                                     <ul>
-                                        <li>Connect, Communicate and Cleanse the business goals by hiring dedicated offshore developers with the trust and expertise of iQuinceSoft. </li>
+                                        <li>Connect, Communicate and Curate the business goals by hiring dedicated offshore developers with the trust and expertise of iQuinceSoft. </li>
                                         <li>We help you with scalable web apps and systems that can revamp your business process and goals. </li>
                                     </ul>
                                 </div>
@@ -281,7 +283,52 @@ class Wix extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is Wix?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Wix is a cloud-based development service that can help you create HTML5 mobile sites and websites with online drag and drop tools.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Is it open-source?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                No. The website creation tools are built by the Wix development team, and the outside developers cannot modify them. They are low but high in quality.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How can I communicate with the hired developers?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We ensure you stay in touch with iQuinceSoft’s development team by all means of communications. Furthermore, we use the project tracking records with the help you made vigilant about the process.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you offer migration services?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We offer Wix migration services.why
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

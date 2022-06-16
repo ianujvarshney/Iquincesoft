@@ -222,7 +222,7 @@ class Header extends Component {
                                  </li>
 
 
-                                 <li><Link className="nav-link" to={"/career"}>Career</Link></li>
+                                 <li><Link className="nav-link" to={"/careers"}>Careers</Link></li>
                                  <li><Link className="nav-link" to={"/casestudies"}>Case Studies</Link></li>
                                  <li><Link className="nav-link" to={"/about"}>About Us</Link></li>
                                  <li><Link className="nav-link" to={"/blog"}>Get Inspired</Link></li>

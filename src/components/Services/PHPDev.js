@@ -18,6 +18,8 @@ import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
+
 
 
 class HirePHPDevelopers extends Component {
@@ -63,10 +65,11 @@ class HirePHPDevelopers extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Get fully scalable, swift and web-friendly with dedicated developers</strong><br /></h1>
+                                    <p>PHP</p>
+                                    <h1><strong>Hire Skilled PHP developers for Scalable, Performing and Enterpise solutions</strong><br /></h1>
                                     <ul>
-                                        <li>Get the PHP developers that fit your project needs and demands and can scale your business to the next level.</li>
-                                        <li>Explore the skillsets that map with the project and company demands, part-time to full-time developers, on an hourly to project basis. </li>
+                                        <li>Hire the PHP developers that fit your project demands and scale your business to the next level.</li>
+                                        <li>Explore the skillsets that map with the project demands, Hire part-time to full-time developers, on an hourly to project basis. </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -86,14 +89,14 @@ class HirePHPDevelopers extends Component {
                                 <OwlCarousel options={culture}>
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Opensource</h4>
-                                        <p>PHP is Opensource. It is free to use. It costs no license fee, and third-party changes make it a preferential choice for most business owners.  </p>
+                                        <h4>OpenSource</h4>
+                                        <p>PHP is OpenSource. It is free to use. It costs no license fee, and third-party changes make it a preferential choice for most business owners.  </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
                                         <h4>Strengthening the web</h4>
-                                        <p>PHP is the most used server-Side scripting language on the web, with more than 80% websites.</p>
+                                        <p>PHP is the most used Server-Side scripting language on the web, with more than 80% websites.</p>
                                     </div>
 
                                     <div className="cult-box">
@@ -127,8 +130,8 @@ class HirePHPDevelopers extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Opensource</h4>
-                                        <p>PHP is Opensource. It is free to use. It costs no license fee, and third-party changes make it a preferential choice for most business owners.  </p>
+                                        <h4>OpenSource</h4>
+                                        <p>PHP is OpenSource. It is free to use. It costs no license fee, and third-party changes make it a preferential choice for most business owners.  </p>
                                     </div>
                                 </div>
 
@@ -186,7 +189,7 @@ class HirePHPDevelopers extends Component {
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             <h4>Web Services & API Development:</h4>
-                                            <p>Make robust and powerful iOS & Android mobile apps or grant access to the platform data with safe, stable, and well-documented web services and APIs. </p>
+                                            <p>Make robust and powerful apps and web systems. Grant access to the platform data with safe, stable, and well-documented web services and APIs. </p>
                                         </div>
 
                                         <div className="cult-box">
@@ -243,7 +246,7 @@ class HirePHPDevelopers extends Component {
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
                                             <h4>Web Services & API Development</h4>
-                                            <p>Make robust and powerful iOS & Android mobile apps or grant access to the platform data with safe, stable, and well-documented web services and APIs. </p>
+                                            <p>Make robust and powerful apps and web systems. Grant access to the platform data with safe, stable, and well-documented web services and APIs. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
@@ -268,7 +271,7 @@ class HirePHPDevelopers extends Component {
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            <h4>ECommerce</h4>
+                                            <h4>e-Commerce</h4>
                                             <p>Create custom online stores with the help of PHP at the platforms like WooCommerce, Magento. If you wish to build one from scratch, we can help with that. As per your business needs, we can help you in integration with shipping, inventory, and 3rd party services.</p>
                                         </div>
 
@@ -309,8 +312,63 @@ class HirePHPDevelopers extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
 
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How to hire dedicated PHP developers?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Click on the CTA button, and a form will pop up, fill in the details and share your requirement with us. Our talent acquisition team will curate a pool of vetted PHP developers so that the best fit for your team and serve you the best.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Should I hire a dedicated PHP developer from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We are referred for our high-class coding standards, impeccable customer support, and prompt and flexible support. We are the recipient of several awards and accolades.
+                                                Our clients value us for our practices. You can rest assured of our PHP developer expertise and the value we bring to your business process.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                I need a few developers. How can you help?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We review your project requirements. We then offer you to choose between pricing models.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How do you select the best PHP developer agencies?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                In this world full of developers and coding experts, it is challenging to select the best from the crowd. Check the third-party reviews on Google and clutch. Go on the reviews and ratings. Discuss the process in detail with the staffing agencies and if you find no loopholes in the discussion process, go ahead.
+                                                We offer the best of the talent through the stringent recruitment process we adopt to select, screen, and recruit the vetted talent.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you sign NDAs?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We keep your details at the core of our policy, and we sign an agreement to make it soundproof.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
                     <div className="culture-sec insight-sec">
                         <h3>Featured Php</h3>
                         <div className="container">

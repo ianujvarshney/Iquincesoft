@@ -18,6 +18,7 @@ import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 
 class IonicDev extends Component {
@@ -60,7 +61,8 @@ class IonicDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>We amplify your voice, and we make your presence felt on the app stores with the help of our dedicated Ionic developers.</strong><br /></h1>
+                                    <p>IONIC</p>
+                                    <h1><strong>Enhance your development capabilities with seasoned ionic developers with iQuinceSoft Advantage.</strong><br /></h1>
                                     <ul>
                                         <li>Make your presence felt across the platforms with scalable, engaging, and customized tailor-made apps that can meet your unmet needs.</li>
                                         <li>Hire ionic developers from iQuinceSoft with the trust, measurable outcomes, and high-end web and app store.</li>
@@ -76,8 +78,8 @@ class IonicDev extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Why Ionic ?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
+                                    <h3>Ionic Development Services</h3>
+                                    <p>Deliver consistent experiences across the channels with the help of a single codebase nad customizable design system.</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -260,7 +262,69 @@ class IonicDev extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why should I hire dedicated Ionic developers from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Your app must hold the proper codes and tech implementation to avoid failures and bugs. This coding standard comes with the skilled and seasoned developers that an IT expert likes iQuinceSoft offers.
+                                                Hire dedicated Ionic developers from iQuinceSoft to enjoy a seamless user experience and visually-appealing app.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is the process for hiring an Ionic developer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Share your business app requirements with us. Once we analyze your business needs, we allocate a seasoned programmer to you for a well-established IT setup.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I hire a developer for a project-based assignment?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. You can choose from the options of flexible pricing models.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Is ionic good for mobile app development?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                For mobile app development, ionic is considered one of the best frameworks. It is an open-source framework and can easily integrate with other programming languages.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why should I use Ionic for my app development?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Ionic is responsive, scalable, and intuitive. It can offer you the benefits of the next level. These benefits include the support of a large developer community, an easy-to-build cross-platform app, a developer-friendly framework, and native tool compatibility.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Will you share the CV of your Ionic Developer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We share the detailed resume of our selected ionic developer for hire.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

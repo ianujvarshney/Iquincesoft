@@ -18,6 +18,7 @@ import AwardFormsec from '../../container/AwardFormsec';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { TailSpin } from 'react-loader-spinner'
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class ZENDStack extends Component {
     constructor(props) {
@@ -58,10 +59,11 @@ class ZENDStack extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Looking for ZEND developers with expertise to build sophisticated yet simple web applications and systems?</strong><br /></h1>
+                                    <p>ZEND STACK</p>
+                                    <h1><strong>Scalable Architect, Fast Development and Optimized Costs.</strong><br /></h1>
                                     <ul>
-                                        <li>Hire the ZEND developers from the house of iQuinceSoft. We offer you job mapping talent skills to meet your development needs, wants, and demands.</li>
-                                        <li>We are skilled, experienced, and vetted talent, ensuring comfort, clear communication, and ease of working with our developers. Manage the best 1% of the ZEND developers as your remote team.</li>
+                                        <li>Hire the ZEND developers from the house of iQuinceSoft. We offer you project mapping on-demand skills to meet your development needs, wants, and demands.</li>
+                                        <li>We are skilled, experienced, and vetted team of talented ZEND developers. We ensure comfort, clear communication, and ease of working with our developers. Manage the best 1% of the ZEND developers as your remote team.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -74,8 +76,8 @@ class ZENDStack extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Why Choose Zend?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
+                                    <h3>Zend Development Services</h3>
+                                    <p>Zend offers the benefits of Extended Class, feel the Goodness of Object Orientation and standard and Guidelines.</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -255,7 +257,61 @@ class ZENDStack extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Should I hire Zend developers?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                For versatility and easy customization, hire Zend developers from iQuinceSoft. It is an open-source platform that is backed by a large number of programmers also.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Which are the industries we can serve with Zend developers?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Zend fits well to serve industries like travel, hospitality, shopping, media & entertainment, banking & finance, logistics and transportation, and education. You can develop and scale up web and mobile apps and systems with the help of Zend developers from iQuinceSoft.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How much does iQuinceSoft cost for a dedicated Zend developer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We offer three pricing models to start with. We are helping businesses with great flexibility and ease. iQuinceSoft offers project-based models, hourly models, and monthly engagement models.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I have a trial period?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We offer a 7-day trial period to all the customers.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you sign NDA?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. For the safety of the source code, IPR, copyright, and ownership of your project, we sign non-disclosure agreements.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
+
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

@@ -1075,7 +1075,7 @@ header .dropdown-menu li a {
   font-size: 32px;
   line-height: 1.3;
   margin: 0 0 32px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .form-box h6 {
   border-top: 2px solid #fff;
@@ -1530,7 +1530,7 @@ footer li {
 }
 .about-txt p {
   font-size: 17px;
-  line-height: 1.7;
+  line-height: 150%;
   margin: 0 0 30px;
   text-align: justify;
 }
@@ -1565,7 +1565,7 @@ footer li {
   padding: 190px 0 115px;
 }
 .service-banner-cat {
-  background: linear-gradient(90deg, #02007c 0%, #00ccff 130.86%);
+  /* background: #e1e1ff; */
   background-position: top center;
   background-size: cover;
   color: #fff;
@@ -1593,19 +1593,15 @@ footer li {
   letter-spacing: 1.5px;
   margin: 35px 0 25px;
 }
+.service-banner ul {
+  padding-left: 40px;
+}
 .service-banner li {
   font-size: 22px;
   letter-spacing: 1.5px;
-  padding: 12px 0 0 33px;
+  padding: 30px 0 0 0px;
   position: relative;
-}
-.service-banner li::before {
-  content: url(images/tick.png);
-  height: 17px;
-  left: 0;
-  position: absolute;
-  top: 13px;
-  width: 17px;
+  list-style: disc;
 }
 .service-banner a {
   background-color: #ff3400;
@@ -1634,6 +1630,20 @@ footer li {
   background-color: #f2f2f2;
   padding: 80px 0;
   text-align: center;
+}
+.serv-sec h2.serv-sec-h2 {
+  font-size: 40px;
+  margin: 40px;
+  /* text-decoration: underline; */
+}
+.serv-sec-1 {
+  background-color: #fff !important;
+}
+.serv-sec-2 {
+  background-color: #dfecf0d2;
+}
+.serv-sec-3 {
+  background-color: #fff !important;
 }
 .serv-sec .col-lg-4,
 .serv-sec .col-lg-6,
@@ -1826,6 +1836,12 @@ footer li {
   border: 1px solid var(--main-color);
   border-radius: 4px;
   margin: 0 0 13px;
+}
+.frequent-sec .accordion .accordion__item ul {
+  padding: 5px 43px !important;
+}
+.frequent-sec .accordion .accordion__item ul li {
+  list-style: circle;
 }
 .frequent-sec .accordion__button {
   background-color: transparent;
@@ -2613,15 +2629,18 @@ footer li {
   font-size: 20px;
   font-weight: normal;
   margin: 4px 0 0 50px;
+  transition: color 1s;
 }
 .cr-sec h4 a {
   color: black;
 }
-.cr-sec h5 {
-  font-size: 15px;
-  font-weight: 700;
-  margin: 13px 0 15px;
+.cr-sec h4:hover {
+  color: var(--main-color);
 }
+.cr-sec h5 span a:hover {
+  color: var(--main-color);
+}
+
 /* .cr-sec h5 span {
   background-color: var(--main-color);
   border-radius: 30px;
@@ -3051,17 +3070,13 @@ footer li {
 /********************Category pages Css here to start**************/
 
 .award-form-sec .row:nth-child(2) .col-lg-12 {
-  background: radial-gradient(
-    168.12% 518.77% at 112.28% -9.4%,
-    #00ccff 0%,
-    #00507c 100%
-  );
+  background: #443f3f;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 .award-form-sec2 .row:nth-child(1) .col-lg-12 {
-  background: #000;
+  background: #443f3f;
 }
 .form-sec {
   font-size: 13px;
@@ -3094,7 +3109,7 @@ footer li {
   width: 100%;
 }
 .form-sec button:hover {
-  background-color: var(--main-color);
+  background-color: black;
   color: #fff;
 }
 .award-form-sec2 img,
@@ -3358,8 +3373,8 @@ footer li {
   margin: 0 0 50px;
 }
 .build-box .build-part1 img {
-  max-width: 187px;
-  margin-right: 12px;
+  width: 100px;
+  margin: -7px 16px;
 }
 .build-box .build-part2 p {
   line-height: 1.7;
@@ -3430,7 +3445,7 @@ footer li {
   animation: fadein 0.35s ease-in;
 }
 .ideal-sec .ideal-part img {
-  width: 70%;
+  width: 100%;
 }
 .dedicate-sec ul li {
   vertical-align: top;
@@ -3573,6 +3588,27 @@ footer li {
   left: 0;
 }
 
+/* ***************************NextSection********************** */
+.Know_more {
+  height: 100vh;
+  width: 100%;
+  background: url("/src/images/NextSection-banner.jpg");
+}
+
+.banner-caption h1 {
+  font-size: 45px;
+  font-weight: 800;
+}
+.Know_more .item {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Know_more .desc {
+  margin: 10px 0;
+  font-size: 20px;
+}
 /*.................. Home-Page-Media .................. */
 @media (min-width: 320px) and (max-width: 767px) {
   .col-lg-1,
@@ -3739,6 +3775,7 @@ footer li {
     margin: 0 auto 30px;
     width: 150px;
   }
+
   .service-banner-cat h2 {
     font-size: 23px;
     margin-top: 28px;
@@ -4253,14 +4290,14 @@ footer li {
     text-align: center;
   }
   .service-banner {
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
       to right top,
       #a610b5,
       #5a66e2,
       #008eea,
       #00a8da,
       #6abcc7
-    );
+    ); */
     padding: 150px 0 100px;
     text-align: center;
   }
@@ -4321,6 +4358,7 @@ footer li {
   .serv-sec h4 {
     font-size: 19px;
   }
+
   .serv-sec h4 span {
     height: 32px;
     padding: 5px 0 0;

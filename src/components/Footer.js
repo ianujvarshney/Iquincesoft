@@ -49,7 +49,7 @@ class Footer extends Component {
 					<div className="row desk-footer">
 						<div className="col-lg-3 col-md-6">
 							<Link to="/"><img alt="img" src={logo1} /></Link>
-							<div><a href="https://www.facebook.com/iquincesoft"><FaFacebook /></a><Link href="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></Link><a href="https://twitter.com/iquincesoft"><FaTwitter /></a><a href="https://www.instagram.com/iquincesoft/"><FaInstagram /></a></div>
+							<div><Link to="https://www.facebook.com/iquincesoft"><FaFacebook /></Link><Link to="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></Link><Link to="https://twitter.com/iquincesoft"><FaTwitter /></Link><Link to="https://www.instagram.com/iquincesoft/"><FaInstagram /></Link></div>
 						</div>
 
 						<div className="col-lg-2 col-md-12">
@@ -103,7 +103,7 @@ class Footer extends Component {
 
 					<div className="row mob-footer">
 						<div className="col-lg-12 col-md-12">
-							<Link to="#"><FaFacebook /></Link><Link to="#"><FaLinkedin /></Link><Link to="#"><FaTwitter /></Link><Link to="#"><FaInstagram /></Link>
+							<Link to="https://www.facebook.com/iquincesoft"><FaFacebook /></Link><Link to="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></Link><Link to="https://twitter.com/iquincesoft"><FaTwitter /></Link><Link to="https://www.instagram.com/iquincesoft/"><FaInstagram /></Link>
 							<h4>Drop us a line: <Link to="mailto:info@iquincesoft.com">info@iquincesoft.com</Link></h4>
 							<h3>Quick Links</h3>
 							<ul>

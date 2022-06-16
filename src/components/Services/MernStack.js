@@ -22,7 +22,7 @@ import AwardFormsec from '../../container/AwardFormsec';
 
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
-
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class MernStack extends Component {
     constructor(props) {
@@ -64,11 +64,12 @@ class MernStack extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Scale your business and programming capabilities with the help of our professional developers and their mapping skills with the critical project needs and demands.</strong><br /></h1>
+                                    <p>MERNSTACK</p>
+                                    <h1><strong>Hire MERN Stack developers to Scalability, Peak Performance and Security.</strong><br /></h1>
                                     <ul>
                                         <li>Get scalable, fast, robust, user-friendly, and intuitive web applications and systems.</li>
-                                        <li>Our developers are well-versed with the MongoDB, Express JS, React JS, and Node JS frameworks with python programming to deliver what your project demands. </li>
-                                        <li>Hire our developers as you need their skills hourly, project, or monthly. </li>
+                                        <li>Our developers are well-versed with the MongoDB, Express JS, React JS, and Node JS frameworks with python programming to deliver what your project demands.</li>
+                                        <li>Hire our developers as you need their skills hourly, project, or monthly.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -268,7 +269,68 @@ class MernStack extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why should I use MERN for web applications?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                MERN is preferred for fast development processes, high-demand single-page applications, and robust, flexible, and scalable apps. For a seamless three-tier architecture pattern and end-to-end customization, use MERN for web applications.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                I am not a tech expert, can I manage the hired developers and coordinate with them well?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We keep our communication simple and easy to understand. For any technical gap, we make sure to deliver a sober message. We assign a product manager for this purpose.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you have dedicated MERN developers for hire?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We have a talent pool of skilled and seasoned full-stack MERN developers who can excel with your web app development. Our developers are full-stack with MERN, UI/UX, HTML5, Bootstrap, and CSS skills and can build what bridges the gap between the business goals and our web outcomes.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is the usual time you take to develop a MERN stack project?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Generally, a web project takes three to six weeks to complete. However, the time varies from project to project due to the varying demands of size, type, customization, and integration with features and functionality.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I screen and interview the candidate before hiring?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. You can conduct screening tests and interviews for developing your MERN web project.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is the average experience your MERN developers have?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We have a team of MERN stack developers with 3-5 years of work experience.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

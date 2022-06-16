@@ -59,9 +59,10 @@ class WordPress extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Hire a WordPress developer that suits your business with the talent pool of iQuinceSoft.</strong><br /></h1>
+                                    <p>WORDPRESS</p>
+                                    <h1><strong>Customized websites from plugins to theme development. We develop webistes that reveal your true spirits</strong><br /></h1>
                                     <ul>
-                                        <li>Hire the best-in-business WordPress developers with cutting-edge expertise and job-mapping skills to fit your business and projects.</li>
+                                        <li>Hire the best-in-business WordPress developers with cutting-edge expertise and skills to fit your business and projects.</li>
                                         <li>Customize, build and deploy new WordPress themes, Plugins, and flexible features that help you develop the ease and robust web app for sophisticated web systems.</li>
                                         <li>Hire dedicated offshore skilled WordPress Developers to outshine the competition. </li>
                                     </ul>
@@ -76,8 +77,8 @@ class WordPress extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Why Wordpress?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
+                                    <h3>Wordpress Solutions - Crafted to Perfection</h3>
+                                    <p>Attractive Designs, Eye-Popping Layouts and Engaging Websites that can generate more sales and work as a virtual salesperson</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -101,19 +102,19 @@ class WordPress extends Component {
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Secure</h4>
+                                        <h4>Secured Websites</h4>
                                         <p>A WordPress template offers numerous themes and plugins to avoid the malware, Cross-site scripting and DDoS attacks.</p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Customizable</h4>
+                                        <h4>Customizable Layouts</h4>
                                         <p>A developer can customize a WordPress website as per the need. Several additional functionalities are there to add with the help of plugins which are free to use.  </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Interface</h4>
+                                        <h4>User-Friendly Interface</h4>
                                         <p>WordPress comes with WYSIWYG (What You See Is What You Get) interface. This can be a perfect platform for non-tech savvy people to build on their portfolio sites and add content without help of costly developers. </p>
                                     </div>
 
@@ -140,7 +141,7 @@ class WordPress extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Responsive </h4>
+                                        <h4>Responsive Designs</h4>
                                         <p>WordPress offers highly customized responsive websites. Hence, it is gives good user experience by the use of plugins like WPTouch, Jetpack, and WordPress Mobile Pack. Mobile friendly websites are uncluttered and easily readable.</p>
                                     </div>
                                 </div>
@@ -148,7 +149,7 @@ class WordPress extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Secure</h4>
+                                        <h4>Secured Websites</h4>
                                         <p>A WordPress template offers numerous themes and plugins to avoid the malware, Cross-site scripting and DDoS attacks. </p>
                                     </div>
                                 </div>
@@ -156,7 +157,7 @@ class WordPress extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Customizable</h4>
+                                        <h4>Customizable Layouts</h4>
                                         <p>A developer can customize a WordPress website as per the need. Several additional functionalities are there to add with the help of plugins which are free to use.  </p>
                                     </div>
                                 </div>
@@ -164,7 +165,7 @@ class WordPress extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Interface</h4>
+                                        <h4>User-Friendly Interface</h4>
                                         <p>WordPress comes with WYSIWYG (What You See Is What You Get) interface. This can be a perfect platform for non-tech savvy people to build on their portfolio sites and add content without help of costly developers. </p>
                                     </div>
                                 </div>
@@ -211,7 +212,7 @@ class WordPress extends Component {
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg4} /> */}
-                                            <h4>E-Commerce Solutions</h4>
+                                            <h4>e-Commerce Solutions</h4>
                                             <p>Do you want to build impeccable and astonishing market stores at WordPress? We can help you with the one. Talk to our experts, specify the needs and demands, and enjoy the highly customized e-commerce store. </p>
                                         </div>
 

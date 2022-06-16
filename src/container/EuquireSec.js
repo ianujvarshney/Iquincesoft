@@ -32,37 +32,41 @@ class EuquireSec extends Component {
 	}
 	submitForm = e => {
 
-
-		let formData = new FormData()
-
-		formData.set("your-name", this.state.name)
-		formData.set("your-email", this.state.email)
-		formData.set("number", this.state.number)
-		formData.set("Companyname", this.state.Company)
-		formData.set("your-message", this.state.message)
-		formData.set("Image", this.state.image)
-		// formdata.append("Image", { uri: photo.uri, name: 'image.jpg', type: 'image/jpeg' })
-		axios.post('https://dev.iquincesoft.com/iqsandbox/wp-json/contact-form-7/v1/contact-forms/1675/feedback', formData, {
-			headers: {
-				"content-type": "multipart/form-data",
-			},
-		})
-			.then(res => {
-				res.data.status === "mail_sent"
-					? this.setState({
-						name: "",
-						email: "",
-						number: "",
-						Company: "",
-						message: "",
-						image: {},
-					})
-					: this.setState({ errorMessage: res.data.message }, () => {
-						setTimeout(() => {
-							this.setState({ errorMessage: "" })
-						}, 2000)
-					})
+		if (this.state.name === '' || this.state.email === '' || this.state.number === '' || this.state.Company === '' || this.state.message === '') {
+			alert("some field are missing filled it");
+		}
+		else {
+			let formData = new FormData()
+			formData.set("your-name", this.state.name)
+			formData.set("your-email", this.state.email)
+			formData.set("number", this.state.number)
+			formData.set("Companyname", this.state.Company)
+			formData.set("your-message", this.state.message)
+			formData.set("Image", this.state.image)
+			// formdata.append("Image", { uri: photo.uri, name: 'image.jpg', type: 'image/jpeg' })
+			axios.post('https://dev.iquincesoft.com/iqsandbox/wp-json/contact-form-7/v1/contact-forms/1675/feedback', formData, {
+				headers: {
+					"content-type": "multipart/form-data",
+				},
 			})
+				.then(res => {
+					res.data.status === "mail_sent"
+						? this.setState({
+							name: "",
+							email: "",
+							number: "",
+							Company: "",
+							message: "",
+							image: {},
+						})
+						: this.setState({ errorMessage: res.data.message }, () => {
+							setTimeout(() => {
+								this.setState({ errorMessage: "" })
+							}, 2000)
+						})
+				})
+			alert("thank you for submission");
+		}
 	}
 
 
@@ -79,7 +83,7 @@ class EuquireSec extends Component {
 									{euquireJson.length && euquireJson.map(euquireJsons => {
 										return (
 											<div key={euquireJsons.id}>
-												<h3>{euquireJsons.name}</h3>
+												<h3 dangerouslySetInnerHTML={{ __html: euquireJsons.name }}></h3>
 												<p dangerouslySetInnerHTML={{ __html: euquireJsons.content }}></p>
 											</div>
 										);

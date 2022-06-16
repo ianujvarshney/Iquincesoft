@@ -23,14 +23,14 @@ class BlogTabs extends Component {
         }
     }
     componentDidMount() {
-        Inspired.getInspired().then((Insights, err) => {
-            if (!err) {
-                this.setState({
-                    InsightsJson: Insights,
-                    Loading: false,
-                });
-            }
-        });
+        // Inspired.getInspired().then((Insights, err) => {
+        //     if (!err) {
+        //         this.setState({
+        //             InsightsJson: Insights,
+        //             Loading: false,
+        //         });
+        //     }
+        // });
         Inspired.getcate().then((Insights, err) => {
             if (!err) {
                 this.setState({
@@ -114,8 +114,8 @@ class BlogTabs extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-up">
-                                    <h1>Learn from our web development blog read by 1.2M tech leaders</h1>
-                                    <p><span>Get a bi-weekly email with <strong>the most popular stories</strong></span></p>
+                                    <h1>Let's share some chat, mate!!</h1>
+                                    <p><span>Get subscribed to some of the best stories in the world of technology.</span></p>
                                     <div className="in-box">
                                         <input type="search" className="box" name="" placeholder="Supercharge your brain" />
                                         <Link to={"#"}>Let's Learn</Link></div>
@@ -172,8 +172,6 @@ class BlogTabs extends Component {
                                             </InfiniteScroll>
 
                                         </TabPanel>
-
-
 
                                         <TabPanel>
                                             <h3>Any content 2</h3>

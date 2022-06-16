@@ -59,6 +59,7 @@ class DevOpsDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-5 col-md-12" data-aos="fade-up">
+                                    <p>DEVOPS</p>
                                     <h1><strong>DevOps Consulting Services</strong><br /></h1>
                                     <ul>
                                         <p>What is my benefit in it?</p>

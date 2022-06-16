@@ -17,6 +17,7 @@ import AwardFormsec from '../../container/AwardFormsec';
 import FAQ from '../../container/FAQ';
 import { TailSpin } from 'react-loader-spinner'
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class AngularDev extends Component {
     constructor(props) {
@@ -58,10 +59,11 @@ class AngularDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <p>ANGULAR</p>
                                     <h1><strong>Hire our skilled Angular developers to upscale your development capabilities </strong><br /></h1>
                                     <ul>
-                                        <li>We can help you take your project outcomes to the next level with the help of our skilled and seasoned angular developers – on an hourly, project, or full-time basis. </li>
-                                        <li>We ensure the results you always aim at with the vetted and skilled angular developers.  </li>
+                                        <li>We can help you take your project outcomes to the next level with the help of our skilled and seasoned angular developers – on an hourly, project, or full-time basis.</li>
+                                        <li>We ensure the results you always aim at with the vetted and skilled angular developers.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -75,7 +77,7 @@ class AngularDev extends Component {
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
                                     <h3>Why Choose Angular?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
+                                    <p>Component-based architecture, Consistent Code, Declarative UI and Google Support makes Angular the preferred choice of developers. </p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -280,7 +282,66 @@ class AngularDev extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why hire an Angular developer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Angular JS is the best framework for a customer-driven approach to building mobile and web apps. It helps in improving the design architecture, fast application development, and code reusability.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How do you select a proficient Angular developer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Consider the following things while hiring an Angular developer:
+                                                <ul>
+                                                    <li> High level of proficiency in AngularJS Framework.</li>
+                                                    <li> Expert in REST APIs.</li>
+                                                    <li> I can work with other frameworks as well.</li>
+                                                    <li> High level of proficiency in JavaScript.</li>
+                                                </ul>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why choose Angular for web development?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Angular is dynamic. Angular offers an agile development process that is highly efficient in saving time and cost. It also provides simple architecture, convenient testing, and parallel development to make it a preferred option.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Is Angular good enough to build a web app in?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. The Angular is based on JavaScript. Java executes according to the REST, which helps frame the high traffic apps and keeps all data encrypted and secure.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Are your Angular developers well-versed with all the Angular versions?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                The seasoned Angular developers can accomplish any task with versions 1.0.0 to 10.0.0.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

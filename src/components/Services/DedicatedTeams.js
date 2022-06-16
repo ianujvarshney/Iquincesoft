@@ -18,8 +18,21 @@ import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
 import icon2 from '../../images/vue-logo.svg';
+import android from '../../images/android.svg';
+import vue from '../../images/vuejs.svg';
+import angular from '../../images/angularicon.svg';
+import react from '../../images/react.svg';
 import cycle from '../../images/cycle-image.svg';
 import icon1 from '../../images/design-icon1.svg';
+import planDev from '../../images/OUTLINE.svg';
+import Frontend from '../../images/Front_End_Development.svg';
+import Backend from '../../images/backend_website.svg';
+import software from '../../images/Software.svg';
+import Graphic from '../../images/Graphic_Designing.svg';
+import Web_Dev from '../../images/Web_Development.svg';
+import Business from '../../images/Business.svg';
+import Artificial from '../../images/Artificial.svg';
+import Developer from '../../images/Developer.svg';
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 
@@ -70,6 +83,7 @@ class DedicatedTeams extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <p>DEDICATED DEVELOPMENT TEAM</p>
                                     <h1><strong>Dedicated Development Teams:</strong><br /></h1>
                                     <h4 className="service-h4">We offer you a platform to hire dedicated developers. Use their top-notch skills as per hourly or fixed cost projects. Manage them as your extended remote team. </h4>
                                     <ul>
@@ -197,7 +211,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-5 col-md-12">
                                     <div className="build-box">
                                         <div className="build-part1">
-                                            <img alt="img" src={icon2} />
+                                            <img alt="img" src={react} />
                                         </div>
                                         <div className="build-part2">
                                             <p>
@@ -212,7 +226,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-5 col-md-12">
                                     <div className="build-box">
                                         <div className="build-part1">
-                                            <img alt="img" src={icon2} />
+                                            <img alt="img" src={angular} />
                                         </div>
                                         <div className="build-part2">
                                             <p>
@@ -266,7 +280,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-5 col-md-12">
                                     <div className="build-box">
                                         <div className="build-part1">
-                                            <img alt="img" src={icon2} />
+                                            <img alt="img" src={android} />
                                         </div>
                                         <div className="build-part2">
                                             <p>
@@ -278,7 +292,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-5 col-md-12">
                                     <div className="build-box">
                                         <div className="build-part1">
-                                            <img alt="img" src={icon2} />
+                                            <img alt="img" src={vue} />
                                         </div>
                                         <div className="build-part2">
                                             <p>
@@ -325,7 +339,7 @@ class DedicatedTeams extends Component {
                                     <div className="row">
                                         <div className="col-lg-4 col-md-6">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={planDev} />
                                                 <h4>Hire Dedicated Developers</h4>
                                                 <p>Hire dedicated developers and use their expertise in the Front end, Back-end, UI/UX, QA, DevOps, Digital Marketing and much more.</p>
                                                 <Link className="design-btn" to={'/DedicatedDevelopmentTeams'}>Learn More</Link>
@@ -333,7 +347,7 @@ class DedicatedTeams extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-6">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={Frontend} />
                                                 <h4>Front-end Development</h4>
                                                 <p>Build interactive, modern and reliable user interfaces across all the business domains with us. We use modern tools and frameworks like React.js, Vue.js, and Angular, for designing and developing robust, fast, and engaging user-friendly interfaces.</p>
                                                 <Link className="design-btn" to="/HireReactDevelopers">Learn More</Link>
@@ -341,7 +355,7 @@ class DedicatedTeams extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-6">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={Backend} />
                                                 <h4>Backend Development</h4>
                                                 <p>From API integration to database migration to set up server-side technologies, a backend developer plays a vital role in getting your project.  </p>
                                                 <Link className="design-btn" to="/HireNodeDevelopers">Learn More</Link>
@@ -349,7 +363,7 @@ class DedicatedTeams extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-6">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={software} />
                                                 <h4>Software Development</h4>
                                                 <p>Meet your business needs with custom functionality and features. We offer custom software services that help you address your business needs. </p>
                                                 <Link className="design-btn" to="#">Learn More</Link>
@@ -357,7 +371,7 @@ class DedicatedTeams extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-6">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={Graphic} />
                                                 <h4>Custom Graphic Designs</h4>
                                                 <p>Let us know your design needs, and we’ll deliver that requirement. We recruit some of the best creative minds from the cream layer of the talent pools. We can help you differentiate your brand from the rest of the crowd and make it a top-ranked brand with no extra costs. </p>
                                                 <Link className="design-btn" to="/HireDesigners">Learn More</Link>
@@ -365,7 +379,7 @@ class DedicatedTeams extends Component {
                                         </div>
                                         <div className="col-lg-4 col-md-6">
                                             <div className="design-box">
-                                                <img alt="img" src={icon1} />
+                                                <img alt="img" src={Web_Dev} />
                                                 <h4>Web Development</h4>
                                                 <p>Get the benefit of state-of-the-art technologies and development practices to create custom web apps and systems for your business. We conceptualize and create apps from scratch that meet your business needs.’ now. You can put your information online at a place, but you can not override the power of the printed brochures.
                                                     iQuincesoft can deliver you all types of brochures in full color.  </p>
@@ -386,7 +400,7 @@ class DedicatedTeams extends Component {
                             <div className="row">
                                 <p className="process-heading-para">The Process we use to build your dedicated development team</p>
                                 <div className="col-lg-5 col-md-6">
-                                    <picture><img alt="img" src={icon1} /></picture>
+                                    <picture><img alt="img" src={Developer} /></picture>
                                 </div>
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-5 col-md-6">
@@ -407,12 +421,12 @@ class DedicatedTeams extends Component {
                                 </div>
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-5 col-md-6">
-                                    <picture><img alt="img" src={icon1} /></picture>
+                                    <picture><img alt="img" src={Business} /></picture>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-5 col-md-6">
-                                    <picture><img alt="img" src={icon1} /></picture>
+                                    <picture><img alt="img" src={Artificial} /></picture>
                                 </div>
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-5 col-md-6">
@@ -455,32 +469,6 @@ class DedicatedTeams extends Component {
                                         <li>
                                             <label><img alt="img" src={icon1} /> Efficient Delivery:</label>
                                             <p>We are a highly skilled and efficient team that leads the clients to forge long-term relations with us, from full-scale software development to quick customizations of pre-designed platforms.</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="col-lg-2"></div>
-                            </div>
-
-                            <div className="row">
-                                <div className="col-lg-2"></div>
-                                <div className="col-lg-8 col-md-12">
-                                    <ul>
-                                        <li>
-                                            <label><img alt="img" src={icon1} /> Quick Ramp-ups:</label>
-                                            <p>We can swiftly ramp up your development projects by implementing the business transformations significantly in the blink of an eye. We leverage our developers to complete the tasks with minimum time to market. </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="col-lg-2"></div>
-                            </div>
-
-                            <div className="row">
-                                <div className="col-lg-2"></div>
-                                <div className="col-lg-8 col-md-12">
-                                    <ul>
-                                        <li>
-                                            <label><img alt="img" src={icon1} /> Quick Ramp-ups:</label>
-                                            <p>We can swiftly ramp up your development projects by implementing the business transformations significantly in the blink of an eye. We leverage our developers to complete the tasks with minimum time to market. </p>
                                         </li>
                                     </ul>
                                 </div>

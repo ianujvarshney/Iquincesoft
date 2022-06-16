@@ -18,7 +18,7 @@ import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
-
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class ReactNative extends Component {
     constructor(props) {
@@ -63,10 +63,11 @@ class ReactNative extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Slash down your hiring cost by 75% by hiring dedicated offshore React Native developers with the trust and commitment to engage and scale complex and sophisticated apps.</strong><br /></h1>
+                                    <p>REACT NATIVE</p>
+                                    <h1><strong>Hire Skilled React Native Specialists for Fast Development, Cost-Effective Process, and Tested Solutions.</strong><br /></h1>
                                     <ul>
-                                        <li>Hybrid, Custom to Native, our dedicated developers can offer a sigh of relief by saving your time, cost, and efforts with seamless fitting in the development team to work on the projects.</li>
-                                        <li>Hire us to get scalable, secure, and high-end apps to conquer the competition.</li>
+                                        <li>Hire our skilled React Native developers for Hybrid, Custom or Native apps with saving your time, cost, and efforts with seamless fitting in the development team to work on the projects.</li>
+                                        <li>Hire us to get Scalable, Secure, and high-end apps to conquer the competition.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -79,8 +80,8 @@ class ReactNative extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Why React Native?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
+                                    <h3>React Native Development Services</h3>
+                                    <p>For Fast loading Apps that can streamline with the tight budget, less development complexities and responsive UI, iQuinceSoft trusts React Native</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -160,7 +161,7 @@ class ReactNative extends Component {
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
                                         <h4>Reusable Codes</h4>
-                                        <p>FReact Native is a platform where developers need not write specific code-specific apps. React Native developers can use the pre-loaded components as per the needs to write new apps. This ensures faster development. </p>
+                                        <p>React Native is a platform where developers need not write specific code-specific apps. React Native developers can use the pre-loaded components as per the needs to write new apps. This ensures faster development. </p>
                                     </div>
                                 </div>
 
@@ -280,7 +281,81 @@ class ReactNative extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Which are the pricing models you offer to hire a React Native developer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We offer three pricing models, which are as follows:
+                                                <ul>
+                                                    <li>The fixed cost pricing model</li>
+                                                    <li>The hourly cost pricing model</li>
+                                                    <li>Project-based pricing model.</li>
+                                                </ul>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How much time is required to develop a React Native app?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Time is not defined in developing an app based on React Native. It varies from app to app according to the size and model of the project. Usually, an app may take three to 6 weeks, depending upon the size, integration, feature, functionalities, and complexity of the app project.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I supervise the app development process?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We keep you in the loop during the development process, plus you can take timely insights from the developer about the development process and communicate at your convenience too.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do I own the app you develop?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We ensure you complete ownership of the project. We provide you with the copyright, NDA, Intellectual Property Rights, and Source Code.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What if I don't like the work of your developer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                In the entire course of our client interaction and service deliveries across the years, this has never happened. Yet, if you don't like anything about our developer's skills and approach, we will replace the developer with another one.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What if I want to change the developer in the mid of the development process?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                In the entire course of our client interaction and service deliveries across the years, this has never happened. Yet, if you don't like anything about our developer's skills and approach, we will replace the developer with another one.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you sign NDAs?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                In the entire course of our client interaction and service deliveries across the years, this has never happened. Yet, if you don't like anything about our developer's skills and approach, we will replace the developer with another one.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

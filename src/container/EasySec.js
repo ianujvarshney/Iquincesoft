@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import FormPopup from '../container/FormPopup';
 import { HashLink as Link } from 'react-router-hash-link';
 
-import easy from '../images/easy-icon.png';
-import easy1 from '../images/easy-icon1.png';
+import easy from '../images/easy-icon.svg';
+import easy1 from '../images/easy-icon1.svg';
 
 class EasySec extends Component {
 	render() {

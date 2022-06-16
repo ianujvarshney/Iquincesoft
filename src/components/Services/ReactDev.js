@@ -59,9 +59,10 @@ class ReactDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong> Hire react developers for peak performance and clean code</strong><br /></h1>
+                                    <p>REACT</p>
+                                    <h1><strong> Hire React developers for peak performance and clean code</strong><br /></h1>
                                     <ul>
-                                        <li>Hybrid, Custom to Native, our dedicated developers can offer a sigh of relief by saving your time, cost, and efforts with seamless fitting in the development team to work on the projects.</li>
+                                        <li>Hire dedicated React.JS developers can save your time, cost, and efforts with seamless fitting in the development team to work on the projects.</li>
                                         <li>Leverage the skills and expertise of our vetted react JS developers to scale and automate your business process with fast, scalable and vertically-integrated options.</li>
                                     </ul>
                                 </div>

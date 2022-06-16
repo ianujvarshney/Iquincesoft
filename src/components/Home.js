@@ -10,23 +10,22 @@ import EuquireSec from '../container/EuquireSec';
 import AwardSec from '../container/AwardSec';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Main } from '../json/Main';
-
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 
 import whyVd from '../images/why-vd.jpg';
 
-import img1 from '../images/serv-icon.png';
-import img2 from '../images/serv-icon1.png';
-import img3 from '../images/serv-icon2.png';
-import img4 from '../images/serv-icon3.png';
+import img1 from '../images/serv-icon1.svg';
+import img2 from '../images/serv-icon2.svg';
+import img3 from '../images/serv-icon3.svg';
+import img4 from '../images/serv-icon4.svg';
 
 import imgs1 from '../images/tech-icon.png';
-import imgs2 from '../images/tech-icon1.png';
-import imgs3 from '../images/tech-icon2.png';
-import imgs4 from '../images/tech-icon3.png';
-import imgs5 from '../images/tech-icon4.png';
-import imgs6 from '../images/tech-icon5.png';
+import imgs2 from '../images/tech-icon1.svg';
+import imgs3 from '../images/tech-icon2.svg';
+import imgs4 from '../images/tech-icon3.svg';
+import imgs5 from '../images/tech-icon4.svg';
+import imgs6 from '../images/tech-icon5.svg';
 
 import star from '../images/star.png';
 import banimg from '../images/ban-img.png';
@@ -231,18 +230,12 @@ class Home extends Component {
 
 						<div className="service-sec" data-aos="fade-down">
 							<div className="container">
-
-								{serviceJson && serviceJson.map(ServicejsonS => {
-									return (
-										ServicejsonS.content === '' ? null :
-											<div className="row">
-												<div className="col-lg-2"></div>
-												<div className="col-lg-8 col-md-12">
-													<h3 dangerouslySetInnerHTML={{ __html: ServicejsonS.content }}></h3>
-												</div>
-											</div>
-									);
-								})}
+								<div className="row">
+									<div className="col-lg-2"></div>
+									<div className="col-lg-8 col-md-12">
+										<h3>Improve your business, scale your development and design capabilities with the help of our dedicated custom teams.</h3>
+									</div>
+								</div>
 
 								<div className="row">
 									<div className="col-lg-1"></div>
@@ -250,7 +243,7 @@ class Home extends Component {
 										<OwlCarousel loop options={service}>
 											<div className="serv-box">
 												<a href="/Web_Development">
-													<img alt="img" src={img1} />
+													<img alt="img" src={img4} />
 													<h4>Web</h4>
 													<div className="arrow-icon"><FaArrowRight /></div>
 												</a>
@@ -266,7 +259,7 @@ class Home extends Component {
 
 											<div className="serv-box">
 												<a href="/DevOps">
-													<img alt="img" src={img3} />
+													<img alt="img" src={img1} />
 													<h4>Dev Ops</h4>
 													<div className="arrow-icon"><FaArrowRight /></div>
 												</a>
@@ -274,7 +267,7 @@ class Home extends Component {
 
 											<div className="serv-box">
 												<a href="/CloudDevelopment">
-													<img alt="img" src={img4} />
+													<img alt="img" src={img3} />
 													<h4>Cloud Development</h4>
 													<div className="arrow-icon"><FaArrowRight /></div>
 												</a>
@@ -324,7 +317,7 @@ class Home extends Component {
 											</div>
 
 											<div className="tech-box">
-												<Link to="#">
+												<Link to="/HirePHPDevelopers">
 													<div className="tech-dot"></div>
 													<img alt="img" src={imgs3} />
 													<h4>Server-Side</h4>
@@ -343,7 +336,7 @@ class Home extends Component {
 											</div>
 
 											<div className="tech-box">
-												<Link to="#">
+												<Link to="/HireWordpressDevelopers">
 													<div className="tech-dot"></div>
 													<img alt="img" src={imgs1} />
 													<h4>CMS</h4>
@@ -399,7 +392,7 @@ class Home extends Component {
 											return (
 												(index === 0) ?
 													<>
-														<h3>Why Choose<span>iQuinceSOFT?</span></h3>
+														<h3>Why Choose <span>iQuinceSOFT?</span></h3>
 														<p key={index} dangerouslySetInnerHTML={{ __html: Choosejson2S.content }}></p>
 														<div key={index} className="tech-box dd">
 															<div className="tech-dot"></div>
@@ -460,7 +453,7 @@ class Home extends Component {
 												<div key={index}>
 													<h3>{careerJsons.name}</h3>
 													<p dangerouslySetInnerHTML={{ __html: careerJsons.content }}></p>
-													<Link to={'/career'}><img alt="img" src={arrow3} />search and apply</Link>
+													<Link to={'/careers'}><img alt="img" src={arrow3} />search and apply</Link>
 												</div>
 											);
 										})}

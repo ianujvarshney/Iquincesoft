@@ -18,6 +18,7 @@ import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 
 class Meanstack extends Component {
@@ -60,7 +61,8 @@ class Meanstack extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Do you wish to hire MEAN developers?</strong><br /></h1>
+                                    <p>MEAN STACK</p>
+                                    <h1><strong>Hire skilled MEAN Stack developers for Quality Codes, Performing Apps and Systems, Optimized enterprise solutions. </strong><br /></h1>
                                     <ul>
                                         <li>We are a team of experts in MongoDB, Express JS, Angular, and Node JS that can serve your project needs with the optimal skillsets that match the project needs and offer you scalable, secure, and user-friendly web applications. </li>
                                         <li>Hire our MEAN developers to take your capabilities and business to the next level and manage the hired talents as your extended remote team.</li>
@@ -76,8 +78,8 @@ class Meanstack extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Why MEAN Stack?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
+                                    <h3>MEAN Stack Development Services</h3>
+                                    <p>MEAN STACK means Fast and Robust Web Applications</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -249,8 +251,52 @@ class Meanstack extends Component {
                     <WebSec />
 
                     <WorkSec />
-
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you have experienced MEAN stack developers at iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We have MEAN stack developers with an average of 7+ years of experience. Our MEAN stack experts have built numerous MEAN stack web applications that are highly scalable, intuitive, and robust.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you offer a flexible pricing model to choose from?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Once we assess the project needs and demands, we choose the most appropriate developers that suit your project needs. You can again conduct screening tests and interviews at this stage to find their suitability. Once you are through with this stage, we will sign the legal formalities and allow you access to the developer to start working together.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                What is the estimated cost of building a web app with your MEAN stack developer?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                It depends on size, type, complexities, features, and functionalities.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you sign NDAs?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes.We shield the source code and IPR with the project's trademark and other confidential data by signing a non-disclosure agreement with the clients.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

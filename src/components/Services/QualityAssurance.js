@@ -60,6 +60,7 @@ class QualityAssurance extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <p>QUALITY ASSURANCE</p>
                                     <h1><strong>Testing & QA </strong><br /></h1>
                                     <ul>
                                         <p>What is my benefit in it?</p>

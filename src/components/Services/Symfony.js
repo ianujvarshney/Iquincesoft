@@ -18,6 +18,8 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 import { TailSpin } from 'react-loader-spinner'
 import AwardFormsec from '../../container/AwardFormsec';
 import Partner from '../../container/Partner';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
+
 
 class Symfony extends Component {
     constructor(props) {
@@ -57,6 +59,7 @@ class Symfony extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <p>SYMFONY</p>
                                     <h1><strong>Hire Symfony developers for clean codes, and secure web apps</strong><br /></h1>
                                     <ul>
                                         <li>With the expertise of our vetted talent pool of developers, we ensure that you get the best from the top 1% of a country of more than 1 billion people.</li>
@@ -282,7 +285,68 @@ class Symfony extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Can I hire dedicated Symfony developers of my choice?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. iQuinceSoft can get you to screen, interview, and hire a dedicated, skilled developer that can ensure you meet the project requirements with satisfaction.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why should I prefer Symfony over the other web development frameworks?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Supported by a large community of developers, Symfony is an open-source framework that can build dynamic and sophisticated web apps. It has the tools to build modern templates, web apps, and tests and offers excellent dependency management.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why should I hire dedicated Symfony developers from iQuinceSoft?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                For the iQuinceSoft advantage that enables you to:
+                                                <ul>
+                                                    <li>Complete control over the process</li>
+                                                    <li>Quality assurance and minimal risks involved</li>
+                                                    <li>Dedicated project manager to manage the project and team with no extra cost.</li>
+                                                    <li>Seamless integration of the developer as your extended team</li>
+                                                    <li>Reliable and professional developers.</li>
+                                                </ul>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you sign NDAs?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We are committed to your confidentiality with the work quality. We ensure your details remain confidential forever.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How do you check the authenticity of an agency?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Check for the client testimonials on the third-party firms like clutch and goodfirms. See what people write about them on the google reviews. Scroll their social media feeds to check the authenticity and quality of work of any agency.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>

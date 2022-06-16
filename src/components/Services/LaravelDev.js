@@ -59,9 +59,10 @@ class LaravelDev extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
+                                    <p>LARAVEL</p>
                                     <h1><strong>Hire Laravel developers for swift delivery, and optimum business solutions </strong><br /></h1>
                                     <ul>
-                                        <li>Get the maximum out of this talent pool to ensure scalable and secure web apps and systems.</li>
+                                        <li>Get the tangible outcomes with the help opf our skilled developers to ensure scalable and secure web apps and systems.</li>
                                         <li>Hire Laravel developers to ensure you high growth systems and increase the capabilities.</li>
                                     </ul>
                                 </div>
@@ -76,7 +77,7 @@ class LaravelDev extends Component {
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
                                     <h3>Why Laravel?</h3>
-                                    <p>Laravel is adding flavor to the digital domain. We enlist a few reasons to clarify the benefits of using Laravel. </p>
+                                    <p>Laravel scores over other frameworks because of the advanced features that facilitates swift development. We enlist a few reasons to clarify the benefits of using Laravel. </p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -183,7 +184,7 @@ class LaravelDev extends Component {
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg} /> */}
                                             <h4>Laravel App Development</h4>
-                                            <p>Think of Laravel applications that fit your processes seamlessly. Think of applications that generate scalable output outcomes for your organizations. We help you design, build and manage that kind of application.  </p>
+                                            <p>Laravel applications can fit your processes seamlessly. Laravel applications can generate scalable output outcomes for your organizations. We help you design, build and manage that kind of application.  </p>
                                         </div>
 
                                         <div className="cult-box">

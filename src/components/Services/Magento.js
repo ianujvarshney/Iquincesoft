@@ -61,7 +61,9 @@ class Magento extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <h1><strong>Are you looking for customized, tailor-made Magento development services?</strong><br /></h1>
+                                    <p>MAGENTO</p>
+
+                                    <h1><strong>Scale your sales in the over-crowded market space with our vetted Magento developers.  </strong><br /></h1>
                                     <ul>
                                         <li>Hire our dedicated offshore Magento developers who can deliver you a store website that complies with your day-to-day business practices.</li>
                                         <li>iQuinceSoft is renowned for the trust and value addition to the teams we work with. Sign up for seven day free trial before welcoming us on board.</li>
@@ -78,8 +80,8 @@ class Magento extends Component {
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
                                     <h3>Why Magento?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
-                                    <p>We encourage, never force!</p>
+                                    <p>Easy integration of 3rd party extensions, Applications and Plug-ins to scale your e-Com store. Optimize the store with our expert Magento Development Services.</p>
+
                                 </div>
 
                                 <OwlCarousel options={culture}>

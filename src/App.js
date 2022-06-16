@@ -11,10 +11,11 @@ import CaseStudy from './components/CaseStudy';
 import CaseStudyDescription from './components/CaseStudyDescription';
 import Blog from './components/Blog';
 import ContactUs from './components/ContactUs';
-import Career from './components/Career';
+import Careers from './components/Careers';
 import JobOffer from './components/JobOffer';
 import JobDetail from './components/JobDetail';
 import PostPage from './components/PostPage';
+import NextSection from './components/NextSection';
 
 import Web_Development from './components/Services/WebDev';
 import Mobile_Developement from './components/Services/MobileDev';
@@ -64,6 +65,7 @@ class App extends Component {
 				<Switch>
 					<Route exact path='/' component={Home} />
 					<Route exact path='/Jobform' component={Jobform} />
+					<Route exact path='/NextSection' component={NextSection} />
 					<Route exact path='/about' component={About} />
 					<Route exact path='/service' component={Service} />
 					<Route exact path='/serviceDescription' component={ServiceDescription} />
@@ -71,7 +73,7 @@ class App extends Component {
 					<Route exact path='/caseStudyDescription' component={CaseStudyDescription} />
 					<Route exact path='/blog' component={Blog} />
 					<Route exact path='/contactUs' component={ContactUs} />
-					<Route exact path='/career' component={Career} />
+					<Route exact path='/careers' component={Careers} />
 					<Route exact path='/jobOffer' component={JobOffer} />
 					<Route exact path='/jobDetail' component={JobDetail} />
 					<Route exact path='/PostPage' component={PostPage} />
