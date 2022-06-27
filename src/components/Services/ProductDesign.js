@@ -61,15 +61,9 @@ class ProductDesign extends Component {
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
                                     <p>PRODUCT DESIGN</p>
-                                    <h1><strong>Product Design Services</strong><br /></h1>
+                                    <h1><strong>We reshape ideas into tangible solutions as products.</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional Product Designers. </li>
+                                        <li>We get into every minute detail of your ideation and make it a successful product that earns you profits and fame. Our top skilled professionals brainstorm to fetch you the ultimate product design, get it in the market, and scale it iteratively.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

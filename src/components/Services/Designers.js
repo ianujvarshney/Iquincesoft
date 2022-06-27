@@ -14,12 +14,28 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
-import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
-import icon1 from '../../images/design-icon1.svg';
 import WebDesign from '../../images/WebDesign.svg';
+import Analysis from '../../images/Analysis.png';
+import Developer from '../../images/Developer.png';
+import Agency from '../../images/Agency.png';
+import Startup from '../../images/Startup.png';
+import Marketing from '../../images/Marketing.png';
+import Quality from '../../images/Quality.svg';
+import Efficiency from '../../images/Efficiency.svg';
+import Building from '../../images/Building.svg';
+import Perception from '../../images/Perception.svg';
+import Promise1 from '../../images/Promise1.svg';
+import creativity from '../../images/creativity.svg';
+import increase from '../../images/Increase.svg';
+import Team from '../../images/Team.svg';
+import Revenue from '../../images/Revenue.svg';
+import Trust from '../../images/Trust.svg';
+import Promise from '../../images/Promise.svg';
+import bulb from '../../images/bulb.png';
+import Maintenance from '../../images/Maintenance.png';
 import SocialAds1 from '../../images/Hamendra.svg';
 import Brochure from '../../images/Brochure.svg';
 import UiUx from '../../images/UiUx.svg';
@@ -106,15 +122,15 @@ class Designers extends Component {
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-4 col-md-12">
                                     <ul>
-                                        <li><img alt="img" src={icon1} /> <span>Work with some of the best creative minds in the industry</span></li>
-                                        <li><img alt="img" src={icon1} /> <span>Build your designer team and clear your creative bottlenecks.</span></li>
-                                        <li><img alt="img" src={icon1} /> <span>Increase your productivity.</span></li>
+                                        <li><img alt="img" src={Promise1} /> <span>Work with some of the best creative minds in the industry</span></li>
+                                        <li><img alt="img" src={creativity} /> <span>Build your designer team and clear your creative bottlenecks.</span></li>
+                                        <li><img alt="img" src={Team} /> <span>Increase your productivity.</span></li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-4 col-md-12">
                                     <ul>
-                                        <li><img alt="img" src={icon1} /> <span>Hire dedicated designers and use their skills to benefit your brand directly.</span></li>
-                                        <li><img alt="img" src={icon1} /> <span>Higher revenues by a significant margin.</span></li>
+                                        <li><img alt="img" src={Revenue} /> <span>Hire dedicated designers and use their skills to benefit your brand directly.</span></li>
+                                        <li><img alt="img" src={increase} /> <span>Higher revenues by a significant margin.</span></li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-1">
@@ -290,7 +306,7 @@ class Designers extends Component {
                                 <div className="col-lg-10 col-md-12">
                                     <div className="whois-box">
                                         <div className="whois-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Agency} />
                                         </div>
                                         <div className="whois-part2">
                                             <h3>For Agencies</h3>
@@ -310,7 +326,7 @@ class Designers extends Component {
                                 <div className="col-lg-10 col-md-12">
                                     <div className="whois-box">
                                         <div className="whois-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Startup} />
                                         </div>
                                         <div className="whois-part2">
                                             <h3>For small businesses</h3>
@@ -330,7 +346,7 @@ class Designers extends Component {
                                 <div className="col-lg-10 col-md-12">
                                     <div className="whois-box">
                                         <div className="whois-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Marketing} />
                                         </div>
                                         <div className="whois-part2">
                                             <h3>For Marketing Teams</h3>
@@ -361,7 +377,7 @@ class Designers extends Component {
                                 <OwlCarousel options={hires}>
                                     <div className="hire-owl">
                                         <div className="hire-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Quality} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>Unmatched Quality</h2>
@@ -370,42 +386,49 @@ class Designers extends Component {
                                         </div>
                                     </div> <div className="hire-owl">
                                         <div className="hire-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Efficiency} />
                                         </div>
                                         <div className="hire-part2">
-                                            <h2>Unmatched Quality</h2>
-                                            <p>Graphic design is the first point of contact between your brand and your prospective customer. If the graphic is not up to the mark, the prospect will never convert to the customer list, and the entire impression about the company will vanish.
-                                                Team iQuinceSoft will offer amazing designs full of information and visually-appealing layouts that can help you sell more.</p>
+                                            <h2>Increased Efficiency</h2>
+                                            <p>iQuinceSoft ensures you better efficiency with the design services. We ensure you get timely designs that complement your campaigns and help you sell more.</p>
                                         </div>
                                     </div>
                                     <div className="hire-owl">
                                         <div className="hire-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Building} />
                                         </div>
                                         <div className="hire-part2">
-                                            <h2>Unmatched Quality</h2>
-                                            <p>Graphic design is the first point of contact between your brand and your prospective customer. If the graphic is not up to the mark, the prospect will never convert to the customer list, and the entire impression about the company will vanish.
-                                                Team iQuinceSoft will offer amazing designs full of information and visually-appealing layouts that can help you sell more.</p>
+                                            <h2>Image Building</h2>
+                                            <p>The first thing that comes to the customer’s mind is the design. Your design speaks on your behalf. Your design reflects your professionalism, quality of service and sincerity. Your design should reflect the same. Therefore, we offer you quality design services that are competitive, customized, and help you build the image you want.</p>
                                         </div>
                                     </div>
                                     <div className="hire-owl">
                                         <div className="hire-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Perception} />
                                         </div>
                                         <div className="hire-part2">
-                                            <h2>Unmatched Quality</h2>
-                                            <p>Graphic design is the first point of contact between your brand and your prospective customer. If the graphic is not up to the mark, the prospect will never convert to the customer list, and the entire impression about the company will vanish.
-                                                Team iQuinceSoft will offer amazing designs full of information and visually-appealing layouts that can help you sell more.</p>
+                                            <h2>Images last long: Use the best ones</h2>
+                                            <p>The image of your brand is directly proportional to the business. Once you have made an image, your customer will keep it. With the help of amazing designs and content by iQuinceSoft, you can build a rock-solid image of professionalism and quality service provider. Thus, they may weigh you over the competitor, and you may earn a good market share.</p>
                                         </div>
                                     </div>
                                     <div className="hire-owl">
                                         <div className="hire-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Trust} />
                                         </div>
                                         <div className="hire-part2">
-                                            <h2>Unmatched Quality</h2>
-                                            <p>Graphic design is the first point of contact between your brand and your prospective customer. If the graphic is not up to the mark, the prospect will never convert to the customer list, and the entire impression about the company will vanish.
-                                                Team iQuinceSoft will offer amazing designs full of information and visually-appealing layouts that can help you sell more.</p>
+                                            <h2>We help you gain Trust.</h2>
+                                            <p>When the customer starts identifying your brand with your visuals, a bond builds between the brand and the customer. We help you build those long-lasting, and amazing visuals that may be identified by the customer and a bond is established between your business and your customer.</p>
+                                        </div>
+                                    </div>
+                                    <div className="hire-owl">
+                                        <div className="hire-part1">
+                                            <img alt="img" src={Promise} />
+                                        </div>
+                                        <div className="hire-part2">
+                                            <h2>The Promise of Quality</h2>
+                                            <p>Your graphic design is your prospects’ first introduction to your brand.
+                                                If you have low-quality, badly-executed design, your prospects will pick up on that—and they won’t become your customers. But by having your design developed by our professionals,
+                                                you’ll assure your customers that your brand takes matters of quality seriously.</p>
                                         </div>
                                     </div>
                                 </OwlCarousel>
@@ -413,7 +436,7 @@ class Designers extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Quality} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>Unmatched Quality</h2>
@@ -425,7 +448,7 @@ class Designers extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Efficiency} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>Increased Efficiency</h2>
@@ -440,7 +463,7 @@ class Designers extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Building} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>Image Building</h2>
@@ -451,10 +474,10 @@ class Designers extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Perception} />
                                         </div>
                                         <div className="hire-part2">
-                                            <h2>Images last long: Use the best ones:</h2>
+                                            <h2>Images last long: Use the best ones</h2>
                                             <p>The image of your brand is directly proportional to the business. Once you have made an image, your customer will keep it. With the help of amazing designs and content by iQuinceSoft, you can build a rock-solid image of professionalism and quality service provider. Thus, they may weigh you over the competitor, and you may earn a good market share.</p>
                                         </div>
                                     </div>
@@ -465,7 +488,7 @@ class Designers extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Trust} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>We help you gain Trust.</h2>
@@ -476,7 +499,7 @@ class Designers extends Component {
                                 <div className="col-lg-5 col-md-6">
                                     <div className="hire-box">
                                         <div className="hire-part1">
-                                            <img alt="img" src={icon1} />
+                                            <img alt="img" src={Promise} />
                                         </div>
                                         <div className="hire-part2">
                                             <h2>The Promise of Quality</h2>
@@ -503,7 +526,7 @@ class Designers extends Component {
                             </div>
                             <div className="row">
                                 <div className="col-lg-5 col-md-6">
-                                    <picture><img alt="img" src={WebDesign} /></picture>
+                                    <picture><img alt="img" src={Analysis} /></picture>
                                 </div>
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-5 col-md-6">
@@ -524,12 +547,12 @@ class Designers extends Component {
                                 </div>
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-5 col-md-6">
-                                    <picture><img alt="img" src={icon1} /></picture>
+                                    <picture><img alt="img" src={Developer} /></picture>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-lg-5 col-md-6">
-                                    <picture><img alt="img" src={icon1} /></picture>
+                                    <picture><img alt="img" src={bulb} /></picture>
                                 </div>
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-5 col-md-6">
@@ -550,7 +573,7 @@ class Designers extends Component {
                                 </div>
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-5 col-md-6">
-                                    <picture><img alt="img" src={icon1} /></picture>
+                                    <picture><img alt="img" src={Maintenance} /></picture>
                                 </div>
                             </div>
                         </div>

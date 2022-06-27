@@ -17,13 +17,11 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
-import icon2 from '../../images/vue-logo.svg';
 import android from '../../images/android.svg';
 import vue from '../../images/vuejs.svg';
 import angular from '../../images/angularicon.svg';
 import react from '../../images/react.svg';
 import cycle from '../../images/cycle-image.svg';
-import icon1 from '../../images/design-icon1.svg';
 import planDev from '../../images/OUTLINE.svg';
 import Frontend from '../../images/Front_End_Development.svg';
 import Backend from '../../images/backend_website.svg';
@@ -33,6 +31,23 @@ import Web_Dev from '../../images/Web_Development.svg';
 import Business from '../../images/Business.svg';
 import Artificial from '../../images/Artificial.svg';
 import Developer from '../../images/Developer.svg';
+import Promise1 from '../../images/Promise1.svg';
+import creativity from '../../images/creativity.svg';
+import increase from '../../images/Increase.svg';
+import Team from '../../images/Team.svg';
+import Revenue from '../../images/Revenue.svg';
+import php3 from '../../images/php3.svg';
+import node3 from '../../images/node3.svg';
+import magento2 from '../../images/magento2.svg';
+import Devops from '../../images/Devops.svg';
+import laravel from '../../images/laravel.svg';
+import wordpress from '../../images/wordpress.svg';
+import Assurance from '../../images/Assurance.svg';
+import codeigniter from '../../images/codeigniter.svg';
+import Diverse from '../../images/Diverse.svg';
+import efficiency from '../../images/efficiency.svg';
+import Increase2 from '../../images/Increase2.svg';
+import Cost from '../../images/Cost.svg';
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 
@@ -83,11 +98,9 @@ class DedicatedTeams extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <p>DEDICATED DEVELOPMENT TEAM</p>
                                     <h1><strong>Dedicated Development Teams:</strong><br /></h1>
                                     <h4 className="service-h4">We offer you a platform to hire dedicated developers. Use their top-notch skills as per hourly or fixed cost projects. Manage them as your extended remote team. </h4>
                                     <ul>
-                                        <p>iQuinceSoft offers you to:</p>
                                         <li>Hire development developers with a hands-on experience like your own. </li>
                                         <li>Slash down the time to market. </li>
                                         <li>Keep control over the projects, milestones and deliverables. </li>
@@ -100,27 +113,27 @@ class DedicatedTeams extends Component {
                         </div>
                     </div>
 
-                    <div className="culture-sec cr-sec cr-sec-2">
+                    <div className="culture-sec cr-sec cr-sec-2 dd">
                         <div className="container">
                             <div className="row ">
-                                <div className="col-lg-2"></div>
-                                <div className="col-lg-8 col-md-12" data-aos="fade-right">
+                                <div className="col-lg-1"></div>
+                                <div className="col-lg-10 col-md-12" data-aos="fade-right">
                                     <h2>Hire Web and Graphic designers and use their skills to enhance your business revenue and branding purposes. Get reduced costs and enhanced business revenues.</h2>
                                 </div>
                             </div>
                             <div className="row mid-border">
                                 <div className="col-lg-2"></div>
-                                <div className="col-lg-4 col-md-6">
+                                <div className="col-lg-4 col-md-12">
                                     <ul>
-                                        <li><img alt="img" src={icon1} /> <span>Work with some of the best creative minds in the industry</span></li>
-                                        <li><img alt="img" src={icon1} /> <span>Build your designer team and clear your creative bottlenecks.</span></li>
-                                        <li><img alt="img" src={icon1} /> <span>Increase your productivity.</span></li>
+                                        <li><img alt="img" src={Promise1} /> <span>Work with some of the best creative minds in the industry</span></li>
+                                        <li><img alt="img" src={creativity} /> <span>Build your designer team and clear your creative bottlenecks.</span></li>
+                                        <li><img alt="img" src={Team} /> <span>Increase your productivity.</span></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 col-md-6">
+                                <div className="col-lg-4 col-md-12">
                                     <ul>
-                                        <li><img alt="img" src={icon1} /> <span>Hire dedicated designers and use their skills to benefit your brand directly.</span></li>
-                                        <li><img alt="img" src={icon1} /> <span>Higher revenues by a significant margin.</span></li>
+                                        <li><img alt="img" src={Revenue} /> <span>Hire dedicated designers and use their skills to benefit your brand directly.</span></li>
+                                        <li><img alt="img" src={increase} /> <span>Higher revenues by a significant margin.</span></li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-1">
@@ -128,7 +141,7 @@ class DedicatedTeams extends Component {
                             </div>
                         </div>
                         <FormPopup />
-                        <h5>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></h5>
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
                     </div>
 
                     <div className="build-sec">
@@ -145,7 +158,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-5 col-md-12">
                                     <div className="build-box">
                                         <div className="build-part1">
-                                            <img alt="img" src={icon2} />
+                                            <img alt="img" src={php3} />
                                         </div>
                                         <div className="build-part2">
                                             <p>
@@ -157,7 +170,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-5 col-md-12">
                                     <div className="build-box">
                                         <div className="build-part1">
-                                            <img alt="img" src={icon2} />
+                                            <img alt="img" src={codeigniter} />
                                         </div>
                                         <div className="build-part2">
                                             <p>
@@ -172,7 +185,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-5 col-md-12">
                                     <div className="build-box">
                                         <div className="build-part1">
-                                            <img alt="img" src={icon2} />
+                                            <img alt="img" src={node3} />
                                         </div>
                                         <div className="build-part2">
                                             <p>
@@ -184,7 +197,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-5 col-md-12">
                                     <div className="build-box">
                                         <div className="build-part1">
-                                            <img alt="img" src={icon2} />
+                                            <img alt="img" src={laravel} />
                                         </div>
                                         <div className="build-part2">
                                             <p>
@@ -199,7 +212,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-5 col-md-12">
                                     <div className="build-box">
                                         <div className="build-part1">
-                                            <img alt="img" src={icon2} />
+                                            <img alt="img" src={magento2} />
                                         </div>
                                         <div className="build-part2">
                                             <p>
@@ -238,7 +251,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-5 col-md-12">
                                     <div className="build-box">
                                         <div className="build-part1">
-                                            <img alt="img" src={icon2} />
+                                            <img alt="img" src={vue} />
                                         </div>
                                         <div className="build-part2">
                                             <p>
@@ -253,7 +266,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-5 col-md-12">
                                     <div className="build-box">
                                         <div className="build-part1">
-                                            <img alt="img" src={icon2} />
+                                            <img alt="img" src={Devops} />
                                         </div>
                                         <div className="build-part2">
                                             <p>
@@ -265,7 +278,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-5 col-md-12">
                                     <div className="build-box">
                                         <div className="build-part1">
-                                            <img alt="img" src={icon2} />
+                                            <img alt="img" src={Assurance} />
                                         </div>
                                         <div className="build-part2">
                                             <p>
@@ -292,7 +305,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-5 col-md-12">
                                     <div className="build-box">
                                         <div className="build-part1">
-                                            <img alt="img" src={vue} />
+                                            <img alt="img" src={wordpress} />
                                         </div>
                                         <div className="build-part2">
                                             <p>
@@ -318,19 +331,35 @@ class DedicatedTeams extends Component {
                             <div className="row">
                                 <OwlCarousel options={Designer}>
                                     <div className="Design-owl">
-                                        <img alt="img" src={icon1} />
-                                        <h4>Web Designs</h4>
-                                        <p>Do you wish to make customized layouts for your websites? We offer design services with more informative and engaging means. Web design by iQuinceSoft includes website mockups, visualization and consultations. We make you a part of the process.  </p>
+                                        <img alt="img" src={planDev} />
+                                        <h4>Hire Dedicated Developers</h4>
+                                        <p>Hire dedicated developers and use their expertise in the Front end, Back-end, UI/UX, QA, DevOps, Digital Marketing and much more. </p>
                                     </div>
                                     <div className="Design-owl">
-                                        <img alt="img" src={icon1} />
-                                        <h4>Web Designs</h4>
-                                        <p>Do you wish to make customized layouts for your websites? We offer design services with more informative and engaging means. Web design by iQuinceSoft includes website mockups, visualization and consultations. We make you a part of the process.  </p>
+                                        <img alt="img" src={Frontend} />
+                                        <h4>Front-end Development</h4>
+                                        <p>Build interactive, modern and reliable user interfaces across all the business domains with us. We use modern tools and frameworks like React.js, Vue.js, and Angular, for designing and developing robust, fast, and engaging user-friendly interfaces.</p>
                                     </div>
                                     <div className="Design-owl">
-                                        <img alt="img" src={icon1} />
-                                        <h4>Web Designs</h4>
-                                        <p>Do you wish to make customized layouts for your websites? We offer design services with more informative and engaging means. Web design by iQuinceSoft includes website mockups, visualization and consultations. We make you a part of the process.  </p>
+                                        <img alt="img" src={Backend} />
+                                        <h4>Backend Development</h4>
+                                        <p>From API integration to database migration to set up server-side technologies, a backend developer plays a vital role in getting your project.  </p>
+                                    </div>
+                                    <div className="Design-owl">
+                                        <img alt="img" src={software} />
+                                        <h4>Software Development</h4>
+                                        <p>Meet your business needs with custom functionality and features. We offer custom software services that help you address your business needs. </p>
+                                    </div>
+                                    <div className="Design-owl">
+                                        <img alt="img" src={Graphic} />
+                                        <h4>Custom Graphic Designs</h4>
+                                        <p>Let us know your design needs, and we’ll deliver that requirement. We recruit some of the best creative minds from the cream layer of the talent pools. We can help you differentiate your brand from the rest of the crowd and make it a top-ranked brand with no extra costs. </p>
+                                    </div>
+                                    <div className="Design-owl">
+                                        <img alt="img" src={Web_Dev} />
+                                        <h4>Web Development</h4>
+                                        <p>Get the benefit of state-of-the-art technologies and development practices to create custom web apps and systems for your business. We conceptualize and create apps from scratch that meet your business needs.’ now. You can put your information online at a place, but you can not override the power of the printed brochures.
+                                            iQuincesoft can deliver you all types of brochures in full color.  </p>
                                     </div>
                                 </OwlCarousel>
 
@@ -445,7 +474,7 @@ class DedicatedTeams extends Component {
                             <div className="row">
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-10 col-md-12">
-                                    <h1>Benefits of a hiring a dedicated development team from iQuinceSoft:</h1>
+                                    <h1>Benefits of a hiring a dedicated development team from iQuinceSoft</h1>
                                 </div>
                             </div>
 
@@ -454,7 +483,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-8 col-md-12">
                                     <ul>
                                         <li>
-                                            <label><img alt="img" src={icon1} /> Diverse Teams:</label>
+                                            <label><img alt="img" src={Diverse} /> Diverse Teams</label>
                                             <p>According to your project specifications, our diverse and versatile teams will deliver you result-driven solutions with expertise in key skills like PHP, Python, Django, NodeJS, Angular, WordPress, React Native, and other services areas.</p>
                                         </li>
                                     </ul>
@@ -467,7 +496,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-8 col-md-12">
                                     <ul>
                                         <li>
-                                            <label><img alt="img" src={icon1} /> Efficient Delivery:</label>
+                                            <label><img alt="img" src={efficiency} /> Efficient Delivery</label>
                                             <p>We are a highly skilled and efficient team that leads the clients to forge long-term relations with us, from full-scale software development to quick customizations of pre-designed platforms.</p>
                                         </li>
                                     </ul>
@@ -481,7 +510,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-8 col-md-12">
                                     <ul>
                                         <li>
-                                            <label><img alt="img" src={icon1} /> Quick Ramp-ups:</label>
+                                            <label><img alt="img" src={Increase2} /> Quick Ramp-ups</label>
                                             <p>We can swiftly ramp up your development projects by implementing the business transformations significantly in the blink of an eye. We leverage our developers to complete the tasks with minimum time to market. </p>
                                         </li>
                                     </ul>
@@ -493,7 +522,7 @@ class DedicatedTeams extends Component {
                                 <div className="col-lg-8 col-md-12">
                                     <ul>
                                         <li>
-                                            <label><img alt="img" src={icon1} /> Transparent Costing:</label>
+                                            <label><img alt="img" src={Cost} /> Transparent Costing</label>
                                             <p>We offer transparent and fair costing at all stages of software development. We charge what is reasonably right and suit your budget by matching our highest quality benchmarks.  </p>
                                         </li>
                                     </ul>
@@ -508,73 +537,67 @@ class DedicatedTeams extends Component {
 
                     <EasySec />
 
-                    <div className="ideal-sec">
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
                         <div className="container">
-                            <h1>Benefits of a hiring a dedicated development team from iQuinceSoft: </h1>
                             <div className="row">
-                                <div className="col-lg-1"></div>
-                                <div className="col-lg-5 col-md-12">
-                                    <div className="ideal-part">
-                                        <img alt="img" src={cycle} />
-                                    </div>
-                                </div>
-                                <div className="col-lg-5 col-md-12">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
                                     <Accordion allowZeroExpanded preExpanded={['a']}>
                                         <AccordionItem>
-                                            <AccordionItemButton>Project Manager</AccordionItemButton>
+                                            <AccordionItemButton>
+                                                Who are iQuinceSoft?
+                                            </AccordionItemButton>
                                             <AccordionItemPanel>
-                                                <p>The project managers are the people who are the all-round performers from planning and scheduling to process tracking and workflow optimization.</p>
-                                                <p><strong>Related tools and technologies:</strong></p>
-                                                <h5>Product Roadmap, Burndown chart, Release Plan, Jira, Team Work, Risk Register, Budget Tracker, Project Charter.</h5>
+                                                iQuinceSoft is a renowned offshore software development company that support, assist and provide high-end IT and consulting services.
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                         <AccordionItem>
-                                            <AccordionItemButton>Business Analyst</AccordionItemButton>
+                                            <AccordionItemButton>
+                                                Can you help in staff augmentation?
+                                            </AccordionItemButton>
                                             <AccordionItemPanel>
-                                                <p>Our business analysts can improve your business processes with the help of rigorous research and insightful documentation and help you refine the project requirements.</p>
-                                                <p><strong>Related tools and technologies:</strong></p>
-                                                <h5>Story map, Product Backlog, Business Model Canvas, Value Proposition.</h5>
+                                                Yes. We take all your hiring responsibilities and you get pre-vetted candidates to work for your project (Once you screen and clear them with the screening process).
+
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                         <AccordionItem>
-                                            <AccordionItemButton>UI Designers</AccordionItemButton>
+                                            <AccordionItemButton>
+                                                What is my benefit in hiring a dedicated development team?
+                                            </AccordionItemButton>
                                             <AccordionItemPanel>
-                                                <p>The designers from iQuinceSoft can help you transform the product vision into user-friendly designs. We create the user experiences optimized for the highest conversion rates. </p>
-                                                <p><strong>Related tools and technologies:</strong></p>
-                                                <h5>Sketch, Figma, inVision, Adobe CC, Principle, Pencil, Piece of paper, Zeplin, Story Map.</h5>
+                                                The benefits are enormous. Some of them are listed below:
+                                                <ul>
+                                                    <li>Minimized operational costs. </li>
+                                                    <li>No need to engage the staff recruitment.</li>
+                                                    <li>No need to hire and fire augmented staff.</li>
+                                                    <li>Admin support from vendor.</li>
+                                                    <li>Clear communication with the augmented team. </li>
+                                                    <li>Easily scale up the team.</li>
+                                                </ul>
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                         <AccordionItem>
-                                            <AccordionItemButton>Frontend Developers</AccordionItemButton>
+                                            <AccordionItemButton>
+                                                How much does it cost to hire a dedicated team?
+                                            </AccordionItemButton>
                                             <AccordionItemPanel>
-                                                <p>The frontend developers build the front-end  that users interact with. They make sure that the user experience is equally smooth and easy to use to every visitor.</p>
-                                                <p><strong>Related tools and technologies:</strong></p>
-                                                <h5>JavaScript, HTML, CSS, React, Vue, Angular, React Native, and Ionic. </h5>
+                                                Hiring a dedicated developer is easy with iQuinceSoft. The cost to hire a dedicated developer team depends on various factors, out of which some are as follows:
+                                                <ul>
+                                                    <li>Tenure of engagement</li>
+                                                    <li>Nature of development</li>
+                                                    <li>Full-time or part-time development</li>
+                                                    <li>The number of specialists hired</li>
+                                                    <li>The experience and skills of developers</li>
+                                                </ul>
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                         <AccordionItem>
-                                            <AccordionItemButton>Backend Developers</AccordionItemButton>
+                                            <AccordionItemButton>
+                                                Do you offer no-risk trial period for the developers?
+                                            </AccordionItemButton>
                                             <AccordionItemPanel>
-                                                <p>The backend developers plan and develop the architecture of the web app and decides on the services and database part, API and external integrations and ensure the product is stable and secure.</p>
-                                                <p><strong>Related tools and technologies:</strong></p>
-                                                <h5>Python, PHP, RoR, Java, Node.js, GoLang, SQL, Algorithm, Microservices, Architecture. </h5>
-                                            </AccordionItemPanel>
-                                        </AccordionItem>
-                                        <AccordionItem>
-                                            <AccordionItemButton>DevOps Engineers</AccordionItemButton>
-                                            <AccordionItemPanel>
-                                                <p>Our DevOps Engineers use the best CI/CD practices to minimize the errors during integration and deployment to streamline the project. </p>
-                                                <p><strong>Related tools and technologies:</strong></p>
-                                                <h5>Azure, Cloud Computing, AWS, Docker, Integration/Delivery, Kubernetes, Ansible, Terraform.</h5>
-                                            </AccordionItemPanel>
-                                        </AccordionItem>
-                                        <AccordionItem>
-                                            <AccordionItemButton>Testing and QA Teams</AccordionItemButton>
-                                            <AccordionItemPanel>
-                                                <p>Our QA engineers and testing teams ensure the software solution to be free from any performance, stability, or functionality issues from meticulous manual testing to writing complex automated testing solutions.  </p>
-                                                <p><strong>Related tools and technologies:</strong></p>
-                                                <h5>JavaScript, Selenium, Cucumber, Cypress, TestCraft, Katalon, WebDriver, Appium, Jasmine, Apptester.
-                                                </h5>
+                                                We ensure you stay safe and offer risk-free culture with one week no-risk trial period for the developers.
                                             </AccordionItemPanel>
                                         </AccordionItem>
                                     </Accordion>
@@ -584,8 +607,6 @@ class DedicatedTeams extends Component {
                         <FormPopup />
                         <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
                     </div>
-
-                    <FAQ />
 
 
                     <WorkSec />

@@ -18,6 +18,9 @@ import FAQ from '../../container/FAQ';
 import { TailSpin } from 'react-loader-spinner'
 import AwardFormsec from '../../container/AwardFormsec';
 import Partner from '../../container/Partner';
+import Business from '../../images/Business.svg';
+import Artificial from '../../images/Artificial.svg';
+import Developer from '../../images/Developer.svg';
 
 class CloudDevelopment extends Component {
     constructor(props) {
@@ -61,7 +64,9 @@ class CloudDevelopment extends Component {
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
                                     <p>CLOUD DEVELOPMENT</p>
                                     <h1><strong>Streamline your cloud development like a conglomerate</strong><br /></h1>
-                                    <h4>We help you slash down the cloud cost, automate the monitoring and take the architectural flexibility to the next level.</h4>
+                                    <ul>
+                                        <li>We help you slash down the cloud cost, automate the monitoring and take the architectural flexibility to the next level.</li>
+                                    </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
                             </div>
@@ -73,48 +78,43 @@ class CloudDevelopment extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Why WooCommerce?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
-                                    <p>We encourage, never force!</p>
+                                    <h3>Cloud Development can take your team's capabilities to the next level</h3>
+                                    <p>Build and scale your apps with the help of resources which require a rare skill set. To build and scale the apps, you need knowledge and experience in cloud development.
+                                        Let us start your cloud development with the trust of iQuinceSoft and take your business capabilities to the next level. </p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Open-source Development</h4>
-                                        <p>More than 2 million active stores make WooCommerce the preferred eCommerce site. </p>
+                                        <h4>Scalability</h4>
+                                        <p>You can scale your apps swiftly in cloud computing. The conventional servers and hosting solution services are not that smooth. Cloud is the most acceptable solution to meet the ever-evolving needs, wants, and demands of businesses. </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Built on WordPress</h4>
-                                        <p>WooCommerce is one of the most extendable, adaptable and flexible eCommerce solutions. This is built on WordPress. The stores can integrate WooCommerce within WordPress to create e-Commerce designs and templates.</p>
+                                        <h4>Secure</h4>
+                                        <p>No risk of IT infrastructure breakdown. Cloud app development removes the fear of breakdowns and offers a robust framework. It can even help recover the deleted data swiftly, thus curbing the downtime.</p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Powerful Analytics</h4>
-                                        <p>WooCommerce offers an intuitive and robust interface that helps businesses. It provides an analytical report that is easy to understand by business owners.</p>
+                                        <h4>Easy Deployment and Integration</h4>
+                                        <p>Cloud development is renowned for its easy deployment and integration.</p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Customer Support</h4>
-                                        <p>Every online business prefers WooCommerce. Customer support makes it most accessible across the globe. WooCommerce customer support team will also support you in every issue.</p>
+                                        <h4>Least time-to-market</h4>
+                                        <p>Cloud computing ensures the time-to-market is least. It provides a perfected continuous deployment model.</p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>WooCommerce is fast</h4>
-                                        <p>ast and responsive e-commerce experience for online stores. This is a crucial benefit of WooCommerce. </p>
+                                        <h4>iQuinceSoft Cloud Computing</h4>
+                                        <p>iQuinceSoft is renowned for using cutting edge tech stacks and state-of-the-art tools to offer you the best in the cloud computing domain.
+                                            We use cloud-native app development to offer you an edge over the competition and get the benefits of the expertise of iQuinceSoft.
+                                            iQuinceSoft can ensure quality and high-end cloud development services to help you attain your business goals.</p>
                                     </div>
-
-                                    <div className="cult-box">
-                                        <div class="tech-dot"></div>
-                                        <h4>Rest API</h4>
-                                        <p>The developers can read and write the products, orders, coupons, shipping channels, and discounts using REST APIs. </p>
-                                    </div>
-
 
                                 </OwlCarousel>
 
@@ -122,48 +122,42 @@ class CloudDevelopment extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Open-source Development</h4>
-                                        <p>More than 2 million active stores make WooCommerce the preferred eCommerce site. </p>
+                                        <h4>Scalability</h4>
+                                        <p>You can scale your apps swiftly in cloud computing. The conventional servers and hosting solution services are not that smooth. Cloud is the most acceptable solution to meet the ever-evolving needs, wants, and demands of businesses. </p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Built on WordPress</h4>
-                                        <p>WooCommerce is one of the most extendable, adaptable and flexible eCommerce solutions. This is built on WordPress. The stores can integrate WooCommerce within WordPress to create e-Commerce designs and templates.</p>
+                                        <h4>Secure</h4>
+                                        <p>No risk of IT infrastructure breakdown. Cloud app development removes the fear of breakdowns and offers a robust framework. It can even help recover the deleted data swiftly, thus curbing the downtime.</p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Powerful Analytics</h4>
-                                        <p>WooCommerce offers an intuitive and robust interface that helps businesses. It provides an analytical report that is easy to understand by business owners.</p>
+                                        <h4>Easy Deployment and Integration</h4>
+                                        <p>Cloud development is renowned for its easy deployment and integration.</p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Customer Support</h4>
-                                        <p>Every online business prefers WooCommerce. Customer support makes it most accessible across the globe. WooCommerce customer support team will also support you in every issue. </p>
+                                        <h4>Least time-to-market</h4>
+                                        <p>Cloud computing ensures the time-to-market is least. It provides a perfected continuous deployment model.</p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>WooCommerce is fast</h4>
-                                        <p>Fast and responsive e-commerce experience for online stores. This is a crucial benefit of WooCommerce. </p>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="cult-box">
-                                        <div class="tech-dot"></div>
-                                        <h4>Rest API</h4>
-                                        <p>The developers can read and write the products, orders, coupons, shipping channels, and discounts using REST APIs. </p>
+                                        <h4>iQuinceSoft Cloud Computing</h4>
+                                        <p>iQuinceSoft is renowned for using cutting edge tech stacks and state-of-the-art tools to offer you the best in the cloud computing domain.
+                                            We use cloud-native app development to offer you an edge over the competition and get the benefits of the expertise of iQuinceSoft.
+                                            iQuinceSoft can ensure quality and high-end cloud development services to help you attain your business goals.</p>
                                     </div>
                                 </div>
 
@@ -172,7 +166,7 @@ class CloudDevelopment extends Component {
                     </div>
 
                     <div className="culture-sec web-sec">
-                        <h3>WooCommerce Services</h3>
+                        <h3> Services</h3>
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-1"></div>
@@ -180,97 +174,82 @@ class CloudDevelopment extends Component {
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
-                                            <h4>WooCommerce Website Customization</h4>
-                                            <p>Customized features for your online stores with iQuinceSoft WooCommerce services. We create, add and apply templates, functionalities and styles with simple CSS and HTML. </p>
+                                            <h4>Cloud-native Architecture</h4>
+                                            <p>The best thing about the cloud architecture is it deploys frequently, and when needed, we can roll it back as well. It is accessible and utilizes the global infrastructure at less price. It scales the software following the business needs. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg1} /> */}
-                                            <h4>API Integration</h4>
-                                            <p>We manage every single facet of an online store with the help of API integration. We connect the PHP app to the WooCommerce store with REST API.</p>
+                                            <h4>Cloud Maintenance</h4>
+                                            <p>Are you planning a cloud computing project? We helped hundreds of businesses to sail through. We have seasoned DevOps engineers and cloud developers who can ensure your cloud app uses the best practices and benefits scalability, flexibility, and security.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg2} /> */}
-                                            <h4>WooCommerce Migration</h4>
-                                            <p>We ensure the migration process is perfectly executed and there is no loss of any existing data, including orders, customer details and products. We offer flawless and straightforward migration for your current eCommerce store from any platform.</p>
+                                            <h4>Cloud-native Architecture</h4>
+                                            <p>The best thing about the cloud architecture is it deploys frequently, and when needed, we can roll it back as well. It is accessible and utilizes the global infrastructure at less price. It scales the software following the business needs.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
-                                            <h4>WooCommerce Plugin Development</h4>
-                                            <p>We adhere to best practices to create an online store with added extensions. We develop unique add-ons and tools to build a WooCommerce shopping cart. </p>
+                                            <h4>Cloud Maintenance</h4>
+                                            <p>Maintenance is a point of concern in the cloud. Hence, it is crucial to ensure that the web infrastructure stays resilient with updates, error prevention, and patching regularly.
+                                                Cloud maintenance can keep the cost and usage down. It can also slash down the chances of production failures by a significant margin.
+                                                iQuinceSoft can also ensure you implement the system updates successfully. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg4} /> */}
-                                            <h4>Payment Gateway Integration</h4>
-                                            <p>We add several secured payment gateways within your eCommerce portal. We offer your customer several gateways and carry out their shopping with easy check-out. </p>
+                                            <h4>Cloud Migration</h4>
+                                            <p>Cloud computing allows you to scale the web app infrastructure within a fraction of the cost viz-a-viz an ongoing system. It is effortless with iQuinceSoft cloud infrastructure.
+                                                iQuinceSoft cloud migration services can rapidly take the development to the next level. It can also reduce the manual efforts with the automation process.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
-                                            <h4>Hire WooCommerce Developers</h4>
-                                            <p>Hire iQuinceSoft WooCommerce developers and save efforts, time and money significantly. Our developers work as per your instructions and contribute as an extended in-house team.</p>
+                                            <h4>Team Augmentation</h4>
+                                            <p>Are you struggling with quality resources? It is not easy to upgrade the team with the required set of skills, and simultaneously you can lose business opportunities.
+                                                Leverage on the expertise of the best in class developers with an added advantage of trust from the house of iQuinceSoft.
+                                                Hire the expertise of the seasoned and highly skilled cloud developers from iQuinceSoft. We offer the option to scale up or ramp down your team size on demand. We keep focusing on cloud-first software development.</p>
                                         </div>
-                                        <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
-                                            <h4>WooCommerce Consulting</h4>
-                                            <p>We offer need-based customized consulting services to help you grow with the growth of your business and improve sales. </p>
-                                        </div>
+
                                     </OwlCarousel>
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
                                             <h4>WooCommerce Website Customization</h4>
-                                            <p>Customized features for your online stores with iQuinceSoft WooCommerce services. We create, add and apply templates, functionalities and styles with simple CSS and HTML. </p>
+                                            <p>The best thing about the cloud architecture is it deploys frequently, and when needed, we can roll it back as well. It is accessible and utilizes the global infrastructure at less price. It scales the software following the business needs. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg1} /> */}
-                                            <h4>API Integration</h4>
-                                            <p>We manage every single facet of an online store with the help of API integration. We connect the PHP app to the WooCommerce store with REST API.</p>
+                                            <h4>Cloud Maintenance</h4>
+                                            <p>Are you planning a cloud computing project? We helped hundreds of businesses to sail through. We have seasoned DevOps engineers and cloud developers who can ensure your cloud app uses the best practices and benefits scalability, flexibility, and security.</p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg2} /> */}
-                                            <h4>WooCommerce Migration</h4>
-                                            <p>We ensure the migration process is perfectly executed and there is no loss of any existing data, including orders, customer details and products. We offer flawless and straightforward migration for your current eCommerce store from any platform.
+                                            <h4>Cloud-native Architecture</h4>
+                                            <p>The best thing about the cloud architecture is it deploys frequently, and when needed, we can roll it back as well. It is accessible and utilizes the global infrastructure at less price. It scales the software following the business needs.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
-                                            <h4>WooCommerce Plugin Development</h4>
-                                            <p>We adhere to best practices to create an online store with added extensions. We develop unique add-ons and tools to build a WooCommerce shopping cart. </p>
+                                            <h4>Cloud Maintenance</h4>
+                                            <p>Maintenance is a point of concern in the cloud. Hence, it is crucial to ensure that the web infrastructure stays resilient with updates, error prevention, and patching regularly.
+                                                Cloud maintenance can keep the cost and usage down. It can also slash down the chances of production failures by a significant margin.
+                                                iQuinceSoft can also ensure you implement the system updates successfully. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg4} /> */}
-                                            <h4>Payment Gateway Integration</h4>
-                                            <p>We add several secured payment gateways within your eCommerce portal. We offer your customer several gateways and carry out their shopping with easy check-out. </p>
+                                            <h4>Cloud Migration</h4>
+                                            <p>Cloud computing allows you to scale the web app infrastructure within a fraction of the cost viz-a-viz an ongoing system. It is effortless with iQuinceSoft cloud infrastructure.
+                                                iQuinceSoft cloud migration services can rapidly take the development to the next level. It can also reduce the manual efforts with the automation process.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
-                                            <h4>Hire WooCommerce Developers</h4>
-                                            <p>Hire iQuinceSoft WooCommerce developers and save efforts, time and money significantly. Our developers work as per your instructions and contribute as an extended in-house team.</p>
-                                        </div>
-
-                                        <div className="col-lg-4 col-md-4"> </div>
-
-                                        <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
-                                            <h4>WooCommerce Consulting</h4>
-                                            <p>We offer need-based customized consulting services to help you grow with the growth of your business and improve sales. </p>
+                                            <h4>Team Augmentation</h4>
+                                            <p>Are you struggling with quality resources? It is not easy to upgrade the team with the required set of skills, and simultaneously you can lose business opportunities.
+                                                Leverage on the expertise of the best in class developers with an added advantage of trust from the house of iQuinceSoft.
+                                                Hire the expertise of the seasoned and highly skilled cloud developers from iQuinceSoft. We offer the option to scale up or ramp down your team size on demand. We keep focusing on cloud-first software development.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -278,6 +257,54 @@ class CloudDevelopment extends Component {
                         </div>
                         <FormPopup />
                         <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
+
+
+                    <div className="process-sec dd">
+                        <div className="container">
+                            <h1>Our Process</h1>
+                            <div className="row">
+                                <p className="process-heading-para">The Process we use to build your dedicated development team</p>
+                                <div className="col-lg-5 col-md-6">
+                                    <picture><img alt="img" src={Developer} /></picture>
+                                </div>
+                                <div className="col-lg-1"></div>
+                                <div className="col-lg-5 col-md-6">
+                                    <div className="process-box txt-process-box">
+                                        <span className="blue">01</span>
+                                        <h3> Select from the best</h3>
+                                        <p>We select the optimal developers that suit your business needs and allow you to screen, audition and interview our vetted, skilled and experienced developers. According to the project requirements, we can increase or decrease the team size. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-lg-5 col-md-6">
+                                    <div className="process-box txt-process-box">
+                                        <span className="blue">02</span>
+                                        <h3>Smooth Integration</h3>
+                                        <p>Our developers merge with your project team and work under your supervision in the next step. We ensure that this integration of our vetted talent stays smooth, and we take care of all the overhead charges. </p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-1"></div>
+                                <div className="col-lg-5 col-md-6">
+                                    <picture><img alt="img" src={Business} /></picture>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-lg-5 col-md-6">
+                                    <picture><img alt="img" src={Artificial} /></picture>
+                                </div>
+                                <div className="col-lg-1"></div>
+                                <div className="col-lg-5 col-md-6">
+                                    <div className="process-box txt-process-box">
+                                        <span className="blue">03</span>
+                                        <h3>Scale</h3>
+                                        <p>The best-fit hiring process model from iQuinceSoft ensures you can scale on-demand the team size and ramp down the team size when not needed.
+                                            We make the process easy and smooth for you like a caring partner. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <Partner />

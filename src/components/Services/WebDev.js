@@ -62,11 +62,10 @@ class Web_Development extends Component {
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
                                     <p>WEB</p>
-                                    <h1><strong>iQuinceSoft offers dedicated web developers who can:</strong><br /></h1>
+                                    <h1><strong>Hire Skilled Web developers to build and scale single page applications to complex web systems that can scale your business.</strong><br /></h1>
                                     <ul>
-                                        <p>Understand your market </p>
-                                        <li>Analyze your business viz-a-viz competitor and.</li>
-                                        <li>Customize the web solutions to help you reach and attain your business goals.</li>
+                                        <p>Hire the taleted web developers to get websites that complement your Business and help you achieve business goals. </p>
+                                        <li>We provide websites that can convert a first time visitor into a brand advocate.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>

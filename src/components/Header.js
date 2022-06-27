@@ -25,16 +25,6 @@ class Header extends Component {
          toggleSidenav: false,
          toggleDropdown: false,
          links: []
-         /*links : [
-          {'id':1,'name':'Services','class':'nav-link','liClassName':'','img':mobIcon,'to':'service'},
-          {'id':2,'name':'Case Studies','class':'nav-link','liClassName':'','img':mobIcon1,'to':'caseStudies'},
-          {'id':3,'name':'Careers','class':'nav-link','liClassName':'','img':mobIcon2,'to':'career'},
-          {'id':4,'name':'How We Deliver','class':'nav-link','liClassName':'','img':mobIcon3,'to':'howWeDeliver'},
-          {'id':5,'name':'Get Inspired','class':'nav-link','liClassName':'','img':mobIcon4,'to':'blog'},
-          {'id':6,'name':'Talk to Sales','class':'nav-link','liClassName':'mob-link','img':mobIcon5,'to':'contactUs'},
-          {'id':7,'name':'Client Login','class':'nav-link','liClassName':'mob-link','img':mobIcon6,'to':'/'},
-          {'id':8,'name':'+1 (347) 960-4166','class':'nav-link','liClassName':'mob-link','img':flag,'to':'','hash':'tel:+1 (347) 960-4166'}
-         ]*/
       }
    }
 
@@ -200,12 +190,13 @@ class Header extends Component {
                                           <Link to={"/HireWooCommerceDevelopers"}>WooCommerce</Link>
                                           <Link to={"/HireShopifyDevelopers"}>Shopify</Link>
                                           <Link to={"/HireopencartDevelopers"}>OpenCart</Link>
-                                          <Link to={"/HireWixDevelopers"}>Wix</Link>
                                        </li>
                                        <li>
                                           <h4>CMS</h4>
                                           <Link to={"/HireDrupalDevelopers"}>Drupal</Link>
                                           <Link to={"/HireWordpressDevelopers"}>Wordpress</Link>
+                                          <Link to={"/HireWordpressDevelopers"}>Web Flow</Link>
+                                          <Link to={"/HireWixDevelopers"}>Wix</Link>
                                        </li>
                                        <li>
                                           <h4>Mobile</h4>
@@ -215,8 +206,10 @@ class Header extends Component {
                                           <Link to={"/HireionicDevelopers"}>Ionic</Link>
                                        </li>
                                        <li>
-                                          <h4>LowCode/No Code</h4>
-                                          <Link to={"/Web_Development"}>Web Flow</Link>
+                                          <h4>Digital Marketting</h4>
+                                          <Link to={"/SEO"}>SEO</Link>
+                                          {/* <Link to={"/SMM"}>SMM</Link> */}
+                                          <Link to={"/PPC"}>PPC</Link>
                                        </li>
                                     </ul>
                                  </li>

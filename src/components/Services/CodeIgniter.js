@@ -13,7 +13,6 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
-import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';

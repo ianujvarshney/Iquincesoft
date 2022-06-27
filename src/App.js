@@ -15,7 +15,7 @@ import Careers from './components/Careers';
 import JobOffer from './components/JobOffer';
 import JobDetail from './components/JobDetail';
 import PostPage from './components/PostPage';
-import NextSection from './components/NextSection';
+import WhyIndia from './components/WhyIndia';
 
 import Web_Development from './components/Services/WebDev';
 import Mobile_Developement from './components/Services/MobileDev';
@@ -55,7 +55,10 @@ import DedicateTeams from '../src/components/Services/DedicatedTeams';
 import Designers from '../src/components/Services/Designers';
 import Ecommerce from '../src/components/Services/Ecommerce';
 import Jobform from './container/Jobform';
+import SEO from './components/Services/SEO';
 import Error from './container/Error';
+import PPC from './components/Services/PPC';
+import SMM from './components/Services/SMM';
 
 
 class App extends Component {
@@ -65,7 +68,7 @@ class App extends Component {
 				<Switch>
 					<Route exact path='/' component={Home} />
 					<Route exact path='/Jobform' component={Jobform} />
-					<Route exact path='/NextSection' component={NextSection} />
+					<Route exact path='/WhyIndia' component={WhyIndia} />
 					<Route exact path='/about' component={About} />
 					<Route exact path='/service' component={Service} />
 					<Route exact path='/serviceDescription' component={ServiceDescription} />
@@ -82,7 +85,6 @@ class App extends Component {
 					<Route exact path='/jobOffer/:post' component={jobCateDetails} />
 					<Route exact path='/jobDetail/:post' component={JobDetail} />
 					<Route exact path='/CaseStudyDescription/:post' component={CaseStudyDescription} />
-
 
 
 					<Route exact path='/Web_Development' component={Web_Development} />
@@ -119,6 +121,9 @@ class App extends Component {
 					<Route exact path='/EcommerceDevelopers' component={Ecommerce} />
 					<Route exact path='/HireDesigners' component={Designers} />
 					<Route exact path='/AwardFormsec' component={AwardFormsec} />
+					<Route exact path='/SEO' component={SEO} />
+					<Route exact path='/SMM' component={SMM} />
+					<Route exact path='/PPC' component={PPC} />
 					<Route exact path='/DevOps' component={DevOps} />
 					<Route exact path='*' component={Error} />
 				</Switch>

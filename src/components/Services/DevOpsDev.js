@@ -60,15 +60,11 @@ class DevOpsDev extends Component {
                             <div className="row">
                                 <div className="col-lg-5 col-md-12" data-aos="fade-up">
                                     <p>DEVOPS</p>
-                                    <h1><strong>DevOps Consulting Services</strong><br /></h1>
+                                    <h1><strong>leverage the expertise of the dedicated wix developers to build an intuitive and engaging website that function as your marketing manager.</strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional DevOps developers.  </li>
+                                        <li>Software Development and Operations approach like never before.
+                                        </li>
+                                        <li>Hire dedicated devOps developers to take your business on the next level of successful business goal attainment.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-2"></div>
@@ -82,46 +78,45 @@ class DevOpsDev extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Why DevOps?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
-                                    <p>We encourage, never force!</p>
+                                    <h3>Why DevOps</h3>
+                                    <p>DevOps is the perfect blend of Software Development and Operations to enable swift development and easy maintenance of new and existing deployments. </p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Open-source Development</h4>
-                                        <p>More than 2 million active stores make DevOps the preferred eCommerce site. </p>
+                                        <h4>Flexible Development</h4>
+                                        <p>DevOps offers you the benefits of swapping, modifying and replacing the components without refactoring.</p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Built on WordPress</h4>
-                                        <p>DevOps is one of the most extendable, adaptable and flexible eCommerce solutions. This is built on WordPress. The stores can integrate DevOps within WordPress to create e-Commerce designs and templates.</p>
+                                        <h4>Security</h4>
+                                        <p>DevOps offers secure services so that you needn’t build from scratch.</p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Powerful Analytics</h4>
-                                        <p>DevOps offers an intuitive and robust interface that helps businesses. It provides an analytical report that is easy to understand by business owners.</p>
+                                        <h4>Smooth Delivery</h4>
+                                        <p>Slash down the development time with enormous services</p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Customer Support</h4>
-                                        <p>Every online business prefers DevOps. Customer support makes it most accessible across the globe. DevOps customer support team will also support you in every issue.</p>
+                                        <h4>Speedy matters</h4>
+                                        <p>Cut down the time-to-market within a perfected development model.</p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>DevOps is fast</h4>
-                                        <p>ast and responsive e-commerce experience for online stores. This is a crucial benefit of DevOps. </p>
+                                        <h4>Fully Scalable</h4>
+                                        <p>Your apps automatically scale up or ramp down the resources in response to the need and usage. </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Rest API</h4>
-                                        <p>The developers can read and write the products, orders, coupons, shipping channels, and discounts using REST APIs. </p>
+                                        <h4>Optimize the cost</h4>
+                                        <p>Pay as you use. It helps you optimize the cost by avoiding the idle server time charges. </p>
                                     </div>
 
 
@@ -131,48 +126,50 @@ class DevOpsDev extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Open-source Development</h4>
-                                        <p>More than 2 million active stores make DevOps the preferred eCommerce site. </p>
+                                        <h4>Flexible Development</h4>
+                                        <p>DevOps offers you the benefits of swapping, modifying and replacing the components without refactoring.</p>
+                                    </div>
+
+                                </div>
+
+                                <div className="col-lg-4 col-md-6">
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Security</h4>
+                                        <p>DevOps offers secure services so that you needn’t build from scratch.</p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Built on WordPress</h4>
-                                        <p>DevOps is one of the most extendable, adaptable and flexible eCommerce solutions. This is built on WordPress. The stores can integrate DevOps within WordPress to create e-Commerce designs and templates.</p>
+                                        <h4>Smooth Delivery</h4>
+                                        <p>Slash down the development time with enormous services</p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Powerful Analytics</h4>
-                                        <p>DevOps offers an intuitive and robust interface that helps businesses. It provides an analytical report that is easy to understand by business owners.</p>
+                                        <h4>Speedy matters</h4>
+                                        <p>Cut down the time-to-market within a perfected development model.</p>
+                                    </div>
+
+                                </div>
+
+                                <div className="col-lg-4 col-md-6">
+                                    <div className="cult-box">
+                                        <div class="tech-dot"></div>
+                                        <h4>Fully Scalable</h4>
+                                        <p>Your apps automatically scale up or ramp down the resources in response to the need and usage. </p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Customer Support</h4>
-                                        <p>Every online business prefers DevOps. Customer support makes it most accessible across the globe. DevOps customer support team will also support you in every issue. </p>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="cult-box">
-                                        <div class="tech-dot"></div>
-                                        <h4>DevOps is fast</h4>
-                                        <p>Fast and responsive e-commerce experience for online stores. This is a crucial benefit of DevOps. </p>
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-4 col-md-6">
-                                    <div className="cult-box">
-                                        <div class="tech-dot"></div>
-                                        <h4>Rest API</h4>
-                                        <p>The developers can read and write the products, orders, coupons, shipping channels, and discounts using REST APIs. </p>
+                                        <h4>Optimize the cost</h4>
+                                        <p>Pay as you use. It helps you optimize the cost by avoiding the idle server time charges. </p>
                                     </div>
                                 </div>
 

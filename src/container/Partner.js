@@ -4,6 +4,7 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import { HashLink as Link } from 'react-router-hash-link';
+import handshake from '../../src/images/handshake.png';
 
 class partner extends Component {
     render() {
@@ -19,7 +20,6 @@ class partner extends Component {
                 <div className="container">
                     <h2 className="heading-2">Partner with iQuinceSoft</h2>
                     <OwlCarousel options={servSlide}>
-
                         <div className="serv-txt">
                             <h4><span></span> Startups</h4>
                             <p>Support and guidance are crucial to assist and help startups. We help you develop your small-scale startups into funded unicorns. We hold you on this journey to successful unicorns from the ideation of startups.

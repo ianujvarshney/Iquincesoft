@@ -61,9 +61,9 @@ class Wix extends Component {
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
                                     <p>WIX</p>
-                                    <h1><strong>Hire Wix developers for Intuitive Designs, Secured Website with Scalable Options </strong><br /></h1>
+                                    <h1><strong>Hire specialist Wix developers for highly engaging, appealing and converting websites. </strong><br /></h1>
                                     <ul>
-                                        <li>Connect, Communicate and Curate the business goals by hiring dedicated offshore developers with the trust and expertise of iQuinceSoft. </li>
+                                        <li>leverage the expertise of the dedicated wix developers to build an intuitive and engaging website that function as your marketing manager. </li>
                                         <li>We help you with scalable web apps and systems that can revamp your business process and goals. </li>
                                     </ul>
                                 </div>

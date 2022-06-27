@@ -12,6 +12,7 @@ import jobImg4 from '../images/job-img4.png';
 import jobImg5 from '../images/job-img5.png';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import axios from 'axios';
 
 class JobDetail extends Component {
 	constructor(props) {
@@ -19,6 +20,12 @@ class JobDetail extends Component {
 		this.state = {
 			InsightsJson: [],
 			page: 1,
+			First_Name: '',
+			Last_Name: '',
+			Email: '',
+			Mobile: '',
+			Message: '',
+			image: {},
 			url: this.props.match.params.post
 
 		}
@@ -33,6 +40,47 @@ class JobDetail extends Component {
 			}
 		});
 	}
+
+	submitForm = e => {
+		// e.preventDefault();
+		if (this.state.First_Name === '' || this.state.Last_Name === '' || this.state.Email === '' || this.state.Mobile === '' || this.state.Message === '') {
+			alert("some field are missing filled it");
+		}
+		else {
+			let formData = new FormData()
+			formData.set("your-FirstName", this.state.First_Name)
+			formData.set("your-LastName", this.state.Last_Name)
+			formData.set("your-email", this.state.Email)
+			formData.set("your-Mob", this.state.Mobile)
+			formData.set("your-message", this.state.Message)
+			formData.append("file", this.state.image);
+			// formdata.append("Image", { uri: photo.uri, name: 'image.jpg', type: 'image/jpeg' })
+			axios.post('https://dev.iquincesoft.com/iqsandbox/wp-json/contact-form-7/v1/contact-forms/1812/feedback', formData, {
+				headers: {
+					"content-type": "multipart/form-data",
+				},
+			})
+				.then(res => {
+					res.data.status === "mail_sent"
+						? this.setState({
+							First_Name: '',
+							Last_Name: '',
+							Email: '',
+							Mobile: '',
+							Message: '',
+						})
+						: this.setState({ errorMessage: res.data.message }, () => {
+							setTimeout(() => {
+								this.setState({ errorMessage: "" })
+							}, 2000)
+						})
+				})
+			alert("thank you for submission");
+		}
+	}
+	uploadPicture = (e) => {
+
+	};
 	render() {
 		const { InsightsJson } = this.state;
 		return (
@@ -62,34 +110,22 @@ class JobDetail extends Component {
 																<form>
 																	<h4>Required:</h4>
 																	<div className="row">
-																		<div className="col-lg-6 col-md-6"><input class="box-2" type="text" name="" placeholder="First Name" /></div>
-																		<div className="col-lg-6 col-md-6"><input class="box-2" type="text" name="" placeholder="Last Name" /></div>
+																		<div className="col-lg-6 col-md-6"><input onChange={e => this.setState({ First_Name: e.target.value })} class="box-2" type="text" name="" placeholder="First Name" /></div>
+																		<div className="col-lg-6 col-md-6"><input onChange={e => this.setState({ Last_Name: e.target.value })} class="box-2" type="text" name="" placeholder="Last Name" /></div>
 																	</div>
-																	<input class="box-2" type="text" name="" placeholder="Email" />
-
+																	<input onChange={e => this.setState({ Email: e.target.value })} class="box-2" type="text" name="" placeholder="Email" />
 																	<p>
-																		{/* <input type="checkbox" value="" /> */}
-
-																		{/* <span>I was informed by the data administrator: The Software House sp. Z oo with its seat in Gliwice (44-100) at ul. Dolnych Wałów 8 (contact: praca@tsh.io ) that:
-																			<ul>
-																				<li>1. Providing personal data in the CV is voluntary, but necessary to carry out the recruitment process. The consequence of not providing personal data will be the inability to conduct the recruitment procedure. Personal data will be processed on the basis of art. 6 paragraph 1 point a and c of the General Regulation on the Protection of Personal Data of April 27, 2016 (GDPR).</li>
-																				<li>2. I have the right to access my personal data and the right to rectify, delete, limit processing, the right to transfer data, the right to object, the right to withdraw consent to their processing at any time without affecting the lawfulness of the processing that has been carried out. on the basis of consent before its withdrawal. In order to exercise the above-mentioned rights, an e-mail with the selected request should be sent to the following address: praca@tsh.io.</li>
-																				<li>3. I have the right to lodge a complaint with GIODO when I find that the processing of my personal data violates the provisions of the Personal Data Protection Act or the General Data Protection Regulation of 27 April 2016 (GDPR).</li>
-																				<li>4. By sending my CV to praca@tsh.io my personal data will be entrusted for processing to the Google group (Google LLC, Google Ireland Limited, Google Commerce Limited, Google Asia Pacific Pte. Ltd, Google Australia Pty Ltd).</li>
-																				<li>5. Personal data will be stored until the end of recruitment procedures, but not longer than for 10 years from the date of sending the CV.</li>
-																				<li>6. My personal data will not be processed automatically.</li>
-																			</ul>
-																		</span> */}
 																	</p>
-																	{/* <h4>Optional:</h4> */}
-																	<input class="box-2" type="text" name="" placeholder="Telephone" />
-																	<textarea class="box-2" rows="4" placeholder="Message"></textarea>
-																	<input class="box-2" type="file" name="" placeholder="Attach your Resume" />
+																	<input onChange={e => this.setState({ Mobile: e.target.value })} class="box-2" type="text" name="" placeholder="Telephone" />
+																	<textarea onChange={e => this.setState({ Message: e.target.value })} class="box-2" rows="4" placeholder="Message"></textarea>
+																	{/* <input class="box-2" type="file" name="" onChange={e => this.setState({
+																		image: URL.createObjectURL(e.target.files[0]),
+																	});} placeholder="Attach your Resume" /> */}
 																	<p>
 																		<input type="checkbox" value="" /> <span>I consent to iQuinceSoft to get my data processed in the form for the current and future recruitment processes.
 																		</span>
 																	</p>
-																	<Link to="#">Send</Link>
+																	<Link onClick={() => this.submitForm()} to="#">Enquire Now</Link>
 																</form>
 															</div>
 														</div>
@@ -202,3 +238,40 @@ class JobDetail extends Component {
 }
 
 export default JobDetail;
+// submitForm = e => {
+
+// 	if (this.state.First_Name === '' || this.state.Last_Name === '' || this.state.Email === '' || this.state.Mobile === '' || this.state.Message === '') {
+// 		alert("some field are missing filled it");
+// 	}
+// 	else {
+// 		let formData = new FormData()
+// 		formData.set("your-FirstName", this.state.First_Name)
+// 		formData.set("your-LastName", this.state.Last_Name)
+// 		formData.set("your-email", this.state.Email)
+// 		formData.set("your-Mob", this.state.Mobile)
+// 		formData.set("your-message", this.state.Message)
+// 		// formData.set("Image", this.state.image)
+// 		// formdata.append("Image", { uri: photo.uri, name: 'image.jpg', type: 'image/jpeg' })
+// 		axios.post('https://dev.iquincesoft.com/iqsandbox/wp-json/contact-form-7/v1/contact-forms/1812/feedback', formData, {
+// 			headers: {
+// 				"content-type": "multipart/form-data",
+// 			},
+// 		})
+// 			.then(res => {
+// 				res.data.status === "mail_sent"
+// 					? this.setState({
+// 						First_Name: '',
+// 						Last_Name: '',
+// 						Email: '',
+// 						Mobile: '',
+// 						Message: '',
+// 					})
+// 					: this.setState({ errorMessage: res.data.message }, () => {
+// 						setTimeout(() => {
+// 							this.setState({ errorMessage: "" })
+// 						}, 2000)
+// 					})
+// 			})
+// 		alert("thank you for submission");
+// 	}
+// }

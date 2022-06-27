@@ -344,9 +344,18 @@ header .dropdown-menu li a {
 .ideal-sec h5 span,
 .ecom-sec h5 span,
 .want-sec h5 span,
-.cr-sec-2 h5 span {
+.cr-sec-2 h5 span,
+.campaign h5 span,
+.BENEFITS h5 span,
+.EXECUTE h5 span,
+.process-sec h5 span,
+.SEO-EXPERTS h5 span,
+.PPC-BENIFIT h5 span,
+.Deliverables h5 span,
+.Lets h5 span {
   display: block;
   font-style: normal;
+  color: black;
 }
 .banner-sec h2 a span,
 .technology-sec h5 a span,
@@ -368,7 +377,13 @@ header .dropdown-menu li a {
 .ideal-sec h5 a span,
 .ecom-sec h5 a span,
 .want-sec h5 a span,
-.cr-sec-2 h5 a span {
+.cr-sec-2 h5 a span,
+.BENEFITS h5 a span,
+.EXECUTE h5 a span,
+.process-sec h5 a span,
+.SEO-EXPERTS h5 a span,
+.Lets h5 a span,
+.Deliverables h5 a span {
   color: #000;
 }
 
@@ -398,6 +413,7 @@ header .dropdown-menu li a {
   font-weight: bold;
   padding: 20px 62px;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 .banner-sec .book-btn {
   margin: 55px 0 18px 95px;
@@ -677,7 +693,16 @@ header .dropdown-menu li a {
 .ideal-sec h5,
 .want-sec h5,
 .ecom-sec h5,
-.cr-sec-2 h5 {
+.cr-sec-2 h5,
+.campaign h5,
+.BENEFITS h5,
+.EXECUTE h5,
+.process-sec h5,
+.SEO-EXPERTS h5,
+.Lets h5,
+.PPC-BENIFIT h5,
+.Deliverables h5 {
+  text-align: center;
   font-size: 14px;
   margin: 22px 0 0;
   color: black;
@@ -698,7 +723,9 @@ header .dropdown-menu li a {
 .ideal-sec h5 a,
 .want-sec h5 a,
 .ecom-sec h5 a,
-.cr-sec-2 h5 a {
+.cr-sec-2 h5 a,
+.campaign h5 a,
+.PPC-BENIFIT h5 a {
   color: #000;
 }
 .tech-box {
@@ -1519,6 +1546,13 @@ footer li {
   font-size: 27px;
   line-height: 40px;
 }
+.culture-sec h3 span,
+.process-sec {
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 30px 0;
+  font-weight: normal;
+}
 .cult-box {
   margin: 0 15px;
   cursor: grabbing;
@@ -1677,6 +1711,7 @@ footer li {
   text-align: center;
   width: 40px;
 }
+
 .serv-sec h4 span a {
   font-family: Avenir-Medium;
   font-size: 17px;
@@ -1698,7 +1733,7 @@ footer li {
   line-height: 1.6;
   padding: 5px 0;
   position: absolute;
-  bottom: 18px;
+  bottom: 9px;
   left: 34px;
   right: 34px;
 }
@@ -1722,6 +1757,25 @@ footer li {
   height: 100%;
   padding: 34px;
   position: relative;
+}
+.serv-txt h4 {
+  text-align: left !important;
+  position: relative;
+  padding: 0 0 10px 35px;
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 15px 0 0;
+}
+.serv-txt h4:before {
+  content: "";
+  position: absolute;
+  background-image: url(./images/handshake.png);
+  width: 30px;
+  height: 30px;
+  top: -5px;
+  left: 0;
+  background-size: cover;
 }
 .serv-txt-2 {
   height: 100%;
@@ -1800,8 +1854,8 @@ footer li {
 }
 .web-sec h3 {
   font-family: Avenir-Medium;
-  line-height: 1.3;
-  margin: 0 0 70px;
+  /* line-height: 1.3;
+  margin: 0 0 70px; */
 }
 .web-sec-2 h3 {
   font-family: Avenir-Medium;
@@ -3286,7 +3340,7 @@ footer li {
 .process-sec .process-heading-para {
   font-size: 20px;
   line-height: 32px;
-  width: 65%;
+  width: 100%;
   text-align: center;
   margin: auto;
   margin-bottom: 50px;
@@ -3295,24 +3349,18 @@ footer li {
   border-left: 2px solid #ccc;
   position: relative;
 }
-.process-sec .col-lg-5:last-child::before {
-  border: 2px solid var(--main-color);
-  border-radius: 50%;
-  content: "";
-  left: -14px;
-  height: 25px;
-  position: absolute;
-  top: 30px;
-  width: 25px;
-  background-color: #fff;
+.line-change .col-lg-5:last-child {
+  border-left: none;
+  position: relative;
 }
+
 .process-sec picture {
   display: block;
 }
 .process-sec picture img {
   margin: 50px auto 0;
   display: block;
-  width: 250px;
+  /* width: 250px; */
   height: auto;
 }
 .process-sec .process-box {
@@ -3328,6 +3376,46 @@ footer li {
   background-color: #fff;
   display: none !important;
 }
+.process-sec .txt-process-box:before {
+  position: absolute;
+  top: 50px;
+  width: 30px;
+  height: 30px;
+  content: "";
+  border-radius: 100%;
+  background-color: #fff;
+  display: none !important;
+}
+.line-change p {
+  margin-bottom: 40px;
+  /* text-align: center; */
+}
+
+.process-box.txt-process-box ul {
+  margin: 35px;
+  text-align: left !important;
+  position: relative;
+  font-size: 19px;
+  line-height: 150%;
+  padding: 0 0 10px 35px;
+}
+.process-box.txt-process-box ul li {
+  margin-top: 10px;
+}
+.process-box.txt-process-box ul li:before {
+  content: "";
+  position: absolute;
+  background: url("../src/images/correct.png") no-repeat 0 3px;
+  width: 35px;
+  height: 35px;
+  top: 2;
+  left: 0;
+}
+.process-box.txt-process-box h5 {
+  font-size: larger;
+  text-align: left;
+  margin-left: 40px;
+}
 
 .process-sec .process-box span {
   line-height: 36px;
@@ -3340,9 +3428,9 @@ footer li {
 }
 .process-sec .process-box {
   text-align: left;
-  border: 1px solid #e0e0e0;
+  /* border: 1px solid #a5a1a1; */
   border-radius: 6px;
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1); */
   padding: 50px 40px 30px;
   margin: 0 0 50px 15px;
 }
@@ -3587,12 +3675,56 @@ footer li {
   top: 0;
   left: 0;
 }
-
-/* ***************************NextSection********************** */
+.campaign .col-lg-6 img {
+  margin-bottom: 30px;
+}
+.campaign {
+  margin: 50px;
+  text-align: center;
+}
+.campaign h1 {
+  text-align: left !important;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.campaign p {
+  text-align: left !important;
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 15px 0 0;
+}
+.campaign ul {
+  text-align: left !important;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.campaign ul li {
+  text-align: left !important;
+  position: relative;
+  padding: 0 0 10px 35px;
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 15px 0 0;
+}
+.campaign ul li:before {
+  content: "";
+  position: absolute;
+  background: url(../src/images/correct.png) no-repeat 0 2px;
+  width: 30px;
+  height: 30px;
+  top: 2;
+  left: 0;
+}
+/* ***************************WhyIndia********************** */
 .Know_more {
   height: 100vh;
   width: 100%;
-  background: url("/src/images/NextSection-banner.jpg");
+  background: url("/src/images/NextSection-banner.webp") no-repeat center;
+  background-size: cover;
 }
 
 .banner-caption h1 {
@@ -3605,9 +3737,259 @@ footer li {
   justify-content: center;
   align-items: center;
 }
+.India-item {
+  text-align: center;
+}
 .Know_more .desc {
   margin: 10px 0;
   font-size: 20px;
+}
+.India {
+  padding: 60px 0px;
+}
+.India h1:first-child {
+  font-size: 45px;
+  margin: 40px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.India-item {
+  margin: 20px;
+}
+.India-item h1 {
+  position: relative;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.India-item h3 {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: 600;
+}
+.India-item h3::after {
+  height: 2px;
+  width: 50px;
+  background: #ffda30;
+  content: "";
+  display: block;
+  margin: 15px auto 20px;
+}
+.India-item h6 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 12px;
+}
+.India-item img {
+  max-height: 175px;
+}
+.India-item .India-item-img {
+  max-width: 89px;
+  max-height: 39px;
+}
+.makes {
+  padding: 100px;
+  background-color: #00ccff2e;
+}
+.makes h2:first-child {
+  font-size: 45px;
+  line-height: 1.4;
+}
+.work-item {
+  margin-right: 5%;
+  padding: 25px 0;
+}
+.work-item h4 {
+  border-top: solid 1px black;
+  padding-top: 15px;
+  border-bottom: none;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.word-item p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.India-facts {
+  background-color: #000;
+  padding: 100px;
+}
+.India-facts h1:first-child {
+  text-align: center;
+  margin: 20px 0 30px 0;
+  color: #fff;
+  font-weight: 600;
+}
+.India-facts img {
+  max-height: 30px;
+  margin: 20px 0;
+}
+.India-facts p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* **********************SEO Page ******************************** */
+.SEARCH {
+  background: #dfecf0d2;
+  padding: 100px 0;
+}
+.SEARCH h3 {
+  font-family: Avenir-Medium;
+  line-height: 1.3;
+}
+.SEARCH p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 15px 0 0;
+}
+.BENEFITS-items {
+  margin: 10px;
+}
+.BENEFITS {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #dfecf0d2;
+}
+.BENEFITS .text-center {
+  text-align: center;
+  font-size: 41px;
+  margin-bottom: 54px;
+}
+.BENEFITS-items P {
+  font-size: 22px;
+  text-align: justify;
+  line-height: 150%;
+}
+.BENEFITS-items h1 {
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+.BENEFITS-items svg:not(:root).svg-inline--fa,
+svg:not(:host).svg-inline--fa {
+  position: relative;
+  background: #fff;
+  color: #52535c;
+  font-size: 20px;
+  display: flex;
+  clear: both;
+  border-radius: 50%;
+  border: 2px solid #f4f3f3;
+  transition: all 0.33s ease-in-out;
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+  box-shadow: 0 2px 0 0px rgba(0, 0, 0, 0.017);
+  left: 80px;
+  transition: border 2s;
+}
+.BENEFITS-items svg:not(:root).svg-inline--fa,
+svg:not(:host).svg-inline--fa:hover {
+  border: 2px solid var(--main-color);
+}
+.BENEFITS-items svg:not(:root).svg-inline--fa,
+svg:not(:host).svg-inline--fa :before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.SEO-EXPERTS {
+  text-align: center;
+  background-color: #dfecf0d2;
+  margin-top: 100px;
+  padding: 100px 0;
+}
+.SEO-EXPERTS p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 15px 0 0;
+}
+.SEO-EXPERTS h1,
+.EXECUTE h1 {
+  font-family: Avenir-semi;
+  font-size: 42px;
+  font-weight: normal;
+  margin: 0 0 40px;
+}
+.EXECUTE .EXECUTE0-main {
+  background: url("../src/images/ourprocess.png") left top no-repeat;
+  background-size: contain;
+  display: table;
+  padding-top: 82px;
+  padding: 84px 40px 0;
+}
+.EXECUTE {
+  text-align: center;
+  padding: 100px 0;
+}
+.EXECUTE-items {
+  align-items: center;
+}
+.EXECUTE h4 {
+  color: var(--main-color);
+  font-family: Avenir-semi;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 13px 0 0;
+}
+.EXECUTE p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 15px 0 0;
+}
+.Lets {
+  text-align: center;
+  background: #e5faff;
+  padding: 100px 0;
+}
+.Lets .lets {
+  /* margin-top: 30px;
+  font-size: 50px;
+  text-align: center; */
+  font-size: 35px;
+  text-align: center;
+  margin: 17px;
+}
+.Lets .lets strong {
+  font-weight: bold;
+}
+.Lets p,
+.Deliverables p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 15px 0 0;
+}
+.Deliverables {
+  text-align: center;
+  padding: 100px 0;
+}
+.Deliverables h1 {
+  text-align: center;
+}
+.Deliverables p {
+  text-align: center;
+}
+.PPC-BENIFIT {
+  text-align: center;
+  padding: 100px 0;
+}
+.PPC-BENIFIT h1 {
+  font-size: 35px;
+  padding: 41px 0;
+  text-align: left;
+}
+.PPC-BENIFIT p {
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 15px 0 0;
 }
 /*.................. Home-Page-Media .................. */
 @media (min-width: 320px) and (max-width: 767px) {
@@ -3685,7 +4067,7 @@ footer li {
   .about-box h5,
   .cr-accord .col-lg-4,
   .check-sec img,
-  .job-txt .col-lg-6:last-child {
+  .job-txt .col-lg-6:last-child, .makes .col-lg-1 {
     display: none;
   }
   .whois-sec h1,
@@ -4380,6 +4762,10 @@ footer li {
     line-height: 1.6;
     text-align: center;
   }
+  .web-sec p {
+    font-size: 19px;
+    margin: 0 0 24px;
+  }
   .web-sec h3 span {
     display: inline;
   }
@@ -4678,6 +5064,59 @@ footer li {
     font-size: 26px;
     line-height: 1.6;
     padding-bottom: 40px;
+  }
+  /* ***********************WhyIndia************************** */
+  .Know_more .item {
+    height: 100vh;
+    display: block;
+    margin-top: 100px;
+    align-items: center;
+  }
+  .banner-caption h1 {
+    font-size: 30px;
+  }
+  .banner-caption p {
+    font-size: 15px;
+  }
+
+  .India h1:first-child {
+    font-size: 100%;
+    margin: 0px;
+    margin-bottom: 100px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+  }
+  .India .col-sm-4 {
+    flex: 0 0 100%;
+    max-width: 33.33%;
+  }
+  .India-item img {
+    max-width: 100%;
+  }
+  .India-item {
+    margin: 0px;
+  }
+  .India-item .India-item-img {
+    max-width: 100%;
+    max-height: 39px;
+  }
+  .makes {
+    padding: 0px;
+    background-color: #00ccff2e;
+  }
+  .makes h2:first-child {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-top: 100px;
+  }
+  .India-facts {
+    background-color: #000;
+    padding: 50px;
+    text-align: center;
+  }
+  .India-facts h1:first-child {
+    font-size: 160%;
   }
 }
 
@@ -5184,7 +5623,10 @@ footer li {
   .story-sec .col-lg-1,
   .easy-sec .col-lg-1,
   .job-detail .col-lg-1,
-  .job-detail .col-lg-2 {
+  .job-detail .col-lg-2,
+  .India .col-lg-2,
+  .makes .col-lg-1,
+  .India-facts .col-lg-2 {
     display: none;
   }
   .form-box h3,
@@ -5302,6 +5744,29 @@ footer li {
   .ecom-part2 h2 {
     margin: 20px;
     font-size: 25px;
+  }
+  /* *************************WhyIndia************************** */
+  .India h1:first-child {
+    font-size: 30px;
+    margin: 0;
+  }
+  .makes h2:first-child {
+    font-size: 29px;
+    margin: 14px 0 0 0;
+  }
+  .India-facts img {
+    max-height: 23px;
+    margin: 16px 0;
+  }
+  .India-facts p {
+    color: #fff;
+    font-size: 13px;
+    line-height: 150%;
+    margin-bottom: 17px;
+  }
+  .banner-caption h1 {
+    font-size: 37px;
+    font-weight: 800;
   }
 }
 
@@ -5598,6 +6063,15 @@ footer li {
     display: block;
     width: 200px;
     height: auto;
+  }
+  /* **************************WhyIndia**************************************** */
+  .India-item img {
+    max-height: 118px;
+  }
+  .India-item h3 {
+    font-size: 15px;
+    margin: 10px 0px 10px 0;
+    font-weight: 600;
   }
 }
 

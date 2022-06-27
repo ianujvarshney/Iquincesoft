@@ -14,7 +14,6 @@ import 'react-owl-carousel2/src/owl.carousel.css';
 import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import AwardFormsec from '../../container/AwardFormsec';
-import FAQ from '../../container/FAQ';
 import { TailSpin } from 'react-loader-spinner'
 import Partner from '../../container/Partner';
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';

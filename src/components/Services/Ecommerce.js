@@ -21,6 +21,7 @@ import Partner from '../../container/Partner';
 import image_body from '../../images/body-img3.svg';
 import woocommerce from '../../images/woocommerce.svg'
 import magento from '../../images/magento-icon.svg';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class Ecommerce extends Component {
     constructor(props) {
@@ -71,14 +72,11 @@ class Ecommerce extends Component {
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
                                     <p>ECOMMERCE</p>
-                                    <h1><strong>Ecommerce Developers</strong><br /></h1>
+                                    <h1><strong>iQuinceSoft allows you to work with the top 1% talent pool. We recruit the best IT talent pool from the nation to deliver you the best eCommerce development services.</strong><br /></h1>
                                     <ul>
-                                        <p>The iQuinceSoft Advantage ensures you:</p>
-                                        <li>Higher revenues by a significant margin.</li>
-                                        <li>Guaranteed results</li>
-                                        <li>Regular updates and insights on the ongoing projects</li>
-                                        <li>Swift initiation with the process</li>
-                                        <li>skilled team to deliver meaningful outputs outcomes. </li>
+
+                                        <li>Use the skills of our benchmark professionals to build, scale and conquer the categories you trade in the eCommerce sector.</li>
+
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -86,87 +84,7 @@ class Ecommerce extends Component {
                         </div>
                     </div>
 
-                    <div className="want-sec">
-                        <div className="container">
-                            <div className="row">
-                                <div className='col-lg-1'></div>
-                                <di className="col-lg-10">
-                                    <h1>If you want to build an online store, but you aren’t sure where to start, here are some common problems people have & what you should avoid</h1>
-                                </di>
-                            </div>
 
-                            <div className="row">
-                                <OwlCarousel options={wanted}>
-                                    <div className="want-txt">
-                                        <div>
-                                            <span>01</span>
-                                            <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
-                                        </div>
-                                    </div>
-                                    <div className="want-txt">
-                                        <div>
-                                            <span>01</span>
-                                            <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
-                                        </div>
-                                    </div>
-                                    <div className="want-txt">
-                                        <div>
-                                            <span>01</span>
-                                            <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
-                                        </div>
-                                    </div>
-                                    <div className="want-txt">
-                                        <div>
-                                            <span>01</span>
-                                            <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
-                                        </div>
-                                    </div>
-                                    <div className="want-txt">
-                                        <div>
-                                            <span>01</span>
-                                            <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
-                                        </div>
-                                    </div>
-                                </OwlCarousel>
-
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="want-part">
-                                        <div>
-                                            <span>01</span>
-                                            <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="want-part">
-                                        <div>
-                                            <span>01</span>
-                                            <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="want-part">
-                                        <div>
-                                            <span>01</span>
-                                            <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="want-part">
-                                        <div>
-                                            <span>01</span>
-                                            <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <FormPopup />
-                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
-                    </div>
 
                     <div className='ecom-sec'>
                         <div className="container">
@@ -434,7 +352,59 @@ class Ecommerce extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why is an eCommerce store vital for your business?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                With a tremendous increase in online shoppers, it becomes vital to register your presence in the online space. Building an eCommerce store can help you develop your opportunities and scale the business to the next level.
+                                                iQuinceSoft can help you build a felt presence and attract clients to widen your customer base to help you meet your business needs and demands.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why choose iQuinceSoft for eCommerce development?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                iQuinceSoft can help you reach the target audience with the help of the following things that complement your business development process.
+                                                <ul>
+                                                    <li>We offer a powerful support system.</li>
+                                                    <li> We follow the standards of the international level.</li>
+                                                    <li> We use the talent that can ignite the spark of success and create a buzz about your brands in the market.</li>
+                                                    <li> We track your budget and create user-friendly projects in the stipulated time.</li>
+                                                </ul>
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Will I be in the loop during the development process?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes! We offer professional eCommerce developer skills to hire. You can hire a developer and supervise him.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How much time is your eCommerce developers taking to build an appealing and engaging web store?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                It depends on the project requirements. It is usual to develop an eCommerce store within the stipulated time frame of 1 to 4 weeks.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>
@@ -491,3 +461,84 @@ class Ecommerce extends Component {
 
 export default Ecommerce;
 
+{/* <div className="want-sec">
+    <div className="container">
+        <div className="row">
+            <div className='col-lg-1'></div>
+            <di className="col-lg-10">
+                <h1>If you want to build an online store, but you aren’t sure where to start, here are some common problems people have & what you should avoid</h1>
+            </di>
+        </div>
+
+        <div className="row">
+            <OwlCarousel options={wanted}>
+                <div className="want-txt">
+                    <div>
+                        <span>01</span>
+                        <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
+                    </div>
+                </div>
+                <div className="want-txt">
+                    <div>
+                        <span>01</span>
+                        <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
+                    </div>
+                </div>
+                <div className="want-txt">
+                    <div>
+                        <span>01</span>
+                        <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
+                    </div>
+                </div>
+                <div className="want-txt">
+                    <div>
+                        <span>01</span>
+                        <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
+                    </div>
+                </div>
+                <div className="want-txt">
+                    <div>
+                        <span>01</span>
+                        <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
+                    </div>
+                </div>
+            </OwlCarousel>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="want-part">
+                    <div>
+                        <span>01</span>
+                        <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="want-part">
+                    <div>
+                        <span>01</span>
+                        <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="want-part">
+                    <div>
+                        <span>01</span>
+                        <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="want-part">
+                    <div>
+                        <span>01</span>
+                        <p>They have a layout this isn’t <strong>aesthetic, usable, or quick-loading.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <FormPopup />
+    <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+</div> */}

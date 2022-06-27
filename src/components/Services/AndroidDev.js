@@ -10,7 +10,6 @@ import WebSec from '../../container/WebSec';
 import ReviewSec from '../../container/ReviewSec';
 import EuquireSec from '../../container/EuquireSec';
 import AwardSec from '../../container/AwardSec';
-import FAQ from '../../container/FAQ';
 import Partner from '../../container/Partner';
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';

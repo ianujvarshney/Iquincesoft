@@ -18,7 +18,7 @@ import FAQ from '../../container/FAQ';
 import AwardFormsec from '../../container/AwardFormsec';
 import { TailSpin } from 'react-loader-spinner';
 import Partner from '../../container/Partner';
-
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 
 class Mobile_Developementjs extends Component {
     constructor(props) {
@@ -61,15 +61,9 @@ class Mobile_Developementjs extends Component {
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
                                     <p>MOBILE DEVELOPMENT</p>
-                                    <h1><strong>Hire Mobile App Developers</strong><br /></h1>
+                                    <h1><strong>Mobile apps are the first junction of prospects and business. Keep it Clean, Appealing and Creative! </strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional mobile app developers.  </li>
+                                        <li>Mobile is the first gadget we use to seek information! Keep your web apps in sync with it for more traffic, sales and revenue.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -297,7 +291,54 @@ class Mobile_Developementjs extends Component {
 
                     <WorkSec />
 
-                    <FAQ />
+                    <div className="frequent-sec">
+                        <h3>Frequently Asked Questions</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-2 col-md-1"></div>
+                                <div className="col-lg-8 col-md-10" data-aos="fade-right">
+                                    <Accordion allowZeroExpanded preExpanded={['a']}>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Why choose iQuinceSoft for your mobile app development services?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                We are process-centric people. We craft a process for your mobile app development that ensures high productivity and efficiency. iQuinceSoft ensures you get the future-proof solutions and offer top-notch mobile application development services.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How much does it cost to develop a mobile app?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                The answer to this question is not straight, as the cost varies. It depends on the project complexity, development process, User interface designs, and the size of the app.
+                                                For a precise quote, please get in touch with our team.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                How long does it take to develop an app?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                It depends on the tech stacks used and scopes with other varying factors. The usual time taken by the mobile app development process is 3 to 8 months.
+                                                To slash down the time-to-market, iQuinceSoft can prioritize the features which focus on the core ones first.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                        <AccordionItem>
+                                            <AccordionItemButton>
+                                                Do you sign confidentiality agreements?
+                                            </AccordionItemButton>
+                                            <AccordionItemPanel>
+                                                Yes. We do sign Non-Disclosure Agreements to keep your source code and project confidential.
+                                            </AccordionItemPanel>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </div>
+                        </div>
+                        <FormPopup />
+                        <h5><Link to={'#EuquireSec'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}>Or, Use this form to share your requirements.<span>Get guaranteed response within 8 Hrs.</span></Link></h5>
+                    </div>
 
                     <div className="culture-sec insight-sec">
                         <h3>Featured Insights</h3>
