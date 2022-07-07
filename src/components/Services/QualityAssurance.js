@@ -61,15 +61,10 @@ class QualityAssurance extends Component {
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
                                     <p>QUALITY ASSURANCE</p>
-                                    <h1><strong>Testing & QA </strong><br /></h1>
+                                    <h1><strong>Hire the best Quality QA testers with the available options that suit your project needs </strong><br /></h1>
                                     <ul>
-                                        <p>What is my benefit in it?</p>
-                                        <li>Reduce the operating cost</li>
-                                        <li>Increase the overall revenues</li>
-                                        <li>Smoothen the process</li>
-                                        <li>Get regular updates on any and every project</li>
-                                        <li>Get streamlined results as per your business goals. </li>
-                                        <li>Highly skilled and professional in testing.  </li>
+                                        <li>Hire the Offshore QA testers hourly, fixed cost, or full time. Use their skills to Optimize the Outcomes.</li>
+                                        <li>QA Testing is a task of sheer talent and responsibility, Hire someone like iQuinceSoft!!</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -88,117 +83,94 @@ class QualityAssurance extends Component {
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
-                                            <h4>Functional Testing</h4>
-                                            <p>We ensure that the security features, installation procedure, APIs, code function and other aspects of a web/mobile app are in-sync with the designed particulars and meet the end-user needs. </p>
+                                            <h4>Offshore Software Testing & QA services</h4>
+                                            <p>iQuinceSoft employs the best QA engineers across the aspects of software applications. We ensure our deliverables meet and exceed your expectations and are of the highest standards.
+                                                Outsource your software testing, and QA needs to iQuinceSoft for the highest quality standards and time-bound delivery. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg1} /> */}
-                                            <h4>Usability Testing</h4>
-                                            <p>With the extensively trained testing professionals, we offer you a defined and productive approach for mobile app usability testing, A/B testing, design surveys, and preference testing to build an app that meets your business goals and proves to be productive.</p>
+                                            <h4>Web App Testing</h4>
+                                            <p>We leverage the best testing tools for web apps across browsers and devices. We trace and track the defects in all the aspects of functionality, interface, performance, security, usability, and accessibility. We ensure that your app functions as intended. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg2} /> */}
-                                            <h4>Integration Testing</h4>
-                                            <p>Our QA experts leverage the bottom-up or top-down process to test the integration of various modules within your app. Thus we ensure flawless communication between them while keeping the budget and time factors in consideration.</p>
+                                            <h4>Mobile App Testing</h4>
+                                            <p>We test every line of code to excavate bugs. We help you roll out the products quickly. We can and have tried different mobile apps for performance, functionality, network connectivity, usability, and security. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
-                                            <h4>Regression Testing</h4>
-                                            <p>Our QA specialists offer error-free regression testing services even after modifications, patches, configurations, and enhancements changes. We at iQuinceSoft offer maximum test coverage to ensure these changes do not obstruct the seamless functionality of the apps. </p>
+                                            <h4>User Experience Testing</h4>
+                                            <p>The testers from iQuinceSoft can ensure you easy-to-use experiences for the customers. We source the participants who meet your customer profiles, help execute the studies and give suggestions and recommendations to improve the customer experience and engagement.  </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg4} /> */}
-                                            <h4>Unit Testing</h4>
-                                            <p>Our team of QA experts offers the proficiency to scrutinize the bugs before the SDLC advances by writing high-quality unit tests. Thus, we pave the way for less pervasive re-factoring by the developers. </p>
+                                            <h4>Manual Testing</h4>
+                                            <p>We are the trained professionals who can ensure your apps have compliant functions, security features, APIs, installation procedures, and the related aspects of functionality with proper specifications and meet your customer needs. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
-                                            <h4>Compatibility Testing</h4>
-                                            <p>Our proficient testers can bring you the benefits of compatibility testing services to operating systems, databases, devices, networks, versions, bandwidth handling capacity and browsers. With the comprehensive compatibility testing services at iQuinceSoft, we clear all the software's bottlenecks to offering the same experience to your user.</p>
-                                        </div>
-                                        <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
-                                            <h4>Performance Testing</h4>
-                                            <p>IQuinceSoft is the pioneer at offering performance testing services. We deliver comprehensive and cost-effective performance services from planning, scripting, executing and reporting within the stipulated time. </p>
-                                        </div>
-                                        <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Automated Testing</h4>
-                                            <p>iQuinceSoft offers test automation planning, tools selection, test environment setup and test data preparation with maintenance and reporting. We help you optimize the testing time and cost as well. Leverage the vast experience of iQuinceSoft in automation testing and get tailored solutions that help you reach the next level with iQuinceSoft advantage. </p>
+                                            <p>Hire our extensively trained trams from iQuinceSoft for in-depth knowledge of the testing tools to automate the tests, create automated test scripts and develop new test cases. We ensure you get an app with the consistent quality assurance you always look for.</p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img src={webImg5} /> */}
-                                            <h4>Security Testing Services</h4>
-                                            <p>Our skilled testers offer you premium security testing services with spotting vulnerabilities in the IT environment and offer suggestions on the migration. We ensure your business and customers enjoy the heck-proof system apps. </p>
+                                            <h4>Regression Testing</h4>
+                                            <p>We ensure your apps are defect-free post modifications, enhancements, and changes in the configurations. Our trained team of quality testers provides maximum test coverage to ensure the changes do not impede the smooth functioning of the applications.  </p>
                                         </div>
+                                        <div className="cult-box">
+                                            <div class="tech-dot"></div>
+                                            <h4>Integration Testing</h4>
+                                            <p>We leverage our top-down and bottom-up methods to test the smooth integration of the different modules in your app. We ensure seamless communication, keeping budget and time constraints in mind. </p>
+                                        </div>
+
                                     </OwlCarousel>
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
-                                            <h4>Functional Testing</h4>
-                                            <p>We ensure that the security features, installation procedure, APIs, code function and other aspects of a web/mobile app are in-sync with the designed particulars and meet the end-user needs. </p>
+                                            <h4>Offshore Software Testing & QA services</h4>
+                                            <p>iQuinceSoft employs the best QA engineers across the aspects of software applications. We ensure our deliverables meet and exceed your expectations and are of the highest standards.
+                                                Outsource your software testing, and QA needs to iQuinceSoft for the highest quality standards and time-bound delivery. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg1} /> */}
-                                            <h4>Usability Testing</h4>
-                                            <p>With the extensively trained testing professionals, we offer you a defined and productive approach for mobile app usability testing, A/B testing, design surveys, and preference testing to build an app that meets your business goals and proves to be productive.</p>
+                                            <h4>Web App Testing</h4>
+                                            <p>We leverage the best testing tools for web apps across browsers and devices. We trace and track the defects in all the aspects of functionality, interface, performance, security, usability, and accessibility. We ensure that your app functions as intended. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg2} /> */}
-                                            <h4>Integration Testing</h4>
-                                            <p>Our QA experts leverage the bottom-up or top-down process to test the integration of various modules within your app. Thus we ensure flawless communication between them while keeping the budget and time factors in consideration.
+                                            <h4>Mobile App Testing</h4>
+                                            <p>We test every line of code to excavate bugs. We help you roll out the products quickly. We can and have tried different mobile apps for performance, functionality, network connectivity, usability, and security.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
-                                            <h4>Regression Testing</h4>
-                                            <p>Our QA specialists offer error-free regression testing services even after modifications, patches, configurations, and enhancements changes. We at iQuinceSoft offer maximum test coverage to ensure these changes do not obstruct the seamless functionality of the apps. </p>
+                                            <h4>User Experience Testing</h4>
+                                            <p>The testers from iQuinceSoft can ensure you easy-to-use experiences for the customers. We source the participants who meet your customer profiles, help execute the studies and give suggestions and recommendations to improve the customer experience and engagement.  </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg4} /> */}
-                                            <h4>Unit Testing</h4>
-                                            <p>Our team of QA experts offers the proficiency to scrutinize the bugs before the SDLC advances by writing high-quality unit tests. Thus, we pave the way for less pervasive re-factoring by the developers. </p>
+                                            <h4>Manual Testing</h4>
+                                            <p>We are the trained professionals who can ensure your apps have compliant functions, security features, APIs, installation procedures, and the related aspects of functionality with proper specifications and meet your customer needs. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
-                                            <h4>Compatibility Testing</h4>
-                                            <p>Our proficient testers can bring you the benefits of compatibility testing services to operating systems, databases, devices, networks, versions, bandwidth handling capacity and browsers. With the comprehensive compatibility testing services at iQuinceSoft, we clear all the software's bottlenecks to offering the same experience to your user.</p>
-                                        </div>
-
-                                        <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
-                                            <h4>Performance Testing</h4>
-                                            <p>IQuinceSoft is the pioneer at offering performance testing services. We deliver comprehensive and cost-effective performance services from planning, scripting, executing and reporting within the stipulated time. </p>
-                                        </div>
-                                        <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
                                             <h4>Automated Testing</h4>
-                                            <p>iQuinceSoft offers test automation planning, tools selection, test environment setup and test data preparation with maintenance and reporting. We help you optimize the testing time and cost as well. Leverage the vast experience of iQuinceSoft in automation testing and get tailored solutions that help you reach the next level with iQuinceSoft advantage. </p>
+                                            <p>Hire our extensively trained trams from iQuinceSoft for in-depth knowledge of the testing tools to automate the tests, create automated test scripts and develop new test cases. We ensure you get an app with the consistent quality assurance you always look for.</p>
                                         </div>
+
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg5} /> */}
-                                            <h4>Security Testing Services</h4>
-                                            <p>Our skilled testers offer you premium security testing services with spotting vulnerabilities in the IT environment and offer suggestions on the migration. We ensure your business and customers enjoy the heck-proof system apps. </p>
+                                            <h4>Regression Testing</h4>
+                                            <p>We ensure your apps are defect-free post modifications, enhancements, and changes in the configurations. Our trained team of quality testers provides maximum test coverage to ensure the changes do not impede the smooth functioning of the applications.  </p>
+                                        </div>
+                                        <div className="col-lg-4 col-md-4"></div>
+                                        <div className="col-lg-4 col-md-4">
+                                            <h4>Integration Testing</h4>
+                                            <p>We leverage our top-down and bottom-up methods to test the smooth integration of the different modules in your app. We ensure seamless communication, keeping budget and time constraints in mind. </p>
                                         </div>
                                     </div>
                                 </div>

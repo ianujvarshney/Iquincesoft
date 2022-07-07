@@ -61,10 +61,10 @@ class Web_Development extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <p>WEB</p>
-                                    <h1><strong>Hire Skilled Web developers to build and scale single page applications to complex web systems that can scale your business.</strong><br /></h1>
+                                    <p>WEB DEVELOPMENT</p>
+                                    <h1><strong>Optimal web solutions that suit your business</strong><br /></h1>
                                     <ul>
-                                        <p>Hire the taleted web developers to get websites that complement your Business and help you achieve business goals. </p>
+                                        <li>Hire web developers with a demonstrated work history to catalyse your growth</li>
                                         <li>We provide websites that can convert a first time visitor into a brand advocate.</li>
                                     </ul>
                                 </div>
@@ -78,47 +78,45 @@ class Web_Development extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Hire Web Developers with the trust of iQuinceSoft</h3>
-                                    <p>We provide dedicated web developers who can serve your software needs hourly/full-time and project basis. Use
-                                        the skills of the best developers from the trust of iQuinceSoft. We help you increase the overall productivity by
-                                        slashing down the time-to-market and overall costing that suits your budget and business.</p>
+                                    <h3>We have the vision to visualize your business goal</h3>
+                                    <p>Hire web developers from iQuinceSoft for clean codes, scalability and quick time-to-market</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Open-source Development</h4>
-                                        <p>More than 2 million active stores make Web the preferred eCommerce site. </p>
+                                        <h4>Strategy t</h4>
+                                        <p>We focus on usable and scalable options to manage your needs. </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Built on WordPress</h4>
-                                        <p>Web is one of the most extendable, adaptable and flexible eCommerce solutions. This is built on WordPress. The stores can integrate Web within WordPress to create e-Commerce designs and templates.</p>
+                                        <h4>Design</h4>
+                                        <p>A user experience that exceeds your expectations and reflects your business spirits</p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Powerful Analytics</h4>
-                                        <p>Web offers an intuitive and robust interface that helps businesses. It provides an analytical report that is easy to understand by business owners.</p>
+                                        <h4>World Class Layouts</h4>
+                                        <p>Visually appealing layouts to help your business attract more traffic and reduce the bounce rate</p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Customer Support</h4>
-                                        <p>Every online business prefers Web. Customer support makes it most accessible across the globe. Web customer support team will also support you in every issue.</p>
+                                        <h4>Business-tailored architecture</h4>
+                                        <p>We design and develop your web solutions considering your company prospects and scalable products.</p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Web is fast</h4>
-                                        <p>ast and responsive e-commerce experience for online stores. This is a crucial benefit of Web. </p>
+                                        <h4>Fast Iterations</h4>
+                                        <p>We deliver more with the pre-made components and templates. This is the benefit of having talented developers on board. </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Rest API</h4>
-                                        <p>The developers can read and write the products, orders, coupons, shipping channels, and discounts using REST APIs. </p>
+                                        <h4>Quality Assurance</h4>
+                                        <p>QA is a precursor stage before deployment at our end with manual and automated tests. We remove the bugs and fix performance issues and conversion blockers. </p>
                                     </div>
 
 
@@ -128,48 +126,48 @@ class Web_Development extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Open-source Development</h4>
-                                        <p>More than 2 million active stores make Web the preferred eCommerce site. </p>
+                                        <h4>Strategy</h4>
+                                        <p>We focus on usable and scalable options to manage your needs. </p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Built on WordPress</h4>
-                                        <p>Web is one of the most extendable, adaptable and flexible eCommerce solutions. This is built on WordPress. The stores can integrate Web within WordPress to create e-Commerce designs and templates.</p>
+                                        <h4>Design</h4>
+                                        <p>A user experience that exceeds your expectations and reflects your business spirits</p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Powerful Analytics</h4>
-                                        <p>Web offers an intuitive and robust interface that helps businesses. It provides an analytical report that is easy to understand by business owners.</p>
+                                        <h4>World Class Layouts</h4>
+                                        <p>Visually appealing layouts to help your business attract more traffic and reduce the bounce rate</p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Customer Support</h4>
-                                        <p>Every online business prefers Web. Customer support makes it most accessible across the globe. Web customer support team will also support you in every issue. </p>
+                                        <h4>Business-tailored architecture</h4>
+                                        <p>We design and develop your web solutions considering your company prospects and scalable products. </p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Web is fast</h4>
-                                        <p>Fast and responsive e-commerce experience for online stores. This is a crucial benefit of Web. </p>
+                                        <h4>Fast Iterations</h4>
+                                        <p> We deliver more with the pre-made components and templates. This is the benefit of having talented developers on board. </p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Rest API</h4>
-                                        <p>The developers can read and write the products, orders, coupons, shipping channels, and discounts using REST APIs. </p>
+                                        <h4>Quality Assurance</h4>
+                                        <p>QA is a precursor stage before deployment at our end with manual and automated tests. We remove the bugs and fix performance issues and conversion blockers. </p>
                                     </div>
                                 </div>
 
@@ -187,7 +185,7 @@ class Web_Development extends Component {
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg} /> */}
-                                            <h4>Web Website Customization</h4>
+                                            <h4>Website Customization</h4>
                                             <p>Customized features for your online stores with iQuinceSoft Web services. We create, add and apply templates, functionalities and styles with simple CSS and HTML. </p>
                                         </div>
 
@@ -236,7 +234,7 @@ class Web_Development extends Component {
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg} /> */}
-                                            <h4>Web Website Customization</h4>
+                                            <h4>Website Customization</h4>
                                             <p>Customized features for your online stores with iQuinceSoft Web services. We create, add and apply templates, functionalities and styles with simple CSS and HTML. </p>
                                         </div>
 

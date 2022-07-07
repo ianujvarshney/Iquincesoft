@@ -78,9 +78,10 @@ class CloudDevelopment extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Cloud Development can take your team's capabilities to the next level</h3>
+                                    <h3>Take your capabilities to the next level with iQuinceSoft Cloud</h3>
                                     <p>Build and scale your apps with the help of resources which require a rare skill set. To build and scale the apps, you need knowledge and experience in cloud development.
-                                        Let us start your cloud development with the trust of iQuinceSoft and take your business capabilities to the next level. </p>
+
+                                        <br />Let us start your cloud development with the trust of iQuinceSoft and take your business capabilities to the next level. </p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
@@ -99,7 +100,7 @@ class CloudDevelopment extends Component {
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
                                         <h4>Easy Deployment and Integration</h4>
-                                        <p>Cloud development is renowned for its easy deployment and integration.</p>
+                                        <p>Cloud development is renowned for its easy deployment and integration. We ensure your products get easily deployed and integrated</p>
                                     </div>
 
                                     <div className="cult-box">
@@ -139,7 +140,7 @@ class CloudDevelopment extends Component {
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
                                         <h4>Easy Deployment and Integration</h4>
-                                        <p>Cloud development is renowned for its easy deployment and integration.</p>
+                                        <p>Cloud development is renowned for its easy deployment and integration.  We ensure your products get easily deployed and integrated</p>
                                     </div>
                                 </div>
 
@@ -174,15 +175,11 @@ class CloudDevelopment extends Component {
                                     <OwlCarousel options={culture}>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            <h4>Cloud-native Architecture</h4>
-                                            <p>The best thing about the cloud architecture is it deploys frequently, and when needed, we can roll it back as well. It is accessible and utilizes the global infrastructure at less price. It scales the software following the business needs. </p>
+                                            <h4>Get Unparalleled Scalability with the Cloud Computing </h4>
+                                            <p>Are you planning a cloud computing project? We helped hundreds of businesses to sail through. We have seasoned DevOps engineers and cloud developers who can ensure your cloud app uses the best practices and benefits scalability, flexibility, and security. </p>
                                         </div>
 
-                                        <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            <h4>Cloud Maintenance</h4>
-                                            <p>Are you planning a cloud computing project? We helped hundreds of businesses to sail through. We have seasoned DevOps engineers and cloud developers who can ensure your cloud app uses the best practices and benefits scalability, flexibility, and security.</p>
-                                        </div>
+
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
@@ -217,13 +214,8 @@ class CloudDevelopment extends Component {
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            <h4>WooCommerce Website Customization</h4>
-                                            <p>The best thing about the cloud architecture is it deploys frequently, and when needed, we can roll it back as well. It is accessible and utilizes the global infrastructure at less price. It scales the software following the business needs. </p>
-                                        </div>
-
-                                        <div className="col-lg-4 col-md-4">
-                                            <h4>Cloud Maintenance</h4>
-                                            <p>Are you planning a cloud computing project? We helped hundreds of businesses to sail through. We have seasoned DevOps engineers and cloud developers who can ensure your cloud app uses the best practices and benefits scalability, flexibility, and security.</p>
+                                            <h4>Get Unparalleled Scalability with the Cloud Computing </h4>
+                                            <p>Are you planning a cloud computing project? We helped hundreds of businesses to sail through. We have seasoned DevOps engineers and cloud developers who can ensure your cloud app uses the best practices and benefits scalability, flexibility, and security. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">

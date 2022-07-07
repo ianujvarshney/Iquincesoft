@@ -8,19 +8,15 @@ import 'react-owl-carousel2/src/owl.carousel.css';
 import { CareerData } from '../json/careers';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import FormPopup from '../container/FormPopup';
-import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
-// import { ShareButton } from "react-custom-share";
-// import { ShareBlockStandard, ShareButtonCircle, } from 'react-custom-share';
-// import { ShareButton } from "react-custom-share";
 import arrow5 from '../images/arrow5.png';
 import arrow2 from '../images/arrow2.png';
 import careerImg from '../images/career-img.png';
-// import FaTwitter from 'react-icons/lib/fa/twitter'
-// import FaLinkedin from 'react-icons/lib/fa/linkedin';
-import { FaTwitter, FaLinkedin, FaFacebook, FaLink } from 'react-icons/fa';
-// import FaFacebook from 'react-icons/lib/fa/facebook';
 import { TailSpin } from 'react-loader-spinner'
 import { Joboffers } from '../json/JobOffers';
+import { FaTwitter, FaLinkedin, FaFacebook, FaLink } from 'react-icons/fa';
+import { Accordion, AccordionItem, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
+import { FacebookShareButton, FacebookIcon, LinkedinShareButton, LinkedinIcon, TwitterShareButton, TwitterIcon, WhatsappShareButton, WhatsappIcon } from "react-share";
+
 
 
 class Career extends Component {
@@ -74,30 +70,6 @@ class Career extends Component {
 		});
 	}
 	render() {
-		// const shareButtonProps = {
-		// 	url: "https://github.com/greglobinski/react-custom-share",
-		// 	network: "Facebook",
-		// 	text: "Give it a try - react-custom-share component",
-		// 	longtext:
-		// 		"Social sharing buttons for React. Use one of the build-in themes or create a custom one from the scratch."
-		// };
-		// const ShareComponent = props => {
-		// 	// create object with props for shareBlock
-		// 	const shareBlockProps = {
-		// 		url: 'https://mywebsite.com/page-to-share/',
-		// 		button: ShareButtonCircle,
-		// 		buttons: [
-		// 			{ network: 'Twitter', icon: FaTwitter },
-		// 			{ network: 'Facebook', icon: FaFacebook },
-		// 			// { network: 'GooglePlus', icon: FaGooglePlus },
-		// 			// { network: 'Email', icon: FaEnvelope },
-		// 			// { network: 'Pinterest', icon: FaPinterest, media: 'https://mywebsite.com/image-to-share.jpg' },
-		// 			{ network: 'Linkedin', icon: FaLinkedin },
-		// 		],
-		// 		text: `Give it a try - mywebsite.com `,
-		// 		longtext: `Take a look at this super website I have just found.`,
-		// 	};
-		// }
 		const { CareerJson, Career3Json, joblinks3 } = this.state;
 		const culture = {
 			items: 1,
@@ -113,10 +85,6 @@ class Career extends Component {
 			this.state.Loading ? <div className="spinner"><TailSpin color="#00ccff" height={80} width={80} /></div> :
 				<>
 					<Header headerClass={'serv-head cr-head'} />
-					{/* <ShareButton {...shareButtonProps}>
-						<FaFacebook />
-					</ShareButton>; */}
-					{/* <ShareBlockStandard {...shareBlockProps} />; */}
 					{CareerJson && CareerJson.map(CareerJsonS => {
 						return (
 							<div className="about-banner">
@@ -128,7 +96,33 @@ class Career extends Component {
 												<p dangerouslySetInnerHTML={{ __html: CareerJsonS.content }}></p>
 												<Link to={'/jobOffer'} scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}><h5><img alt="img" src={arrow2} />Job Offers</h5></Link>
 											</div>
-											<div className="col-lg-7 col-md-5" data-aos="fade-up"><a href="https://www.facebook.com/iquincesoft"><FaFacebook /></a> <a href="https://www.linkedin.com/company/iquincesoft-consulting-services-pvt-ltd-/mycompany/"><FaLinkedin /></a> <a href="https://twitter.com/iquincesoft"><FaTwitter /></a> <Link to={"#"}><FaLink /></Link></div>
+											<div className="col-lg-7 col-md-5" data-aos="fade-up">
+												<FacebookShareButton
+													url={'https://dev.iquincesoft.com/careers'}
+													quote={'Share Me'}
+													className="Demo__some-network__share-button">
+													<FacebookIcon size={40} round />
+												</FacebookShareButton>
+												<LinkedinShareButton
+													url={'https://dev.iquincesoft.com/careers'}
+													quote={'Share Me'}
+													className="Demo__some-network__share-button">
+													<LinkedinIcon size={40} round />
+												</LinkedinShareButton>
+												<TwitterShareButton
+													url={'https://dev.iquincesoft.com/careers'}
+													quote={'Share Me'}
+													className="Demo__some-network__share-button">
+													<TwitterIcon size={40} round />
+												</TwitterShareButton>
+												<WhatsappShareButton
+													url={'https://dev.iquincesoft.com/careers'}
+													quote={'Share Me'}
+													className="Demo__some-network__share-button">
+													<WhatsappIcon size={40} round />
+												</WhatsappShareButton>
+
+											</div>
 										</div>
 									</div>
 								</div>

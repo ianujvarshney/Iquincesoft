@@ -13,8 +13,6 @@ import { Main } from '../json/Main';
 import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 
-import whyVd from '../images/why-vd.jpg';
-
 import img1 from '../images/serv-icon1.svg';
 import img2 from '../images/serv-icon2.svg';
 import img3 from '../images/serv-icon3.svg';
@@ -26,6 +24,13 @@ import imgs3 from '../images/tech-icon2.svg';
 import imgs4 from '../images/tech-icon3.svg';
 import imgs5 from '../images/tech-icon4.svg';
 import imgs6 from '../images/tech-icon5.svg';
+import Dedication from '../images/Dedication.svg';
+import Timer from '../images/Timer.svg';
+import project from '../images/Support.svg';
+import result from '../images/result.svg';
+import Star from '../images/Team.svg';
+import Launch from '../images/Launch.svg';
+import Developer2 from '../images/Developer2.svg';
 
 import star from '../images/star.png';
 import banimg from '../images/ban-img.png';
@@ -403,8 +408,8 @@ class Home extends Component {
 													:
 													<div key={index} className="tech-box dd-1">
 														<div key={index} className="tech-dot"></div>
-														<img alt="img" src={Choosejson2S.img} />
-														<h4>Technology Fast 50 Deloitte</h4>
+														<img height="60px" alt="img" src={Choosejson2S.img} />
+														<h4>A decade of dedication</h4>
 													</div>
 
 											);
@@ -412,32 +417,66 @@ class Home extends Component {
 									</div>
 
 									<div className="col-lg-8 col-md-8">
-										{chooseJson.length && (
-											<OwlCarousel options={whySlide}>
-												{chooseJson.map((ChoosejsonS, index) => {
-													return (
-														<div>
-															<div key={index} className="tech-box dd-1">
-																<div className="tech-dot"></div>
-																<img alt="img" src={ChoosejsonS.img} />
-																<h4 dangerouslySetInnerHTML={{ __html: ChoosejsonS.name }}></h4>
-															</div>
+										<OwlCarousel options={whySlide}>
+											<div>
+												<div className="tech-box dd-1 tech-box-color">
+													<div className="tech-dot"></div>
+													<img height="60px" alt="img" src={Star} />
+													<h4>150 + 5-Star Reviews</h4>
+												</div>
 
-															<div key={index} className="tech-box dd-1">
-																<div className="tech-dot"></div>
-																<img alt="img" src={ChoosejsonS.img} />
-																<h4 dangerouslySetInnerHTML={{ __html: ChoosejsonS.name }}></h4>
-															</div>
-														</div>
-													);
-												})}
-											</OwlCarousel>
-										)}
-										<div className="tech-box dd">
+												<div className="tech-box dd-1">
+													<div className="tech-dot"></div>
+													<img height="60px" alt="img" src={Timer} />
+													<h4>Time-bound delivery</h4>
+												</div>
+												<div className="tech-box dd-1 tech-box-color">
+													<div className="tech-dot"></div>
+													<img height="60px" alt="img" src={Developer2} />
+													<h4>Top 3% Developers</h4>
+												</div>
+											</div>
+											<div>
+												<div className="tech-box dd-1">
+													<div className="tech-dot"></div>
+													<img height="60px" alt="img" src={project} />
+													<h4>Unparalleled Support (Post-delivery)</h4>
+												</div>
+												<div className="tech-box dd-1 tech-box-color">
+													<div className="tech-dot"></div>
+													<img height="60px" alt="img" src={Launch} />
+													<h4>20,000 + projects delivered successfully</h4>
+												</div>
+												<div className="tech-box dd-1">
+													<div className="tech-dot"></div>
+													<img height="60px" alt="img" src={result} />
+													<h4>Results that matter</h4>
+												</div>
+											</div>
+										</OwlCarousel>
+										{/* <OwlCarousel options={whySlide}>
+											<div>
+												<div className="tech-box dd-1">
+													<div className="tech-dot"></div>
+													<img height="60px" alt="img" src={Star} />
+													<h4>150 + 5-Star Reviews</h4>
+												</div>
+											</div>
+											<div>
+												<div className="tech-box dd-1">
+													<div className="tech-dot"></div>
+													<img height="60px" alt="img" src={Star} />
+													<h4>150 + 5-Star Reviews</h4>
+												</div>
+
+											</div>
+										</OwlCarousel> */}
+										{/* <div className="tech-box dd">
 											<div className="tech-dot"></div>
 											<img alt="img" width="100%" src={whyVd} />
-										</div>
+										</div> */}
 									</div>
+
 								</div>
 							</div>
 							<FormPopup />

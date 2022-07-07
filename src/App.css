@@ -608,7 +608,7 @@ header .dropdown-menu li a {
 }
 .serv-box h4,
 .tech-box h4 {
-  color: var(--main-color);
+  color: black;
   font-size: 16px;
   letter-spacing: 0.01em;
   margin: 5px 0 17px;
@@ -735,6 +735,9 @@ header .dropdown-menu li a {
   margin: 0 15px 15px;
   padding: 5px 5px 12px;
   position: relative;
+}
+.tech-box-color {
+  background-color: #e9f7ff !important;
 }
 .tech-box::before {
   border: 2px solid var(--main-color);
@@ -1746,7 +1749,13 @@ footer li {
 .serv-sec-2 .serv-txt h4 .serv-sec-span {
   display: none;
 }
+.serv-sec-2 .serv-txt-1 h4 .serv-sec-span {
+  display: none;
+}
 .serv-sec.serv-sec-2 .serv-txt p {
+  margin-bottom: 0;
+}
+.serv-sec.serv-sec-2 .serv-txt-1 p {
   margin-bottom: 0;
 }
 .serv-txt {
@@ -1758,21 +1767,39 @@ footer li {
   padding: 34px;
   position: relative;
 }
+.serv-txt-1 {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  height: 100%;
+  padding: 34px;
+  position: relative;
+}
 .serv-txt h4 {
   text-align: left !important;
   position: relative;
-  padding: 0 0 10px 35px;
+  padding: 0 0 10px 46px;
   text-align: left;
   font-size: 17px;
   line-height: 1.6;
   margin: 15px 0 0;
 }
+/* .serv-txt-1 h4 {
+  text-align: left !important;
+  position: relative;
+  padding: 0 0 10px 46px;
+  text-align: left;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 15px 0 0;
+} */
 .serv-txt h4:before {
   content: "";
   position: absolute;
   background-image: url(./images/handshake.png);
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   top: -5px;
   left: 0;
   background-size: cover;
@@ -3360,7 +3387,7 @@ footer li {
 .process-sec picture img {
   margin: 50px auto 0;
   display: block;
-  /* width: 250px; */
+  width: 100%;
   height: auto;
 }
 .process-sec .process-box {
@@ -3870,8 +3897,7 @@ footer li {
   font-size: 25px;
   margin-bottom: 6px;
 }
-.BENEFITS-items svg:not(:root).svg-inline--fa,
-svg:not(:host).svg-inline--fa {
+.EXECUTE-items h1 {
   position: relative;
   background: #fff;
   color: #52535c;
@@ -3881,19 +3907,20 @@ svg:not(:host).svg-inline--fa {
   border-radius: 50%;
   border: 2px solid #f4f3f3;
   transition: all 0.33s ease-in-out;
-  width: 120px;
-  height: 120px;
+  width: 125px;
+  height: 125px;
   justify-content: center;
   box-shadow: 0 2px 0 0px rgba(0, 0, 0, 0.017);
-  left: 80px;
+  left: 60px;
+  top: -4px;
   transition: border 2s;
+  align-items: center;
 }
-.BENEFITS-items svg:not(:root).svg-inline--fa,
-svg:not(:host).svg-inline--fa:hover {
+
+.EXECUTE-items h1:hover {
   border: 2px solid var(--main-color);
 }
-.BENEFITS-items svg:not(:root).svg-inline--fa,
-svg:not(:host).svg-inline--fa :before {
+.EXECUTE-items h1:before {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3913,7 +3940,7 @@ svg:not(:host).svg-inline--fa :before {
 }
 .SEO-EXPERTS h1,
 .EXECUTE h1 {
-  font-family: Avenir-semi;
+  font-family: "Avenir-semi";
   font-size: 42px;
   font-weight: normal;
   margin: 0 0 40px;
@@ -4155,7 +4182,7 @@ svg:not(:host).svg-inline--fa :before {
   }
   .process-sec picture img {
     margin: 0 auto 30px;
-    width: 150px;
+    width: 100%;
   }
 
   .service-banner-cat h2 {
@@ -4198,6 +4225,9 @@ svg:not(:host).svg-inline--fa :before {
     font-size: 32px;
   }
   .serv-sec.serv-sec-2 .serv-txt h4 span {
+    display: none;
+  }
+  .serv-sec.serv-sec-2 .serv-txt-1 h4 span {
     display: none;
   }
   .whois-box .whois-part2 {
@@ -4700,6 +4730,12 @@ svg:not(:host).svg-inline--fa :before {
     padding: 38px 20px;
     text-align: left;
   }
+  .serv-txt-1 {
+    box-shadow: 0 0 5px #999;
+    margin: 10px 15px;
+    padding: 38px 20px;
+    text-align: left;
+  }
 
   .serv-sec .col-lg-4:first-child,
   .case-tab ul li {
@@ -5118,6 +5154,15 @@ svg:not(:host).svg-inline--fa :before {
   .India-facts h1:first-child {
     font-size: 160%;
   }
+  .EXECUTE .EXECUTE0-main {
+    background: none;
+  }
+  .EXECUTE-items h1 {
+    display: inline-block;
+  }
+  .EXECUTE-items {
+    margin: 20px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
@@ -5331,6 +5376,25 @@ svg:not(:host).svg-inline--fa :before {
     letter-spacing: 0.5px;
     /* line-height: 1.7; */
     margin: 4px 0;
+  }
+  .EXECUTE-items h1 {
+    position: relative;
+    background: #fff;
+    color: #52535c;
+    /* font-size: 20px; */
+    display: contents;
+    /* clear: both; */
+    /* border-radius: 50%; */
+    /* border: 2px solid #f4f3f3; */
+    /* transition: all 0.33s ease-in-out; */
+    /* width: 100%; */
+    /* height: 69px; */
+    /* justify-content: center; */
+    /* box-shadow: 0 2px 0 0px rgba(0, 0, 0, 0.017); */
+    /* left: 24px; */
+    /* top: -24px; */
+    transition: border 2s;
+    /* align-items: center; */
   }
 }
 
@@ -5768,6 +5832,25 @@ svg:not(:host).svg-inline--fa :before {
     font-size: 37px;
     font-weight: 800;
   }
+  .EXECUTE-items h1 {
+    position: relative;
+    background: #fff;
+    color: #52535c;
+    font-size: 20px;
+    display: flex;
+    clear: both;
+    border-radius: 50%;
+    border: 2px solid #f4f3f3;
+    transition: all 0.33s ease-in-out;
+    width: 75px;
+    height: 69px;
+    justify-content: center;
+    box-shadow: 0 2px 0 0px rgba(0, 0, 0, 0.017);
+    left: 24px;
+    top: -24px;
+    transition: border 2s;
+    align-items: center;
+  }
 }
 
 @media (min-width: 992px) {
@@ -6073,6 +6156,24 @@ svg:not(:host).svg-inline--fa :before {
     margin: 10px 0px 10px 0;
     font-weight: 600;
   }
+  .EXECUTE-items h1 {
+    position: relative;
+    background: #fff;
+    color: #52535c;
+    font-size: 20px;
+    display: flex;
+    clear: both;
+    border-radius: 50%;
+    border: 2px solid #f4f3f3;
+    transition: all 0.33s ease-in-out;
+    width: 93px;
+    height: 90px;
+    justify-content: center;
+    box-shadow: 0 2px 0 0px rgba(0, 0, 0, 0.017);
+    left: 45px;
+    top: -6px;
+    transition: border 2s;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1239px) {
@@ -6151,7 +6252,7 @@ svg:not(:host).svg-inline--fa :before {
   margin-right: 20px;
 }
 .Post-sec a {
-  color: #864fe9;
+  color: var(--main-color);
 }
 .Post-sec .col-lg-12 {
   padding-top: 40px;

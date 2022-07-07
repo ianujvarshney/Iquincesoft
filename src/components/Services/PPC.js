@@ -14,7 +14,7 @@ import OwlCarousel from 'react-owl-carousel2';
 import 'react-owl-carousel2/src/owl.carousel.css';
 import { PostCate } from '../../json/PostCate';
 import 'react-accessible-accordion/dist/fancy-example.css';
-import campaign from '../../images/campaign_image.jpg';
+import campaign from '../../images/campaign_image.png';
 import { TailSpin } from 'react-loader-spinner'
 import AwardFormsec from '../../container/AwardFormsec';
 import Partner from '../../container/Partner';
@@ -180,7 +180,7 @@ class PPC extends Component {
                                         The web owner must know the cost involved on cost click per(CPC) and Click through Rate(CTR) so that he can judge how much to spend on a keyword.</p>
                                 </div>
                                 <div className="col-lg-6">
-                                    <img alt="img" src={benifit_image} />
+                                    <img alt="img" width="100%" src={benifit_image} />
                                 </div>
                             </div>
 
@@ -192,7 +192,7 @@ class PPC extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-6 col-md-12">
-                                    <img width="100%" src={campaign} />
+                                    <img width="100%" alt="img" src={campaign} />
                                 </div>
                                 <div className="col-lg-6 col-md-12">
                                     <h1>Brief process of our pay per click campaign:</h1>

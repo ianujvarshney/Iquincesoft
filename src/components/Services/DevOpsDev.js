@@ -60,7 +60,7 @@ class DevOpsDev extends Component {
                             <div className="row">
                                 <div className="col-lg-5 col-md-12" data-aos="fade-up">
                                     <p>DEVOPS</p>
-                                    <h1><strong>leverage the expertise of the dedicated wix developers to build an intuitive and engaging website that function as your marketing manager.</strong><br /></h1>
+                                    <h1><strong>Hire Dedicated DevOps Developers to get favourable busines outcomes</strong><br /></h1>
                                     <ul>
                                         <li>Software Development and Operations approach like never before.
                                         </li>
@@ -184,99 +184,73 @@ class DevOpsDev extends Component {
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-10 col-md-12" data-aos="fade-up">
                                     <OwlCarousel options={culture}>
-                                        <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img alt="img"src={webImg} /> */}
-                                            <h4>DevOps Website Customization</h4>
-                                            <p>Customized features for your online stores with iQuinceSoft DevOps services. We create, add and apply templates, functionalities and styles with simple CSS and HTML. </p>
-                                        </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img alt="img"src={webImg1} /> */}
-                                            <h4>API Integration</h4>
-                                            <p>We manage every single facet of an online store with the help of API integration. We connect the PHP app to the DevOps store with REST API.</p>
-                                        </div>
-
-                                        <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img alt="img"src={webImg2} /> */}
-                                            <h4>DevOps Migration</h4>
-                                            <p>We ensure the migration process is perfectly executed and there is no loss of any existing data, including orders, customer details and products. We offer flawless and straightforward migration for your current eCommerce store from any platform.</p>
-                                        </div>
-
-                                        <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img alt="img"src={webImg3} /> */}
-                                            <h4>DevOps Plugin Development</h4>
-                                            <p>We adhere to best practices to create an online store with added extensions. We develop unique add-ons and tools to build a DevOps shopping cart. </p>
-                                        </div>
-
-                                        <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img alt="img"src={webImg4} /> */}
-                                            <h4>Payment Gateway Integration</h4>
-                                            <p>We add several secured payment gateways within your eCommerce portal. We offer your customer several gateways and carry out their shopping with easy check-out. </p>
-                                        </div>
-
-                                        <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img alt="img"src={webImg5} /> */}
                                             <h4>Hire DevOps Developers</h4>
                                             <p>Hire iQuinceSoft DevOps developers and save efforts, time and money significantly. Our developers work as per your instructions and contribute as an extended in-house team.</p>
                                         </div>
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
-                                            {/* <img alt="img"src={webImg5} /> */}
+                                            <h4>Assessment and Planning</h4>
+                                            <p>We customize a DevOps Assessment roadmap to visualise the state and identify the traceable KPIs.</p>
+                                        </div>
+                                        <div className="cult-box">
+                                            <div class="tech-dot"></div>
+                                            <h4>CI/CD Pipeline</h4>
+                                        </div>
+                                        <div className="cult-box">
+                                            <div class="tech-dot"></div>
                                             <h4>DevOps Consulting</h4>
                                             <p>We offer need-based customized consulting services to help you grow with the growth of your business and improve sales. </p>
                                         </div>
+                                        <div className="cult-box">
+                                            <div class="tech-dot"></div>
+                                            <h4>Process Automation</h4>
+                                            <p>Automate your whole process pipeline from code generation to production, builds, test cases, QA checks, and security with the expertise of iQuinceSoft. </p>
+                                        </div>
+                                        <div className="cult-box">
+                                            <div class="tech-dot"></div>
+                                            <h4>Process Implementation</h4>
+                                            <p>Leverage the expertise of iQuinceSoft for the analysis, design, build, automation and implementation in the specific areas. </p>
+                                        </div>
+                                        <div className="cult-box">
+                                            <div class="tech-dot"></div>
+                                            <h4>Security Integration</h4>
+                                            <p>We offer end-to-end security integration to your systems and process with the expertise of our DevOps engineers at iQuinceSoft. </p>
+                                        </div>
+
                                     </OwlCarousel>
 
                                     <div className="row">
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img alt="img"src={webImg} /> */}
-                                            <h4>DevOps Website Customization</h4>
-                                            <p>Customized features for your online stores with iQuinceSoft DevOps services. We create, add and apply templates, functionalities and styles with simple CSS and HTML. </p>
-                                        </div>
-
-                                        <div className="col-lg-4 col-md-4">
-                                            {/* <img alt="img"src={webImg1} /> */}
-                                            <h4>API Integration</h4>
-                                            <p>We manage every single facet of an online store with the help of API integration. We connect the PHP app to the DevOps store with REST API.</p>
-                                        </div>
-
-                                        <div className="col-lg-4 col-md-4">
-                                            {/* <img alt="img"src={webImg2} /> */}
-                                            <h4>DevOps Migration</h4>
-                                            <p>We ensure the migration process is perfectly executed and there is no loss of any existing data, including orders, customer details and products. We offer flawless and straightforward migration for your current eCommerce store from any platform.
-                                            </p>
-                                        </div>
-
-                                        <div className="col-lg-4 col-md-4">
-                                            {/* <img alt="img"src={webImg3} /> */}
-                                            <h4>DevOps Plugin Development</h4>
-                                            <p>We adhere to best practices to create an online store with added extensions. We develop unique add-ons and tools to build a DevOps shopping cart. </p>
-                                        </div>
-
-                                        <div className="col-lg-4 col-md-4">
-                                            {/* <img alt="img"src={webImg4} /> */}
-                                            <h4>Payment Gateway Integration</h4>
-                                            <p>We add several secured payment gateways within your eCommerce portal. We offer your customer several gateways and carry out their shopping with easy check-out. </p>
-                                        </div>
-
-                                        <div className="col-lg-4 col-md-4">
-                                            {/* <img alt="img"src={webImg5} /> */}
                                             <h4>Hire DevOps Developers</h4>
                                             <p>Hire iQuinceSoft DevOps developers and save efforts, time and money significantly. Our developers work as per your instructions and contribute as an extended in-house team.</p>
                                         </div>
-
-                                        <div className="col-lg-4 col-md-4"> </div>
+                                        <div className="col-lg-4 col-md-4">
+                                            <h4>Assessment and Planning</h4>
+                                            <p>We customize a DevOps Assessment roadmap to visualise the state and identify the traceable KPIs.</p>
+                                        </div>
+                                        <div className="col-lg-4 col-md-4">
+                                            <h4>CI/CD Pipeline</h4>
+                                            <p>We bridge the gap between the development and operations with continuous development, testing, integration, and deployment.</p>
+                                        </div>
 
                                         <div className="col-lg-4 col-md-4">
-                                            {/* <img alt="img"src={webImg5} /> */}
                                             <h4>DevOps Consulting</h4>
                                             <p>We offer need-based customized consulting services to help you grow with the growth of your business and improve sales. </p>
+                                        </div>
+                                        <div className="col-lg-4 col-md-4">
+                                            <h4>Process Automation</h4>
+                                            <p>Automate your whole process pipeline from code generation to production, builds, test cases, QA checks, and security with the expertise of iQuinceSoft. </p>
+                                        </div>
+                                        <div className="col-lg-4 col-md-4">
+                                            <h4>Process Implementation</h4>
+                                            <p>Leverage the expertise of iQuinceSoft for the analysis, design, build, automation and implementation in the specific areas. </p>
+                                        </div>
+                                        <div className="col-lg-4 col-md-4">
+                                            <h4>Security Integration</h4>
+                                            <p>We offer end-to-end security integration to your systems and process with the expertise of our DevOps engineers at iQuinceSoft. </p>
                                         </div>
                                     </div>
                                 </div>

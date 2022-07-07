@@ -61,7 +61,7 @@ class ProductDesign extends Component {
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
                                     <p>PRODUCT DESIGN</p>
-                                    <h1><strong>We reshape ideas into tangible solutions as products.</strong><br /></h1>
+                                    <h1><strong>You Ideate, We Create Your Product</strong><br /></h1>
                                     <ul>
                                         <li>We get into every minute detail of your ideation and make it a successful product that earns you profits and fame. Our top skilled professionals brainstorm to fetch you the ultimate product design, get it in the market, and scale it iteratively.</li>
                                     </ul>
@@ -84,28 +84,28 @@ class ProductDesign extends Component {
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg} /> */}
                                             <h4>MVP Development</h4>
-                                            <p>IQuinceSoft is a leading agency that serves Startups and SMEs with global clientele with the MVP development services. Our MVP service includes pilot MVP development, single feature MVP design, prototype design, and POC demo that allow organizations to comprehend the product-market fit and help them grow exponentially. </p>
+                                            <p>iQuinceSoft is a leading agency that serves Startups and SMEs with global clientele with the MVP development services. Our MVP service includes pilot MVP development, single feature MVP design, prototype design, and POC demo that allow organizations to comprehend the product-market fit and help them grow exponentially. </p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg1} /> */}
                                             <h4>Product Testing</h4>
-                                            <p>IQuinceSoft offers test plans, test cases, risk assessment, defect analysis and recommendations that ensure adaptability and smooth performance security and increase the utility of your products.</p>
+                                            <p>iQuinceSoft offers test plans, test cases, risk assessment, defect analysis and recommendations that ensure adaptability and smooth performance security and increase the utility of your products.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg2} /> */}
                                             <h4>Product design & Engineering</h4>
-                                            <p>IQuinceSoft designers are aligned with the skillset that maps user flows and creates style guides, sketches, and wireframes to develop UI designs that scale the scalability across platforms and devices.</p>
+                                            <p>iQuinceSoft designers are aligned with the skillset that maps user flows and creates style guides, sketches, and wireframes to develop UI designs that scale the scalability across platforms and devices.</p>
                                         </div>
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg3} /> */}
                                             <h4>Product Deployment</h4>
-                                            <p>IQuinceSoft leverages the skills and experience to implement best-in-class product solutions. We deploy software solutions that thrive and help clients attain their business goals. </p>
+                                            <p>iQuinceSoft leverages the skills and experience to implement best-in-class product solutions. We deploy software solutions that thrive and help clients attain their business goals. </p>
                                         </div>
 
                                         <div className="cult-box">
@@ -120,7 +120,7 @@ class ProductDesign extends Component {
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg5} /> */}
                                             <h4>Product Support & Maintenance</h4>
-                                            <p>We have a team of consultants that can strategize your business launch products with slashed downtime to market. We also deliver maintenance services, including design enhancements, migration, data warehouse support, and bug-fixing. we improve the functionality and release new versions with upgrades as well. connect with our skilled software architects to reach the solutions.</p>
+                                            <p>We have a team of consultants that can strategize your business launch products with slashed downtime to market. We also deliver maintenance services, including design enhancements, migration, data warehouse support, and bug-fixing.</p>
                                         </div>
 
                                     </OwlCarousel>
@@ -129,26 +129,26 @@ class ProductDesign extends Component {
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg} /> */}
                                             <h4>MVP Development</h4>
-                                            <p>IQuinceSoft is a leading agency that serves Startups and SMEs with global clientele with the MVP development services. Our MVP service includes pilot MVP development, single feature MVP design, prototype design, and POC demo that allow organizations to comprehend the product-market fit and help them grow exponentially. </p>
+                                            <p>iQuinceSoft is a leading agency that serves Startups and SMEs with global clientele with the MVP development services. Our MVP service includes pilot MVP development, single feature MVP design, prototype design, and POC demo that allow organizations to comprehend the product-market fit and help them grow exponentially. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg1} /> */}
                                             <h4>Product Testing</h4>
-                                            <p>IQuinceSoft offers test plans, test cases, risk assessment, defect analysis and recommendations that ensure adaptability and smooth performance security and increase the utility of your products.</p>
+                                            <p>iQuinceSoft offers test plans, test cases, risk assessment, defect analysis and recommendations that ensure adaptability and smooth performance security and increase the utility of your products.</p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg2} /> */}
                                             <h4>Product design & Engineering</h4>
-                                            <p>IQuinceSoft designers are aligned with the skillset that maps user flows and creates style guides, sketches, and wireframes to develop UI designs that scale the scalability across platforms and devices.
+                                            <p>iQuinceSoft designers are aligned with the skillset that maps user flows and creates style guides, sketches, and wireframes to develop UI designs that scale the scalability across platforms and devices.
                                             </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg3} /> */}
                                             <h4>Product Deployment</h4>
-                                            <p>IQuinceSoft leverages the skills and experience to implement best-in-class product solutions. We deploy software solutions that thrive and help clients attain their business goals. </p>
+                                            <p>iQuinceSoft leverages the skills and experience to implement best-in-class product solutions. We deploy software solutions that thrive and help clients attain their business goals. </p>
                                         </div>
 
                                         <div className="col-lg-4 col-md-4">
@@ -161,7 +161,7 @@ class ProductDesign extends Component {
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg5} /> */}
                                             <h4>Product Support & Maintenance</h4>
-                                            <p>We have a team of consultants that can strategize your business launch products with slashed downtime to market. We also deliver maintenance services, including design enhancements, migration, data warehouse support, and bug-fixing. we improve the functionality and release new versions with upgrades as well. connect with our skilled software architects to reach the solutions.</p>
+                                            <p>We have a team of consultants that can strategize your business launch products with slashed downtime to market. We also deliver maintenance services, including design enhancements, migration, data warehouse support, and bug-fixing. </p>
                                         </div>
                                     </div>
                                 </div>

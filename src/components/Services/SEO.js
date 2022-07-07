@@ -19,7 +19,8 @@ import AwardFormsec from '../../container/AwardFormsec';
 import Partner from '../../container/Partner';
 import SEOimage from '../../images/icp-seo.png';
 import OPTIMIZATION2 from '../../images/OPTIMIZATION2.png';
-import CURRENT from '../../images/CURRENT.jpg';
+import OPTIMIZATION3 from '../../images/OPTIMIZATION3.png';
+import CURRENT from '../../images/CURRENT.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faKey } from '@fortawesome/free-solid-svg-icons';
 import { faFlask } from '@fortawesome/free-solid-svg-icons';
@@ -244,7 +245,7 @@ class SEO extends Component {
                             </div>
                             <div className="row">
                                 <div className="col-lg-5 col-md-6">
-                                    <picture><img alt="img" width="100%" src={OPTIMIZATION2} /></picture>
+                                    <picture><img alt="img" width="100%" src={OPTIMIZATION3} /></picture>
                                 </div>
                                 <div className="col-lg-7 col-md-6">
                                     <div className="process-box txt-process-box">
@@ -358,28 +359,28 @@ class SEO extends Component {
 
                                             <div className="col-lg-3">
                                                 <div className="EXECUTE-items">
-                                                    <FontAwesomeIcon icon={faKey} className="hover:text-red-500"></FontAwesomeIcon>
+                                                    <h1><FontAwesomeIcon icon={faKey} className="hover:text-red-500"></FontAwesomeIcon></h1>
                                                     <h4>Keyword Research</h4>
                                                     <p>This defines the probability of your appearance through dense combination.</p>
                                                 </div>
                                             </div>
                                             <div className="col-lg-3">
                                                 <div className="EXECUTE-items">
-                                                    <FontAwesomeIcon icon={faFlask}></FontAwesomeIcon>
+                                                    <h1><FontAwesomeIcon icon={faFlask}></FontAwesomeIcon></h1>
                                                     <h4>Onsite Optimization</h4>
                                                     <p> The Here we do whatever to top is possible you up within website.</p>
                                                 </div>
                                             </div>
                                             <div className="col-lg-3">
                                                 <div className="EXECUTE-items">
-                                                    <FontAwesomeIcon icon={faAnchor}></FontAwesomeIcon>
+                                                    <h1><FontAwesomeIcon icon={faAnchor}></FontAwesomeIcon></h1>
                                                     <h4>Link Building</h4>
                                                     <p>We initiate the process of getting external pages to link to a page on your website.</p>
                                                 </div>
                                             </div>
                                             <div className="col-lg-3">
                                                 <div className="EXECUTE-items">
-                                                    <FontAwesomeIcon icon={faBarChart}></FontAwesomeIcon>
+                                                    <h1><FontAwesomeIcon icon={faBarChart}></FontAwesomeIcon></h1>
                                                     <h4>Reporting and Analysis</h4>
                                                     <p>We conduct it through content, linking structure &amp; social media efforts.</p>
                                                 </div>

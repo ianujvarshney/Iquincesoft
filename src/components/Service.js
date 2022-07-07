@@ -234,34 +234,34 @@ class Service extends Component {
 									<p>Get benefit from the exceptional front-end services and dominate the competition.</p>
 									<em><Link to="/serviceDescription">Read More..</Link></em>
 									<OwlCarousel options={servSlide}>
-										<div className="serv-txt">
+										<div className="serv-txt-1-1">
 											<h4><span><FaCode /><Link to="/HireReactDevelopers">React.js</Link></span></h4>
 											<p> Let’s build websites with seamless integration, responsive UI, and better code readability with our skilled and razor-sharp react developers
 											</p>
 											<h4><Link to="/HireReactDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireVueDevelopers" >Vue.js</Link></span></h4>
 											<p> From single-page applications, online marketplaces, and marketplaces to interactive dashboards and custom development, our ready-to-hire developers can ensure your web apps are next-level. </p>
 											<h4><Link to="/HireVueDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireAngularDevelopers" >Angular</Link></span></h4>
 											<p> Hire our Angular expert developers to create robust and appealing Single Page Applications (SPAs).  </p>
 											<h4><Link to="/HireAngularDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireMERNStackDevelopers" >MERN Stack</Link></span></h4>
 											<p> Hire our skilled MERN stack developers to get a scalable and wide range of fast and cost-efficient development. </p>
 											<h4><Link to="/HireMERNStackDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireZendStackDevelopers" >ZEND Stack</Link></span></h4>
 											<p> Get feature-filled web apps that are secure, robust, and scalable. Our developers can get you the large-scale enterprise apps without any hassle.
 											</p>
 											<h4><Link to="/HireZendStackDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireMeanstackDevelopers" >MEAN Stack</Link></span></h4>
 											<p> Are you looking for easy-to-maintain web solutions with fast development that offer the least time-to-market apps? Hire MEAN developers from iQuinceSoft.
 											</p>
@@ -271,7 +271,7 @@ class Service extends Component {
 								</div>
 
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1 serv-txt-1-1">
 										<h4><span><FaCode /><Link to="/HireReactDevelopers">React.js</Link></span></h4>
 										<p>Let’s build websites with seamless integration, responsive UI, and better code readability with our skilled and razor-sharp react developers.
 										</p>
@@ -279,28 +279,28 @@ class Service extends Component {
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireVueDevelopers" >Vue.js</Link></span></h4>
 										<p>  From single-page applications, online marketplaces, and marketplaces to interactive dashboards and custom development, our ready-to-hire developers can ensure your web apps are next-level. </p>
 										<h4><Link to="/HireVueDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireAngularDevelopers" >Angular</Link></span></h4>
 										<p> Hire our Angular expert developers to create robust and appealing Single Page Applications (SPAs).  </p>
 										<h4><Link to="/HireAngularDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireMERNStackDevelopers" >MERN Stack</Link></span></h4>
 										<p> Hire our skilled MERN stack developers to get a scalable and wide range of fast and cost-efficient development. </p>
 										<h4><Link to="/HireMERNStackDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireZendStackDevelopers" >ZEND Stack</Link></span></h4>
 										<p> Get feature-filled web apps that are secure, robust, and scalable. Our developers can get you the large-scale enterprise apps without any hassle.
 										</p>
@@ -308,7 +308,7 @@ class Service extends Component {
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireMeanstackDevelopers" >MEAN Stack</Link></span></h4>
 										<p> Are you looking for easy-to-maintain web solutions with fast development that offer the least time-to-market apps? Hire MEAN developers from iQuinceSoft.
 										</p>
@@ -333,27 +333,27 @@ class Service extends Component {
 									<p>The backend developers from iQuinceSoft can build a robust foundation with clean codes and streamline communication between the database and application. </p>
 									<em><Link to="/serviceDescription">Read More..</Link></em>
 									<OwlCarousel options={servSlide}>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireNodeDevelopers" >Node.js</Link></span></h4>
 											<p>  Deliver perfect tech performance, scalability, application limitations, and speed to attain business goals with the trust of iQuinceSoft.  </p>
 											<h4><Link to="/HireNodeDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HirePHPDevelopers" >PHP</Link></span></h4>
 											<p> Cost-effective websites that can deliver complex web solutions with the help of our skilled PHP developers. </p>
 											<h4><Link to="/HirePHPDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireLaravelDevelopers" >Laravel</Link></span></h4>
 											<p> We offer you the Laravel developers that can help you customize web solutions to deliver fully-functional and secure websites. </p>
 											<h4><Link to="/HireLaravelDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireSymfonyDevelopers" >Symfony</Link></span></h4>
 											<p> Symfony developers from iQuinceSoft can deliver web apps with swift, easy, and quality code.  </p>
 											<h4><Link to="/HireSymfonyDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireCodeIgniterDevelopers" >CodeIgniter</Link></span></h4>
 											<p>Vetted Codeigniter developers to get a secure framework, simple configuration, and easy-to-use web solutions. Hire Codeigniter developers from iQuinceSoft.
 											</p>
@@ -362,35 +362,35 @@ class Service extends Component {
 									</OwlCarousel>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireNodeDevelopers" >Node.js</Link></span></h4>
 										<p>  Deliver perfect tech performance, scalability, application limitations, and speed to attain business goals with the trust of iQuinceSoft.  </p>
 										<h4><Link to="/HireNodeDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HirePHPDevelopers" >PHP</Link></span></h4>
 										<p> Cost-effective websites that can deliver complex web solutions with the help of our skilled PHP developers. </p>
 										<h4><Link to="/HirePHPDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireLaravelDevelopers" >Laravel</Link></span></h4>
 										<p> We offer you the Laravel developers that can help you customize web solutions to deliver fully-functional and secure websites. </p>
 										<h4><Link to="/HireLaravelDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireSymfonyDevelopers" >Symfony</Link></span></h4>
 										<p> Symfony developers from iQuinceSoft can deliver web apps with swift, easy, and quality code.  </p>
 										<h4><Link to="/HireSymfonyDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireCodeIgniterDevelopers" >CodeIgniter</Link></span></h4>
 										<p>Vetted Codeigniter developers to get a secure framework, simple configuration, and easy-to-use web solutions. Hire Codeigniter developers from iQuinceSoft.
 										</p>
@@ -411,27 +411,27 @@ class Service extends Component {
 									<p>Hire iQuinceSoft’s e-Commerce developers can increase your store's visibility, enhance sales, and get the clients searching for the exact products you offer. </p>
 									<em><Link to="/serviceDescription">Read More..</Link></em>
 									<OwlCarousel options={servSlide}>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireMagentoDevelopers" >Magento</Link></span></h4>
 											<p> Flexibility, development architecture, and scalable Magento development can ensure you the eCommerce store that can get you to attain business goals. </p>
 											<h4><Link to="/HireMagentoDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireWooCommerceDevelopers" >WooCommerce</Link></span></h4>
 											<p> Harness the power of a highly customizable and open-source eCommerce platform with a user-friendly backend. Our expert WooCommerce developers will offer you an online store that helps you sell.  </p>
 											<h4><Link to="/HireWooCommerceDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireShopifyDevelopers" >Shopify</Link></span></h4>
 											<p>We get you the not-so-obvious-looking web stores that can offer tangible business outcomes and solve your business problems.   </p>
 											<h4><Link to="/HireShopifyDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireopencartDevelopers" >OpenCart</Link></span></h4>
 											<p>  Hire iQuinceSoft’s OpenCart developers to get online stores that can attract and convince customers to make a purchase.  </p>
 											<h4><Link to="/HireopencartDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireWixDevelopers" >Wix</Link></span></h4>
 											<p> Wix is a platform that offers reliable, qualitative websites. Hire our talented Wix developers for websites of the next level. </p>
 											<h4><Link to="/HireWixDevelopers" >Read more</Link></h4>
@@ -439,35 +439,35 @@ class Service extends Component {
 									</OwlCarousel>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireMagentoDevelopers" >Magento</Link></span></h4>
 										<p> Flexibility, development architecture, and scalable Magento development can ensure you the eCommerce store that can get you to attain business goals. </p>
 										<h4><Link to="/HireMagentoDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireWooCommerceDevelopers" >WooCommerce</Link></span></h4>
 										<p> Harness the power of a highly customizable and open-source eCommerce platform with a user-friendly backend. Our expert WooCommerce developers will offer you an online store that helps you sell.  </p>
 										<h4><Link to="/HireWooCommerceDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireShopifyDevelopers" >Shopify</Link></span></h4>
 										<p>We get you the not-so-obvious-looking web stores that can offer tangible business outcomes and solve your business problems.   </p>
 										<h4><Link to="/HireShopifyDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireopencartDevelopers" >OpenCart</Link></span></h4>
 										<p>  Hire iQuinceSoft’s OpenCart developers to get online stores that can attract and convince customers to make a purchase.  </p>
 										<h4><Link to="/HireopencartDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireWixDevelopers" >Wix</Link></span></h4>
 										<p> Wix is a platform that offers reliable, qualitative websites. Hire our talented Wix developers for websites of the next level. </p>
 										<h4><Link to="/HireWixDevelopers" >Read more</Link></h4>
@@ -487,12 +487,12 @@ class Service extends Component {
 									<p>Hire CMS developers from iQuinceSoft to ensure optimum management and updating of the content in real-time.</p>
 									<em><Link to="/serviceDescription">Read More..</Link></em>
 									<OwlCarousel options={servSlide}>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireDrupalDevelopers" >Drupal</Link></span></h4>
 											<p> Do you want an excellent platform to build complex websites, portals, and online communities? Then, connect with the vetted Drupal developers from iQuinceSoft.  </p>
 											<h4><Link to="/HireDrupalDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireWordpressDevelopers" >Wordpress</Link></span></h4>
 											<p> User Experience of the next level. This is what we offer with the help of our WordPress experts.
 											</p>
@@ -501,14 +501,14 @@ class Service extends Component {
 									</OwlCarousel>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireDrupalDevelopers" >Drupal</Link></span></h4>
 										<p> Do you want an excellent platform to build complex websites, portals, and online communities? Then, connect with the vetted Drupal developers from iQuinceSoft.  </p>
 										<h4><Link to="/HireDrupalDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireWordpressDevelopers" >Wordpress</Link></span></h4>
 										<p> User Experience of the next level. This is what we offer with the help of our WordPress experts.
 										</p>
@@ -528,22 +528,22 @@ class Service extends Component {
 									<em><Link to="/serviceDescription">Read More..</Link></em>
 
 									<OwlCarousel options={servSlide}>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireIosDevelopers" >Ios</Link></span></h4>
 											<p> Hybrid, Native, or Custom! Outshine the competition with our visually appealing iOS apps.  </p>
 											<h4><Link to="/HireIosDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireReactNativeDevelopers" >ReactNative</Link></span></h4>
 											<p> Manage the entire mobile app development process with the help of our skilled and ready-to-hire React Native developers.  </p>
 											<h4><Link to="/HireReactNativeDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireAndroidDevelopers" >Android</Link></span></h4>
 											<p> Conquer the play store with the help of our expert app developers.  </p>
 											<h4><Link to="/HireAndroidDevelopers" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="/HireionicDevelopers" >Ionic</Link></span></h4>
 											<p> Get the benefit of excellent web development skills from the house of iQuincSoft – the name the industry banks upon.  </p>
 											<h4><Link to="/HireionicDevelopers" >Read more</Link></h4>
@@ -551,28 +551,28 @@ class Service extends Component {
 									</OwlCarousel>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireIosDevelopers" >Ios</Link></span></h4>
 										<p> Hybrid, Native, or Custom! Outshine the competition with our visually appealing iOS apps.  </p>
 										<h4><Link to="/HireIosDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireAndroidDevelopers" >Android</Link></span></h4>
 										<p> Conquer the play store with the help of our expert app developers.  </p>
 										<h4><Link to="/HireAndroidDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireReactNativeDevelopers" >ReactNative</Link></span></h4>
 										<p> Manage the entire mobile app development process with the help of our skilled and ready-to-hire React Native developers.  </p>
 										<h4><Link to="/HireReactNativeDevelopers" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="/HireionicDevelopers" >Ionic</Link></span></h4>
 										<p> Get the benefit of excellent web development skills from the house of iQuincSoft – the name the industry banks upon.  </p>
 										<h4><Link to="/HireionicDevelopers" >Read more</Link></h4>
@@ -592,17 +592,17 @@ class Service extends Component {
 									<p>iQuinceSoft is a name that can turn around the fortunes of your business with the help of making your web presence more robust and enhanced with visibility, right targeting, and optimizing the cost. Hire Digital Marketers from iQuinceSoft.</p>
 									<em><Link to="/serviceDescription">Read More..</Link></em>
 									<OwlCarousel options={servSlide}>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="#">SEO</Link></span></h4>
 											<p> Rank high, bring traffic, and earn leads that can convert to broaden your customer base with SEO experts from iQuinceSoft., </p>
 											<h4><Link to="#" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="#" >SMM</Link></span></h4>
 											<p> Harness the power of social media with optimized posts and content. Blow the competition away with your brand essence with the help of iQuinceSoft’s SM managers.  </p>
 											<h4><Link to="#" >Read more</Link></h4>
 										</div>
-										<div className="serv-txt">
+										<div className="serv-txt-1">
 											<h4><span><FaCode /><Link to="#" >PPC</Link></span></h4>
 											<p> Maximize the power of advertising with the help of the creative brains from iQuinceSoft. We deliver your message at the right time, place, and audience to maximize profits. </p>
 											<h4><Link to="#" >Read more</Link></h4>
@@ -610,21 +610,21 @@ class Service extends Component {
 									</OwlCarousel>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="#" >SEO</Link></span></h4>
 										<p> Rank high, bring traffic, and earn leads that can convert to broaden your customer base with SEO experts from iQuinceSoft., </p>
 										<h4><Link to="#" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="#" >SMM</Link></span></h4>
 										<p> Harness the power of social media with optimized posts and content. Blow the competition away with your brand essence with the help of iQuinceSoft’s SM managers.  </p>
 										<h4><Link to="#" >Read more</Link></h4>
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<h4><span><FaCode /><Link to="#" >PPC</Link></span></h4>
 										<p> Maximize the power of advertising with the help of the creative brains from iQuinceSoft. We deliver your message at the right time, place, and audience to maximize profits. </p>
 										<h4><Link to="#" >Read more</Link></h4>
@@ -736,7 +736,7 @@ export default Service;
 									<em><Link to="/Web_Development">Schedule an Appointment</Link></em>
 									<em><a href="/caseStudies">Read Case Study</a></em> */}
 {/* <div className="col-lg-8 col-md-12">
-									<div className="serv-txt">
+									<div className="serv-txt-1">
 										<div className="row">
 											<div className="col-lg-6 col-md-6">
 												<h4><span><FaCode /><Link to='#'>Integrations and Extensions</Link></span></h4>

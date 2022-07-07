@@ -60,10 +60,11 @@ class Mobile_Developementjs extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-7 col-md-12" data-aos="fade-up">
-                                    <p>MOBILE DEVELOPMENT</p>
-                                    <h1><strong>Mobile apps are the first junction of prospects and business. Keep it Clean, Appealing and Creative! </strong><br /></h1>
+                                    <p>MOBILE APP DEVELOPMENT</p>
+                                    <h1><strong>Persuasive, Intuitive and Converting Mobile Apps</strong></h1>
                                     <ul>
-                                        <li>Mobile is the first gadget we use to seek information! Keep your web apps in sync with it for more traffic, sales and revenue.</li>
+                                        <li>Mobile is the first gadget we use to seek information!Keep your web apps in sync with it for more traffic, sales and revenue.</li>
+                                        <li>An industry with more than 258 billion users and $158 billion revenue, Mobile applications are the best way to reach your target audience with instant feedback and easy access to the global audience.</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-5 col-md-12" ><AwardFormsec /></div>
@@ -76,22 +77,21 @@ class Mobile_Developementjs extends Component {
                             <div className="row">
                                 <div className="col-lg-2"></div>
                                 <div className="col-lg-8 col-md-12" data-aos="fade-right">
-                                    <h3>Why Mobile Developement?</h3>
-                                    <p>You will be provided with the necessary space, tools, and resources to pursue your own ambitions, develop in the chosen direction and even create a personal expert brand.</p>
-                                    <p>We encourage, never force!</p>
+                                    <h3>Why do you need Mobile Developement?</h3>
+                                    <p>Immense market potential, Customer base and instant feedback with easy to access the global clientele makes mobile app development vital for your business and its growth.</p>
                                 </div>
 
                                 <OwlCarousel options={culture}>
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Open-source Development</h4>
-                                        <p>More than 2 million active stores make Mobile App the preferred eCommerce site. </p>
+                                        <h4>Accessible from different Platforms</h4>
+                                        <p>Mobile apps are the mobile identity of a business with easy to access from any gadget and platform</p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Built on WordPress</h4>
-                                        <p>Mobile App is one of the most extendable, adaptable and flexible eCommerce solutions. This is built on WordPress. The stores can integrate Mobile App within WordPress to create e-Commerce designs and templates.</p>
+                                        <h4>Promote Brand Recognition</h4>
+                                        <p>Mobile Application is one of the best tool to promote branding. It helps people recall the brand fast with easy brand awareness and recognition</p>
                                     </div>
 
                                     <div className="cult-box">
@@ -103,19 +103,19 @@ class Mobile_Developementjs extends Component {
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
                                         <h4>Customer Support</h4>
-                                        <p>Every online business prefers Mobile App. Customer support makes it most accessible across the globe. Mobile App customer support team will also support you in every issue.</p>
+                                        <p>Every online business prefers Mobile App. Customer support makes it most accessible across the globe. Mobile App customer support team will also support you in every issue. </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
                                         <h4>Mobile App is fast</h4>
-                                        <p>ast and responsive e-commerce experience for online stores. This is a crucial benefit of Mobile App. </p>
+                                        <p>Fast and responsive e-commerce experience for online stores. This is a crucial benefit of Mobile App. </p>
                                     </div>
 
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Rest API</h4>
-                                        <p>The developers can read and write the products, orders, coupons, shipping channels, and discounts using REST APIs. </p>
+                                        <h4>Facilitates Quick Customer Feedback </h4>
+                                        <p>Mobile applications can help the business with instant customer feedbacks. Feedbacks can offer meaningful insights to improve and serve customers with more fruitful services </p>
                                     </div>
 
 
@@ -125,16 +125,16 @@ class Mobile_Developementjs extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Open-source Development</h4>
-                                        <p>More than 2 million active stores make Mobile App the preferred eCommerce site. </p>
+                                        <h4>Accessible from different Platforms</h4>
+                                        <p>Mobile apps are the mobile identity of a business with easy to access from any gadget and platform</p>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Built on WordPress</h4>
-                                        <p>Mobile App is one of the most extendable, adaptable and flexible eCommerce solutions. This is built on WordPress. The stores can integrate Mobile App within WordPress to create e-Commerce designs and templates.</p>
+                                        <h4>Promote Brand Recognition</h4>
+                                        <p>Mobile Application is one of the best tool to promote branding. It helps people recall the brand fast with easy brand awareness and recognition</p>
                                     </div>
                                 </div>
 
@@ -165,8 +165,8 @@ class Mobile_Developementjs extends Component {
                                 <div className="col-lg-4 col-md-6">
                                     <div className="cult-box">
                                         <div class="tech-dot"></div>
-                                        <h4>Rest API</h4>
-                                        <p>The developers can read and write the products, orders, coupons, shipping channels, and discounts using REST APIs. </p>
+                                        <h4>Facilitates Quick Customer Feedback </h4>
+                                        <p>Mobile applications can help the business with instant customer feedbacks. Feedbacks can offer meaningful insights to improve and serve customers with more fruitful services </p>
                                     </div>
                                 </div>
 
@@ -181,12 +181,7 @@ class Mobile_Developementjs extends Component {
                                 <div className="col-lg-1"></div>
                                 <div className="col-lg-10 col-md-12" data-aos="fade-up">
                                     <OwlCarousel options={culture}>
-                                        <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img src={webImg} /> */}
-                                            <h4>Mobile App Website Customization</h4>
-                                            <p>Customized features for your online stores with iQuinceSoft Mobile App services. We create, add and apply templates, functionalities and styles with simple CSS and HTML. </p>
-                                        </div>
+
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
@@ -202,12 +197,7 @@ class Mobile_Developementjs extends Component {
                                             <p>We ensure the migration process is perfectly executed and there is no loss of any existing data, including orders, customer details and products. We offer flawless and straightforward migration for your current eCommerce store from any platform.</p>
                                         </div>
 
-                                        <div className="cult-box">
-                                            <div class="tech-dot"></div>
-                                            {/* <img src={webImg3} /> */}
-                                            <h4>Mobile App Plugin Development</h4>
-                                            <p>We adhere to best practices to create an online store with added extensions. We develop unique add-ons and tools to build a Mobile App shopping cart. </p>
-                                        </div>
+
 
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
@@ -225,17 +215,20 @@ class Mobile_Developementjs extends Component {
                                         <div className="cult-box">
                                             <div class="tech-dot"></div>
                                             {/* <img src={webImg5} /> */}
+                                            <h4>Post-Release Support</h4>
+                                            <p>iQuinceSoft has a team that is obsessed with the post-release services. this enables us to engage in regular feedback and we work on our areas of improvement (if any)</p>
+                                        </div>
+
+                                        <div className="cult-box">
+                                            <div class="tech-dot"></div>
+                                            {/* <img src={webImg5} /> */}
                                             <h4>Mobile App Consulting</h4>
                                             <p>We offer need-based customized consulting services to help you grow with the growth of your business and improve sales. </p>
                                         </div>
                                     </OwlCarousel>
 
                                     <div className="row">
-                                        <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg} /> */}
-                                            <h4>Mobile App Website Customization</h4>
-                                            <p>Customized features for your online stores with iQuinceSoft Mobile App services. We create, add and apply templates, functionalities and styles with simple CSS and HTML. </p>
-                                        </div>
+
 
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg1} /> */}
@@ -250,11 +243,6 @@ class Mobile_Developementjs extends Component {
                                             </p>
                                         </div>
 
-                                        <div className="col-lg-4 col-md-4">
-                                            {/* <img src={webImg3} /> */}
-                                            <h4>Mobile App Plugin Development</h4>
-                                            <p>We adhere to best practices to create an online store with added extensions. We develop unique add-ons and tools to build a Mobile App shopping cart. </p>
-                                        </div>
 
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg4} /> */}
@@ -268,7 +256,12 @@ class Mobile_Developementjs extends Component {
                                             <p>Hire iQuinceSoft Mobile App developers and save efforts, time and money significantly. Our developers work as per your instructions and contribute as an extended in-house team.</p>
                                         </div>
 
-                                        <div className="col-lg-4 col-md-4"> </div>
+                                        <div className="col-lg-4 col-md-4">
+                                            {/* <img src={webImg5} /> */}
+                                            <h4>Post-Release Support</h4>
+                                            <p>iQuinceSoft has a team that is obsessed with the post-release services. this enables us to engage in regular feedback and we work on our areas of improvement (if any)</p>
+                                        </div>
+
 
                                         <div className="col-lg-4 col-md-4">
                                             {/* <img src={webImg5} /> */}

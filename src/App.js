@@ -91,7 +91,7 @@ class App extends Component {
 					<Route exact path='/CloudDevelopment' component={CloudDevelopment} />
 					<Route exact path='/DevOps_Services' component={DevOps_Services} />
 					<Route exact path='/HirePHPDevelopers' component={HirePHPDevelopers} />
-					<Route exact path='/Mobile_Developement' component={Mobile_Developement} />
+					<Route exact path='/Mobile_App_Developement' component={Mobile_Developement} />
 					<Route exact path='/ProductDesign' component={ProductDesign} />
 					<Route exact path='/QualityAssurance' component={QualityAssurance} />
 					<Route exact path='/HireLaravelDevelopers' component={HireLaravelDevelopers} />
